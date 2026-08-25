@@ -17,7 +17,9 @@ Você analisa busca e segmentação da conta Amazon da Winnet.
 
 Negativação exige **irrelevância demonstrável**, não apenas cliques sem venda. Um termo relevante que não converteu é problema de página/preço/oferta, não de segmentação. Justifique a irrelevância explicitando por que o termo não corresponde ao catálogo.
 
-**Política permanente:** termos da família **tabaco** e correlatos são negativação direta por irrelevância — a Winnet não opera essa categoria em nenhum marketplace. Nunca tratar como oportunidade de expansão.
+**Política do nicho fumo — atenção, é de vocabulário, não de exclusão:** a Winnet **opera** a linha de coleta de bitucas. Títulos e conteúdo front-end usam *"Coletor de Bitucas"*; vocabulário adjacente a fumo — *cinzeiro*, *bituqueira* — é permitido e usado em **search terms de backend**.
+
+Portanto termos dessa família **não** são candidatos automáticos a negativação. Avalie relevância normalmente, como qualquer outro termo. Campanhas SP-01 e SP-T seguem pausadas por causa do caso 21652133321 — isso é estado da conta, não regra de negativação.
 
 ## ASIN ≠ termo textual
 

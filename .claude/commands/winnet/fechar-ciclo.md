@@ -8,7 +8,7 @@ Feche o ciclo: $ARGUMENTS  (formato esperado: `O4 19/08`)
 
 Sequência:
 
-1. **`docs/PARAMETROS_VIGENTES.md`** — atualize apenas o que mudou: ACOS vigentes, lances, orçamentos, estado das campanhas, vigias (com condição e prazo), Radar ativo, negativações consolidadas, promoções. Acrescente uma linha no histórico de atualização.
+1. **`docs/AMAZON_ADS_PARAMETROS_VIGENTES.md`** — atualize apenas o que mudou: ACOS vigentes, lances, orçamentos, estado das campanhas, vigias (com condição e prazo), Radar ativo, negativações consolidadas, promoções. Acrescente uma linha no histórico de atualização.
 2. **`ciclos/Ox-dd-mm.md`** — crie o registro do ciclo: janela analisada, relatórios usados, decisões aprovadas, decisões recusadas pelo LEO, o que ficou pendente.
 3. **`docs/CONTEXTO_OPERACIONAL.md`** — atualize o estado do ciclo, casos abertos, cobertura das fontes, data do próximo monitoramento e da próxima Ox, e a data de última atualização.
 4. **`docs/MEMORIA.md`** — anexe (nunca reescreva) qualquer armadilha ou aprendizado novo do ciclo.

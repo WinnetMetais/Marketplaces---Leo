@@ -1,91 +1,72 @@
-# Contexto Operacional — Marketplaces Winnet
+# CONTEXTO OPERACIONAL — SNAPSHOT
 
-**Documento vivo.** Atualizar ao final de cada ciclo Ox e sempre que o estado da operação mudar.
-
-- **Última atualização:** 19/08/2026
-- **Responsável:** LEO
-- **Marketplace primário:** Amazon (em operação)
-- **Sinal externo:** Mercado Livre
+**Data do snapshot:** 25/08/2026
+**Natureza:** DOCUMENTO VIVO. Representa o estado operacional no momento do snapshot, exportado da memória do Project do Claude.ai na migração para o Claude Code. Atualizar sempre que o estado mudar; nunca tratar como regra permanente.
 
 ---
 
-## 1. Estado atual do ciclo
+## Estado atual
 
-| Item | Estado |
-|---|---|
-| Último ciclo concluído | **O3** |
-| Próximo ciclo | **O4** |
-| Ritmo de otimização | quinzenal |
-| Ritmo de monitoramento | semanal (7 dias) |
-| Data do próximo monitoramento | *a definir com LEO* |
-| Data aproximada da próxima O4 | *a definir com LEO* |
+- **Ciclo de Ads:** O3 executado (referência 11/08/2026). Todas as estruturas O3 em incubação, com primeira leitura na **O4 (25/08/2026 — hoje)**.
+- **Monitoramento semanal (período 10–16/08):** Status VIGIA; nenhuma intervenção em campanha autorizada. Geral Automática sinalizada para confirmação na O4. Ajuste de TOS do Extintor corrigido no console.
+- **SP-01 e SP-T — política de fumo:** Ambas pausadas; gatilho de reativação vinculado à resolução do caso **21652133321** (agente Rebeca, resposta indicada em 48h). Caminho de resolução: reverter títulos para linguagem "Coletor de Bitucas"; vocabulário adjacente a fumo (cinzeiro, bituqueira) restrito a search terms de backend. Precedente: caso 21577340991 confirmou requalificação anterior.
+- **Planilha Mestra:** versão canônica **v4.3.2** (`dados/Planilha_Mestra_Winnet_v4_3_2.xlsx`).
+- **Livro_Vendas:** fechamento de agosto/2026 em **07/09/2026** (primeira segunda de setembro). Cobertura atual até 06/08/2026; lançamentos de 07–16/08 pendentes no Registro_Vendas. Atribuição de origem (Ads/Orgânico) exige cruzamento com relatórios de publicidade no fechamento; lançamentos não classificáveis devem ser sinalizados para decisão da Wintech — nunca inferidos.
+- **Imagens de produto:** trabalho contínuo em múltiplos SKUs com geradores de IA (GPT, Gemini) e edição manual (Photopea, Canva), prompts em português.
 
-> Origem: informado por LEO na migração do Project para o Claude Code.
-> Confirmar contra `docs/PARAMETROS_VIGENTES.md` e o Registro de Alterações antes de abrir a O4.
+## No horizonte
+
+- **O4 (25/08/2026):** primeira leitura de todas as estruturas O3; avaliar desempenho da Geral Automática; Bituqueiras reclassificadas como INVESTIGAR ENTREGA pendente de diagnóstico. Vigias com veredito previsto: PI P3050, PI L2470-CZ, PI PG3070. Revisar PI SP-01.
+- **Levantamento pendente na O4:** inventário completo de estratégias de lance, campanha por campanha (nome, tipo, portfólio, papel, estratégia, orçamento, status, última otimização).
+- **Reativação SP-01/Bituqueiras** condicionada à resolução do caso 21652133321.
+- **Fechamento mensal do Livro_Vendas** em 07/09/2026.
+- **O5 estimada:** ~08/09/2026.
+- Continuidade do desenvolvimento de imagens para SKUs ativos.
+
+## Aprendizados e decisões consolidadas (não re-litigar)
+
+- Régua Radar ativa; regra antiga "R$5 → +20%" aposentada (absorvida pelo Radar).
+- Referências de 20–25/30–50 cliques são apenas históricas.
+- Campo Status do Controle Semanal usa somente categorias oficiais (ex.: VIGIA); notas qualitativas vão no campo Notas.
+- TOS IS e dados de Cinzeiros: reportar apenas como métrica bruta; nunca inferir teto de demanda, headroom ou volume de mercado.
+- Estrutura promocional finalizada: 3+ unidades = 5% (catálogo amplo, margem ≥19%); 5+ unidades = 8% (somente Pequenos/Médios, 82 SKUs; Grandes excluídos por risco de subsídio de frete).
+- Geradores de IA têm dificuldade com edições geométricas precisas; Photopea preferido para correções cirúrgicas. Lógica de posicionamento funcional em imagens de ambientação (ex.: coletor em entradas de bares/hotéis, não no meio do salão).
+
+## Metodologia de origem
+
+O método operacional foi originalmente estabelecido por um assessor (Henrique) e vem sendo progressivamente formalizado em documentação oficial (Playbook, Guia, Skill).
 
 ---
 
-## 2. Casos abertos
+## Estado do repositório (Claude Code)
 
-| Caso | Referência | Situação |
+**Migração concluída em 25/08/2026.** Fontes oficiais carregadas:
+
+| Fonte | Arquivo | Situação |
 |---|---|---|
-| Caso Amazon | **21652133321** | Aberto / em acompanhamento — detalhamento pendente de upload |
+| Método | `docs/PLAYBOOK_OFICIAL_AMAZON_ADS_WINNET_v1.md` | ✅ íntegro |
+| Estado | `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md` | ✅ snapshot 14/08/2026 |
+| Guia da Mestra | `docs/GUIA_PLANILHA_MESTRA.md` | ✅ íntegro |
+| Skill | `.claude/skills/amazon-ads-winnet/SKILL.md` | ✅ v1.6.3, 2.135 linhas |
+| Planilha Mestra | `dados/Planilha_Mestra_Winnet_v4_3_2.xlsx` | ✅ 9 abas |
+| Controle Semanal | `dados/Controle_Semanal_Amazon_Ads_Winnet.xlsx` | ✅ 62 linhas |
+| Registro de Alterações | `dados/Registro_Alteracoes_Amazon_Ads_Winnet.xlsx` | ✅ 210 linhas |
+
+### Abas da Planilha Mestra v4.3.2
+
+`LEIA-ME` · `Resumo` (68) · `Simulador` (232 = SKUs × 2 cenários) · `Registro_Vendas` (117) · `Livro_Vendas` (37) · `Novo_Produto` (25) · `Ref_Frete` (54) · `Classificação_Frete` (119) · `Listas` (114)
+
+### Único bloqueador para a O4
+
+- [ ] **Relatórios Amazon da janela de 30 dias** em `relatorios/amazon/` — Termos de Pesquisa, Segmentação, Produtos Anunciados, Posicionamento, Campanhas, Parcela de Impressões, Export do Gerenciador (com coluna Estado) e Relatório de Negócios.
+
+Sem eles a O4 não abre. Todo o restante do método já está operante.
 
 ---
 
-## 3. Cobertura das fontes internas
-
-| Fonte | Cobertura | Observação |
-|---|---|---|
-| `Registro_Vendas` | vendas reais registradas | Fonte oficial de valores realizados |
-| `Livro_Vendas` | **fechamento em 07/09** | Atualização mensal; entre fechamentos fica 1–2 meses defasado |
-| Planilha Mestra | **v4.3.2** | Fonte oficial de SKU/preço/custo/margem/tarifa/frete/classe logística |
-| Controle Semanal | — | Acompanhamento do monitoramento |
-| Registro de Alterações | — | Rastreabilidade dos ciclos Ox |
-
-**Regra derivada:** para qualquer janela Ads posterior a **07/09**, o `Livro_Vendas` ainda não cobre o período. Ausência de venda no Livro nessa faixa **não** é evidência de ausência de venda — declarar a lacuna temporal explicitamente.
-
----
-
-## 4. Versões vigentes
-
-| Artefato | Versão |
-|---|---|
-| Skill `amazon-ads-winnet` | **v1.6.3** |
-| Planilha Mestra | **v4.3.2** |
-| Playbook Oficial Amazon Ads Winnet | v1 |
-
----
-
-## 5. Inventário de dados no repositório
-
-Rodar `/contexto` (ou o hook de SessionStart) para o inventário ao vivo.
-
-| Pasta | Conteúdo esperado |
-|---|---|
-| `dados/` | Planilha Mestra v4.3.2, Controle Semanal, Registro de Alterações |
-| `relatorios/amazon/` | Exports: Termos de Pesquisa, Segmentação, Produtos Anunciados, Posicionamento, Campanhas, Parcela de Impressões, Export do Gerenciador, Relatório de Negócios |
-| `ciclos/` | Um arquivo por ciclo Ox concluído |
-
----
-
-## 6. Pendências de upload
-
-Itens que o Project original tinha e que ainda **não** estão neste repositório. Enquanto não subirem, as análises que dependem deles ficam com confiança reduzida e a lacuna deve ser declarada na seção **I. Dados que faltam** de cada entrega.
-
-- [ ] `dados/Planilha_Mestra_Winnet_v4.3.2.xlsx`
-- [ ] `dados/Controle_Semanal.xlsx`
-- [ ] `dados/Registro_de_Alteracoes.xlsx`
-- [ ] Conteúdo original de `docs/PLAYBOOK_AMAZON_ADS_WINNET.md`
-- [ ] Conteúdo original de `docs/PARAMETROS_VIGENTES.md` (ACOS Objetivo/Máximo/Emergência, lances, orçamentos, vigias, Radar, promoções)
-- [ ] Conteúdo original de `docs/GUIA_PLANILHA_MESTRA.md`
-- [ ] Relatórios Amazon da janela da O4
-- [ ] Detalhamento do caso 21652133321
-
----
-
-## 7. Log de atualizações deste documento
+## Log de atualizações deste documento
 
 | Data | Ciclo | O que mudou |
 |---|---|---|
-| 19/08/2026 | — | Criação do repositório; migração do Project para Claude Code; skill v1.6.3 instalada; stack Ruflo + claude-mem + find-skills ativada |
+| 19/08/2026 | — | Snapshot exportado da memória do Project |
+| 25/08/2026 | — | Migração para o Claude Code concluída: docs oficiais, Mestra v4.3.2 e planilhas carregadas; stack Ruflo + claude-mem + find-skills ativa; correção da leitura da política de fumo |

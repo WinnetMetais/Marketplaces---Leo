@@ -4,7 +4,7 @@ Aprendizados consolidados que **não** devem ser reaprendidos a cada sessão.
 Complementa (não substitui) o `claude-mem`, que captura memória automática por sessão.
 
 **Regra:** este arquivo guarda **método e aprendizado**, nunca **estado numérico**.
-Números vivos ficam em `docs/PARAMETROS_VIGENTES.md`.
+Números vivos ficam em `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md`.
 
 ---
 
@@ -79,9 +79,25 @@ Usar exatamente estas formulações quando a situação ocorrer:
 
 ## 3. Políticas permanentes
 
-- **Tabaco e correlatos:** a Winnet não opera essa categoria em nenhum marketplace. Termos dessa família são candidatos diretos a negativação por irrelevância semântica — nunca oportunidade de expansão.
+- **Nicho fumo — política de VOCABULÁRIO, não de exclusão:** a Winnet **opera** a linha de coleta de bitucas. Front-end (títulos, bullets, conteúdo visível) usa vocabulário de coleta de resíduos — *"Coletor de Bitucas"*. Vocabulário adjacente a fumo — *cinzeiro*, *bituqueira* — fica restrito a **search terms de backend**, onde é permitido e usado. Termos dessa família em relatórios de pesquisa **não** são candidatos automáticos a negativação: avaliar relevância normalmente.
+  - Campanhas **SP-01** e **SP-T** pausadas; reativação vinculada à resolução do caso **21652133321** (agente Rebeca). Caminho: reverter títulos para "Coletor de Bitucas". Precedente: caso **21577340991** confirmou requalificação anterior.
+  - ⚠️ *Erro registrado (19/08/2026):* na migração para o Claude Code, esta política foi interpretada como "a Winnet não opera tabaco, negativar tudo". Interpretação **incorreta** — corrigida em 25/08/2026 com o CLAUDE.md original. Negativar essa família por padrão teria eliminado tráfego relevante do catálogo ativo.
 - **Trava de execução:** analisar e recomendar. Execução só após aprovação explícita do LEO.
 - **Mercado Livre:** entra como **sinal externo** de demanda/preço, não como fonte de decisão Amazon.
+
+### Réguas aposentadas — não ressuscitar
+- Regra antiga **"R$5 → +20%"** está **aposentada**, absorvida pela régua de Radar.
+- Referências de **20–25 / 30–50 cliques** são apenas históricas. A régua vigente é ~15 cliques.
+
+### Campo Status do Controle Semanal
+Usa **somente categorias oficiais** (ex.: `VIGIA`). Nota qualitativa vai no campo **Notas**, nunca no Status.
+
+### Livro_Vendas — atribuição de origem
+A classificação Ads/Orgânico no fechamento exige cruzamento com relatórios de publicidade.
+Lançamento não classificável é **sinalizado para decisão da Wintech** — nunca inferido.
+
+### Imagens
+Geradores de IA têm dificuldade com edição geométrica precisa; **Photopea** é preferido para correção cirúrgica. Lógica de posicionamento funcional em ambientação (ex.: coletor na entrada de bares/hotéis, não no meio do salão).
 
 ---
 

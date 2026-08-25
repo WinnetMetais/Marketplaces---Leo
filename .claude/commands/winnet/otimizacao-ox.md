@@ -10,7 +10,7 @@ Janelas: **30 dias** para réguas principais · **Era** para testes/vigias · **
 
 Sequência:
 
-1. Invoque a Skill `amazon-ads-winnet` e leia `docs/PARAMETROS_VIGENTES.md`, `docs/CONTEXTO_OPERACIONAL.md` e `docs/MEMORIA.md`.
+1. Invoque a Skill `amazon-ads-winnet` e leia `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md`, `docs/CONTEXTO_OPERACIONAL.md` e `docs/MEMORIA.md`.
 2. **`auditor-dados-amazon`** — inventário dos 11 insumos, validação e mapa de cruzamentos permitidos/proibidos. Se faltarem fontes, siga com o que der e declare as limitações; não trave a Ox inteira.
 3. Em paralelo, quando a base permitir:
    - **`ads-x-vendas-totais`** — bloco C

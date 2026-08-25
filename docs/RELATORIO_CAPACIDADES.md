@@ -88,13 +88,13 @@ Skills `xlsx` (Mestra, Controle Semanal, Registro de Alterações), `pdf`, `docx
 
 ## 5. O que ainda falta
 
-| Pendência | Impacto |
-|---|---|
-| Planilhas em `dados/` | Bloqueia toda decisão financeira (margem, break-even) |
-| Valores de `PARAMETROS_VIGENTES.md` | ACOS, lances, orçamentos, vigias e Radar estão `PENDENTE` |
-| Texto integral do Playbook e do Guia da Mestra | Método operante vem da Skill; os documentos são o registro |
-| Relatórios Amazon da janela da O4 | Bloqueia a execução da O4 |
-| Permissão de escrita do GitHub App | Impede o push automático |
+| Pendência | Impacto | Situação |
+|---|---|---|
+| ~~Planilhas em `dados/`~~ | — | ✅ carregadas em 25/08 |
+| ~~Valores dos Parâmetros Vigentes~~ | — | ✅ ACOS 9/18/36%, lances e promoções reais |
+| ~~Playbook e Guia da Mestra integrais~~ | — | ✅ carregados em 25/08 |
+| **Relatórios Amazon da janela** | **Único bloqueador da O4** | ⬜ pendente |
+| Permissão de escrita do GitHub App | Push automático | ✅ liberada em 25/08 |
 
 ---
 
@@ -106,6 +106,6 @@ Skills `xlsx` (Mestra, Controle Semanal, Registro de Alterações), `pdf`, `docx
 | Subagentes e rituais | ✅ |
 | Memória em três camadas | ✅ |
 | Governança e travas | ✅ |
-| Análise financeira | ⬜ aguarda a Mestra |
-| Execução da O4 | ⬜ aguarda relatórios + Parâmetros |
-| Push automático | ⬜ aguarda permissão do GitHub App |
+| Análise financeira | ✅ Mestra v4.3.2 com 9 abas |
+| Execução da O4 | ⬜ aguarda os relatórios da janela |
+| Push automático | ✅ |

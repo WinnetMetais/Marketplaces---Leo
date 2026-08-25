@@ -9,7 +9,7 @@ Levante e apresente o estado atual deste repositório para o LEO:
 3. **Prontidão para Ox** — confronte o inventário com os 11 insumos do método e diga o que está **PRESENTE** e **AUSENTE**. Separe:
    - **BLOQUEADOR** para uma ação específica
    - **IMPORTANTE, mas não bloqueador geral**
-4. **Parâmetros** — aponte quantos campos de `docs/PARAMETROS_VIGENTES.md` ainda estão `PENDENTE`.
+4. **Parâmetros** — aponte quantos campos de `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md` ainda estão `PENDENTE`.
 5. **Capacidades ativas** — skills carregadas, subagentes disponíveis, comandos, MCP e status do claude-mem.
 6. **Último ciclo no git** — `git log --oneline --grep='^\[O' -5`.
 

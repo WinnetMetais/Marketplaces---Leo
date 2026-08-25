@@ -38,18 +38,25 @@ O scaffold do Ruflo (agentes, comandos, skills, helpers, `.mcp.json`) **já est�
 
 ### 3. Carregar os dados
 
+As planilhas já estão em `dados/`:
+
 ```
 dados/
-  Planilha_Mestra_Winnet_v4.3.2.xlsx
-  Controle_Semanal.xlsx
-  Registro_de_Alteracoes.xlsx
+  Planilha_Mestra_Winnet_v4_3_2.xlsx          # canônica — 9 abas
+  Controle_Semanal_Amazon_Ads_Winnet.xlsx
+  Registro_Alteracoes_Amazon_Ads_Winnet.xlsx
+```
 
+Falta apenas carregar os exports da janela em `relatorios/amazon/`:
+
+```
 relatorios/amazon/
-  2026-07-20_2026-08-18__termos-de-pesquisa.xlsx
+  2026-07-26_2026-08-24__termos-de-pesquisa.xlsx
+  2026-07-26_2026-08-24__campanhas.xlsx
   ...
 ```
 
-Ver `dados/README.md` e `relatorios/amazon/README.md` para as convenções.
+Ver `relatorios/amazon/README.md` para as convenções de nome.
 
 ### 4. Abrir
 
@@ -94,7 +101,7 @@ Toda alteração aguarda **aprovação explícita do LEO**.
 
 Ao final de cada Ox, **após aprovação**:
 
-1. Atualizar `docs/PARAMETROS_VIGENTES.md`
+1. Atualizar `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md`
 2. Registrar em `ciclos/Ox-dd-mm.md`
 3. Atualizar `docs/CONTEXTO_OPERACIONAL.md`
 4. Anexar aprendizados em `docs/MEMORIA.md`
@@ -110,8 +117,8 @@ O histórico do git é o registro oficial dos ciclos — cumpre o papel que o hi
 |---|---|
 | `CLAUDE.md` | Governança do projeto — lido automaticamente em toda sessão |
 | `docs/CONTEXTO_OPERACIONAL.md` | Snapshot vivo: ciclo, casos abertos, cobertura das fontes, pendências |
-| `docs/PLAYBOOK_AMAZON_ADS_WINNET.md` | Método — COMO analisar e decidir |
-| `docs/PARAMETROS_VIGENTES.md` | Estado numérico — ACOS, lances, orçamentos, vigias, Radar |
+| `docs/PLAYBOOK_OFICIAL_AMAZON_ADS_WINNET_v1.md` | Método — COMO analisar e decidir |
+| `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md` | Estado vivo — ACOS 9/18/36%, lances, ciclo, campanhas, promoções |
 | `docs/GUIA_PLANILHA_MESTRA.md` | Como ler a Mestra e suas armadilhas financeiras |
 | `docs/MEMORIA.md` | Aprendizados consolidados que não devem ser reaprendidos |
 | `docs/RELATORIO_CAPACIDADES.md` | Inventário completo das capacidades ativas |
