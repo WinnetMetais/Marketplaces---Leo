@@ -85,6 +85,28 @@ Usar exatamente estas formulações quando a situação ocorrer:
 - **Trava de execução:** analisar e recomendar. Execução só após aprovação explícita do LEO.
 - **Mercado Livre:** entra como **sinal externo** de demanda/preço, não como fonte de decisão Amazon.
 
+### Régua de orçamento — condição de aplicabilidade (O4, 25/08/2026)
+ACOS abaixo do Objetivo **não** aciona automaticamente a régua de crescimento de orçamento.
+Se a campanha consome uma fração do próprio teto, o orçamento **não é a restrição** e aumentá-lo
+não produz efeito. O crescimento sai pelo **lance**. Caso de referência: Geral DBA-o3 com ACOS
+6,06% consumindo ~7% de um orçamento de R$ 90/dia — régua não aplicada (O4-011), escalada feita
+via lance 0,40 → 0,48 (O4-015).
+
+### Inelegibilidade ≠ falha de desempenho (O4, 25/08/2026)
+Campanha pausada por suspensão de anúncio/política sai da leitura de performance: não entra em
+contrapeso vitalício, não conta como campanha ruim, não vira evidência de nicho fraco.
+Caso de referência: PI SP-01-o228/07.
+
+### Teste de estratégia de lance exige grupo de controle (O4, 25/08/2026)
+Ao migrar estratégia (fixo → dinâmico), migrar **uma** estrutura e manter as demais como controle,
+para que o veredito do ciclo seguinte seja atribuível. Caso de referência: piloto da 6B (O4-014)
+com Cinzeiros, L3070-B, Extintor, EGC e Bituqueiras mantidos em fixo.
+
+### CPC do funil como diagnóstico de leilão (O4, 25/08/2026)
+Termo que converte na Automática a CPC abaixo do lance da Manual correspondente indica que a
+barreira da Manual **não é força de lance, é vitória de leilão** — o que aponta para estratégia
+de lance, não para valor de lance.
+
 ### Réguas aposentadas — não ressuscitar
 - Regra antiga **"R$5 → +20%"** está **aposentada**, absorvida pela régua de Radar.
 - Referências de **20–25 / 30–50 cliques** são apenas históricas. A régua vigente é ~15 cliques.

@@ -1,6 +1,6 @@
 # AMAZON ADS — PARÂMETROS VIGENTES
 
-Snapshot inicial: 14/08/2026
+Snapshot: **25/08/2026 (pós-O4)** — substitui o snapshot de 14/08/2026.
 
 DOCUMENTO VIVO.
 
@@ -15,6 +15,8 @@ Não transformar informações deste documento em regras permanentes do Playbook
 ---
 
 ## 1. Réguas de ACOS vigentes
+
+Sem alteração na O4.
 
 ACOS Objetivo: 9%
 
@@ -47,6 +49,14 @@ Tarifa Amazon observada:
 
 aproximadamente 11,7% a 14,8% sobre produto + frete.
 
+### NOVO — Teto mensal de Ads
+
+**R$ 1.000/mês.** Definido por Dianna; registrado em 25/08/2026.
+
+Gasto na janela 30d da O4: R$ 352,88 — aproximadamente **35% do teto**.
+
+Projeção pós-O4 (radares, EGC e Geral +20%): acompanhar nos monitoramentos. Folga ampla no momento.
+
 IMPORTANTE:
 
 Esses valores são apenas parâmetros gerais atuais.
@@ -55,35 +65,31 @@ Para qualquer decisão específica por SKU, consultar obrigatoriamente a PLANILH
 
 ---
 
-## 3. Lances atuais — manuais novas
+## 3. Lances atuais — estruturas novas
 
 ### Extintor
-
-Exata: R$ 2,60
+Exata: R$ 2,60 · Topo de Pesquisa **+75% (reaplicado em 25/08 — vigente)** · fixo
 
 ### Lixeiras banheiro — 6B
-
-Exata: R$ 1,50  
-Frase: R$ 1,20
+Exata: R$ 1,50 · Frase: R$ 1,20 · Topo +25%
+**PILOTO: lances dinâmicos (aumento e redução)** — O4-014
 
 ### Cinzeiros — 6C
-
-Exata: R$ 1,60  
-Frase: R$ 1,30
+Exata: R$ 1,60 · Frase: R$ 1,30 · Topo +50% · fixo (grupo de controle)
 
 ### Bituqueiras
+Exata: R$ 1,20 · Frase: R$ 1,00 · Topo +50% · fixo (grupo de controle)
 
-Exata: R$ 1,20  
-Frase: R$ 1,00
-
-### L3070-B + L4080-B
-
-Exata: R$ 1,20  
-Frase: R$ 1,00
+### L3070-B
+Exata: R$ 1,20 · Frase: R$ 1,00 · Topo +25% · fixo (grupo de controle)
 
 ### Automática EGC
+Lance atual: **R$ 0,84** (O4-012; era R$ 0,70) · fixo (grupo de controle)
 
-Lance atual: R$ 0,70
+### Geral Automática DBA-o311/08
+Lance padrão do grupo: **R$ 0,48** (O4-015; era R$ 0,40; 98 produtos)
+
+Pendência para a O5: conferir lances por segmentação automática (close / loose / substitutes / complements).
 
 IMPORTANTE:
 
@@ -93,236 +99,142 @@ Esses valores são snapshot, não regra permanente.
 
 ---
 
-## 4. Ajustes atuais de Topo de Pesquisa
+## 4. Radares vigentes — com contrato de saída na O5
 
-Extintor:
+| Estrutura | Situação |
+|---|---|
+| PI L2470-CZ-o228/07 `[O4 25/08]` | alvos +20% (0,66 / 0,60) |
+| PI PG3070-o228/07 `[O4 25/08]` | 57 alvos a 0,66 |
+| Auto PXM-o228/07 | radar formalizado da família PXM |
+| Auto EGC | lance 0,84, julgamento longo (nicho de busca rara) |
 
-+75%
+**Contrato comum:** na O5 (~08/09), sem amostra relevante ou com cliques acumulados sem venda → **pausa sem prorrogação**.
 
-Cinzeiros / Bituqueiras:
-
-+50%
-
-Lixeiras:
-
-+25%
-
-Esses percentuais podem mudar conforme desempenho e relatório de posicionamento.
+Nota para a O5 sobre PG3070: os alvos são `asin-expanded` — avaliar migração para exatos se houver amostra.
 
 ---
 
-## 5. Referências operacionais vigentes
+## 5. Piloto de estratégia de lance (O4-014)
+
+**6B → dinâmicos (aumento e redução).**
+
+Grupo de controle mantido em lances fixos: Cinzeiros, L3070-B, Extintor, EGC, Bituqueiras.
+
+Tese: capturar leilões que o funil já provou converter — termos da 6B vendem via Geral a CPC de R$ 0,65–0,80, abaixo do lance de R$ 1,50. A barreira não é força de lance, é vitória de leilão.
+
+**Veredito: O5.** Se a 6B destravar entrega/captura e o controle não, avaliar migração das demais.
+
+---
+
+## 6. Referências operacionais vigentes
 
 ### Radar
-
-Referência inicial de aumento de lance:
-
-aproximadamente +20% por ciclo quando justificado.
-
-Não é aumento automático.
+Referência inicial de aumento de lance: aproximadamente +20% por ciclo quando justificado. Não é aumento automático.
 
 ### Checkpoint padrão
-
-Aproximadamente 15 cliques sem venda:
-
-abrir diagnóstico de conversão.
+Aproximadamente 15 cliques sem venda: abrir diagnóstico de conversão.
 
 ### Produto Indicado
-
-15+ cliques vitalícios sem venda:
-
-gatilho formal vigente para possível pausa do ALVO.
+15+ cliques vitalícios sem venda: gatilho formal vigente para possível pausa do ALVO.
 
 ### Triagem de termos
-
-Aproximadamente 3+ cliques sem venda:
-
-sinal de revisão.
-
-NÃO é negativação automática.
+Aproximadamente 3+ cliques sem venda: sinal de revisão. **NÃO** é negativação automática.
 
 ### Triagem de ASIN em PI
-
-Aproximadamente 5+ cliques sem venda:
-
-sinal de revisão.
-
-NÃO é exclusão automática.
+Aproximadamente 5+ cliques sem venda: sinal de revisão. **NÃO** é exclusão automática.
 
 ---
 
-## 6. Promoções vigentes
+## 7. Promoções vigentes
 
 ### Compra de 3 ou mais unidades
-
-Desconto:
-
-5%
-
-Critério atual:
-
-lista de produtos com margem ≥19%.
-
-Quantidade aproximada atual:
-
-101 SKUs.
+Desconto: 5% · Critério: produtos com margem ≥19% · ~101 SKUs
 
 ### Compra de 5 ou mais unidades
+Desconto: 8% · Somente Pequenos/Médios com margem ≥19% · ~82 SKUs
 
-Desconto:
+Produtos Grandes: fora da promoção de 8% enquanto a questão de frete por unidade não estiver resolvida.
 
-8%
+Orçamento configurado: R$ 1.000 por promoção. Promoções não acumuláveis.
 
-Aplicação atual:
-
-somente produtos Pequenos/Médios com margem ≥19%.
-
-Quantidade atual aproximada:
-
-82 SKUs.
-
-Produtos Grandes:
-
-fora da promoção de 8% enquanto a questão de frete por unidade não estiver resolvida.
-
-Orçamento configurado:
-
-R$1.000 por promoção.
-
-Promoções:
-
-não acumuláveis.
-
-Término atualmente configurado:
-
-janeiro/2027.
+Término atualmente configurado: janeiro/2027.
 
 Todos esses dados devem ser revisados quando houver alteração das promoções.
 
 ---
 
-## 7. Ciclo operacional atual
+## 8. Ciclo operacional atual
 
-O3 concluída:
+O3 concluída: 11/08/2026
 
-11/08/2026.
+**O4 concluída: 25/08/2026**
 
-Próximo monitoramento previsto no snapshot:
+Monitoramentos previstos: **31/08/2026** e **07/09/2026** (o de 07/09 coincide com o fechamento do `Livro_Vendas`)
 
-17/08/2026.
-
-O4 prevista:
-
-25/08/2026.
-
-O5 estimada:
-
-aproximadamente 08/09/2026.
+**O5 prevista: ~08/09/2026**
 
 Datas futuras devem ser atualizadas quando o ciclo efetivamente ocorrer.
 
 ---
 
-## 8. Estado atual da conta — snapshot 14/08/2026
+## 9. Inventário de estratégias de lance — PENDÊNCIA RESOLVIDA ✅
 
-Campanhas ativas:
+Resolvida na O4 com o export do Gerenciador de 25/08.
 
-aproximadamente 22.
+- **Estruturas da fase da assessoria** (gerações o1/o2/o3, ativas ou pausadas): lances dinâmicos — aumento e redução. Exceção única: auto L1618-T-o130/06 (somente redução; pausada).
+- **Estruturas novas:** fixos — exceto a 6B, dinâmica desde O4-014.
+- **Geral DBA-o311/08:** dinâmicos — aumento e redução.
 
-### PI SP-01
-
-Orçamento configurado:
-
-R$40/dia.
-
-Status atual:
-
-SUSPENSA.
-
-Tratar como estado da conta, não como regra do método.
-
-Decisão/revisão prevista para O4.
-
-### Vigias com veredito previsto para O4
-
-- PI P3050
-- PI L2470-CZ
-- PI PG3070
-
-### Estruturas com primeira leitura prevista para O4
-
-- Bituqueiras
-- L3070-B
-- EGC
-- 6B expandida
-
----
-
-## 9. Inventário de estratégias de lance
-
-PENDÊNCIA ATUAL.
-
-Ainda não existe mapa completo campanha por campanha.
-
-Regra conhecida:
-
-### Estruturas criadas na fase da assessoria
-
-Predominantemente:
-
-Lances dinâmicos — aumentar e reduzir.
-
-### Estruturas novas
-
-Podem utilizar:
-
-Lances fixos.
-
-AÇÃO PENDENTE:
-
-Na O4, levantar campanha por campanha:
-
-- nome;
-- tipo;
-- portfólio;
-- papel;
-- estratégia de lance;
-- orçamento;
-- status;
-- última otimização.
-
-Após levantamento, registrar abaixo neste documento.
+Contagem no export de 25/08 (pré-O4-014): **73 dinâmicas aumento/redução · 6 fixas · 1 somente redução**.
+Pós-O4: **74 · 5 · 1**.
 
 Nunca presumir estratégia antes de verificar a campanha.
 
 ---
 
-## 10. Mapa vivo das campanhas
+## 10. Estado da conta — 25/08/2026 (pós-execuções O4)
 
-PENDÊNCIA DE ESTRUTURAÇÃO.
+**Campanhas ativas: 15.**
 
-O mapa deve classificar cada campanha como, quando aplicável:
+Eram 21 no export da manhã. A O4 pausou 5 (PI P3050, auto L1618-o115, auto PG3070-o115, PI P3060-o115, PI PXP-o103); PI SP-01 está pausada desde 17/08.
 
-- Vendedora
-- Aposta
-- Vigia
-- Radar
-- Pausada condicional
-- Coberta pela Geral
-
-O mapa deve ser atualizado a cada otimização.
-
-Não usar classificação antiga se houver informação mais recente.
+| Campanha / grupo | Situação |
+|---|---|
+| Geral DBA-o311/08 | orçamento R$ 90 mantido · lance padrão R$ 0,48 |
+| Manuais novas | 6B [piloto dinâmico], Cinzeiros, Extintor, L3070-B, Bituqueiras Space, EGC |
+| Estruturas O3 | PI PXM-o311/08, auto PXP-o311/08, PI L2030-B-o311/08 — primeira leitura real na O5 |
+| Radares | PI L2470-CZ, PI PG3070, auto PXM-o228/07 |
+| PI P3070-o228/07 | **CONGELADA** — sem mexida de lance até o diagnóstico de conversão do SKU |
+| Auto SP-PP-o116/07 | ativa · segmentação `substitutes` pausada · negativas aplicadas |
+| Auto SP-01-o116/07 | ativa — reativada entre 17 e 25/08 |
+| PI SP-01-o228/07 | **PAUSADA POR INELEGIBILIDADE** — não é falha de desempenho; caso encerrado por decisão Wintech |
 
 ---
 
-## 11. Pendências operacionais atuais
+## 11. Mapa vivo das campanhas — classificação O4
 
-1. Levantar inventário completo das estratégias de lance.
-2. Formalizar mapa vivo das campanhas.
-3. Atualizar este documento ao final de cada otimização.
-4. Revisar PI SP-01 durante a O4.
-5. Resolver futuramente a questão de frete por unidade em produtos Grandes antes de ampliar a promoção de 8%.
+| Classe | Campanhas |
+|---|---|
+| **Vendedora** | Geral DBA |
+| **Aposta** | 6B, Cinzeiros, Extintor, L3070-B, Bituqueiras, PI PXM-o3, auto PXP-o3, PI L2030-B-o3 |
+| **Radar** | PI L2470-CZ, PI PG3070, auto PXM-o2, EGC |
+| **Congelada p/ diagnóstico** | PI P3070 |
+| **Pausada condicional** (retorno pós-página) | PI P3050, PI P3060 |
+| **Pausada por inelegibilidade** | PI SP-01 |
+| **Coberta pela Geral** | demais SKUs |
+
+O mapa deve ser atualizado a cada otimização. Não usar classificação antiga se houver informação mais recente.
+
+---
+
+## 12. Pendências operacionais atuais
+
+1. **Confirmar execução de O4-014 e O4-015** no console (6B → dinâmicos + renomear; Geral 0,40 → 0,48) e marcar como executadas no Registro de Alterações.
+2. **Fila de conversão** (tratar em bloco): L1618-T → P3070 → P3050, Q2460-B, P3060, L2030-B, P4080.
+3. **Lances por segmentação da Geral** — coletar no console na O5.
+4. **Halo Q2430-A** — confirmar no `Registro_Vendas` a composição do pedido de R$ 1.741,56.
+5. Resolver a questão de frete por unidade em produtos Grandes antes de ampliar a promoção de 8%.
+6. **Acompanhar gasto contra o teto mensal de R$ 1.000.**
 
 ---
 

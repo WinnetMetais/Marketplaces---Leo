@@ -1,27 +1,36 @@
 # CONTEXTO OPERACIONAL — SNAPSHOT
 
-**Data do snapshot:** 25/08/2026
-**Natureza:** DOCUMENTO VIVO. Representa o estado operacional no momento do snapshot, exportado da memória do Project do Claude.ai na migração para o Claude Code. Atualizar sempre que o estado mudar; nunca tratar como regra permanente.
+**Data do snapshot:** 25/08/2026 (pós-O4)
+**Natureza:** DOCUMENTO VIVO. Representa o estado operacional no momento do snapshot. Atualizar sempre que o estado mudar; nunca tratar como regra permanente.
 
 ---
 
 ## Estado atual
 
-- **Ciclo de Ads:** O3 executado (referência 11/08/2026). Todas as estruturas O3 em incubação, com primeira leitura na **O4 (25/08/2026 — hoje)**.
-- **Monitoramento semanal (período 10–16/08):** Status VIGIA; nenhuma intervenção em campanha autorizada. Geral Automática sinalizada para confirmação na O4. Ajuste de TOS do Extintor corrigido no console.
-- **SP-01 e SP-T — política de fumo:** Ambas pausadas; gatilho de reativação vinculado à resolução do caso **21652133321** (agente Rebeca, resposta indicada em 48h). Caminho de resolução: reverter títulos para linguagem "Coletor de Bitucas"; vocabulário adjacente a fumo (cinzeiro, bituqueira) restrito a search terms de backend. Precedente: caso 21577340991 confirmou requalificação anterior.
+- **Ciclo de Ads:** **O4 concluída em 25/08/2026.** 15 ações aprovadas e executadas por Wintech. Registro completo em `ciclos/O4-25-08.md`.
+- **Estado da conta:** 15 campanhas ativas (eram 21 na manhã de 25/08; a O4 pausou 5, e a PI SP-01 está pausada desde 17/08).
+- **Geral Automática DBA-o3:** única vendedora — 100% da receita atribuída, ACOS 6,06%. Orçamento R$ 90 mantido; lance padrão escalado de R$ 0,40 para **R$ 0,48**.
+- **Teto mensal de Ads:** **R$ 1.000/mês** (definido por Dianna, registrado em 25/08). Uso atual ~35%.
+- **SP-01 — política de fumo:** **caso encerrado.** Contestação negada em 2ª análise (25/08). A PI SP-01-o228/07 fica **pausada por inelegibilidade** — não é falha de desempenho. A auto SP-01-o116/07 foi reativada entre 17 e 25/08 após requalificação do ASIN.
+- **SP-PP:** anomalia resolvida na causa — segmentação `substitutes` pausada e negativas aplicadas (12 exatas + 6 frases). CTR a reavaliar pós-limpeza na O5.
 - **Planilha Mestra:** versão canônica **v4.3.2** (`dados/Planilha_Mestra_Winnet_v4_3_2.xlsx`).
-- **Livro_Vendas:** fechamento de agosto/2026 em **07/09/2026** (primeira segunda de setembro). Cobertura atual até 06/08/2026; lançamentos de 07–16/08 pendentes no Registro_Vendas. Atribuição de origem (Ads/Orgânico) exige cruzamento com relatórios de publicidade no fechamento; lançamentos não classificáveis devem ser sinalizados para decisão da Wintech — nunca inferidos.
+- **Livro_Vendas:** fechamento de agosto/2026 em **07/09/2026**. Atribuição de origem (Ads/Orgânico) exige cruzamento com relatórios de publicidade no fechamento; lançamentos não classificáveis devem ser sinalizados para decisão da Wintech — nunca inferidos.
 - **Imagens de produto:** trabalho contínuo em múltiplos SKUs com geradores de IA (GPT, Gemini) e edição manual (Photopea, Canva), prompts em português.
 
 ## No horizonte
 
-- **O4 (25/08/2026):** primeira leitura de todas as estruturas O3; avaliar desempenho da Geral Automática; Bituqueiras reclassificadas como INVESTIGAR ENTREGA pendente de diagnóstico. Vigias com veredito previsto: PI P3050, PI L2470-CZ, PI PG3070. Revisar PI SP-01.
-- **Levantamento pendente na O4:** inventário completo de estratégias de lance, campanha por campanha (nome, tipo, portfólio, papel, estratégia, orçamento, status, última otimização).
-- **Reativação SP-01/Bituqueiras** condicionada à resolução do caso 21652133321.
-- **Fechamento mensal do Livro_Vendas** em 07/09/2026.
-- **O5 estimada:** ~08/09/2026.
-- Continuidade do desenvolvimento de imagens para SKUs ativos.
+- **Monitoramentos:** 31/08/2026 e 07/09/2026 (o de 07/09 coincide com o fechamento do `Livro_Vendas`).
+- **O5 prevista:** ~08/09/2026.
+- **Vereditos previstos para a O5:** os 4 radares (PI L2470-CZ, PI PG3070, auto PXM-o2, EGC) · o piloto de estratégia da 6B · a primeira leitura real das estruturas O3 (PI PXM-o3, auto PXP-o3, PI L2030-B-o3) · Bituqueiras · o efeito da Geral a R$ 0,48.
+- **Fila de conversão** aberta e prioritária: L1618-T → P3070 → P3050, Q2460-B, P3060, L2030-B, P4080.
+
+## Pendências abertas — cobrar nos monitoramentos
+
+1. **Confirmar execução de O4-014 e O4-015** no console (6B → dinâmicos + renomear; Geral 0,40 → 0,48) e marcar como executadas no Registro de Alterações.
+2. **Fila de conversão** — tratar em bloco, pós-fechamento. **Não esquecer.** Prioridade 1: **L1618-T** (CTR 2% sem venda; conferir preço R$ 116). Depois **P3070** (maior gasto sem venda; PI congelada), então P3050, Q2460-B, P3060, L2030-B, P4080.
+3. **Lances por segmentação da Geral** (close / loose / substitutes / complements) — coletar no console na O5; relevante depois de O4-015.
+4. **Halo Q2430-A** — confirmar no `Registro_Vendas` a composição do pedido de R$ 1.741,56. O valor bate com 3 unidades da Aro Quadrada 50L (B0H51P391G).
+5. **Para a O5:** dados vitalícios por alvo de PI (régua formal de 15+ cliques) · Business Report na janela exata da O5 · BR mensal de agosto vs julho no fechamento do Livro (07/09) · primeira leitura de Bituqueiras e das estruturas O3 · veredito dos 4 radares · veredito do piloto 6B · leitura do efeito da Geral a 0,48 · reavaliar CTR do SP-PP pós-limpeza · **acompanhar gasto contra o teto de R$ 1.000**.
 
 ## Aprendizados e decisões consolidadas (não re-litigar)
 
@@ -31,6 +40,8 @@
 - TOS IS e dados de Cinzeiros: reportar apenas como métrica bruta; nunca inferir teto de demanda, headroom ou volume de mercado.
 - Estrutura promocional finalizada: 3+ unidades = 5% (catálogo amplo, margem ≥19%); 5+ unidades = 8% (somente Pequenos/Médios, 82 SKUs; Grandes excluídos por risco de subsídio de frete).
 - Geradores de IA têm dificuldade com edições geométricas precisas; Photopea preferido para correções cirúrgicas. Lógica de posicionamento funcional em imagens de ambientação (ex.: coletor em entradas de bares/hotéis, não no meio do salão).
+- **Pausa por inelegibilidade ≠ falha de desempenho.** Não entra em contrapeso vitalício nem em leitura de performance.
+- **ACOS abaixo do Objetivo não aciona automaticamente a régua de orçamento.** Se a campanha consome uma fração do próprio teto, o orçamento não é a restrição — o crescimento sai pelo lance.
 
 ## Metodologia de origem
 
@@ -40,27 +51,17 @@ O método operacional foi originalmente estabelecido por um assessor (Henrique) 
 
 ## Estado do repositório (Claude Code)
 
-**Migração concluída em 25/08/2026.** Fontes oficiais carregadas:
-
 | Fonte | Arquivo | Situação |
 |---|---|---|
 | Método | `docs/PLAYBOOK_OFICIAL_AMAZON_ADS_WINNET_v1.md` | ✅ íntegro |
-| Estado | `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md` | ✅ snapshot 14/08/2026 |
+| Estado | `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md` | ✅ snapshot 25/08/2026 (pós-O4) |
 | Guia da Mestra | `docs/GUIA_PLANILHA_MESTRA.md` | ✅ íntegro |
-| Skill | `.claude/skills/amazon-ads-winnet/SKILL.md` | ✅ v1.6.3, 2.135 linhas |
+| Skill | `.claude/skills/amazon-ads-winnet/SKILL.md` | ✅ v1.6.3 |
 | Planilha Mestra | `dados/Planilha_Mestra_Winnet_v4_3_2.xlsx` | ✅ 9 abas |
-| Controle Semanal | `dados/Controle_Semanal_Amazon_Ads_Winnet.xlsx` | ✅ 62 linhas |
-| Registro de Alterações | `dados/Registro_Alteracoes_Amazon_Ads_Winnet.xlsx` | ✅ 210 linhas |
-
-### Abas da Planilha Mestra v4.3.2
-
-`LEIA-ME` · `Resumo` (68) · `Simulador` (232 = SKUs × 2 cenários) · `Registro_Vendas` (117) · `Livro_Vendas` (37) · `Novo_Produto` (25) · `Ref_Frete` (54) · `Classificação_Frete` (119) · `Listas` (114)
-
-### Único bloqueador para a O4
-
-- [ ] **Relatórios Amazon da janela de 30 dias** em `relatorios/amazon/` — Termos de Pesquisa, Segmentação, Produtos Anunciados, Posicionamento, Campanhas, Parcela de Impressões, Export do Gerenciador (com coluna Estado) e Relatório de Negócios.
-
-Sem eles a O4 não abre. Todo o restante do método já está operante.
+| Controle Semanal | `dados/Controle_Semanal_Amazon_Ads_Winnet.xlsx` | ✅ |
+| Registro de Alterações | `dados/Registro_Alteracoes_Amazon_Ads_Winnet.xlsx` | ⚠️ as 15 linhas da O4 ainda **não** foram lançadas na planilha — estão em `ciclos/O4-25-08.md` |
+| Relatórios da O4 | `relatorios/amazon/` | ✅ 9 arquivos, janela 25/07–23/08 |
+| Ciclos | `ciclos/O4-25-08.md` | ✅ |
 
 ---
 
@@ -69,4 +70,5 @@ Sem eles a O4 não abre. Todo o restante do método já está operante.
 | Data | Ciclo | O que mudou |
 |---|---|---|
 | 19/08/2026 | — | Snapshot exportado da memória do Project |
-| 25/08/2026 | — | Migração para o Claude Code concluída: docs oficiais, Mestra v4.3.2 e planilhas carregadas; stack Ruflo + claude-mem + find-skills ativa; correção da leitura da política de fumo |
+| 25/08/2026 | — | Migração para o Claude Code concluída; correção da leitura da política de fumo |
+| 25/08/2026 | **O4** | Fechamento do ciclo: novo snapshot dos Parâmetros, teto mensal de Ads de R$ 1.000, estado da conta pós-execuções, mapa vivo e pendências da O5 |
