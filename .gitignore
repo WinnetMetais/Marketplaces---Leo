@@ -9,9 +9,17 @@ credentials*.json
 .git-credentials
 
 # ---- Runtime Ruflo / claude-flow ----
+# Estado de maquina gerado pelo daemon a cada sessao — nao versionar.
 .claude-flow/data/
 .claude-flow/logs/
 .claude-flow/sessions/
+.claude-flow/metrics/
+.claude-flow/policy/
+.claude-flow/daemon-state.json
+.claude-flow/daemon.pid
+.claude-flow/harness-active-policy.json
+.claude/proven-config.json
+.claude/.proven-config-version
 .swarm/
 ruvector.db
 agentdb.rvf
