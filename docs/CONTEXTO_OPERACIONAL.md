@@ -22,12 +22,12 @@
 - **Monitoramentos:** 31/08/2026 e 07/09/2026 (o de 07/09 coincide com o fechamento do `Livro_Vendas`).
 - **O5 prevista:** ~08/09/2026.
 - **Vereditos previstos para a O5:** os 4 radares (PI L2470-CZ, PI PG3070, auto PXM-o2, EGC) · o piloto de estratégia da 6B · a primeira leitura real das estruturas O3 (PI PXM-o3, auto PXP-o3, PI L2030-B-o3) · Bituqueiras · o efeito da Geral a R$ 0,48.
-- **Fila de conversão** aberta e prioritária: L1618-T → P3070 → P3050, Q2460-B, P3060, L2030-B, P4080.
+- **Fila de conversão** aberta, agora em **dois níveis** (decisão de 26/08): revisão barata ordena por valor diagnóstico; investimento profundo ordena por lucro × tráfego. Ordens e tabela na **pendência 2 de `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md`** — fonte única.
 
 ## Pendências abertas — cobrar nos monitoramentos
 
-1. **Confirmar execução de O4-014 e O4-015** no console (6B → dinâmicos + renomear; Geral 0,40 → 0,48) e marcar como executadas no Registro de Alterações.
-2. **Fila de conversão** — tratar em bloco, pós-fechamento. **Não esquecer.** Prioridade 1: **L1618-T** (CTR 2% sem venda; conferir preço R$ 116). Depois **P3070** (maior gasto sem venda; PI congelada), então P3050, Q2460-B, P3060, L2030-B, P4080.
+1. **Confirmar execução de O4-014 e O4-015 — ✅ RESOLVIDA em 26/08.** Execução confirmada no console por Wintech; Registro de Alterações preenchido com as 19 entradas da O4 em status **EXECUTADA - EM MATURAÇÃO**.
+2. **Fila de conversão — DECIDIDA EM DOIS NÍVEIS (26/08).** São duas atividades com critérios distintos: a **revisão barata** (minutos por SKU) ordena por **valor diagnóstico**; o **investimento profundo** (horas) ordena por **lucro × tráfego**. As duas ordens e a tabela de lucro esperado estão na **pendência 2 de `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md`** — fonte única, não duplicar aqui. O Nível 2 e a proposta de concentração são **uma decisão só na O5**.
 3. **Lances por segmentação da Geral** (close / loose / substitutes / complements) — coletar no console na O5; relevante depois de O4-015.
 4. **Halo Q2430-A** — confirmar no `Registro_Vendas` a composição do pedido de R$ 1.741,56. O valor bate com 3 unidades da Aro Quadrada 50L (B0H51P391G).
 5. **Para a O5:** dados vitalícios por alvo de PI (régua formal de 15+ cliques) · Business Report na janela exata da O5 · BR mensal de agosto vs julho no fechamento do Livro (07/09) · primeira leitura de Bituqueiras e das estruturas O3 · veredito dos 4 radares · veredito do piloto 6B · leitura do efeito da Geral a 0,48 · reavaliar CTR do SP-PP pós-limpeza · **acompanhar gasto contra o teto de R$ 1.000**.
@@ -59,7 +59,7 @@ O método operacional foi originalmente estabelecido por um assessor (Henrique) 
 | Skill | `.claude/skills/amazon-ads-winnet/SKILL.md` | ✅ v1.6.3 |
 | Planilha Mestra | `dados/Planilha_Mestra_Winnet_v4_3_2.xlsx` | ✅ 9 abas |
 | Controle Semanal | `dados/Controle_Semanal_Amazon_Ads_Winnet.xlsx` | ✅ |
-| Registro de Alterações | `dados/Registro_Alteracoes_Amazon_Ads_Winnet.xlsx` | ⚠️ as 15 linhas da O4 ainda **não** foram lançadas na planilha — estão em `ciclos/O4-25-08.md` |
+| Registro de Alterações | `dados/Registro_Alteracoes_Amazon_Ads_Winnet.xlsx` | ✅ 19 entradas da O4 lançadas pelo Wintech em 26/08, status **EXECUTADA - EM MATURAÇÃO** (conferido pelo chat canônico) |
 | Relatórios da O4 | `relatorios/amazon/` | ✅ 9 arquivos, janela 25/07–23/08 |
 | Ciclos | `ciclos/O4-25-08.md` | ✅ |
 

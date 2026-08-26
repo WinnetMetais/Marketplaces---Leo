@@ -80,7 +80,7 @@ Usar exatamente estas formulações quando a situação ocorrer:
 ## 3. Políticas permanentes
 
 - **Nicho fumo — política de VOCABULÁRIO, não de exclusão:** a Winnet **opera** a linha de coleta de bitucas. Front-end (títulos, bullets, conteúdo visível) usa vocabulário de coleta de resíduos — *"Coletor de Bitucas"*. Vocabulário adjacente a fumo — *cinzeiro*, *bituqueira* — fica restrito a **search terms de backend**, onde é permitido e usado. Termos dessa família em relatórios de pesquisa **não** são candidatos automáticos a negativação: avaliar relevância normalmente.
-  - Campanhas **SP-01** e **SP-T** pausadas; reativação vinculada à resolução do caso **21652133321** (agente Rebeca). Caminho: reverter títulos para "Coletor de Bitucas". Precedente: caso **21577340991** confirmou requalificação anterior.
+  - **Estado das campanhas SP-01/SP-T: consultar sempre os Parâmetros Vigentes.** Aprendizado permanente: contestações de política têm **custo de risco às aprovações vigentes** — encerrar quando o precedente proteger o restante do catálogo.
   - ⚠️ *Erro registrado (19/08/2026):* na migração para o Claude Code, esta política foi interpretada como "a Winnet não opera tabaco, negativar tudo". Interpretação **incorreta** — corrigida em 25/08/2026 com o CLAUDE.md original. Negativar essa família por padrão teria eliminado tráfego relevante do catálogo ativo.
 - **Trava de execução:** analisar e recomendar. Execução só após aprovação explícita do LEO.
 - **Mercado Livre:** entra como **sinal externo** de demanda/preço, não como fonte de decisão Amazon.
@@ -114,9 +114,9 @@ como causa de queda, checar se esse patamar mudou — historicamente não é o g
 ### O gargalo estrutural é densidade de tráfego, não conversão de página (26/08/2026)
 323 sessões distribuídas em 74 ASINs numa semana: média 4,4, **mediana 2**, e **zero ASINs**
 atingiram as ~58 sessões necessárias para esperar 1 venda. Períodos sem venda são consequência
-aritmética da dispersão, não falha de página. Prova: na mesma janela, um ASIN vendeu com 4 sessões
-(25% de conversão) e outro vendeu 3 unidades com 1 sessão. **As páginas convertem; o cliente é que
-raramente chega ao mesmo produto.**
+aritmética da dispersão, não falha de página. Indício na mesma janela: houve ASINs vendendo com 1–4
+sessões. **A dispersão é aritmética confirmada; a qualidade das páginas segue não testada
+individualmente** (nenhum SKU tem amostra).
 
 ### Sessões vs cliques de Ads — proporção medida (26/08/2026)
 Ads gera ~118 cliques/semana contra ~323 sessões/semana: **cerca de 1/3 do tráfego é Ads**.
