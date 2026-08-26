@@ -285,7 +285,9 @@ O mapa deve ser atualizado a cada otimização. Não usar classificação antiga
 4. **Halo Q2430-A — CONFIRMADO POR INFERÊNCIA FORTE (26/08); validação final pendente.** A venda de 20/08 foi **3 un × R$ 580,52 = R$ 1.741,56**; o SKU anunciado Q2430-A custa R$ 231,21 e R$ 1.741,56 ÷ 231,21 não fecha em número inteiro. Consistência numérica exata com 3 un da Aro Quadrada 50L (B0H51P391G). **Validação final no pedido durante o fechamento do Livro_Vendas em 07/09** — sai de graça, o Livro será aberto de qualquer forma. Produto anunciado ≠ produto comprado.
 5. Resolver a questão de frete por unidade em produtos Grandes antes de ampliar a promoção de 8%.
 6. **Acompanhar gasto contra o teto mensal de R$ 1.000.**
-7. **Dispersão de catálogo — NOVO (26/08).** 323 sessões/semana distribuídas em 74 ASINs; mediana de 2 por ASIN; **zero ASINs** atingiram as ~58 sessões necessárias. Proposta de concentração em 9 SKUs preparada para decisão na **O5** — **decisão unificada com o Nível 2 da pendência 2**. Bloqueador: **estoque por SKU**.
+7. **Dispersão de catálogo — NOVO (26/08).** 323 sessões/semana distribuídas em 74 ASINs; mediana de 2 por ASIN; **zero ASINs** atingiram as ~58 sessões necessárias. Proposta de concentração em 9 SKUs preparada para decisão na **O5** — **decisão unificada com o Nível 2 da pendência 2**.
+
+   **Bloqueador de estoque RESOLVIDO em 26/08:** a operação anuncia disponibilidade respaldada por **reposição imediata de fábrica**, não por estoque próprio, e **pode expedir direto da fábrica** — sem perna de transferência. Capacidade não é restrição e o prazo de manuseio prometido é cumprido. **A O5 fica dependendo apenas do monitoramento de 31/08.**
 
 ---
 

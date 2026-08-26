@@ -2,6 +2,10 @@
 
 **Status:** PROPOSTA. Nada executado. Decisão prevista para a **O5 (~08/09/2026)**.
 
+> ✅ **BLOQUEADOR RESOLVIDO (26/08):** capacidade de fornecimento não é restrição — disponibilidade
+> respaldada por reposição imediata de fábrica, com expedição direta possível. A O5 fica dependendo
+> apenas do monitoramento de 31/08.
+>
 > **DECISÃO DE ESCOPO (26/08, chat canônico):** esta proposta e o **Nível 2 da fila de conversão** (investimento profundo) são **uma decisão única** na O5, com **estoque por SKU na mesa**. Não decidir separado — concentrar catálogo e escolher onde investir em listing são a mesma pergunta de alocação.
 **Preparada em:** 26/08/2026 · **Autor da análise:** Claude Code · **Aprovação:** LEO
 
@@ -96,14 +100,15 @@ Se a fração de Ads (~118 cliques/semana) for concentrada nos 9 SKUs do núcleo
 > A pergunta sobre ordenação por lucro unitário foi **respondida em 26/08**: sim, em dois níveis — revisão barata ordena por valor diagnóstico; investimento profundo ordena por lucro × tráfego. Registrado na pendência 2 dos Parâmetros Vigentes.
 
 1. O núcleo de 9 faz sentido comercialmente? Há SKU estratégico fora dele que precisa entrar?
-2. A família P30xx (pedal) tem estoque e capacidade de entrega para receber foco?
+2. ~~A família P30xx tem estoque e capacidade?~~ **RESPONDIDA em 26/08: sim.** Capacidade não é restrição.
 3. Reduzir foco no L1618-T é aceitável, considerando que ele é porta de entrada de catálogo?
 4. Concentrar Ads ou também concentrar esforço de listing/imagens nos mesmos 9?
 5. O Vine, quando o Registro de Marca sair, entra primeiro nos 9 do núcleo?
 
 ## 9. Dados que elevariam a confiança
 
-- Estoque atual por SKU (nenhuma concentração faz sentido sem cobertura)
+- ~~Estoque atual por SKU~~ — **RESOLVIDO em 26/08**: reposição de fábrica com expedição direta; capacidade não restringe
+- Prazo de manuseio configurado por SKU × prazo real de expedição da fábrica (para vigiar a Taxa de Envio com Atraso)
 - Cobertura completa do `Registro_Vendas` (39 linhas registradas; confirmar se é o histórico integral)
 - Posição de preço contra concorrentes nos 9 do núcleo
 - Leitura pós-O4 (31/08) — se o lance da Geral a R$ 0,48 já redistribuiu tráfego

@@ -141,6 +141,19 @@ Decisão do chat canônico, generalizável:
 
 Confundir os dois leva a gastar hora cara no SKU de maior tráfego e menor margem. Caso de referência: L1618-T é 1º na revisão barata (37 sessões/semana) e 6º no investimento profundo (R$ 13,59/semana esperados, contra R$ 46,85 do P3060).
 
+### Modelo de disponibilidade — capacidade não é restrição (26/08/2026)
+A operação anuncia disponibilidade respaldada por **reposição imediata de fábrica**, não por estoque
+próprio em armazém. Quando o item não está na empresa, é retirado da fábrica — e **pode ser expedido
+direto de lá**, sem perna de transferência.
+
+Consequências para o método:
+- **Capacidade de fornecimento não é restrição** em decisões de concentração ou escala. Não tratar
+  "estoque" como bloqueador padrão.
+- O que resta monitorar é **prazo de manuseio** e a **Taxa de Envio com Atraso** (meta Amazon <4%).
+- ⚠️ **Fragilidade do denominador:** a ~19 pedidos/mês, **um único envio atrasado leva a métrica a ~5%**,
+  acima da meta. O risco não vem da fábrica — vem do volume baixo, que não dilui erro. Vale mais que
+  qualquer buffer de estoque.
+
 ### Réguas aposentadas — não ressuscitar
 - Regra antiga **"R$5 → +20%"** está **aposentada**, absorvida pela régua de Radar.
 - Referências de **20–25 / 30–50 cliques** são apenas históricas. A régua vigente é ~15 cliques.
