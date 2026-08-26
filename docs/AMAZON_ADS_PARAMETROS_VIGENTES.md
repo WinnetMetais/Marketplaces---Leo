@@ -63,6 +63,17 @@ Esses valores são apenas parâmetros gerais atuais.
 
 Para qualquer decisão específica por SKU, consultar obrigatoriamente a PLANILHA MESTRA vigente.
 
+### NOVO — Conversão medida da conta
+
+**Taxa de conversão (pedidos/sessão): 1,72%** — medida em 28/07–24/08 (18 pedidos / 1.044 sessões).
+
+Régua de amostra derivada: **~58 sessões para esperar 1 venda** em um ASIN.
+Tráfego medido: 37,3 sessões/dia (28/07–24/08) · 46,1 sessões/dia (19–25/08).
+
+Atualizar a cada ciclo. Este número calibra toda leitura de amostra da conta.
+
+---
+
 ---
 
 ## 3. Lances atuais — estruturas novas

@@ -107,6 +107,32 @@ Termo que converte na Automática a CPC abaixo do lance da Manual correspondente
 barreira da Manual **não é força de lance, é vitória de leilão** — o que aponta para estratégia
 de lance, não para valor de lance.
 
+### Buy Box não é causa nesta conta (medido 19–25/08)
+99,21% de Buy Box ponderada por sessão; 71 de 74 ASINs em 100%. Antes de investigar Buy Box
+como causa de queda, checar se esse patamar mudou — historicamente não é o gargalo.
+
+### O gargalo estrutural é densidade de tráfego, não conversão de página (26/08/2026)
+323 sessões distribuídas em 74 ASINs numa semana: média 4,4, **mediana 2**, e **zero ASINs**
+atingiram as ~58 sessões necessárias para esperar 1 venda. Períodos sem venda são consequência
+aritmética da dispersão, não falha de página. Prova: na mesma janela, um ASIN vendeu com 4 sessões
+(25% de conversão) e outro vendeu 3 unidades com 1 sessão. **As páginas convertem; o cliente é que
+raramente chega ao mesmo produto.**
+
+### Sessões vs cliques de Ads — proporção medida (26/08/2026)
+Ads gera ~118 cliques/semana contra ~323 sessões/semana: **cerca de 1/3 do tráfego é Ads**.
+Concentrar catálogo via Ads redireciona só essa fração; os outros 2/3 são orgânicos e seguem
+listing/ranking. Não prometer controle total do tráfego por decisão de campanha.
+
+### Halo confirmado com número (20/08/2026)
+Venda de 3 un × R$ 580,52 = R$ 1.741,56 foi atribuída ao SKU anunciado Q2430-A, cujo preço é
+R$ 231,21. Produto anunciado ≠ produto comprado, confirmado nesta conta. Não ler valor atribuído
+como venda direta do SKU anunciado.
+
+### Avaliações — o volume é o limitante, não a ferramenta
+Taxa orgânica típica 1–2% (até ~5% com "Solicitar avaliação"). A ~19 pedidos/mês, o esperado é
+**menos de 1 avaliação por mês**. Agravante: comprador B2B avalia menos que B2C. A alavanca que
+funciona em volume baixo é **Amazon Vine** (exige Registro de Marca).
+
 ### Réguas aposentadas — não ressuscitar
 - Regra antiga **"R$5 → +20%"** está **aposentada**, absorvida pela régua de Radar.
 - Referências de **20–25 / 30–50 cliques** são apenas históricas. A régua vigente é ~15 cliques.

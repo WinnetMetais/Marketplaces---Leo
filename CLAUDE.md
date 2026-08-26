@@ -205,7 +205,7 @@ ciclos/                                    # registro de cada Ox
 
 ### `Registro_Vendas` — estrutura
 
-- **Header na linha 6, dados a partir da linha 7.**
+- **Header na linha 5, dados a partir da linha 6** (verificado na v4.3.2 em 26/08/2026 — conferir a cada nova versão antes de iterar).
 - **Nunca usar "Inserir linha"** — utilizar as linhas vazias já existentes, para preservar fórmulas e estrutura.
 - Pedidos **multi-SKU**: uma linha por SKU, **mesmo número de pedido** em todas (sem sufixos "1/3", "2/3"). Frete cobrado e frete real **somente na primeira linha**; zero nas demais.
 - Vendas antigas: usar o **preço efetivamente praticado na data da venda**, quando conhecido, para não distorcer margem histórica.
