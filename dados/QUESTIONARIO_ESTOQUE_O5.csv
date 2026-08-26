@@ -1,0 +1,13 @@
+﻿SKU;ASIN;Classe;Papel;Preco;Lucro_un;Sessoes_semana;Vendas_registradas;Estoque_pronto_hoje_un;Sob_encomenda_S_N;Prazo_producao_dias;Gargalo_conhecido;Aguenta_3x_demanda_S_N_TALVEZ;Observacao
+P4080;B0H63W8G49;Grandes;nucleo+fila;1070.17;268.22;7.0;1;;;;;;
+P3070;B0H63FKGPJ;Medios;nucleo+fila;616.18;160.07;16.0;1;;;;;;
+EGC;B0H4WLDNYD;Medios;nucleo;674.62;147.22;6.0;2;;;;;;
+P3060;B0H4NLBG1Y;Medios;nucleo+fila;511.42;143.36;19.0;2;;;;;;
+L3070-B;B0H6KN61XR;Medios;nucleo;543.85;131.5;5.0;1;;;;;;
+P3050;B0H6365DBF;Medios;nucleo+fila;467.67;110.94;8.0;2;;;;;;
+L2460-CP;B0H4X46QCC;Medios;nucleo;335.68;75.87;4.0;1;;;;;;
+Q2460-B;B0H7YNMBBK;Medios;fila;360.97;69.89;22.0;0;;;;;;
+PXM;B0H4S3FHG6;Pequenos;nucleo;203.54;43.48;6.0;8;;;;;;
+L2030-B;B0H4RV67FF;Pequenos;fila;153.72;29.58;6.0;1;;;;;;
+L2025-T;B0H6C5CTSC;Pequenos;nucleo;132.9;25.9;28.0;4;;;;;;
+L1618-T;B0H3QQLFFY;Pequenos;fila;116.0;21.36;37.0;3;;;;;;
