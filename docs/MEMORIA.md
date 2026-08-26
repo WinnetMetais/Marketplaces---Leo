@@ -133,6 +133,14 @@ Taxa orgânica típica 1–2% (até ~5% com "Solicitar avaliação"). A ~19 pedi
 **menos de 1 avaliação por mês**. Agravante: comprador B2B avalia menos que B2C. A alavanca que
 funciona em volume baixo é **Amazon Vine** (exige Registro de Marca).
 
+### Ordem de fila: diagnóstico e investimento usam critérios diferentes (26/08/2026)
+Decisão do chat canônico, generalizável:
+
+- **Revisão barata** (minutos por SKU) ordena por **valor diagnóstico** — vá primeiro onde há mais tráfego, porque é onde um problema sistêmico aparece primeiro, independentemente do retorno daquele SKU.
+- **Investimento profundo** (horas: listing, fotos, preço) ordena por **retorno esperado** = tráfego × conversão × lucro unitário.
+
+Confundir os dois leva a gastar hora cara no SKU de maior tráfego e menor margem. Caso de referência: L1618-T é 1º na revisão barata (37 sessões/semana) e 6º no investimento profundo (R$ 13,59/semana esperados, contra R$ 46,85 do P3060).
+
 ### Réguas aposentadas — não ressuscitar
 - Regra antiga **"R$5 → +20%"** está **aposentada**, absorvida pela régua de Radar.
 - Referências de **20–25 / 30–50 cliques** são apenas históricas. A régua vigente é ~15 cliques.

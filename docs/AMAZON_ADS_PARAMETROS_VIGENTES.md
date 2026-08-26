@@ -263,12 +263,29 @@ O mapa deve ser atualizado a cada otimização. Não usar classificação antiga
 ## 12. Pendências operacionais atuais
 
 1. **Confirmar execução de O4-014 e O4-015** no console (6B → dinâmicos + renomear; Geral 0,40 → 0,48) e marcar como executadas no Registro de Alterações.
-2. **Fila de conversão — RECALIBRADA em 26/08.** SKUs: L1618-T → P3070 → P3050, Q2460-B, P3060, L2030-B, P4080. Margens saudáveis, cliques sem venda — mas nenhum atingiu volume onde zero venda seja anômalo (conversão média ~1,72%). **Manter a revisão de página/preço/oferta como passo 1** (baixo custo, sem presunção de defeito); a questão de fundo — conversão vs densidade de tráfego — vai para a decisão de concentração na O5 (`docs/PROPOSTA_CONCENTRACAO_O5.md`).
+2. **Fila de conversão — DECIDIDA EM DOIS NÍVEIS (26/08).** Margens saudáveis, cliques sem venda — mas nenhum SKU atingiu volume onde zero venda seja anômalo (conversão média ~1,72%). A fila passa a ter duas ordens distintas, porque são duas atividades diferentes:
+
+   **Nível 1 — revisão barata** (10 min/SKU: página, preço, oferta). Ordena por **valor diagnóstico**, não por retorno. Ordem mantida: **L1618-T → P3070 → P3050 → Q2460-B → P3060 → L2030-B → P4080**. O L1618-T segue em primeiro por ser o maior tráfego da conta (37 sessões/semana, CTR 2%) — se existe problema sistêmico de página, aparece nele primeiro. Sem presunção de defeito.
+
+   **Nível 2 — investimento profundo** (reescrever listing, novas fotos, mudança de preço). Ordena por **lucro × tráfego**:
+
+   | # | SKU | Sessões/sem | Lucro/un | Lucro esperado/sem |
+   |---:|---|---:|---:|---:|
+   | 1 | P3060 | 19 | R$ 143,36 | R$ 46,85 |
+   | 2 | P3070 | 16 | R$ 160,07 | R$ 44,05 |
+   | 3 | P4080 | 7 | R$ 268,22 | R$ 32,29 |
+   | 4 | Q2460-B | 22 | R$ 69,89 | R$ 26,45 |
+   | 5 | P3050 | 8 | R$ 110,94 | R$ 15,27 |
+   | 6 | L1618-T | 37 | R$ 21,36 | R$ 13,59 |
+   | 7 | L2030-B | 6 | R$ 29,58 | R$ 3,05 |
+
+   **A fila profunda e a proposta de concentração são UMA decisão só, na O5**, com estoque na mesa. Ver `docs/PROPOSTA_CONCENTRACAO_O5.md`.
+
 3. **Lances por segmentação da Geral** — coletar no console na O5.
 4. **Halo Q2430-A — CONFIRMADO POR INFERÊNCIA FORTE (26/08); validação final pendente.** A venda de 20/08 foi **3 un × R$ 580,52 = R$ 1.741,56**; o SKU anunciado Q2430-A custa R$ 231,21 e R$ 1.741,56 ÷ 231,21 não fecha em número inteiro. Consistência numérica exata com 3 un da Aro Quadrada 50L (B0H51P391G). **Validação final no pedido durante o fechamento do Livro_Vendas em 07/09** — sai de graça, o Livro será aberto de qualquer forma. Produto anunciado ≠ produto comprado.
 5. Resolver a questão de frete por unidade em produtos Grandes antes de ampliar a promoção de 8%.
 6. **Acompanhar gasto contra o teto mensal de R$ 1.000.**
-7. **Dispersão de catálogo — NOVO (26/08).** 323 sessões/semana distribuídas em 74 ASINs; mediana de 2 por ASIN; **zero ASINs** atingiram as ~58 sessões necessárias. Proposta de concentração em 9 SKUs preparada para decisão na **O5**. Bloqueador da decisão: **estoque por SKU**.
+7. **Dispersão de catálogo — NOVO (26/08).** 323 sessões/semana distribuídas em 74 ASINs; mediana de 2 por ASIN; **zero ASINs** atingiram as ~58 sessões necessárias. Proposta de concentração em 9 SKUs preparada para decisão na **O5** — **decisão unificada com o Nível 2 da pendência 2**. Bloqueador: **estoque por SKU**.
 
 ---
 
