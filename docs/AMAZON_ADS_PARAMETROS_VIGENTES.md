@@ -141,15 +141,21 @@ Tese: capturar leilões que o funil já provou converter — termos da 6B vendem
 
 ### Conversão e tráfego medidos — NOVO (26/08/2026)
 
-**Taxa de conversão da conta: 1,72%** (pedidos/sessão — 18 pedidos / 1.044 sessões, 28/07–24/08).
+**REFERÊNCIA DERIVADA, não régua oficial.** Os números abaixo são **média da conta inteira**, misturando tráfego orgânico e Ads em 74 ASINs. **Não representam a conversão de nenhum SKU específico** e não substituem régua do Playbook.
 
-**Régua de amostra derivada: ~58 sessões para esperar 1 venda** em um ASIN.
+**Taxa de conversão média da conta: ~1,72%** (pedidos/sessão — 18 pedidos / 1.044 sessões).
+Fonte: Business Report por ASIN, janelas 28/07–10/08 (526 sessões) e 11/08–24/08 (518 sessões); exportados em 25/08/2026.
+
+**Régua de amostra derivada: ~58 sessões para esperar 1 venda** em um ASIN, na média da conta.
 
 Tráfego: 37,3 sessões/dia (28/07–24/08) · 46,1 sessões/dia (19–25/08).
+Buy Box: **99,21% ponderada por sessão** (71 de 74 ASINs em 100%) — não é gargalo desta conta.
+Fonte de ambos: Business Report por data e por ASIN, janela 19–25/08; exportados em 26/08/2026.
 
-Buy Box: **99,21% ponderada por sessão** (19–25/08; 71 de 74 ASINs em 100%) — não é gargalo desta conta.
+Atualizar a cada ciclo.
 
-Atualizar a cada ciclo. Estes números calibram toda leitura de amostra.
+### Mapeamento SKU ↔ ASIN
+O **Relatório de Produtos Anunciados** traz SKU e ASIN na mesma linha. Usar essa fonte — **nunca inferir o mapeamento por título ou dimensão**.
 
 ### Radar
 Referência inicial de aumento de lance: aproximadamente +20% por ciclo quando justificado. Não é aumento automático.
@@ -157,7 +163,9 @@ Referência inicial de aumento de lance: aproximadamente +20% por ciclo quando j
 ### Checkpoint padrão
 Aproximadamente 15 cliques sem venda: abrir diagnóstico de conversão.
 
-**NOTA DE CALIBRAÇÃO (26/08/2026):** com a conversão vigente de 1,72%, 15 cliques esperam **0,26 vendas** — zero venda ocorre em **77% dos casos mesmo com página saudável**. O checkpoint indica **onde olhar**, não **o que concluir**. Zero venda só vira sinal estatístico por volta de **170 cliques**. A régua permanece válida como gatilho de diagnóstico; o que não se sustenta é lê-la como evidência de problema de conversão.
+**NOTA DE CALIBRAÇÃO (26/08/2026):** com conversão média de ~1,72%, 15 cliques esperam 0,26 vendas — zero venda ocorre em ~77% dos casos mesmo com página saudável (só vira sinal estatístico perto de ~170 cliques). O checkpoint permanece como gatilho de **DIAGNÓSTICO** (revisar página/preço/oferta é barato), não como prova de problema. Zero venda em amostra pequena não condena página nem SKU; **decisões de pausa nesse volume são de portfólio/contrato, não veredito estatístico**.
+
+Referência: 34 cliques (P3050) → 56% de chance de zero venda · 50 cliques (L1618-T) → 42%.
 
 ### Produto Indicado
 15+ cliques vitalícios sem venda: gatilho formal vigente para possível pausa do ALVO.
@@ -215,8 +223,6 @@ Pós-O4: **74 · 5 · 1**.
 
 Nunca presumir estratégia antes de verificar a campanha.
 
-**Mapeamento SKU ↔ ASIN (26/08):** o Relatório de Produtos Anunciados traz SKU e ASIN na mesma linha. Usar essa fonte — **nunca inferir o mapeamento por título ou dimensão**.
-
 ---
 
 ## 10. Estado da conta — 25/08/2026 (pós-execuções O4)
@@ -257,9 +263,9 @@ O mapa deve ser atualizado a cada otimização. Não usar classificação antiga
 ## 12. Pendências operacionais atuais
 
 1. **Confirmar execução de O4-014 e O4-015** no console (6B → dinâmicos + renomear; Geral 0,40 → 0,48) e marcar como executadas no Registro de Alterações.
-2. **Fila de conversão — REAVALIADA em 26/08.** SKUs: L1618-T, P3070, P3050, Q2460-B, P3060, L2030-B, P4080. Todos com margem dentro/acima da meta e cliques sem venda — mas **a amostra não sustenta diagnóstico de página**: com conversão de 1,72%, nenhum atingiu volume onde zero venda seja anômalo. Antes de investir em página/preço/oferta, distinguir se o problema é conversão ou **densidade de tráfego**. Ver `docs/PROPOSTA_CONCENTRACAO_O5.md`.
+2. **Fila de conversão — RECALIBRADA em 26/08.** SKUs: L1618-T → P3070 → P3050, Q2460-B, P3060, L2030-B, P4080. Margens saudáveis, cliques sem venda — mas nenhum atingiu volume onde zero venda seja anômalo (conversão média ~1,72%). **Manter a revisão de página/preço/oferta como passo 1** (baixo custo, sem presunção de defeito); a questão de fundo — conversão vs densidade de tráfego — vai para a decisão de concentração na O5 (`docs/PROPOSTA_CONCENTRACAO_O5.md`).
 3. **Lances por segmentação da Geral** — coletar no console na O5.
-4. **Halo Q2430-A — RESOLVIDA em 26/08.** A venda de 20/08 foi **3 un × R$ 580,52 = R$ 1.741,56**. O SKU anunciado Q2430-A custa R$ 231,21 — os valores não fecham. **Halo confirmado**, consistente com Aro Quadrada 50L (B0H51P391G). Produto anunciado ≠ produto comprado.
+4. **Halo Q2430-A — CONFIRMADO POR INFERÊNCIA FORTE (26/08); validação final pendente.** A venda de 20/08 foi **3 un × R$ 580,52 = R$ 1.741,56**; o SKU anunciado Q2430-A custa R$ 231,21 e R$ 1.741,56 ÷ 231,21 não fecha em número inteiro. Consistência numérica exata com 3 un da Aro Quadrada 50L (B0H51P391G). **Validação final no pedido durante o fechamento do Livro_Vendas em 07/09** — sai de graça, o Livro será aberto de qualquer forma. Produto anunciado ≠ produto comprado.
 5. Resolver a questão de frete por unidade em produtos Grandes antes de ampliar a promoção de 8%.
 6. **Acompanhar gasto contra o teto mensal de R$ 1.000.**
 7. **Dispersão de catálogo — NOVO (26/08).** 323 sessões/semana distribuídas em 74 ASINs; mediana de 2 por ASIN; **zero ASINs** atingiram as ~58 sessões necessárias. Proposta de concentração em 9 SKUs preparada para decisão na **O5**. Bloqueador da decisão: **estoque por SKU**.
