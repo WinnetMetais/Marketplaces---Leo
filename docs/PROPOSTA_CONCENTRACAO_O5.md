@@ -104,6 +104,7 @@ Se a fração de Ads (~118 cliques/semana) for concentrada nos 9 SKUs do núcleo
 3. Reduzir foco no L1618-T é aceitável, considerando que ele é porta de entrada de catálogo?
 4. Concentrar Ads ou também concentrar esforço de listing/imagens nos mesmos 9?
 5. O Vine, quando o Registro de Marca sair, entra primeiro nos 9 do núcleo?
+6. **DESEMPATE OBRIGATÓRIO — Q2460-B.** O SKU aparece **simultaneamente** na fila de investimento profundo (nº 4, R$ 26,45/semana de lucro esperado) e na lista de **redução de foco** desta proposta (zero venda real, 28 cliques sem conversão). **As duas posições são incompatíveis** — não se desinveste e investe pesado no mesmo SKU. Como a fila profunda e a concentração são uma decisão única, o desempate é do LEO na O5.
 
 ## 9. Dados que elevariam a confiança
 

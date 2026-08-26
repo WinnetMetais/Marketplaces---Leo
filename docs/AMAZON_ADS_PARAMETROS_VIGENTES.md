@@ -63,17 +63,6 @@ Esses valores são apenas parâmetros gerais atuais.
 
 Para qualquer decisão específica por SKU, consultar obrigatoriamente a PLANILHA MESTRA vigente.
 
-### NOVO — Conversão medida da conta
-
-**Taxa de conversão (pedidos/sessão): 1,72%** — medida em 28/07–24/08 (18 pedidos / 1.044 sessões).
-
-Régua de amostra derivada: **~58 sessões para esperar 1 venda** em um ASIN.
-Tráfego medido: 37,3 sessões/dia (28/07–24/08) · 46,1 sessões/dia (19–25/08).
-
-Atualizar a cada ciclo. Este número calibra toda leitura de amostra da conta.
-
----
-
 ---
 
 ## 3. Lances atuais — estruturas novas
@@ -262,7 +251,7 @@ O mapa deve ser atualizado a cada otimização. Não usar classificação antiga
 
 ## 12. Pendências operacionais atuais
 
-1. **Confirmar execução de O4-014 e O4-015** no console (6B → dinâmicos + renomear; Geral 0,40 → 0,48) e marcar como executadas no Registro de Alterações.
+1. **Confirmar execução de O4-014 e O4-015 — ✅ RESOLVIDA em 26/08.** Execução confirmada no console por Wintech; Registro de Alterações preenchido com as 19 entradas da O4 em status **EXECUTADA - EM MATURAÇÃO**.
 2. **Fila de conversão — DECIDIDA EM DOIS NÍVEIS (26/08).** Margens saudáveis, cliques sem venda — mas nenhum SKU atingiu volume onde zero venda seja anômalo (conversão média ~1,72%). A fila passa a ter duas ordens distintas, porque são duas atividades diferentes:
 
    **Nível 1 — revisão barata** (10 min/SKU: página, preço, oferta). Ordena por **valor diagnóstico**, não por retorno. Ordem mantida: **L1618-T → P3070 → P3050 → Q2460-B → P3060 → L2030-B → P4080**. O L1618-T segue em primeiro por ser o maior tráfego da conta (37 sessões/semana, CTR 2%) — se existe problema sistêmico de página, aparece nele primeiro. Sem presunção de defeito.
