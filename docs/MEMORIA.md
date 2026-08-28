@@ -165,6 +165,15 @@ condenada por **artefato de calendário**.
 Caso de referência: Era O4→O5 (25/08–08/09) = 15 dias corridos, **10 úteis** (33% não úteis), com bloco de
 3 dias seguidos em 05–07/09.
 
+### Perguntas de escala respondem-se pela tabela de referência, não por mais amostra (28/08/2026)
+Para saber se um custo **escala com a quantidade**, comparar SKUs diferentes na mesma quantidade **não
+responde** — confunde quantidade com peso unitário. A resposta vem de cruzar a **tabela de referência**
+(`Ref_Frete`: Região × Classe, sem dimensão de quantidade) com o **valor cobrado real**.
+
+Corolário: ao medir multi-unidade, **não usar a tabela como denominador se ela for enviesada**. Medido em
+28/08: a `Ref_Frete` superestima o frete real em ~44% na mediana (25 de 27 pedidos de 1 un abaixo da
+tabela). A referência correta é o **frete real observado em pedidos de 1 unidade**.
+
 ### Réguas aposentadas — não ressuscitar
 - Regra antiga **"R$5 → +20%"** está **aposentada**, absorvida pela régua de Radar.
 - Referências de **20–25 / 30–50 cliques** são apenas históricas. A régua vigente é ~15 cliques.

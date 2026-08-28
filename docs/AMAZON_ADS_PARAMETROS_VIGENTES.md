@@ -306,20 +306,24 @@ O mapa deve ser atualizado a cada otimização. Não usar classificação antiga
 
 3. **Lances por segmentação da Geral** — coletar no console na O5.
 4. **Halo Q2430-A — CONFIRMADO POR INFERÊNCIA FORTE (26/08); validação final pendente.** A venda de 20/08 foi **3 un × R$ 580,52 = R$ 1.741,56**; o SKU anunciado Q2430-A custa R$ 231,21 e R$ 1.741,56 ÷ 231,21 não fecha em número inteiro. Consistência numérica exata com 3 un da Aro Quadrada 50L (B0H51P391G). **Validação final no pedido durante o fechamento do Livro_Vendas em 08/09** — sai de graça, o Livro será aberto de qualquer forma. Produto anunciado ≠ produto comprado.
-5. **Frete por unidade — ESCOPO AMPLIADO (28/08).** A pendência descrevia o subsídio como problema exclusivo dos **Grandes**. O Simulador mostra o mesmo padrão nos **Pequenos**: `L1618-T` tem frete cobrado R$ 16,90 contra frete real R$ 30,00 (SP Interior) e R$ 24,90 contra R$ 46,50 (RS Capital) — subsídio de **−R$ 13,10 a −R$ 21,60 por unidade**, já embutido na margem. Em RS Capital isso derruba o L1618-T de 18,4% para **11,1%**, abaixo do piso de 15%.
+5. **Frete por unidade — PARCIALMENTE RESOLVIDO (28/08), por medição.**
 
-   **A pergunta central continua aberta e é esta: o frete real escala com o número de unidades do pedido, ou é cobrado uma vez por pedido e dilui?** O Simulador calcula por unidade e não responde. As duas respostas levam a decisões opostas:
+   **✅ RESOLVIDO — o frete cobrado NÃO escala com a quantidade.** Cruzamento dos 10 pedidos multi-unidade do `Registro_Vendas` contra a `Ref_Frete`: a tabela tem apenas **Região × Classe**, sem dimensão de quantidade — é **valor por remessa**. Dos 10 pedidos, **8 foram cobrados exatamente a tarifa de 1 unidade** da tabela. Duas divergências, nenhuma delas escalonamento: PXM 3un/Ceará Capital cobrado R$ 159,96 contra R$ 70 de tabela (acima), e L2030 2un/São Paulo Interior cobrado R$ 0,00 contra R$ 16,90 (frete grátis).
 
-   - **Se escala por unidade:** as promoções de 3+ e 5+ ampliam o subsídio a cada unidade adicional, em **todas as classes** — não só nos Grandes. A exclusão dos Grandes do 8% seria o primeiro sintoma de um problema mais amplo.
-   - **Se é por pedido e dilui:** a venda multi-unidade **melhora** a economia de frete, e a exclusão dos Grandes precisaria de outra justificativa.
+   **✅ RESOLVIDO — o frete real tende a crescer com a quantidade, logo o subsídio AMPLIA.** Corrigido pelo viés da tabela (ver item aberto abaixo), medido contra o frete real típico de 1 unidade: **Q4070-A 4un/SP Capital = 5,1×** (cobrado R$ 106, real R$ 300 — subsídio de **−R$ 194 num único pedido**) · P3060 2un = 2,8× · PXP 3un = 2,3× · L2430-B 2un = 2,1× · PXM 3un = 2,1×. **Tendência, não lei:** 6 dos 9 pedidos mensuráveis escalaram; L2460-AML 3un (0,7×) e L2025-T 2un (1,0×) não.
 
-   *A redação de 28/08 desta pendência afirmava a segunda hipótese como fato. Era inferência não verificada e foi retirada. **Nenhuma decisão deve se apoiar nela.***
+   **Isto valida a exclusão dos Grandes da promoção de 8%.** Verificado nas 53 regiões da `Ref_Frete`: em **Grandes, cobrança = custo real em 100% das linhas** — não há subsídio de projeto. Todo o risco da classe vem da **quantidade**, e o Q4070-A o mede.
 
-   **Como resolver:** cruzar, no `Registro_Vendas`, pedidos reais de múltiplas unidades do mesmo SKU — comparar frete cobrado e frete real contra o pedido de 1 unidade do mesmo SKU. É medição, não teoria.
+   **⚠️ CORREÇÃO REGISTRADA:** a redação de 28/08 afirmava que o subsídio **diluía** em pedido multi-unidade. Era inferência não verificada e estava **invertida**. Retirada.
 
-   **Tentativa de medição em 28/08 — NÃO CONCLUSIVA.** O `Registro_Vendas` tem 39 linhas, das quais **10 multi-unidade espalhadas em 8 regiões**. Região e peso dominam o frete e confundem a leitura. O único grupo com amostra comparável (Pequenos → São Paulo Capital) aponta para **os dois lados**: um pedido de 2 un custou R$ 15,49, exatamente o mesmo que um de 1 un (dilui); outro de 2 un custou R$ 28,29, praticamente o dobro (escala). **A pergunta segue aberta por falta de amostra, não por falta de tentativa.** Refazer a medição após o fechamento do `Livro_Vendas` em 08/09, com base maior.
+   **🔶 ABERTO — a `Ref_Frete` superestima o frete real.** Em **27 pedidos de 1 unidade** com tabela aplicável, **25 pagaram abaixo da tabela**, com **mediana de 56%** — a tabela superestima em ~44%. Se confirmado, as margens do Simulador estão **pessimistas**, o que afeta o critério de ≥19% das promoções e os rankings de lucro da fila profunda e da Proposta de Concentração. Verificar na O5, com o Livro de agosto fechado. **Nenhuma decisão deve ser tomada com base nisto antes da verificação.**
+
+   **🔶 ABERTO — o subsídio de projeto não é exclusivo dos Grandes; é o oposto.** A `Ref_Frete` embute cobrança abaixo do custo real em **14 regiões de Pequenos e 14 de Médios** (Sul, Sudeste, ES, MG, RJ e SP), e em **zero** de Grandes. Exemplos: Pequenos/RS Capital cobra R$ 24,90 contra custo real R$ 46,50 (−R$ 21,60); Médios/ES Capital cobra R$ 59,90 contra R$ 93,00 (−R$ 33,10). Ou seja: **Pequenos e Médios carregam subsídio estrutural na tabela, antes de qualquer efeito de quantidade; Grandes carregam apenas o efeito de quantidade.** Avaliar na O5 junto com o item acima.
+
+   **NOTA DE MÉTODO:** comparar SKUs diferentes na mesma quantidade **não responde** à pergunta de escala — confunde quantidade com peso unitário. A resposta veio da `Ref_Frete` cruzada com o frete cobrado real, não de mais amostra de vendas. E comparar multi-unidade **contra a tabela** distorce, porque a tabela é enviesada: a referência correta é o frete real observado em pedidos de 1 unidade.
 
    Resolver antes de ampliar a promoção de 8%.
+
 6. **Acompanhar gasto contra o teto mensal de R$ 1.000.**
 7. **Dispersão de catálogo — NOVO (26/08).** 323 sessões/semana distribuídas em 74 ASINs; mediana de 2 por ASIN; **zero ASINs** atingiram as ~58 sessões necessárias. Proposta de concentração em 9 SKUs preparada para decisão na **O5** — **decisão unificada com o Nível 2 da pendência 2**.
 
