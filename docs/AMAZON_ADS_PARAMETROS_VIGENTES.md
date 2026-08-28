@@ -1,6 +1,6 @@
 # AMAZON ADS — PARÂMETROS VIGENTES
 
-Snapshot: **25/08/2026 (pós-O4)**, com atualizações de medição de **26/08/2026** — substitui o snapshot de 14/08/2026.
+Snapshot: **25/08/2026 (pós-O4)**, com atualizações de medição de **26/08/2026** e atualizações operacionais de **28/08/2026** — substitui o snapshot de 14/08/2026.
 
 DOCUMENTO VIVO.
 
@@ -112,7 +112,13 @@ Esses valores são snapshot, não regra permanente.
 
 **NOTA DE CALIBRAÇÃO — ERA COM FERIADO (28/08/2026).** A Era O4→O5 (25/08–08/09) contém o feriado prolongado de **05 a 07/09** (Independência, 07/09 em segunda-feira). Em catálogo predominantemente **B2B**, esses dias suprimem tráfego de compra corporativa.
 
-Medição da Era: **15 dias corridos · 10 dias úteis** — 5 não úteis (29–30/08, 05–07/09), **33% do período**. O bloco de 05 a 07/09 são 3 dias seguidos sem compra corporativa.
+**Convenção de contagem da Era (fixada em 28/08/2026):** a Era conta **do dia seguinte à otimização anterior até o dia anterior à otimização atual**. É o período efetivamente contido nos relatórios usados no julgamento — o dia da otimização anterior já foi contado na Era anterior, e o dia da otimização atual ainda não tem dado quando os relatórios são extraídos. Aplicar em todos os ciclos seguintes para que as Eras sejam comparáveis entre si.
+
+**Era O4→O5: 26/08 a 07/09 = 13 dias corridos · 8 dias úteis · 5 não úteis** (29–30/08, 05–07/09) = **38% do período**.
+
+O bloco de 05 a 07/09 são 3 dias seguidos sem compra corporativa.
+
+*Correção de 28/08:* a versão anterior desta nota registrava 15 corridos / 10 úteis / 33%, contando 25/08 e 08/09 nas pontas. Os radares tiveram **8 dias úteis** de amostra, não 10.
 
 Julgar os contratos de saída dos 4 radares pela **Era efetiva em dias úteis**, não pela Era corrida.
 
@@ -181,7 +187,9 @@ Aproximadamente 5+ cliques sem venda: sinal de revisão. **NÃO** é exclusão a
 Desconto: 5% · Critério: produtos com margem ≥19% · ~101 SKUs
 
 ### Compra de 5 ou mais unidades
-Desconto: 8% · Somente Pequenos/Médios com margem ≥19% · ~82 SKUs
+Desconto: 8% · Somente Pequenos/Médios com margem ≥19% · **83 SKUs**
+
+**SP-T (Space Torre) adicionado em 28/08/2026:** Médios, margem **21,67%** em SP Interior — cumpria os dois critérios e estava fora por **lacuna de configuração**. Execução confirmada no console por Wintech. Contagem passou de 82 para 83.
 
 Produtos Grandes: fora da promoção de 8% enquanto a questão de frete por unidade não estiver resolvida.
 
@@ -191,6 +199,18 @@ Término atualmente configurado: janeiro/2027.
 
 Todos esses dados devem ser revisados quando houver alteração das promoções.
 
+### Auditoria de conformidade — 28/08/2026
+
+As duas listas foram cruzadas contra o **Simulador da Planilha Mestra v4.3.2** (cenário SP Interior). Resultado: **conformidade total, zero violações**.
+
+- **Promo 3+:** 101 SKUs, todos com margem ≥19%. Os 12 SKUs do catálogo abaixo de 19% estão corretamente excluídos, **sem exceção e sem sobra** — o maior excluído (L2430-A, 18,72%) fica abaixo do menor incluído.
+- **Promo 5+:** 83 SKUs, todos Pequenos/Médios com margem ≥19%. Os 18 SKUs classe Grandes do catálogo estão todos fora.
+- Todos os SKUs das duas listas existem no Simulador com **grafia exata**, inclusive `L2450--CZ`. Zero SKU órfão.
+
+**Não reabrir esta verificação na O5.**
+
+*Observação registrada, sem ação:* o critério de ≥19% é medido em **SP Interior**. No cenário **RS Capital** vários SKUs promocionados caem abaixo do piso de 15% da meta. É característica conhecida da estrutura, não defeito de configuração.
+
 ---
 
 ## 8. Ciclo operacional atual
@@ -199,7 +219,9 @@ O3 concluída: 11/08/2026
 
 **O4 concluída: 25/08/2026**
 
-Monitoramentos previstos: **31/08/2026** e **07/09/2026**
+Monitoramento previsto: **31/08/2026**.
+
+**O monitoramento de 07/09 foi ELIMINADO (decisão de 28/08).** Motivo: 07/09 é feriado, confirmado como **dia não operante no calendário de envio da conta**, e a O5 do dia seguinte lê a Era inteira. Leitura em 07/09 seria trabalho duplicado com 24h de intervalo. A O5 de 08/09 absorve a leitura do período. Intervalo de 8 dias entre leituras contra os 7 do ritual — o Playbook trata a **cadência semanal como conveniência operacional, não regra**.
 
 **EXCEÇÃO DOCUMENTADA (28/08):** o fechamento do `Livro_Vendas` de Agosto/2026 move de **07/09 para 08/09** por causa do feriado da Independência. É **exceção documentada, não mudança de protocolo** — o fechamento segue sendo na primeira segunda do mês.
 
@@ -284,7 +306,11 @@ O mapa deve ser atualizado a cada otimização. Não usar classificação antiga
 
 3. **Lances por segmentação da Geral** — coletar no console na O5.
 4. **Halo Q2430-A — CONFIRMADO POR INFERÊNCIA FORTE (26/08); validação final pendente.** A venda de 20/08 foi **3 un × R$ 580,52 = R$ 1.741,56**; o SKU anunciado Q2430-A custa R$ 231,21 e R$ 1.741,56 ÷ 231,21 não fecha em número inteiro. Consistência numérica exata com 3 un da Aro Quadrada 50L (B0H51P391G). **Validação final no pedido durante o fechamento do Livro_Vendas em 08/09** — sai de graça, o Livro será aberto de qualquer forma. Produto anunciado ≠ produto comprado.
-5. Resolver a questão de frete por unidade em produtos Grandes antes de ampliar a promoção de 8%.
+5. **Frete por unidade — ESCOPO AMPLIADO (28/08).** A pendência descrevia o subsídio como problema exclusivo dos **Grandes**. O Simulador mostra o mesmo padrão nos **Pequenos**: `L1618-T` tem frete cobrado R$ 16,90 contra frete real R$ 30,00 (SP Interior) e R$ 24,90 contra R$ 46,50 (RS Capital) — subsídio de **−R$ 13,10 a −R$ 21,60 por unidade**, já embutido na margem. Em RS Capital isso derruba o L1618-T de 18,4% para **11,1%**, abaixo do piso de 15%.
+
+   **Consequência operacional:** o subsídio é pago **por pedido**, então pedido B2C de 1 unidade absorve o custo inteiro, enquanto pedido B2B multi-unidade dilui. **Qualquer estratégia que aumente volume de unidade avulsa em Pequenos amplia o subsídio.**
+
+   Resolver antes de ampliar a promoção de 8% **e antes de qualquer decisão que aumente venda unitária em Pequenos**.
 6. **Acompanhar gasto contra o teto mensal de R$ 1.000.**
 7. **Dispersão de catálogo — NOVO (26/08).** 323 sessões/semana distribuídas em 74 ASINs; mediana de 2 por ASIN; **zero ASINs** atingiram as ~58 sessões necessárias. Proposta de concentração em 9 SKUs preparada para decisão na **O5** — **decisão unificada com o Nível 2 da pendência 2**.
 

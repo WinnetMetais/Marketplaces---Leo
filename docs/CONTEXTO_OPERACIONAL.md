@@ -7,7 +7,7 @@
 
 ## Estado atual
 
-- **Ciclo de Ads:** **O4 concluída em 25/08/2026.** 15 ações aprovadas e executadas por Wintech. Registro completo em `ciclos/O4-25-08.md`.
+- **Ciclo de Ads:** **O4 concluída em 25/08/2026.** 19 ações aprovadas e executadas por Wintech. Registro completo em `ciclos/O4-25-08.md`.
 - **Estado da conta:** 15 campanhas ativas (eram 21 na manhã de 25/08; a O4 pausou 5, e a PI SP-01 está pausada desde 17/08).
 - **Geral Automática DBA-o3:** única vendedora — 100% da receita atribuída, ACOS 6,06%. Orçamento R$ 90 mantido; lance padrão escalado de R$ 0,40 para **R$ 0,48**.
 - **Teto mensal de Ads:** **R$ 1.000/mês** (definido por Dianna, registrado em 25/08). Uso atual ~35%.
@@ -19,8 +19,8 @@
 
 ## No horizonte
 
-- **Monitoramentos:** 31/08/2026 e 07/09/2026.
-- **O5 prevista:** 08/09/2026 — **Era com 10 dias úteis em 15 corridos** (feriado 05–07/09). Julgar radares por dias úteis; ver nota de calibração nos Parâmetros.
+- **Monitoramento:** 31/08/2026. O de 07/09 foi **eliminado** — feriado, dia não operante confirmado, e a O5 de 08/09 absorve a leitura.
+- **O5 prevista:** 08/09/2026 — **Era de dados 26/08–07/09: 13 corridos · 8 úteis · 5 mortos (38%)** (feriado 05–07/09). Convenção de contagem fixada nos Parâmetros, Seção 4. Julgar radares por dias úteis.
 - **Vereditos previstos para a O5:** os 4 radares (PI L2470-CZ, PI PG3070, auto PXM-o2, EGC) · o piloto de estratégia da 6B · a primeira leitura real das estruturas O3 (PI PXM-o3, auto PXP-o3, PI L2030-B-o3) · Bituqueiras · o efeito da Geral a R$ 0,48.
 - **Fila de conversão** aberta, agora em **dois níveis** (decisão de 26/08): revisão barata ordena por valor diagnóstico; investimento profundo ordena por lucro × tráfego. Ordens e tabela na **pendência 2 de `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md`** — fonte única.
 
@@ -38,7 +38,7 @@
 - Referências de 20–25/30–50 cliques são apenas históricas.
 - Campo Status do Controle Semanal usa somente categorias oficiais (ex.: VIGIA); notas qualitativas vão no campo Notas.
 - TOS IS e dados de Cinzeiros: reportar apenas como métrica bruta; nunca inferir teto de demanda, headroom ou volume de mercado.
-- Estrutura promocional finalizada: 3+ unidades = 5% (catálogo amplo, margem ≥19%); 5+ unidades = 8% (somente Pequenos/Médios, 82 SKUs; Grandes excluídos por risco de subsídio de frete).
+- Estrutura promocional finalizada: 3+ unidades = 5% (catálogo amplo, margem ≥19%); 5+ unidades = 8% (somente Pequenos/Médios, **83 SKUs** após inclusão do SP-T em 28/08; Grandes excluídos por risco de subsídio de frete).
 - Geradores de IA têm dificuldade com edições geométricas precisas; Photopea preferido para correções cirúrgicas. Lógica de posicionamento funcional em imagens de ambientação (ex.: coletor em entradas de bares/hotéis, não no meio do salão).
 - **Pausa por inelegibilidade ≠ falha de desempenho.** Não entra em contrapeso vitalício nem em leitura de performance.
 - **ACOS abaixo do Objetivo não aciona automaticamente a régua de orçamento.** Se a campanha consome uma fração do próprio teto, o orçamento não é a restrição — o crescimento sai pelo lance.
@@ -72,3 +72,4 @@ O método operacional foi originalmente estabelecido por um assessor (Henrique) 
 | 19/08/2026 | — | Snapshot exportado da memória do Project |
 | 25/08/2026 | — | Migração para o Claude Code concluída; correção da leitura da política de fumo |
 | 25/08/2026 | **O4** | Fechamento do ciclo: novo snapshot dos Parâmetros, teto mensal de Ads de R$ 1.000, estado da conta pós-execuções, mapa vivo e pendências da O5 |
+| 28/08/2026 | entre-ciclos | Calendário de envio 07/09 confirmado como não operante · monitoramento de 07/09 eliminado · convenção de contagem da Era fixada (13/8/38%) · promoções auditadas e conformes · SP-T incluído na promo 5+ (82→83) · escopo do frete ampliado para Pequenos · correção 15→19 ações da O4 |
