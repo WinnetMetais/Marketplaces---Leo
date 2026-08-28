@@ -105,7 +105,7 @@ Se a fração de Ads (~118 cliques/semana) for concentrada nos 9 SKUs do núcleo
 4. Concentrar Ads ou também concentrar esforço de listing/imagens nos mesmos 9?
 5. O Vine, quando o Registro de Marca sair, entra primeiro nos 9 do núcleo?
 6. **P4080 × subsídio de frete (registrado em 28/08 como pergunta, não objeção).** O P4080 está no **Núcleo A** — prioridade máxima — e é classe **Grandes**, justamente a classe excluída da promoção de 8% por risco de subsídio. **Se o frete escalar por unidade**, concentrar esforço no P4080 tem um custo que esta proposta não contabilizou. A pendência 5 dos Parâmetros permanece aberta e não conclusiva. Decidir na O5 com a medição que houver.
-7. **Divergência `Ref_Frete` × frete real — ESCOPO AMPLIADO (28/08).** Item de **precificação, não de Ads**, mas que atinge **toda a base desta proposta**. Em pedidos de 1 unidade: **Pequenos 13 de 15 abaixo da tabela (mediana 50%)** e **Médios 11 de 11 abaixo (mediana 65%)**. Não é fenômeno de uma classe — **as margens de praticamente todo o catálogo podem estar subestimadas no Simulador**.
+7. **Divergência `Ref_Frete` × frete real — ESCOPO AMPLIADO (28/08).** Item de **precificação, não de Ads**, mas que atinge **toda a base desta proposta**. Em pedidos de 1 unidade: **Pequenos 14 de 16 abaixo da tabela (mediana 49%)** e **Médios 12 de 12 abaixo (mediana 63%)**. Não é fenômeno de uma classe — **as margens de praticamente todo o catálogo podem estar subestimadas no Simulador**.
 
    Consequência direta: o **lucro unitário** que ordena o Núcleo A, o Núcleo B e a fila profunda foi calculado sobre **frete de tabela**. Se o frete real é ~50–65% da tabela, **todos os rankings desta proposta mudam de valor — possivelmente de ordem**. Reavaliar sobre frete real, com o Livro de agosto fechado, **antes de fixar a lista final**.
 8. **DESEMPATE OBRIGATÓRIO — Q2460-B.** O SKU aparece **simultaneamente** na fila de investimento profundo (nº 4, R$ 26,45/semana de lucro esperado) e na lista de **redução de foco** desta proposta (zero venda real, 28 cliques sem conversão). **As duas posições são incompatíveis** — não se desinveste e investe pesado no mesmo SKU. Como a fila profunda e a concentração são uma decisão única, o desempate é do LEO na O5.
@@ -114,6 +114,6 @@ Se a fração de Ads (~118 cliques/semana) for concentrada nos 9 SKUs do núcleo
 
 - ~~Estoque atual por SKU~~ — **RESOLVIDO em 26/08**: reposição de fábrica com expedição direta; capacidade não restringe
 - Prazo de manuseio configurado por SKU × prazo real de expedição da fábrica (para vigiar a Taxa de Envio com Atraso)
-- Cobertura completa do `Registro_Vendas` (39 linhas registradas; confirmar se é o histórico integral)
+- Cobertura completa do `Registro_Vendas` (42 linhas registradas; confirmar se é o histórico integral)
 - Posição de preço contra concorrentes nos 9 do núcleo
 - Leitura pós-O4 (31/08) — se o lance da Geral a R$ 0,48 já redistribuiu tráfego

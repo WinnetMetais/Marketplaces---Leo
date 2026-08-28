@@ -322,12 +322,12 @@ O mapa deve ser atualizado a cada otimização. Não usar classificação antiga
 
    | Classe | Obs. | Abaixo da tabela | Mediana real/tabela |
    |---|---:|---:|---:|
-   | Pequenos | 15 | 13 | **50%** |
-   | Médios | 11 | **11 de 11** | **65%** |
+   | Pequenos | 16 | 14 | **49%** |
+   | Médios | 12 | **12 de 12** | **63%** |
    | Grandes | 1 | 1 | 67% |
-   | **Todas** | **27** | **25** | **56%** |
+   | **Todas** | **29** | **27** | **~55%** |
 
-   *(O chat canônico reportou 16/14/49% em Pequenos, 12/12/63% em Médios e 29/27/~55% no total. A diferença vem do escopo — 29 é o total de linhas de `Qtd=1`, incluindo as 2 zeradas de multi-SKU — e de uma linha classificada em classe diferente. **Direção, magnitude e conclusão são idênticas nas duas contagens.**)*
+   *(Contagem: 42 linhas preenchidas − 11 multi-unidade = 31 de `Qtd=1`; menos 2 zeradas de multi-SKU (L21, L30) = **29 observações**.)*
 
    **Consequência:** se **Pequenos e Médios** estão pessimistas no Simulador, as margens de **praticamente todo o catálogo** estão subestimadas. O critério de **≥19% das promoções** e os **rankings de lucro** precisam ser reavaliados sobre **frete real, não sobre tabela**. Verificar na O5, com o Livro de agosto fechado. **Nenhuma decisão deve ser tomada com base nisto antes da verificação.**
 

@@ -171,7 +171,7 @@ responde** — confunde quantidade com peso unitário. A resposta vem de cruzar 
 (`Ref_Frete`: Região × Classe, sem dimensão de quantidade) com o **valor cobrado real**.
 
 Corolário: ao medir multi-unidade, **não usar a tabela como denominador se ela for enviesada**. Medido em
-28/08: a `Ref_Frete` superestima o frete real em ~44% na mediana (25 de 27 pedidos de 1 un abaixo da
+28/08: a `Ref_Frete` superestima o frete real em ~45% na mediana (27 de 29 pedidos de 1 un abaixo da
 tabela). A referência correta é o **frete real observado em pedidos de 1 unidade**.
 
 ### Réguas aposentadas — não ressuscitar
