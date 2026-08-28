@@ -50,7 +50,7 @@ Cada item abaixo veio de um Teste Real. São armadilhas confirmadas — não rep
 
 ### Fontes internas
 - `Registro_Vendas` = vendas reais, valores oficiais. Não rebaixar a "provisório".
-- `Livro_Vendas` fecha **mensalmente (07/09)**; defasagem de 1–2 meses é normal.
+- `Livro_Vendas` fecha **mensalmente, na primeira segunda do mês**; defasagem de 1–2 meses é normal. Data efetiva de cada fechamento: consultar os Parâmetros Vigentes (pode haver exceção por feriado).
 - **Ausência de registro ≠ ausência de venda.** Declarar a lacuna temporal.
 - Histórico é **contexto/contrapeso** — nunca soma ao ACOS da janela.
 
@@ -153,6 +153,17 @@ Consequências para o método:
 - ⚠️ **Fragilidade do denominador:** a ~19 pedidos/mês, **um único envio atrasado leva a métrica a ~5%**,
   acima da meta. O risco não vem da fábrica — vem do volume baixo, que não dilui erro. Vale mais que
   qualquer buffer de estoque.
+
+### Era com feriado — julgar por dias úteis em catálogo B2B (28/08/2026)
+O comprador da Winnet é empresa. Feriado prolongado **suprime tráfego de compra corporativa**, não o desloca.
+Quando uma Era contiver feriado, **julgar contratos de saída e réguas de amostra pela Era efetiva em dias
+úteis**, não pela Era corrida.
+
+Não afrouxa contrato: amostra insuficiente continua autorizando pausa. Impede apenas que estrutura seja
+condenada por **artefato de calendário**.
+
+Caso de referência: Era O4→O5 (25/08–08/09) = 15 dias corridos, **10 úteis** (33% não úteis), com bloco de
+3 dias seguidos em 05–07/09.
 
 ### Réguas aposentadas — não ressuscitar
 - Regra antiga **"R$5 → +20%"** está **aposentada**, absorvida pela régua de Radar.

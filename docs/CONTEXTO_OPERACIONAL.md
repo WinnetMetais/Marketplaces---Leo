@@ -14,13 +14,13 @@
 - **SP-01 — política de fumo:** **caso encerrado.** Contestação negada em 2ª análise (25/08). A PI SP-01-o228/07 fica **pausada por inelegibilidade** — não é falha de desempenho. A auto SP-01-o116/07 foi reativada entre 17 e 25/08 após requalificação do ASIN.
 - **SP-PP:** anomalia resolvida na causa — segmentação `substitutes` pausada e negativas aplicadas (12 exatas + 6 frases). CTR a reavaliar pós-limpeza na O5.
 - **Planilha Mestra:** versão canônica **v4.3.2** (`dados/Planilha_Mestra_Winnet_v4_3_2.xlsx`).
-- **Livro_Vendas:** fechamento de agosto/2026 em **07/09/2026**. Atribuição de origem (Ads/Orgânico) exige cruzamento com relatórios de publicidade no fechamento; lançamentos não classificáveis devem ser sinalizados para decisão da Wintech — nunca inferidos.
+- **Livro_Vendas:** fechamento de agosto/2026 movido de 07/09 para **08/09/2026** — exceção documentada por feriado da Independência (07/09, segunda), **não** mudança de protocolo. **Ordem no dia: Livro_Vendas primeiro, O5 depois.** Atribuição de origem (Ads/Orgânico) exige cruzamento com relatórios de publicidade no fechamento; lançamentos não classificáveis devem ser sinalizados para decisão da Wintech — nunca inferidos.
 - **Imagens de produto:** trabalho contínuo em múltiplos SKUs com geradores de IA (GPT, Gemini) e edição manual (Photopea, Canva), prompts em português.
 
 ## No horizonte
 
-- **Monitoramentos:** 31/08/2026 e 07/09/2026 (o de 07/09 coincide com o fechamento do `Livro_Vendas`).
-- **O5 prevista:** ~08/09/2026.
+- **Monitoramentos:** 31/08/2026 e 07/09/2026.
+- **O5 prevista:** 08/09/2026 — **Era com 10 dias úteis em 15 corridos** (feriado 05–07/09). Julgar radares por dias úteis; ver nota de calibração nos Parâmetros.
 - **Vereditos previstos para a O5:** os 4 radares (PI L2470-CZ, PI PG3070, auto PXM-o2, EGC) · o piloto de estratégia da 6B · a primeira leitura real das estruturas O3 (PI PXM-o3, auto PXP-o3, PI L2030-B-o3) · Bituqueiras · o efeito da Geral a R$ 0,48.
 - **Fila de conversão** aberta, agora em **dois níveis** (decisão de 26/08): revisão barata ordena por valor diagnóstico; investimento profundo ordena por lucro × tráfego. Ordens e tabela na **pendência 2 de `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md`** — fonte única.
 
@@ -30,7 +30,7 @@
 2. **Fila de conversão — DECIDIDA EM DOIS NÍVEIS (26/08).** São duas atividades com critérios distintos: a **revisão barata** (minutos por SKU) ordena por **valor diagnóstico**; o **investimento profundo** (horas) ordena por **lucro × tráfego**. As duas ordens e a tabela de lucro esperado estão na **pendência 2 de `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md`** — fonte única, não duplicar aqui. O Nível 2 e a proposta de concentração são **uma decisão só na O5**.
 3. **Lances por segmentação da Geral** (close / loose / substitutes / complements) — coletar no console na O5; relevante depois de O4-015.
 4. **Halo Q2430-A** — confirmar no `Registro_Vendas` a composição do pedido de R$ 1.741,56. O valor bate com 3 unidades da Aro Quadrada 50L (B0H51P391G).
-5. **Para a O5:** dados vitalícios por alvo de PI (régua formal de 15+ cliques) · Business Report na janela exata da O5 · BR mensal de agosto vs julho no fechamento do Livro (07/09) · primeira leitura de Bituqueiras e das estruturas O3 · veredito dos 4 radares · veredito do piloto 6B · leitura do efeito da Geral a 0,48 · reavaliar CTR do SP-PP pós-limpeza · **acompanhar gasto contra o teto de R$ 1.000**.
+5. **Para a O5:** dados vitalícios por alvo de PI (régua formal de 15+ cliques) · Business Report na janela exata da O5 · BR mensal de agosto vs julho no fechamento do Livro (08/09) · primeira leitura de Bituqueiras e das estruturas O3 · veredito dos 4 radares · veredito do piloto 6B · leitura do efeito da Geral a 0,48 · reavaliar CTR do SP-PP pós-limpeza · **acompanhar gasto contra o teto de R$ 1.000**.
 
 ## Aprendizados e decisões consolidadas (não re-litigar)
 

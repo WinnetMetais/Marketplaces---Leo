@@ -110,6 +110,14 @@ Esses valores são snapshot, não regra permanente.
 
 **Contrato comum:** na O5 (~08/09), sem amostra relevante ou com cliques acumulados sem venda → **pausa sem prorrogação**.
 
+**NOTA DE CALIBRAÇÃO — ERA COM FERIADO (28/08/2026).** A Era O4→O5 (25/08–08/09) contém o feriado prolongado de **05 a 07/09** (Independência, 07/09 em segunda-feira). Em catálogo predominantemente **B2B**, esses dias suprimem tráfego de compra corporativa.
+
+Medição da Era: **15 dias corridos · 10 dias úteis** — 5 não úteis (29–30/08, 05–07/09), **33% do período**. O bloco de 05 a 07/09 são 3 dias seguidos sem compra corporativa.
+
+Julgar os contratos de saída dos 4 radares pela **Era efetiva em dias úteis**, não pela Era corrida.
+
+**Isto NÃO afrouxa o contrato:** amostra insuficiente continua autorizando pausa. Apenas impede que estrutura seja condenada por **artefato de calendário**.
+
 Nota para a O5 sobre PG3070: os alvos são `asin-expanded` — avaliar migração para exatos se houver amostra.
 
 ---
@@ -191,7 +199,11 @@ O3 concluída: 11/08/2026
 
 **O4 concluída: 25/08/2026**
 
-Monitoramentos previstos: **31/08/2026** e **07/09/2026** (o de 07/09 coincide com o fechamento do `Livro_Vendas`)
+Monitoramentos previstos: **31/08/2026** e **07/09/2026**
+
+**EXCEÇÃO DOCUMENTADA (28/08):** o fechamento do `Livro_Vendas` de Agosto/2026 move de **07/09 para 08/09** por causa do feriado da Independência. É **exceção documentada, não mudança de protocolo** — o fechamento segue sendo na primeira segunda do mês.
+
+**Ordem no dia 08/09: `Livro_Vendas` primeiro, O5 depois.**
 
 **O5 prevista: ~08/09/2026** · O6 estimada: ~22/09/2026
 
@@ -271,7 +283,7 @@ O mapa deve ser atualizado a cada otimização. Não usar classificação antiga
    **A fila profunda e a proposta de concentração são UMA decisão só, na O5**, com estoque na mesa. Ver `docs/PROPOSTA_CONCENTRACAO_O5.md`.
 
 3. **Lances por segmentação da Geral** — coletar no console na O5.
-4. **Halo Q2430-A — CONFIRMADO POR INFERÊNCIA FORTE (26/08); validação final pendente.** A venda de 20/08 foi **3 un × R$ 580,52 = R$ 1.741,56**; o SKU anunciado Q2430-A custa R$ 231,21 e R$ 1.741,56 ÷ 231,21 não fecha em número inteiro. Consistência numérica exata com 3 un da Aro Quadrada 50L (B0H51P391G). **Validação final no pedido durante o fechamento do Livro_Vendas em 07/09** — sai de graça, o Livro será aberto de qualquer forma. Produto anunciado ≠ produto comprado.
+4. **Halo Q2430-A — CONFIRMADO POR INFERÊNCIA FORTE (26/08); validação final pendente.** A venda de 20/08 foi **3 un × R$ 580,52 = R$ 1.741,56**; o SKU anunciado Q2430-A custa R$ 231,21 e R$ 1.741,56 ÷ 231,21 não fecha em número inteiro. Consistência numérica exata com 3 un da Aro Quadrada 50L (B0H51P391G). **Validação final no pedido durante o fechamento do Livro_Vendas em 08/09** — sai de graça, o Livro será aberto de qualquer forma. Produto anunciado ≠ produto comprado.
 5. Resolver a questão de frete por unidade em produtos Grandes antes de ampliar a promoção de 8%.
 6. **Acompanhar gasto contra o teto mensal de R$ 1.000.**
 7. **Dispersão de catálogo — NOVO (26/08).** 323 sessões/semana distribuídas em 74 ASINs; mediana de 2 por ASIN; **zero ASINs** atingiram as ~58 sessões necessárias. Proposta de concentração em 9 SKUs preparada para decisão na **O5** — **decisão unificada com o Nível 2 da pendência 2**.
