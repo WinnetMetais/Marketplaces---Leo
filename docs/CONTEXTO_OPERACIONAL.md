@@ -1,6 +1,6 @@
 # CONTEXTO OPERACIONAL — SNAPSHOT
 
-**Data do snapshot:** 25/08/2026 (pós-O4)
+**Data do snapshot:** 25/08/2026 (pós-O4), com atualizações operacionais de 28/08/2026
 **Natureza:** DOCUMENTO VIVO. Representa o estado operacional no momento do snapshot. Atualizar sempre que o estado mudar; nunca tratar como regra permanente.
 
 ---
@@ -54,7 +54,7 @@ O método operacional foi originalmente estabelecido por um assessor (Henrique) 
 | Fonte | Arquivo | Situação |
 |---|---|---|
 | Método | `docs/PLAYBOOK_OFICIAL_AMAZON_ADS_WINNET_v1.md` | ✅ íntegro |
-| Estado | `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md` | ✅ snapshot 25/08/2026 (pós-O4) |
+| Estado | `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md` | ✅ snapshot 25/08/2026 (pós-O4) + atualizações de 28/08 |
 | Guia da Mestra | `docs/GUIA_PLANILHA_MESTRA.md` | ✅ íntegro |
 | Skill | `.claude/skills/amazon-ads-winnet/SKILL.md` | ✅ v1.6.3 |
 | Planilha Mestra | `dados/Planilha_Mestra_Winnet_v4_3_2.xlsx` | ✅ 9 abas |

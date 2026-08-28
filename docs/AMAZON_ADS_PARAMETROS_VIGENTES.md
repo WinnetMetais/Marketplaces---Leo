@@ -308,9 +308,18 @@ O mapa deve ser atualizado a cada otimização. Não usar classificação antiga
 4. **Halo Q2430-A — CONFIRMADO POR INFERÊNCIA FORTE (26/08); validação final pendente.** A venda de 20/08 foi **3 un × R$ 580,52 = R$ 1.741,56**; o SKU anunciado Q2430-A custa R$ 231,21 e R$ 1.741,56 ÷ 231,21 não fecha em número inteiro. Consistência numérica exata com 3 un da Aro Quadrada 50L (B0H51P391G). **Validação final no pedido durante o fechamento do Livro_Vendas em 08/09** — sai de graça, o Livro será aberto de qualquer forma. Produto anunciado ≠ produto comprado.
 5. **Frete por unidade — ESCOPO AMPLIADO (28/08).** A pendência descrevia o subsídio como problema exclusivo dos **Grandes**. O Simulador mostra o mesmo padrão nos **Pequenos**: `L1618-T` tem frete cobrado R$ 16,90 contra frete real R$ 30,00 (SP Interior) e R$ 24,90 contra R$ 46,50 (RS Capital) — subsídio de **−R$ 13,10 a −R$ 21,60 por unidade**, já embutido na margem. Em RS Capital isso derruba o L1618-T de 18,4% para **11,1%**, abaixo do piso de 15%.
 
-   **Consequência operacional:** o subsídio é pago **por pedido**, então pedido B2C de 1 unidade absorve o custo inteiro, enquanto pedido B2B multi-unidade dilui. **Qualquer estratégia que aumente volume de unidade avulsa em Pequenos amplia o subsídio.**
+   **A pergunta central continua aberta e é esta: o frete real escala com o número de unidades do pedido, ou é cobrado uma vez por pedido e dilui?** O Simulador calcula por unidade e não responde. As duas respostas levam a decisões opostas:
 
-   Resolver antes de ampliar a promoção de 8% **e antes de qualquer decisão que aumente venda unitária em Pequenos**.
+   - **Se escala por unidade:** as promoções de 3+ e 5+ ampliam o subsídio a cada unidade adicional, em **todas as classes** — não só nos Grandes. A exclusão dos Grandes do 8% seria o primeiro sintoma de um problema mais amplo.
+   - **Se é por pedido e dilui:** a venda multi-unidade **melhora** a economia de frete, e a exclusão dos Grandes precisaria de outra justificativa.
+
+   *A redação de 28/08 desta pendência afirmava a segunda hipótese como fato. Era inferência não verificada e foi retirada. **Nenhuma decisão deve se apoiar nela.***
+
+   **Como resolver:** cruzar, no `Registro_Vendas`, pedidos reais de múltiplas unidades do mesmo SKU — comparar frete cobrado e frete real contra o pedido de 1 unidade do mesmo SKU. É medição, não teoria.
+
+   **Tentativa de medição em 28/08 — NÃO CONCLUSIVA.** O `Registro_Vendas` tem 39 linhas, das quais **10 multi-unidade espalhadas em 8 regiões**. Região e peso dominam o frete e confundem a leitura. O único grupo com amostra comparável (Pequenos → São Paulo Capital) aponta para **os dois lados**: um pedido de 2 un custou R$ 15,49, exatamente o mesmo que um de 1 un (dilui); outro de 2 un custou R$ 28,29, praticamente o dobro (escala). **A pergunta segue aberta por falta de amostra, não por falta de tentativa.** Refazer a medição após o fechamento do `Livro_Vendas` em 08/09, com base maior.
+
+   Resolver antes de ampliar a promoção de 8%.
 6. **Acompanhar gasto contra o teto mensal de R$ 1.000.**
 7. **Dispersão de catálogo — NOVO (26/08).** 323 sessões/semana distribuídas em 74 ASINs; mediana de 2 por ASIN; **zero ASINs** atingiram as ~58 sessões necessárias. Proposta de concentração em 9 SKUs preparada para decisão na **O5** — **decisão unificada com o Nível 2 da pendência 2**.
 
