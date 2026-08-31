@@ -64,3 +64,9 @@ SKUs com cliques sem venda na janela (diagnóstico, não pausa): **L2025-T 22 cl
 ---
 
 **De olho até a O5 (08/09):** envio dos 2 pedidos pendentes hoje; ~~estado da auto L1618~~ (pausada em 31/08, EC-002); se a venda do PXP ganha atribuição tardia; sessões de 30–31/08; gasto acumulado do mês contra o teto.
+
+---
+
+## Adendo pós-fechamento (31/08, após os exports)
+
+**Primeira conversão do piloto 6B.** Venda de 31/08 atribuída à **Campanha de Palavra-Chave Lixeiras banheiro-O4 25/08** — a campanha do piloto de estratégia de lances (O4-014, fixo → dinâmico). A venda ocorreu **depois** da geração dos exports desta janela, portanto não aparece nos números acima; entra na leitura da O5. É a **primeira venda da campanha** desde a criação (29/07) e a primeira de uma Manual Claude fora do Extintor. Registrar na O5: SKU, valor e termo de pesquisa que converteu (puxar do relatório de Termos da janela da O5).
