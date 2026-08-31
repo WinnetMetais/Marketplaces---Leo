@@ -22,6 +22,7 @@
 - **Monitoramento:** ✅ **realizado em 31/08/2026** — registro em `ciclos/Monitoramento-31-08.md`. Destaques: 3 vendas na janela 24–31/08 (2 atribuídas a Ads), Geral em vigia (ACOS de janela 83,9%, leitura na O5), radar EGC destravou entrega, **auto L1618-o115/07 encontrada ativa e pausada no ato (EC-002, conserto da O4-006)**. O monitoramento de 07/09 foi **eliminado** — feriado, dia não operante confirmado, e a O5 de 08/09 absorve a leitura.
 - **O5 prevista:** 08/09/2026 — **Era de dados 26/08–07/09: 13 corridos · 8 úteis · 5 mortos (38%)** (feriado 05–07/09). Convenção de contagem fixada nos Parâmetros, Seção 4. Julgar radares por dias úteis.
 - **Vereditos previstos para a O5:** os 4 radares (PI L2470-CZ, PI PG3070, auto PXM-o2, EGC) · o piloto de estratégia da 6B · a primeira leitura real das estruturas O3 (PI PXM-o3, auto PXP-o3, PI L2030-B-o3) · Bituqueiras · o efeito da Geral a R$ 0,48.
+- **Item de método para a O5 (31/08):** a atribuição de Ads valoriza vendas **a preço de tabela, antes do desconto promocional** (verificado: Q3060-A 3un atribuído a R$ 1.741,56 contra receita real de R$ 1.654,48). Em SKU com promoção ativa, ROAS atribuído infla e ACOS subestima — considerar ao julgar campanhas na O5. Detalhe em `docs/MEMORIA.md`.
 - **Fila de conversão** aberta, agora em **dois níveis** (decisão de 26/08): revisão barata ordena por valor diagnóstico; investimento profundo ordena por lucro × tráfego. Ordens e tabela na **pendência 2 de `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md`** — fonte única.
 
 ## Pendências abertas — cobrar nos monitoramentos

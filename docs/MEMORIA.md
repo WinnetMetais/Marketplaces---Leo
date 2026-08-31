@@ -174,6 +174,15 @@ Corolário: ao medir multi-unidade, **não usar a tabela como denominador se ela
 28/08: a `Ref_Frete` superestima o frete real em ~45% na mediana (27 de 29 pedidos de 1 un abaixo da
 tabela). A referência correta é o **frete real observado em pedidos de 1 unidade**.
 
+### Atribuição de Ads valoriza a preço de tabela, antes do desconto promocional (31/08/2026)
+Verificado na semana 17–23/08: o export de Campanhas atribuiu R$ 2.077,24 ao pedido Q3060-A 3un + L2460-CP,
+que é exatamente **3 × R$ 580,52 + R$ 335,68 — o preço de tabela**. A receita real foi R$ 1.990,16
+(desconto promocional de R$ 87,08 no Q3060-A). Consequências: em venda com promoção ativa, o relatório
+de Ads **infla a venda atribuída e o ROAS, e subestima o ACOS**. Ao cruzar Ads × Registro_Vendas,
+esperar diferença igual ao desconto promo — não é erro de nenhuma das fontes, são bases de valor diferentes.
+Registrado na O5 como item de método. (Origem: alerta correto de divergência com decomposição inicial
+errada — os R$ 87,08 foram lidos como frete; o chat canônico corrigiu com a proveniência do export.)
+
 ### Réguas aposentadas — não ressuscitar
 - Regra antiga **"R$5 → +20%"** está **aposentada**, absorvida pela régua de Radar.
 - Referências de **20–25 / 30–50 cliques** são apenas históricas. A régua vigente é ~15 cliques.
