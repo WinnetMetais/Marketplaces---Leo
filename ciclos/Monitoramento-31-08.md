@@ -69,4 +69,11 @@ SKUs com cliques sem venda na janela (diagnóstico, não pausa): **L2025-T 22 cl
 
 ## Adendo pós-fechamento (31/08, após os exports)
 
-**Primeira conversão do piloto 6B.** Venda de 31/08 atribuída à **Campanha de Palavra-Chave Lixeiras banheiro-O4 25/08** — a campanha do piloto de estratégia de lances (O4-014, fixo → dinâmico). A venda ocorreu **depois** da geração dos exports desta janela, portanto não aparece nos números acima; entra na leitura da O5. É a **primeira venda da campanha** desde a criação (29/07) e a primeira de uma Manual Claude fora do Extintor. Registrar na O5: SKU, valor e termo de pesquisa que converteu (puxar do relatório de Termos da janela da O5).
+**Primeira conversão do piloto 6B.** Venda de 31/08 atribuída à **Campanha de Palavra-Chave Lixeiras banheiro-O4 25/08** — a campanha do piloto de estratégia de lances (O4-014, fixo → dinâmico). A venda ocorreu **depois** da geração dos exports desta janela, portanto não aparece nos números acima; entra na leitura da O5. É a **primeira venda da campanha** desde a criação (29/07) e a primeira de uma Manual Claude fora do Extintor.
+
+**Detalhe do pedido (print do Seller Central):** **L2025-T × 2 unidades** a R$ 132,90 = **R$ 265,80** de produto + **R$ 43,00 de frete cobrado** = R$ 308,80. Item do pedido 168513502290001. Envio pendente no momento do print.
+
+Três observações para a O5:
+1. **L2025-T vendeu 2 dias seguidos por caminhos diferentes do funil** — 30/08 pela Geral (1 un, termo "cesto de lixo cozinha inox") e 31/08 pela Manual 6B (2 un). O SKU era também o 2º em sessões da janela (25). SKU do Núcleo B da proposta de concentração ganhando tração.
+2. **Frete cobrado R$ 43,00 em pedido de 2 unidades** — acima da tarifa de 1 unidade de Pequenos/capital (R$ 24,90). Caso raro em que a cobrança multi-unidade NÃO ficou na tarifa de 1 un (como a exceção PXM 3un/Ceará). Confirmar a região quando a venda entrar no `Registro_Vendas` e somar à amostra da pendência 5.
+3. **Termo de pesquisa que converteu** — puxar do relatório de Termos da janela da O5.
