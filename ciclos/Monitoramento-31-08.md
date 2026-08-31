@@ -9,7 +9,7 @@
 
 1. **A seca de vendas reverteu.** 3 vendas na janela: PXM R$ 203,54 (26/08), PXP R$ 167,89 (29/08), L2025-T R$ 132,90 (30/08). Total R$ 504,33.
 2. **2 de 3 vendas já atribuídas a Ads:** PXM ao Extintor Exato Manual (termo "suporte extintor de incêndio") e L2025-T à Geral DBA (termo "cesto de lixo cozinha inox"). A venda do PXP **não** tem atribuição até 31/08 — orgânica até prova em contrário (janela de atribuição segue aberta).
-3. **⚠️ Divergência de execução: a auto L1618-o115/07 está ATIVADA.** A O4-006 registrou a pausa como EXECUTADA em 25/08, mas o export do Gerenciador de 31/08 mostra a campanha ATIVADO, com impressões até 30/08. Gasto zero na janela — sem urgência financeira, mas o Registro de Alterações e o console divergem. Confirmar com Wintech e pausar.
+3. **⚠️ Divergência de execução: a auto L1618-o115/07 estava ATIVADA — ✅ RESOLVIDA em 31/08.** A O4-006 registrou a pausa como EXECUTADA em 25/08, mas o export do Gerenciador de 31/08 mostrava a campanha ATIVADO, com impressões até 30/08 (gasto zero na janela). O LEO **executou a pausa em 31/08**, no mesmo dia do achado. Registrada como **EC-002** (reexecução/conserto da O4-006) no Registro de Alterações.
 4. **Geral DBA em vigia:** ACOS de 83,9% na janela 7d (R$ 111,50 de custo, R$ 132,90 de venda). Leitura com duas ressalvas: atribuição imatura nos últimos 2–3 dias e a Geral nunca é pausada como campanha comum. É o efeito esperado do lance escalado a R$ 0,48 — mais entrega (27.241 impressões, 155 cliques) sem a conversão ainda ter acompanhado. Veredito na O5, não aqui.
 5. **Radar EGC destravou a entrega:** 547 impressões em 7 dias contra 361 em 30 dias antes do ajuste. O radar cumpriu o objetivo de gerar amostra.
 6. **Alerta operacional:** 2 pedidos com **envio pendente e prazo em 31/08** (L2025-T e PXP). Confirmar o envio hoje para não pontuar na Taxa de Envio com Atraso.
@@ -58,9 +58,9 @@ SKUs com cliques sem venda na janela (diagnóstico, não pausa): **L2025-T 22 cl
 ## I. Dados que faltam
 
 1. Business Report **por data** cobrindo 30 e 31/08 (sessões diárias) — trazer na O5.
-2. Confirmação no console do estado da **auto L1618-o115/07** (e, se ativa, execução da pausa O4-006).
+2. ~~Confirmação no console do estado da **auto L1618-o115/07**~~ — **RESOLVIDO em 31/08**: pausa reexecutada pelo LEO (EC-002).
 3. Livro_Vendas de agosto (08/09, antes da O5) — validação das margens e do halo.
 
 ---
 
-**De olho até a O5 (08/09):** envio dos 2 pedidos pendentes hoje; estado da auto L1618; se a venda do PXP ganha atribuição tardia; sessões de 30–31/08; gasto acumulado do mês contra o teto.
+**De olho até a O5 (08/09):** envio dos 2 pedidos pendentes hoje; ~~estado da auto L1618~~ (pausada em 31/08, EC-002); se a venda do PXP ganha atribuição tardia; sessões de 30–31/08; gasto acumulado do mês contra o teto.
