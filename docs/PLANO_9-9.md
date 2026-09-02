@@ -123,3 +123,29 @@
 - **Q2460-B** — margem < 15% a −10% + desempate obrigatório pendente na O5
 
 **Racional da divisão:** Relâmpago concentra o pico de visibilidade nos SKUs que têm tráfego e não convertem (destrave) e nos tickets altos do Núcleo A; Melhor Oferta dá badge contínuo a semana inteira para os que já giram (manter o embalo) e para os que precisam de exposição prolongada. 14 ofertas, todas com taxa zero, todas elegíveis a ponto no Vem de Amazon quando venderem.
+
+---
+
+## Expansão da lista (02/09) — +9 SKUs, total 23 ofertas
+
+Pedido do LEO: mais produtos para alavancar. Critério: margem ≥15% a −10% **+ tráfego observado na semana** (impressões/cliques/sessões) — oferta em SKU sem visita não alavanca.
+
+### RELÂMPAGO — +3 (total 9)
+| SKU | Margem a −10% | Lucro/un | Tráfego 7d | Motivo |
+|---|---:|---:|---|---|
+| P3050 | 17,8% | R$ 74,88 | 1.440 impr · 8 cliques · 12 sessões | Núcleo A; maior tráfego fora do P3070 |
+| L4080-A | 21,8% | R$ 159,87 | 778 impr | melhor margem Grandes a −10% |
+| P4080ALC | 18,3% | R$ 200,98 | 763 impr | maior lucro absoluto por unidade do pacote |
+
+### MELHOR OFERTA — +6 (total 14)
+| SKU | Margem a −10% | Tráfego 7d | Motivo |
+|---|---:|---|---|
+| L3070-B | 18,3% | 364 impr | **Núcleo A da proposta de concentração** |
+| PG2460 | 16,7% | 470 impr · 5 sessões | maior tráfego da família porta-guarda-chuva |
+| L3060-A | 16,8% | 388 impr · 5 sessões | tráfego constante sem conversão |
+| L2460-AML | 19,1% | CTR 3,2% | melhor CTR entre os parados |
+| L2470-B | 15,5% | 447 impr | tráfego sem conversão |
+| P2440 | 15,0% | 662 impr | no limite exato do piso — DENTRO DA META |
+
+Grandes nas ofertas: sempre com **unidades reservadas baixas** (1–2) até a pendência 5 fechar na O5.
+Pacote final: **9 Relâmpago + 14 Melhor Oferta = 23 ofertas**, taxa zero, todas elegíveis ao Vem de Amazon.
