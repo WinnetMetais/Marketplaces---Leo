@@ -61,3 +61,33 @@
 - Print/lista das ofertas criadas → Claude Code redige a **EC-003** para o Registro de Alterações
 - Ofertas ficam "em análise" — o console mostra data/hora da Relâmpago ~1 semana antes de rodar
 - Se alguma for **rejeitada**, anotar o motivo mostrado e trazer — há substitutos calculados
+
+---
+
+## Conferência da elegibilidade Melhor Oferta (prints do console, 02/09)
+
+**9 selecionados pelo LEO — todos corretos:** L3070-B · L2030 · PXM · PXP · L2025-T · L2460-AML · EGC · L2460-CP · PG2460 ✓
+
+**Corretamente NÃO marcados** (estão no fluxo Relâmpago, não duplicar): P4080 (B0H63W8G49) · P3060 (B0H4NLBG1Y) · Q3060-A (B0H51P391G) · P3070 (B0H63FKGPJ) · P3050 (B0H6365DBF)
+
+**Corretamente pulados** (margem < 15% a −10% ou redução de foco): L2430-B · L2030-B · L1618-T (este também só elegível p/ Semana de Beleza)
+
+### ADICIONAR — elegíveis nos prints, margem aprovada
+| SKU | ASIN | Desconto | Preço da oferta | Margem a −10% | Unidades |
+|---|---|---:|---:|---:|---|
+| **L3085-B** | B0H51PF33S | 10% | **R$ 578,02** | 16,8% | 5–10 |
+| **Q4070-A** | B0H7ZGZ8DK | 10% | **R$ 947,85** | 15,6% | **1–2 (Grandes)** |
+
+### PROCURAR na lista (os prints são parciais — rolar/buscar por ASIN)
+| SKU | ASIN | Se aparecer |
+|---|---|---|
+| L2030-T | B0H77661G6 | 15% → R$ 121,66 |
+| SP-T | B0H3MGC36H | 10% → R$ 416,13 |
+| L3060-A | B0H6R5SYVL | 10% → R$ 357,19 |
+| L2470-B | B0H4W81CPN | 10% → R$ 358,52 |
+| P2440 | B0H7LGF1WN | 10% → R$ 245,80 |
+| L4090-A (LAB) | — | 12% → R$ 724,09 |
+| P3070ALC (LAB) | — | 10% → R$ 756,57 |
+| P4060 (LAB) | — | 10% → R$ 730,75 |
+
+Se não aparecerem: são **inelegíveis por critério da Amazon** (falta de histórico) — esperado para os LAB. Nesse caso o experimento LAB migra para **cupom de 5%** ou fica para a Black Friday, conforme o plano.
