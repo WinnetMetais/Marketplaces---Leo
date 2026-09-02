@@ -149,3 +149,25 @@ Pedido do LEO: mais produtos para alavancar. Critério: margem ≥15% a −10% *
 
 Grandes nas ofertas: sempre com **unidades reservadas baixas** (1–2) até a pendência 5 fechar na O5.
 Pacote final: **9 Relâmpago + 14 Melhor Oferta = 23 ofertas**, taxa zero, todas elegíveis ao Vem de Amazon.
+
+---
+
+## Grupo LABORATÓRIO (aprovado pelo LEO em 02/09) — +3 SKUs, total 26 ofertas
+
+**Hipótese testada:** o selo de oferta gera tráfego por si só (efeito vitrine/badge), independentemente de demanda pré-existente.
+**Métrica de sucesso declarada ANTES do evento: Δ sessões** (Business Report por ASIN, semana da oferta × semana anterior). **Vendas NÃO são a métrica** — SKU de 1–2 sessões/semana fecha com zero vendas quase certamente, mesmo com página e oferta boas (mesma lógica do checkpoint de 15 cliques). Venda é bônus.
+**Desenho:** conceito de grupo de controle já registrado em `docs/MEMORIA.md` (26/08). Rotular como LAB no registro para o resultado não ser lido como "oferta falhou".
+
+| SKU | Classe | Preço | Margem a −10% | Tráfego atual |
+|---|---|---:|---:|---|
+| L4090-A | Grandes | 822,83 | 21,7% | ~zero sessões |
+| P3070ALC | Médios | 840,63 | 20,5% | ~zero sessões |
+| P4060 | Médios | 811,94 | 20,0% | ~zero sessões |
+
+Tipo: **Melhor Oferta** (semana toda — máxima janela de medição). Grandes (L4090-A) com 1–2 unidades reservadas, como os demais.
+
+**Custo assumido e aceito:** o preço da oferta entra no histórico de preços do SKU e pode ancorar o referencial de ofertas futuras (Black Friday). Por isso o grupo é pequeno (3) e não se repete automaticamente.
+
+**Leitura do resultado (na O5 ou pós-evento):** se Δ sessões for relevante nos 3, o badge gera tráfego sozinho → a Black Friday (19–30/11) pode usar ofertas como alavanca de exposição para cauda. Se Δ ~zero, oferta sem audiência é inerte → Black Friday concentra só em SKUs com tráfego.
+
+## PACOTE FINAL: 9 Relâmpago + 14 Melhor Oferta + 3 LAB = 26 ofertas
