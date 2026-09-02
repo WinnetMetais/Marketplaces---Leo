@@ -85,3 +85,41 @@
 **Janela:** a Relâmpago roda em **um único dia dentro da semana selecionada**, com data/hora revelada ~1 semana antes. Para cobrir o 9.9, selecionar a semana **seg. 07/09 – dom. 13/09** ("Semana de Beleza" é só o rótulo temático da semana). ⚠️ O print mostrava **"Mega Ofertas Prime Day" selecionado** — evento distinto, com datas próprias; conferir e trocar para a semana 07–13/09 antes de submeter.
 
 **Público:** Clientes Prime (padrão do formato). **Estoque:** liberado pela Dianna; reservar mais que o mínimo de 1 unidade nos SKUs em que se deseja rotatividade real (1 venda já garante o ponto do Vem de Amazon, mas limita o giro).
+
+---
+
+## Lista final expandida (02/09) — Melhor Oferta também exige 10%
+
+**Critério adotado (dupla régua, aprovar na O5 como método):**
+- SKU **com venda real registrada**: decide a **margem medida** no `Registro_Vendas`, ajustada a −10%.
+- SKU **sem venda**: decide o **Simulador** (SP Interior), piso 15% a −10%.
+
+**Por que não aceitar margem de ~10% simulada:** o risco do frete é **assimétrico**. O frete real costuma vir abaixo da tabela (margens medidas 25–41%), mas o **L2450-AML provou o contrário**: margem medida 13,3% a preço cheio — a −10% cairia para **6,5%**. Frete real também pode ser pior que a tabela. Piso mantido.
+
+### OFERTA RELÂMPAGO — pico de 1 dia, semana 07–13/09 (6 SKUs)
+| SKU | Margem a −10% | Base | Motivo |
+|---|---:|---|---|
+| Q3060-A | 22,6% | medida | vendeu 3 un em 20/08 — âncora do evento |
+| P3060 | 22,6% | Simulador | Núcleo A |
+| P3070 | 20,3% | Simulador | 6.174 impr + 17 cliques/7d sem venda — a oferta é o destrave |
+| P4080 | 19,3% | Simulador | já configurado; 1 un reservada; Núcleo A |
+| L2470-CZ | 22,8% | Simulador | radar da O4 sem amostra — oferta gera amostra |
+| PG3070 | 17,6% | Simulador | radar da O4 sem amostra + pedido do LEO (família PG) |
+
+### MELHOR OFERTA — badge a semana toda, 08–13/09 (8 SKUs)
+| SKU | Margem a −10% | Base | Motivo |
+|---|---:|---|---|
+| L2030-T | 36,3% | medida | vendeu 01/09 |
+| L2460-CP | 33,7% | medida | Núcleo B, margem campeã |
+| L2030 | 37,4% | medida | 2 vendas registradas |
+| L2025-T | 26,6% | medida | 4 un em 48h — maior giro atual |
+| PXM | 25,0% | medida | Extintor 6kg, funil provado |
+| PXP | 19,1% | medida | Extintor 4kg — DENTRO DA META |
+| SP-T | 15,7% | Simulador | recém-incluído na promo 5+ (EC-001); visibilidade |
+| EGC | 15,6% | Simulador | radar destravou entrega; oferta converte o tráfego novo |
+
+### CORTADOS
+- **L2450-AML** — margem medida a −10% = 6,5% ❌ (frete real PE pior que tabela)
+- **Q2460-B** — margem < 15% a −10% + desempate obrigatório pendente na O5
+
+**Racional da divisão:** Relâmpago concentra o pico de visibilidade nos SKUs que têm tráfego e não convertem (destrave) e nos tickets altos do Núcleo A; Melhor Oferta dá badge contínuo a semana inteira para os que já giram (manter o embalo) e para os que precisam de exposição prolongada. 14 ofertas, todas com taxa zero, todas elegíveis a ponto no Vem de Amazon quando venderem.
