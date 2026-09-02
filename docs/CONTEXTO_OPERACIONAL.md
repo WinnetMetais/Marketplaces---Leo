@@ -17,6 +17,12 @@
 - **Livro_Vendas:** fechamento de agosto/2026 movido de 07/09 para **08/09/2026** — exceção documentada por feriado da Independência (07/09, segunda), **não** mudança de protocolo. **Ordem no dia: Livro_Vendas primeiro, O5 depois.** Atribuição de origem (Ads/Orgânico) exige cruzamento com relatórios de publicidade no fechamento; lançamentos não classificáveis devem ser sinalizados para decisão da Wintech — nunca inferidos.
 - **Imagens de produto:** trabalho contínuo em múltiplos SKUs com geradores de IA (GPT, Gemini) e edição manual (Photopea, Canva), prompts em português.
 
+## Evento 9.9 — ofertas no ar (02/09)
+
+- **16 ofertas programadas para 07–13/09** (Semana de Beleza): 5 Relâmpago + 11 Melhor Oferta, taxa zero, descontos 10–15% validados por margem. Registro em `ciclos/EC-02-09.md` (EC-003/EC-004) e plano em `docs/PLANO_9-9.md`.
+- Conta inscrita no **Vem de Amazon** (contato: LEO). Cada oferta com ≥1 venda até 30/09 pontua.
+- Leitura pós-evento em 14/09; **não calibrar réguas no ROAS do evento** (atribuição a preço de tabela).
+
 ## No horizonte
 
 - **Monitoramento:** ✅ **realizado em 31/08/2026** — registro em `ciclos/Monitoramento-31-08.md`. Destaques: 3 vendas na janela 24–31/08 (2 atribuídas a Ads), Geral em vigia (ACOS de janela 83,9%, leitura na O5), radar EGC destravou entrega, **auto L1618-o115/07 encontrada ativa e pausada no ato (EC-002, conserto da O4-006)**. O monitoramento de 07/09 foi **eliminado** — feriado, dia não operante confirmado, e a O5 de 08/09 absorve a leitura.
