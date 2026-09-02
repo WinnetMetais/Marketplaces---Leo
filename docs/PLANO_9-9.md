@@ -193,3 +193,17 @@ Régua: teto para margem ≥20% (medida para quem vendeu, Simulador para o resto
 | Demais 16 SKUs | **10%** | teto ≤ 10,8% | — |
 
 Os 16 a 10% (P3070, P4080, PG3070, P3050, P4080ALC, PXP, SP-T, EGC, L3070-B, PG2460, L3060-A, L2460-AML, L2470-B, P2440, P3070ALC, P4060) ficam no mínimo do console — o teto deles é menor ou igual a ~10%, e o piso de 10% já os coloca entre margem 15–20% (DENTRO DA META), aceito no desenho do evento.
+
+---
+
+## Estado da submissão (02/09, relato do LEO)
+
+**Melhor Oferta: 11 submetidas** — L3070-B, L2030, PXM, PXP, L2025-T, L2460-AML, EGC, L2460-CP, PG2460 (seleção do LEO) + L3085-B e Q4070-A (adições da conferência).
+
+**Inelegíveis por critério da Amazon (não aparecem na lista):** L2030-T, SP-T, L3060-A, L2470-B, P2440 e os 3 do LAB (L4090-A, P3070ALC, P4060). Esperado — filtro de histórico. O experimento LAB **não roda no 9.9**; opções: cupom de 5% (decisão do LEO) ou reavaliar na Black Friday.
+
+**Relâmpago (9 SKUs):** submissão em andamento pelo LEO.
+
+Nota operacional: o download da lista no console tem throttle (~15 min entre gerações) — não afeta as ofertas criadas.
+
+**Pacote real vs. planejado:** 26 planejadas → **20 viáveis** (9 Relâmpago + 11 Melhor Oferta), 8 barradas por elegibilidade, 2 cortadas por margem/decisão (L2450-AML, Q2460-B). Aprendizado para a Black Friday: elegibilidade de Melhor Oferta exige histórico — os prints já mapearam quem estará elegível em novembro ("Black Friday e Cyber Monday" listado por ASIN).
