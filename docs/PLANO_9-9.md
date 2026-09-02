@@ -1,7 +1,7 @@
 # PLANO 9.9 — OFERTAS PARA ROTATIVIDADE (rascunho 01/09/2026)
 
 **Objetivo do LEO:** volume e rotatividade via Ofertas Relâmpago no 9.9, pontuando no **Vem de Amazon**.
-**Status:** ANALISADO — aguardando aprovação do LEO por SKU. Nada submetido.
+**Status:** APROVADO PELO LEO em 02/09 — descontos no teto, janela Relâmpago na semana de 07–13/09, Melhor Oferta 08–13/09. Em submissão no Seller Central.
 
 ## Restrições de calendário
 
@@ -61,3 +61,27 @@
 2. Leitura pós-evento: atribuição de Ads valoriza a **preço de tabela** (MEMORIA 31/08) — ROAS do 9.9 sairá inflado por desenho; não calibrar régua nele.
 3. Ads acompanha, não lidera: TOS/lance temporário só nas Manuais que convertem (Extintor, 6B), com reversão marcada; orçamento da Geral só sobe se houver evidência de esgotamento no dia.
 4. Oferta sem venda no trimestre não pontua — cortar da lista qualquer SKU sem chance real de girar até 30/09.
+
+---
+
+## Configuração final aprovada (02/09) — dados do console
+
+**Tarifas confirmadas no console: R$ 0,00 de participação + 0,00% variável.** Oferta gratuita neste evento.
+
+**O console impõe desconto mínimo de 10% na Relâmpago** (campo "Máx." do preço da oferta = −10% do preço de referência). Margens recalculadas no Simulador (SP Interior) com esse piso real:
+
+| SKU | Desconto | Preço oferta | Margem simulada | Veredito |
+|---|---:|---:|---:|---|
+| Q3060-A | 13% | R$ 505,05 | 20,5% | ACIMA DA META |
+| P3060 | 14% | R$ 439,82 | 20,0% | ACIMA DA META |
+| P3070 | 10% | R$ 554,56 | 20,3% | ACIMA DA META |
+| PG3070 | 10% | R$ 406,05 | 17,6% | DENTRO DA META |
+| P4080 | 10% | R$ 963,15 | 19,3% | DENTRO DA META |
+
+**P4080 readmitido** (decisão do LEO no console): a 10% fica DENTRO DA META; preço de referência = preço cheio (R$ 1.070,17, sem armadilha de referencial); **1 unidade reservada** limita a exposição; e a verificação da pendência 5 mostrou que Grandes não têm subsídio estrutural em venda unitária — o risco era de escala por quantidade, que a reserva de 1 un elimina.
+
+**Melhor Oferta (L2025-T, L2030-T, L2450-AML, PXP): CONDICIONAL.** A 5%, margens de 15,4–16,8% (DENTRO DA META). **Se o console impor 10% também na Melhor Oferta, as margens caem para 12,0–13,4% — abaixo do piso de 15% — e os 4 NÃO devem ser submetidos**; alternativa: cupom de 5% (não pontua no Vem de Amazon, mas mantém o giro).
+
+**Janela:** a Relâmpago roda em **um único dia dentro da semana selecionada**, com data/hora revelada ~1 semana antes. Para cobrir o 9.9, selecionar a semana **seg. 07/09 – dom. 13/09** ("Semana de Beleza" é só o rótulo temático da semana). ⚠️ O print mostrava **"Mega Ofertas Prime Day" selecionado** — evento distinto, com datas próprias; conferir e trocar para a semana 07–13/09 antes de submeter.
+
+**Público:** Clientes Prime (padrão do formato). **Estoque:** liberado pela Dianna; reservar mais que o mínimo de 1 unidade nos SKUs em que se deseja rotatividade real (1 venda já garante o ponto do Vem de Amazon, mas limita o giro).
