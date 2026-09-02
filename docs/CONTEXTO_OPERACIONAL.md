@@ -23,12 +23,45 @@
 - Conta inscrita no **Vem de Amazon** (contato: LEO). Cada oferta com ≥1 venda até 30/09 pontua.
 - Leitura pós-evento em 14/09; **não calibrar réguas no ROAS do evento** (atribuição a preço de tabela).
 
+## Marca e catálogo — snapshot 01/09/2026 (entre-ciclos, pré-O5)
+
+**Nada desta seção foi executado no console — são decisões e diagnósticos.**
+
+### Brand Registry — APROVADO ✅
+- Marca **`WINNET METAIS`** aprovada (caso 21786840981), ativa e conectada à conta de vendas. **Alias único: `WINNET METAIS`** — não existe outra grafia válida.
+- Função de vendas: **Representante da marca — ATIVO** (papel máximo).
+- Benefícios liberados: Conteúdo A+, Lojas, Marcas patrocinadas, Avaliações de clientes, Produtos patrocinados, Exibição patrocinada, Brand Analytics, Denunciar violação, IP Accelerator, Project Zero, Unidade de crimes de falsificação.
+
+### Bloqueio confirmado — ASIN genérico
+- O atributo de marca de ASIN cadastrado como **"Genérico" não pode ser alterado** (suporte, caso 21821042531; consistente com a política de edição de página de detalhes: trocar marca exige **ASIN novo**, mesmo sem mudança material do produto).
+- **Consequência:** A+, Avaliações de clientes, Brand Analytics e Sponsored Brands **não operam sobre o catálogo atual**. Hoje o Brand Registry entrega apenas **proteção de nome**. Único caminho: **recriar anúncios sob a marca**.
+
+### Vine — indisponível
+- Exige oferta **FBA**; a operação é envio próprio. O bloqueador transversal **"prova social zero" permanece aberto** e sem solução via Brand Registry. Alternativa a avaliar depois: botão "Solicitar avaliação" do Seller Central.
+
+### Catálogo — diagnóstico (Relatório de Todas as Ofertas, 01/09)
+- **Nenhum EAN existe**: as 114 linhas têm `product-id-type = 1` (ASIN) e `product-id` = próprio ASIN.
+- **Sem variações pai/filho** — cada SKU é página isolada; 114 páginas competindo entre si sem seletor concentrando sessões.
+- Categorias (PTD): `TRASH_CAN`, `MOUNT_BRACKET`, `CLOTHES_RACK`, `ASHTRAY`, `HOME`.
+- Adesivo do produto traz **"Winnet Home & Pro"** — não bate com a marca registrada. Embalagem sem impressão de marca.
+
+### Decisão — EAN próprio (Wintech + Dianna, 01/09)
+- **Filiação à GS1 Brasil com emissão de EANs próprios.** Isenção de GTIN descartada.
+- Motivo: elimina a dependência do EAN da fábrica (código registrado em nome de terceiros — risco de rejeição na criação, anexação de oferta e disputa de página) e serve a todos os canais.
+- ⚠️ **Ponto de atenção: os EANs devem ser emitidos no CNPJ titular da marca WINNET METAIS.**
+- Custo: anuidade GS1 + reimpressão do adesivo com a grafia correta. Nenhum outro custo no projeto.
+
+### Risco atravessado — INPI
+- Processo **INPI 944049613 em período de oposição**. Se negar, a Amazon pode **revogar o Brand Registry** e derrubar A+, Store e Brand Analytics. **Manter o Jair Silva de Andrade ativo até a concessão.**
+
 ## No horizonte
 
 - **Monitoramento:** ✅ **realizado em 31/08/2026** — registro em `ciclos/Monitoramento-31-08.md`. Destaques: 3 vendas na janela 24–31/08 (2 atribuídas a Ads), Geral em vigia (ACOS de janela 83,9%, leitura na O5), radar EGC destravou entrega, **auto L1618-o115/07 encontrada ativa e pausada no ato (EC-002, conserto da O4-006)**. O monitoramento de 07/09 foi **eliminado** — feriado, dia não operante confirmado, e a O5 de 08/09 absorve a leitura.
 - **O5 prevista:** 08/09/2026 — **Era de dados 26/08–07/09: 13 corridos · 8 úteis · 5 mortos (38%)** (feriado 05–07/09). Convenção de contagem fixada nos Parâmetros, Seção 4. Julgar radares por dias úteis.
 - **Vereditos previstos para a O5:** os 4 radares (PI L2470-CZ, PI PG3070, auto PXM-o2, EGC) · o piloto de estratégia da 6B · a primeira leitura real das estruturas O3 (PI PXM-o3, auto PXP-o3, PI L2030-B-o3) · Bituqueiras · o efeito da Geral a R$ 0,48.
 - **Item de método para a O5 (31/08):** a atribuição de Ads valoriza vendas **a preço de tabela, antes do desconto promocional** (verificado: Q3060-A 3un atribuído a R$ 1.741,56 contra receita real de R$ 1.654,48). Em SKU com promoção ativa, ROAS atribuído infla e ACOS subestima — considerar ao julgar campanhas na O5. Detalhe em `docs/MEMORIA.md`.
+- **PENDÊNCIA NOVA PARA A O5 — Migração de ASIN (01/09):** escopo a decidir na O5, **fundido com a proposta de concentração — são a mesma decisão**. Estratégia **faseada, não parcial**: piloto de 2–3 SKUs na O6 (22/09) → resto do núcleo após 1 Era de leitura → cauda com ficha clonada. Detalhes, sequência obrigatória e riscos na **pendência 7 de `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md`**.
+- **Cronograma proposto (NÃO aprovado):** 08/09 O5 (Livro primeiro; decisão de escopo da migração) · 09–21/09 produção de fotos/copy/A+ (nada publicado) · 22/09 O6 (piloto na virada de Era) · Era O6→O7 primeira leitura limpa; só depois se decide o resto.
 - **Fila de conversão** aberta, agora em **dois níveis** (decisão de 26/08): revisão barata ordena por valor diagnóstico; investimento profundo ordena por lucro × tráfego. Ordens e tabela na **pendência 2 de `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md`** — fonte única.
 
 ## Pendências abertas — cobrar nos monitoramentos
@@ -80,3 +113,6 @@ O método operacional foi originalmente estabelecido por um assessor (Henrique) 
 | 25/08/2026 | — | Migração para o Claude Code concluída; correção da leitura da política de fumo |
 | 25/08/2026 | **O4** | Fechamento do ciclo: novo snapshot dos Parâmetros, teto mensal de Ads de R$ 1.000, estado da conta pós-execuções, mapa vivo e pendências da O5 |
 | 28/08/2026 | entre-ciclos | Calendário de envio 07/09 confirmado como não operante · monitoramento de 07/09 eliminado · convenção de contagem da Era fixada (13/8/38%) · promoções auditadas e conformes · SP-T incluído na promo 5+ (82→83) · escopo do frete ampliado para Pequenos · correção 15→19 ações da O4 |
+| 31/08/2026 | entre-ciclos | Monitoramento semanal realizado (3 vendas na janela, 2 atribuídas) · EC-002: pausa da auto L1618 reexecutada · achado: atribuição de Ads a preço de tabela |
+| 01/09/2026 | entre-ciclos | **Brand Registry WINNET METAIS aprovado** · bloqueio de ASIN genérico confirmado (recriação é o único caminho) · Vine indisponível (exige FBA) · diagnóstico de catálogo (sem EAN, sem variações, 114 páginas isoladas) · **decisão EAN próprio via GS1** (Wintech + Dianna) · pendência nova: migração de ASIN, escopo na O5 · risco INPI em oposição |
+| 02/09/2026 | entre-ciclos | Pacote 9.9 executado: 16 ofertas aceitas para 07–13/09 (EC-003/EC-004) · Registro de Alterações com 23 entradas |

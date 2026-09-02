@@ -338,6 +338,26 @@ O mapa deve ser atualizado a cada otimização. Não usar classificação antiga
    Resolver antes de ampliar a promoção de 8%.
 
 6. **Acompanhar gasto contra o teto mensal de R$ 1.000.**
+
+7. **MIGRAÇÃO DE ASIN — recriação do catálogo sob a marca WINNET METAIS (pendência nova, 01/09/2026). Escopo a decidir na O5, fundido com a proposta de concentração — são a mesma decisão.**
+
+   **Origem:** Brand Registry aprovado, mas o atributo de marca "Genérico" dos ASINs atuais **não pode ser alterado** (caso 21821042531). A+, Avaliações, Brand Analytics e Sponsored Brands só operam sobre ASINs novos criados sob a marca.
+
+   **Estratégia: faseada, não parcial.** Piloto de 2–3 SKUs na O6 (22/09) → resto do núcleo após 1 Era de leitura → cauda com ficha clonada. Destino provável é migrar tudo; o piloto existe para **medir a perda de orgânico** antes de comprometer o catálogo.
+
+   **Sequência obrigatória por SKU:** ASIN novo publicado e ativo → oferta antiga **encerrada (encerrar, não excluir)** → produto trocado no grupo de anúncios.
+
+   **Riscos operacionais:** anúncio duplicado é violação · grupo de anúncios com produto sem oferta ativa **para de entregar**.
+
+   **O que sobrevive:** campanha, orçamento, estratégia de lance, palavras-chave, negativas acumuladas, alvos de PI, ajustes de posicionamento e histórico de campanha. **O que zera:** histórico de conversão e ranking orgânico do ASIN.
+
+   **Exclusões:** **SP-01 e SP-T ficam fora da migração** — recriar dispara nova análise de política e há histórico de fumo; não expor aprovação vigente.
+
+   **Item novo para a O5:** avaliar criar **variações pai/filho** na recriação (L1618/-A/-B/-T e famílias similares hoje competem como páginas isoladas). É a única janela sem custo extra para fazer isso.
+
+   **Pré-requisito em andamento:** EANs próprios via **GS1 Brasil** (decisão Wintech + Dianna, 01/09; emissão no CNPJ titular da marca). Isenção de GTIN descartada.
+
+   **NOTA DE MÉTODO — marco de corte de série:** a migração é um **corte na série histórica por ASIN**. Fica registrado que **Era pré-migração e Era pós-migração NÃO são comparáveis** por SKU migrado — reinício de amostra explícito, a marcar no fechamento do ciclo que executar cada fase. O SKU interno não muda: `Registro_Vendas`, `Livro_Vendas` e margens permanecem íntegros; o corte é só de ASIN.
 7. **Dispersão de catálogo — NOVO (26/08).** 323 sessões/semana distribuídas em 74 ASINs; mediana de 2 por ASIN; **zero ASINs** atingiram as ~58 sessões necessárias. Proposta de concentração em 9 SKUs preparada para decisão na **O5** — **decisão unificada com o Nível 2 da pendência 2**.
 
    **Bloqueador de estoque RESOLVIDO em 26/08:** a operação anuncia disponibilidade respaldada por **reposição imediata de fábrica**, não por estoque próprio, e **pode expedir direto da fábrica** — sem perna de transferência. Capacidade não é restrição e o prazo de manuseio prometido é cumprido. **A O5 fica dependendo apenas do monitoramento de 31/08.**
