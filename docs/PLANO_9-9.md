@@ -7,7 +7,7 @@
 
 - **Aprovação de oferta leva dias** (aviso da comunidade Amazon) → submeter até **03–04/09**, antes do feriado 05–07/09. **Não dá para esperar a O5 (08/09).**
 - **Vem de Amazon:** só **Melhor Oferta** e **Oferta Relâmpago** pontuam; cupom não (mas pode combinar). Cada oferta precisa de **≥1 venda no trimestre** (fecha 30/09) para valer ponto → priorizar SKUs com probabilidade real de venda, não SKUs parados.
-- Confirmar no Seller Central: desconto mínimo exigido pela Relâmpago, taxa por oferta, preço de referência e elegibilidade por ASIN.
+- **Desconto mínimo confirmado pelo LEO em 01/09: 5%.** Restam confirmar: taxa por oferta, preço de referência e elegibilidade por ASIN.
 
 ## Desconto máximo por SKU (Simulador, cenário SP Interior — frete de TABELA)
 
@@ -27,6 +27,23 @@
 | L2030-T | Pequenos | 143,13 | 19,4% | sem folga | 7,1% | ✅ 01/09 |
 | L2450-AML | Pequenos | 259,90 | 18,5% | sem folga | 5,7% | ✅ 3 un 31/08 |
 | P4080 | Grandes | 1.070,17 | 25,1% | 8,9% | 16,3% | — ⚠️ pendência frete |
+
+## Família porta-guarda-chuva (pedido do LEO, 01/09) — Simulador SP Interior
+
+| SKU | Classe | Preço | Margem atual | Desc. máx. piso 20% | Desc. máx. piso 15% |
+|---|---|---:|---:|---:|---:|
+| PG4050 | Médios | 460,12 | 25,4% | **9,4%** | 16,7% |
+| PG4080 | Grandes | 639,57 | 24,5% | 8,1% ⚠️ Grandes | 15,6% |
+| PG3070 | Médios | 451,17 | 23,5% | **6,2%** | 13,7% |
+| PG2460 | Médios | 248,75 | 22,6% | 4,7% (5% fura por 0,1pp) | 12,5% |
+| PG3060 | Médios | 321,21 | 20,9% | 1,6% | 9,6% |
+| PG2470 | Médios | 360,60 | 20,4% | 0,7% | 8,7% |
+| EGC | Médios | 674,62 | 21,8% | 3,2% | 10,9% |
+| PG2450 | Pequenos | 234,12 | 19,2% | sem folga | 6,8% |
+
+**Indicação da família: PG3070** — único que combina folga real no piso 20% (6,2%) com um motivo estratégico: a PI PG3070 é radar da O4 com entrega fraca (205 impr, 0 cliques/7d) e contrato de saída na O5; uma oferta no 9.9 é gerador de amostra sem mexer em lance. PG4050 tem a maior folga (9,4%) mas sem tráfego observado — risco de não gerar a venda que pontua no Vem de Amazon. PG2460 é o de maior tráfego da família (5 sessões, 2 cliques na janela), mas a 5% a margem simulada fica em 19,9% — passa só no piso 15%.
+
+**Ressalva Vem de Amazon:** a família PG quase não vende — oferta sem venda no trimestre **não pontua**. O valor aqui é rotatividade/visibilidade, não ponto garantido.
 
 ## A tensão a decidir
 
