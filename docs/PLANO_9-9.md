@@ -207,3 +207,26 @@ Os 16 a 10% (P3070, P4080, PG3070, P3050, P4080ALC, PXP, SP-T, EGC, L3070-B, PG2
 Nota operacional: o download da lista no console tem throttle (~15 min entre gerações) — não afeta as ofertas criadas.
 
 **Pacote real vs. planejado:** 26 planejadas → **20 viáveis** (9 Relâmpago + 11 Melhor Oferta), 8 barradas por elegibilidade, 2 cortadas por margem/decisão (L2450-AML, Q2460-B). Aprendizado para a Black Friday: elegibilidade de Melhor Oferta exige histórico — os prints já mapearam quem estará elegível em novembro ("Black Friday e Cyber Monday" listado por ASIN).
+
+---
+
+## Relâmpago — elegibilidade real (tela de criação, 02/09)
+
+Console mostra **19 ASINs qualificados para Relâmpago**. Cruzamento com a lista aprovada:
+
+**✅ Selecionados pelo LEO (5) — exatamente a lista ∩ elegíveis:** P4080 · P3060 · Q3060-A · P3070 · P3050
+
+**❌ Inelegíveis para Relâmpago (não aparecem):** L2470-CZ, PG3070, L4080-A, P4080ALC — os 2 radares e os 2 Grandes de reforço ficam de fora por critério da Amazon.
+
+**Corretamente NÃO marcados:** os 11 já submetidos como Melhor Oferta (não duplicar) + L2430-B, L2030-B, L1618-T (margem/decisão).
+
+**PACOTE 9.9 FINAL REAL: 5 Relâmpago + 11 Melhor Oferta = 16 ofertas**, semana 07–13/09.
+
+Valores para o template de Relâmpago (mesmo fluxo download → editar → upload):
+| SKU | Preço da oferta | Unidades |
+|---|---:|---|
+| Q3060-A | R$ 499,25 (−14%) | 10+ (decisão LEO) |
+| P3060 | R$ 439,82 (−14%) | 10+ |
+| P3070 | R$ 554,56 (−10%) | 10+ |
+| P3050 | R$ 420,90 (−10%) | 10+ |
+| **P4080** | R$ 963,15 (−10%) | **2 (Grandes — trava)** |
