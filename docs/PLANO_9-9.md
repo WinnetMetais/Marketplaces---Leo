@@ -171,3 +171,25 @@ Tipo: **Melhor Oferta** (semana toda — máxima janela de medição). Grandes (
 **Leitura do resultado (na O5 ou pós-evento):** se Δ sessões for relevante nos 3, o badge gera tráfego sozinho → a Black Friday (19–30/11) pode usar ofertas como alavanca de exposição para cauda. Se Δ ~zero, oferta sem audiência é inerte → Black Friday concentra só em SKUs com tráfego.
 
 ## PACOTE FINAL: 9 Relâmpago + 14 Melhor Oferta + 3 LAB = 26 ofertas
+
+---
+
+## Descontos finais por SKU (02/09) — teto com trava de prudência
+
+Régua: teto para margem ≥20% (medida para quem vendeu, Simulador para o resto), **capado em 15%**. Motivo do cap: (1) tetos medidos altos vêm de amostra de 1–2 vendas; (2) desconto profundo vira **âncora de histórico de preço** e rebaixa o referencial da Black Friday; (3) entre 10% e 15% já há efeito de evento — acima disso queima margem com retorno incerto.
+
+| SKU | Desconto final | Teto calculado | Base |
+|---|---:|---:|---|
+| **L2025-T** | **15%** | 20,9% (cap) | medida |
+| **L2030-T** | **15%** | 37,9% (cap) | medida |
+| **L2030** | **15%** | 39,1% (cap) | medida |
+| **L2460-CP** | **15%** | 33,6% (cap) | medida |
+| **PXM** | **15%** | 18,2% (cap) | medida |
+| **Q3060-A** | **14%** | 14,2% | medida |
+| **P3060** | **14%** | 14,0% | Simulador |
+| **L2470-CZ** | **14%** | 14,4% | Simulador |
+| **L4080-A** | **12%** | 12,9% | Simulador |
+| **L4090-A** (LAB) | **12%** | 12,7% | Simulador |
+| Demais 16 SKUs | **10%** | teto ≤ 10,8% | — |
+
+Os 16 a 10% (P3070, P4080, PG3070, P3050, P4080ALC, PXP, SP-T, EGC, L3070-B, PG2460, L3060-A, L2460-AML, L2470-B, P2440, P3070ALC, P4060) ficam no mínimo do console — o teto deles é menor ou igual a ~10%, e o piso de 10% já os coloca entre margem 15–20% (DENTRO DA META), aceito no desenho do evento.
