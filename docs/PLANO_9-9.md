@@ -230,3 +230,20 @@ Valores para o template de Relâmpago (mesmo fluxo download → editar → uploa
 | P3070 | R$ 554,56 (−10%) | 10+ |
 | P3050 | R$ 420,90 (−10%) | 10+ |
 | **P4080** | R$ 963,15 (−10%) | **2 (Grandes — trava)** |
+
+---
+
+## Verificação de 03/09 — CUMPRIDA ✅ (painel de Ofertas, prints do LEO)
+
+**16/16 ofertas com status "Em breve"** — programação vigente, nenhuma suprimida ou com atenção. Tarifas R$ 0,00 confirmadas em todas as linhas. **Público-alvo efetivo: "Todos os clientes"** (melhor que o "Clientes Prime" indicado na criação — alcance total).
+
+### Dias sorteados das Relâmpago (pela Amazon)
+| SKU | Deal | Dia |
+|---|---|---|
+| P3060 | e7d2e312 | **07/09 (dom, feriado-véspera)** |
+| P3050 | d2375165 | **07/09** |
+| P4080 | 9d50ac13 | **10/09 (qui)** |
+| P3070 | 2c746504 | **11/09 (sex)** |
+| Q3060-A | b45401f5 | **11/09 (sex)** |
+
+⚠️ **Nenhuma Relâmpago caiu no 9.9 em si** — a Amazon espalhou pela semana (2 no feriado de 07/09, inclusive). As 11 Melhores Ofertas cobrem a semana inteira (07–13/09), incluindo o dia 09. Implicação para a leitura pós-evento: o "pico" das Relâmpago virá em 3 momentos distintos, não num dia único — ler vendas por dia, não agregado.
