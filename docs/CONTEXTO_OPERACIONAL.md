@@ -54,6 +54,11 @@
 ### Risco atravessado — INPI
 - Processo **INPI 944049613 em período de oposição**. Se negar, a Amazon pode **revogar o Brand Registry** e derrubar A+, Store e Brand Analytics. **Manter o Jair Silva de Andrade ativo até a concessão.**
 
+## Cupons ativos fora do pacote 9.9 (04/09)
+
+- **EC-005 — P2025, cupom 12%** (decisão LEO). SKU fora do 9.9, sem conflito. Margem 12,8%; empilha com promo de quantidade (5+ → 19% de desconto, margem 7,2%).
+- **EC-006 — EMB-05 e EMB-08, cupom 50%** (decisão **Dianna**): **liquidação deliberada abaixo do custo** para liberar espaço físico. Perda conhecida de **−R$ 53 a −R$ 61 por unidade** (até −R$ 71 no EMB-08 com promo de quantidade). ⚠️ **Vendas desses SKUs sairão com margem negativa por desenho — segregar de qualquer média de margem do catálogo.** Linha de base e reavaliação em 18/09 no `ciclos/EC-04-09.md`.
+
 ## No horizonte
 
 - **Monitoramento:** ✅ **realizado em 31/08/2026** — registro em `ciclos/Monitoramento-31-08.md`. Destaques: 3 vendas na janela 24–31/08 (2 atribuídas a Ads), Geral em vigia (ACOS de janela 83,9%, leitura na O5), radar EGC destravou entrega, **auto L1618-o115/07 encontrada ativa e pausada no ato (EC-002, conserto da O4-006)**. O monitoramento de 07/09 foi **eliminado** — feriado, dia não operante confirmado, e a O5 de 08/09 absorve a leitura.
