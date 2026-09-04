@@ -183,6 +183,13 @@ esperar diferença igual ao desconto promo — não é erro de nenhuma das fonte
 Registrado na O5 como item de método. (Origem: alerta correto de divergência com decomposição inicial
 errada — os R$ 87,08 foram lidos como frete; o chat canônico corrigiu com a proveniência do export.)
 
+### Nomenclatura de SKU: prefixo `P` ≠ sufixo `P` (04/09/2026)
+No catálogo Winnet, **`P` no início do SKU significa PEDAL** (`P2025`, `P3050`, `P4080` = lixeiras com pedal),
+mas **`P` no fim significa PRETO** — cor da tampa (`EMB-03P`, `EMB-05P` = embutir com tampa preta).
+São convenções diferentes na mesma letra. Erro cometido em 04/09: `EMB-05P` foi lido como "5L com pedal",
+corrigido pelo LEO. Ao interpretar SKU novo, conferir o **nome do produto** na Mestra antes de inferir
+característica a partir da sigla — a grafia da base sempre prevalece.
+
 ### Réguas aposentadas — não ressuscitar
 - Regra antiga **"R$5 → +20%"** está **aposentada**, absorvida pela régua de Radar.
 - Referências de **20–25 / 30–50 cliques** são apenas históricas. A régua vigente é ~15 cliques.
