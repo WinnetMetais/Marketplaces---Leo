@@ -118,12 +118,12 @@ O método operacional foi originalmente estabelecido por um assessor (Henrique) 
 | Fonte | Arquivo | Situação |
 |---|---|---|
 | Método | `docs/PLAYBOOK_OFICIAL_AMAZON_ADS_WINNET_v1.md` | ✅ íntegro |
-| Estado | `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md` | ✅ snapshot 25/08/2026 (pós-O4) + atualizações de 28/08 |
+| Estado | `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md` | ✅ snapshot 25/08/2026 (pós-O4) + atualizações de 28/08 e 01/09 (pendência 7 — migração de ASIN) |
 | Guia da Mestra | `docs/GUIA_PLANILHA_MESTRA.md` | ✅ íntegro |
 | Skill | `.claude/skills/amazon-ads-winnet/SKILL.md` | ✅ v1.6.3 |
 | Planilha Mestra | `dados/Planilha_Mestra_Winnet_v4_3_3.xlsx` | ✅ 9 abas |
 | Controle Semanal | `dados/Controle_Semanal_Amazon_Ads_Winnet.xlsx` | ✅ |
-| Registro de Alterações | `dados/Registro_Alteracoes_Amazon_Ads_Winnet.xlsx` | ✅ 19 entradas da O4 lançadas pelo Wintech em 26/08, status **EXECUTADA - EM MATURAÇÃO** (conferido pelo chat canônico) |
+| Registro de Alterações | `dados/Registro_Alteracoes_Amazon_Ads_Winnet.xlsx` | ✅ 23 entradas (19 da O4 + EC-001/002/003/004). **EC-005 e EC-006 ainda não lançados pelo LEO** |
 | Relatórios da O4 | `relatorios/amazon/` | ✅ 9 arquivos, janela 25/07–23/08 |
 | Ciclos | `ciclos/O4-25-08.md` | ✅ |
 
@@ -140,3 +140,5 @@ O método operacional foi originalmente estabelecido por um assessor (Henrique) 
 | 31/08/2026 | entre-ciclos | Monitoramento semanal realizado (3 vendas na janela, 2 atribuídas) · EC-002: pausa da auto L1618 reexecutada · achado: atribuição de Ads a preço de tabela |
 | 01/09/2026 | entre-ciclos | **Brand Registry WINNET METAIS aprovado** · bloqueio de ASIN genérico confirmado (recriação é o único caminho) · Vine indisponível (exige FBA) · diagnóstico de catálogo (sem EAN, sem variações, 114 páginas isoladas) · **decisão EAN próprio via GS1** (Wintech + Dianna) · pendência nova: migração de ASIN, escopo na O5 · risco INPI em oposição |
 | 02/09/2026 | entre-ciclos | Pacote 9.9 executado: 16 ofertas aceitas para 07–13/09 (EC-003/EC-004) · Registro de Alterações com 23 entradas |
+| 04/09/2026 | entre-ciclos | Cupons fora do pacote 9.9: EC-005 (P2025 12%) e EC-006 (EMB-05/EMB-05P/EMB-08 a 50%, liquidação abaixo do custo por decisão da Dianna, sem teto de orçamento) · gatilho de revisão em 18/09 |
+| 08/09/2026 | pré-O5 | **Livro_Vendas de agosto fechado** · Planilha Mestra promovida a **v4.3.3** (v4.3.2 preservada) · receita de agosto R$ 13.915,83 com **68,4% orgânico** · Ads ≈ 32% da receita do mês · **pendência 4 (halo Q2430-A) resolvida** · achado do fechamento: lançamento a preço de tabela |
