@@ -13,7 +13,7 @@
 - **Teto mensal de Ads:** **R$ 1.000/mês** (definido por Dianna, registrado em 25/08). Uso atual ~35%.
 - **SP-01 — política de fumo:** **caso encerrado.** Contestação negada em 2ª análise (25/08). A PI SP-01-o228/07 fica **pausada por inelegibilidade** — não é falha de desempenho. A auto SP-01-o116/07 foi reativada entre 17 e 25/08 após requalificação do ASIN.
 - **SP-PP:** anomalia resolvida na causa — segmentação `substitutes` pausada e negativas aplicadas (12 exatas + 6 frases). CTR a reavaliar pós-limpeza na O5.
-- **Planilha Mestra:** versão canônica **v4.3.2** (`dados/Planilha_Mestra_Winnet_v4_3_2.xlsx`).
+- **Planilha Mestra:** versão canônica **v4.3.3** (`dados/Planilha_Mestra_Winnet_v4_3_3.xlsx`).
 - **Livro_Vendas:** fechamento de agosto/2026 movido de 07/09 para **08/09/2026** — exceção documentada por feriado da Independência (07/09, segunda), **não** mudança de protocolo. **Ordem no dia: Livro_Vendas primeiro, O5 depois.** Atribuição de origem (Ads/Orgânico) exige cruzamento com relatórios de publicidade no fechamento; lançamentos não classificáveis devem ser sinalizados para decisão da Wintech — nunca inferidos.
 - **Imagens de produto:** trabalho contínuo em múltiplos SKUs com geradores de IA (GPT, Gemini) e edição manual (Photopea, Canva), prompts em português.
 
@@ -59,6 +59,25 @@
 - **EC-005 — P2025, cupom 12%** (decisão LEO). SKU fora do 9.9, sem conflito. Margem 12,8%; empilha com promo de quantidade (5+ → 19% de desconto, margem 7,2%).
 - **EC-006 — EMB-05, EMB-05P e EMB-08, cupom 50%** (decisão **Dianna**): **liquidação deliberada abaixo do custo** para liberar espaço físico. Perda conhecida de **−R$ 53 a −R$ 61 por unidade**, **sem contagem de estoque** — o teto prático é o orçamento do cupom (até −R$ 71 no EMB-08 com promo de quantidade). ⚠️ **Vendas desses SKUs sairão com margem negativa por desenho — segregar de qualquer média de margem do catálogo.** Linha de base e reavaliação em 18/09 no `ciclos/EC-04-09.md`.
 
+## Livro de Vendas fechado — Agosto/2026 (08/09, pré-O5)
+
+**Planilha Mestra promovida a v4.3.3.** Diagnóstico read-only confirmou: mudanças materiais **apenas no `Livro_Vendas`** (17 pedidos de agosto lançados + resumo mensal). Simulador, Registro_Vendas e Novo_Produto mudaram só em precisão de ponto flutuante (maior diferença 1,7e-13) — **nenhum valor real alterado**. Ref_Frete, Classificação_Frete e Listas intactas. v4.3.2 preservada no repositório conforme a cadeia de versões.
+
+### Receita por origem — os três meses
+
+| Mês | Total | Ads | Orgânico | % Orgânico |
+|---|---:|---:|---:|---:|
+| Junho (08–30) | R$ 3.312,09 | R$ 2.346,75 | R$ 965,34 | 29,1% |
+| Julho | R$ 4.856,63 | R$ 2.830,55 | R$ 2.026,08 | 41,7% |
+| **Agosto** | **R$ 13.915,83** | R$ 4.391,50 | **R$ 9.524,33** | **68,4%** |
+| **TOTAL** | **R$ 22.084,55** | R$ 9.568,80 | R$ 12.515,75 | 56,7% |
+
+**Dois fatos que a O5 precisa absorver:**
+1. **Agosto quase triplicou julho** (R$ 4.856 → R$ 13.915, +186%).
+2. **A parcela orgânica cresce em share e em valor** — 29% → 42% → 68%. O Ads cresceu (R$ 2.830 → R$ 4.391) mas o orgânico cresceu muito mais. **Ler ACOS e ROAS de Ads sabendo que Ads responde por ~32% da receita de agosto**, não pela receita total.
+
+**Notas metodológicas do fechamento (LEO, 08/09):** valores lançados **a preço de tabela** (convenção do painel) — 3 pedidos com promo 5% somam −R$ 341,24 contra a receita real, e o `Registro_Vendas` preserva a real. Atribuição cruzada com Produtos Anunciados (25/07–23/08 + 08/08–06/09) e sanidade fechada contra o Campaign export (**Geral: 9 compras = R$ 3.561,62, bijeção exata**). **Halo Q2430-A → Q3060-A confirmado** (fecha a pendência 4 do Contexto). Diferença histórica de ~R$ 168 até 06/08 permanece registrada como zona cinzenta do par PXP+PXM de 02/07.
+
 ## No horizonte
 
 - **Monitoramento:** ✅ **realizado em 31/08/2026** — registro em `ciclos/Monitoramento-31-08.md`. Destaques: 3 vendas na janela 24–31/08 (2 atribuídas a Ads), Geral em vigia (ACOS de janela 83,9%, leitura na O5), radar EGC destravou entrega, **auto L1618-o115/07 encontrada ativa e pausada no ato (EC-002, conserto da O4-006)**. O monitoramento de 07/09 foi **eliminado** — feriado, dia não operante confirmado, e a O5 de 08/09 absorve a leitura.
@@ -74,7 +93,7 @@
 1. **Confirmar execução de O4-014 e O4-015 — ✅ RESOLVIDA em 26/08.** Execução confirmada no console por Wintech; Registro de Alterações preenchido com as 19 entradas da O4 em status **EXECUTADA - EM MATURAÇÃO**.
 2. **Fila de conversão — DECIDIDA EM DOIS NÍVEIS (26/08).** São duas atividades com critérios distintos: a **revisão barata** (minutos por SKU) ordena por **valor diagnóstico**; o **investimento profundo** (horas) ordena por **lucro × tráfego**. As duas ordens e a tabela de lucro esperado estão na **pendência 2 de `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md`** — fonte única, não duplicar aqui. O Nível 2 e a proposta de concentração são **uma decisão só na O5**.
 3. **Lances por segmentação da Geral** (close / loose / substitutes / complements) — coletar no console na O5; relevante depois de O4-015.
-4. **Halo Q2430-A** — confirmar no `Registro_Vendas` a composição do pedido de R$ 1.741,56. O valor bate com 3 unidades da Aro Quadrada 50L (B0H51P391G).
+4. **Halo Q2430-A — ✅ RESOLVIDA em 08/09.** Confirmado no fechamento do Livro de agosto: halo Q2430-A → Q3060-A, pedido de R$ 1.741,56 = 3 un da Aro Quadrada 50L (B0H51P391G), atribuído à Geral DBA.
 5. **Para a O5:** dados vitalícios por alvo de PI (régua formal de 15+ cliques) · Business Report na janela exata da O5 · BR mensal de agosto vs julho no fechamento do Livro (08/09) · primeira leitura de Bituqueiras e das estruturas O3 · veredito dos 4 radares · veredito do piloto 6B · leitura do efeito da Geral a 0,48 · reavaliar CTR do SP-PP pós-limpeza · **acompanhar gasto contra o teto de R$ 1.000**.
 
 ## Aprendizados e decisões consolidadas (não re-litigar)
@@ -102,7 +121,7 @@ O método operacional foi originalmente estabelecido por um assessor (Henrique) 
 | Estado | `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md` | ✅ snapshot 25/08/2026 (pós-O4) + atualizações de 28/08 |
 | Guia da Mestra | `docs/GUIA_PLANILHA_MESTRA.md` | ✅ íntegro |
 | Skill | `.claude/skills/amazon-ads-winnet/SKILL.md` | ✅ v1.6.3 |
-| Planilha Mestra | `dados/Planilha_Mestra_Winnet_v4_3_2.xlsx` | ✅ 9 abas |
+| Planilha Mestra | `dados/Planilha_Mestra_Winnet_v4_3_3.xlsx` | ✅ 9 abas |
 | Controle Semanal | `dados/Controle_Semanal_Amazon_Ads_Winnet.xlsx` | ✅ |
 | Registro de Alterações | `dados/Registro_Alteracoes_Amazon_Ads_Winnet.xlsx` | ✅ 19 entradas da O4 lançadas pelo Wintech em 26/08, status **EXECUTADA - EM MATURAÇÃO** (conferido pelo chat canônico) |
 | Relatórios da O4 | `relatorios/amazon/` | ✅ 9 arquivos, janela 25/07–23/08 |
