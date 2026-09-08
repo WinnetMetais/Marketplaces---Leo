@@ -146,3 +146,60 @@ A régua do Playbook é de **alvo de PI**, então a aplicação do diagnóstico 
 - **Não conferi** as propostas de "Resultado pós-alteração" das entradas EM MATURAÇÃO uma a uma contra a janela pós-execução de cada ação — conferi por amostragem (O4-004, O4-005, O4-010, O4-012, O4-014, O4-015) e todas batem com os números que já validei acima.
 - **Não há BR por data** — a separação dos 5 dias mortos permanece impossível, como o próprio bloco I registra.
 - **Não avaliei o mérito** das decisões de G. Auditoria é de dado e de método; a decisão é do LEO, item a item.
+
+---
+
+## 7. Parecer sobre a lista G (advisório — a aprovação é do LEO)
+
+**20 SIM · 3 AJUSTAR.** Nenhum ajuste muda a ação; os três corrigem justificativa ou registro.
+
+| # | Parecer | Base conferida |
+|---|---|---|
+| G1 | SIM | Gasto R$ 10,55/dia contra teto de R$ 90/dia |
+| G2 | SIM | substitutes 167 cli / 1 compra / ACOS 81% / 39% do gasto |
+| G3 | SIM | close-match 2,5% em 30d e 6,9% vitalício (128 cli, 4 compras) |
+| G4 | SIM | Export confirma lance por segmentação; o padrão não é usado |
+| G5 | SIM | Vitalício 18 cli / 0 em 32 alvos |
+| G6 | SIM | Vitalício 8 cli / 0 em 83 alvos |
+| **G7** | **AJUSTAR** | ver abaixo |
+| G8 | SIM | Gatilho bem formado, mas já quase satisfeito — ver nota |
+| G9 | SIM | Era 11 cli/13d contra pré-Era 6 cli/15d, 1ª venda |
+| **G10** | **AJUSTAR** | ver abaixo |
+| G11 | SIM | Share 100% em todos os termos com impressão |
+| G12 | SIM | Gasta R$ 2,86 em 30d |
+| G13 | SIM | 6 termos irrelevantes na loose (não 3) — reforça |
+| G13b | SIM | L2025-B: 4 cli / R$ 6,52 / 0 venda no mesmo termo |
+| G14 | SIM | Nenhum alvo ≥15 vit.; triagem 12/7/5/5 |
+| G15 | SIM | Investigação, custo zero |
+| G16 | SIM | PXP-o3 26 cli/3 compras/R$ 539,32 · L2030-B-o3 16 cli/3 compras/R$ 497,34 |
+| G17 | SIM | ASIN ausente do BR da Era (0 sessões) — prioridade |
+| **G18** | **AJUSTAR** | ver abaixo |
+| G19 | SIM | 1 venda em close-match; candidato, não decisão |
+| G20 | SIM | Apoiado no tráfego medido, não na tese não documentada |
+| G21 | SIM | Condicionado a GS1, como está escrito |
+| G22 | SIM | Fecha a bijeção ao centavo (R$ 24,87) |
+| G23 | SIM | 16 ativas conferido no export |
+
+### G7 — AJUSTAR a justificativa (a pausa continua correta)
+
+A auto PXM-o425/08 **tem venda vitalícia: R$ 610,62, 1 compra**. Conferido no `Registro_Vendas`: é o pedido de **08/07, 3 unidades de PXM** — o maior pedido individual de PXM da série.
+
+O motivo escrito em G7 ("Era 2 cli/0; redundante") **não menciona isso**. O contrapeso vitalício do Playbook exige olhar o histórico antes de pausar campanha que já vendeu.
+
+A pausa continua defensável — a redundância é real (o Extintor manual converteu na Era, a PI PXM-o3 tem 1 venda vitalícia de 20/07, a auto PXP-o3 tem 3). Mas **a linha do Registro precisa dizer que o contrapeso foi aplicado e superado pela redundância**, senão em um ciclo futuro essa pausa vai ser relida como "campanha que nunca vendeu".
+
+### G10 — AJUSTAR a expectativa (a migração continua defensável)
+
+O termo "lixeira basculante 50 litros" é servido **simultaneamente** pela Geral (19 impressões, 4 cliques) e pela manual L3070-B (54 impressões, 3 cliques). O share de **42,44% é do termo na conta e soma as duas**.
+
+Migrar a manual para lance dinâmico pode aumentar a disputa **contra a própria Geral**. Aprovar sim, mas **medir o efeito olhando as duas campanhas juntas** — e registrar isso na linha, para não creditar à migração um ganho que saiu do bolso da Geral.
+
+### G18 — AJUSTAR a data
+
+As duas vendas vitalícias do L2460-CP são **19/06** e **19/08** (ambas R$ 335,68, conferidas no `Registro_Vendas`). G18 escreve "18/06". Corrigir antes de lançar, para a linha do Registro nascer certa.
+
+A promoção para Manual continua recomendada: 2 vendas reais, margem 22,6%, custo de aquisição vitalício de R$ 0,10 no termo.
+
+### Nota sobre G8
+
+O gatilho proposto é **0 vendas E CTR < 0,3%**. O CTR atual da EGC já é **0,125%** — ou seja, se a Melhor Oferta em curso não converter, o gatilho dispara automaticamente na O6. Na prática G8 é "mais uma Era e sai", com custo de R$ 2,64 em 30 dias. É um desvio de contrato bem delimitado, não um contrato aberto.
