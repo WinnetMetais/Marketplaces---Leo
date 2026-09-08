@@ -289,3 +289,72 @@ O caso 21652133321 **não foi resolvido** — foi encerrado com contestação ne
 **Impacto financeiro: desprezível** — a Bituqueiras inteira gastou R$ 0,91 em 30 dias. **Impacto de governança: real** — uma regra do `CLAUDE.md` que a operação não cumpre deixa de ser regra.
 
 **Encaminhamento (decisão do LEO):** ou a Bituqueiras passa a excluir SP-01 e SP-T, ou o `CLAUDE.md` é corrigido para dizer que a trava vale para as **campanhas dedicadas** SP-01/SP-T e não para o SKU dentro de outras campanhas. Não decidir agora deixa a contradição aberta, o que o §14 do próprio `CLAUDE.md` proíbe.
+
+---
+
+## 10. Auditoria do PACOTE DE FECHAMENTO (recebido em 08/09)
+
+**Objeto:** `ciclos/O5-08-09_pacote-fechamento-chat-canonico.md`
+**Veredito:** ✅ **APROVADO com 3 correções.** Nenhuma altera uma ação; duas corrigem números que iriam para dentro do Registro de Alterações, onde erro fica.
+
+### Conferido e exato
+
+| Item | Afirmação do pacote | Recontagem |
+|---|---|---|
+| §9 inventário de estratégias | 75 dinâmicas · 4 fixas · 1 só redução (após O5-009) | Export de hoje: **74 · 5 · 1**. Com a L3070-B migrando de fixo para dinâmico → **75 · 4 · 1** ✅ |
+| §10 campanhas ativas | 12 (eram 16; O5 pausa 4) | 16 − 4 = 12 ✅ |
+| §12.3 frete na Era | 9 observações Qtd=1, razão 46–100%, mediana ~63% | **9 obs · 46,3% a 99,8% · mediana 62,9%** ✅ |
+| §3 lances | Extintor 2,60 · 6B 1,50/1,20 · Cinzeiros 1,60/1,30 · Bituqueiras 1,20/1,00 · L3070-B 1,20/1,00 | Todos conferem no relatório de Segmentação ✅ |
+| §3 Geral | close 0,45→0,54 · loose 0,54 · substitutes 0,54→0,45 · complements 0,45 | ✅ |
+| §8 Era O5→O6 | 09–21/09 = 13 corridos, 9 úteis; 21/09 segunda, 22/09 terça | ✅ (calendário conferido) · 05/10 é a 1ª segunda de outubro ✅ |
+| Contagem do Registro | 23 → 21 avaliadas + 2 em maturação | 4 R + 15 O4 + 4 EC = 23 ✅ |
+| O5-003 | Gasto da Era ≈ 12% do orçamento | 10,55 / 90 = 11,7% ✅ |
+| 3ª compra de setembro | é de 08/09, fora da Era | Era tem 2 compras em setembro (01/09 e 07/09); o console 01–08/09 tem 3 ✅. **Acertou em não inferir o SKU.** |
+
+### C4 — O5-010 traz um CPC no campo de lance
+
+A linha registra `Estado / valor anterior = "Ativa (lance 1,28 médio CPC)"`.
+
+**O lance das 4 segmentações da auto SP-PP-o425/08 é R$ 1,32** (relatório de Segmentação, coluna `Lance do segmento`, idêntico em close/loose/substitutes/complements). O **1,28** é o CPC da Era — R$ 8,98 ÷ 7 cliques = R$ 1,283.
+
+São coisas diferentes: o lance é configuração, o CPC é resultado. Numa linha do Registro, `valor anterior` tem que ser a configuração — senão a O6 vai comparar contra um número que nunca existiu no console.
+
+**Correção:** `Ativa — lance 1,32 nas 4 segmentações`.
+
+### C5 — "100% dos cliques da Era vieram da loose" é falso
+
+O5-010 afirma isso. O relatório de termos, filtrado por janelas dentro da Era, dá:
+
+| Segmentação | Cliques | Custo |
+|---|---:|---:|
+| loose-match | **6** | R$ 7,66 |
+| *(não localizado nos termos)* | 1 | R$ 1,32 |
+| **Era (export da campanha)** | **7** | **R$ 8,98** |
+
+São **6 de 7 cliques (86%)**, não 100%. O sétimo clique e R$ 1,32 não aparecem no relatório de termos — pode ser termo não listado ou outra segmentação; **não dá para afirmar de onde veio**.
+
+O próprio pacote já cita corretamente o valor `R$ 7,66 de R$ 8,98` na mesma frase — ou seja, o "100%" contradiz o número que está ao lado dele. A decisão de pausar a loose não muda.
+
+**Correção:** `6 dos 7 cliques da Era (R$ 7,66 de R$ 8,98) vieram da loose-match`.
+
+### C6 — §2 projeta setembro com o ritmo de outra janela
+
+O pacote escreve: *"Setembro 01–08: R$ 108,08 ≈ 11% do teto; **ritmo da Era R$ 16,2/dia → projeção R$ 480–500/mês**."*
+
+Projetar setembro pelo ritmo da **Era** (26/08–07/09) tendo o dado do próprio setembro em mãos é cruzar janelas. Setembro roda **mais barato** que a Era, porque a Era carrega 26–31/08:
+
+| Base | R$/dia | Projeção do mês | % do teto |
+|---|---:|---:|---:|
+| Ritmo da Era | 16,23 | R$ 487 | 49% |
+| **Setembro, 8 dias corridos** | **13,51** | **R$ 405** | **41%** |
+| **Setembro, 7 dias completos** | **15,44** | **R$ 463** | **46%** |
+
+**Correção:** projeção de **R$ 405 a R$ 463/mês (41% a 46% do teto)**, com a ressalva de que 08/09 é dia incompleto. A conclusão — folga ampla — não muda.
+
+### Não auditável nesta fonte
+
+**§3, lance da auto EGC = 0,84.** O relatório de Segmentação traz o campo `Lance do segmento` **vazio** nas 4 segmentações da EGC (herdam do grupo de anúncios). O valor vem da O4-012, não da fonte de hoje. Registrar como declarado, não como conferido.
+
+### Lembrete que o pacote não incorporou
+
+A divergência **SP-T / SP-01 na Manual Bituqueiras** (seção 9 desta auditoria) não aparece no pacote. O `CLAUDE.md` §12 diz que as duas seguem pausadas até a resolução do caso 21652133321, e as duas são anunciadas na Bituqueiras. Custo desprezível, mas é contradição de documentação em aberto — e o §14 do `CLAUDE.md` manda fechar antes de finalizar.
