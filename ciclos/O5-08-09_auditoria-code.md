@@ -203,3 +203,89 @@ A promoção para Manual continua recomendada: 2 vendas reais, margem 22,6%, cus
 ### Nota sobre G8
 
 O gatilho proposto é **0 vendas E CTR < 0,3%**. O CTR atual da EGC já é **0,125%** — ou seja, se a Melhor Oferta em curso não converter, o gatilho dispara automaticamente na O6. Na prática G8 é "mais uma Era e sai", com custo de R$ 2,64 em 30 dias. É um desvio de contrato bem delimitado, não um contrato aberto.
+
+---
+
+## 8. Três pendências do bloco I resolvidas em 08/09 (pós-parecer)
+
+### I.2 — Lances por segmentação da Geral antes de 25/08 · ✅ RESOLVIDA no repositório
+
+Não precisou de console. O export de segmentação da O4 (`relatorios/amazon/ads_30d_segmentacao.csv`, tirado em 25/08) traz a coluna `Lance do segmento`:
+
+| Segmentação | 25/08 | 08/09 | Mudou? |
+|---|---:|---:|---|
+| close-match | 0,45 | 0,45 | não |
+| complements | 0,45 | 0,45 | não |
+| loose-match | 0,54 | 0,54 | não |
+| substitutes | 0,54 | 0,54 | não |
+
+**Nenhum lance de segmentação mudou entre a O4 e a O5.**
+
+E o argumento fecha a questão mesmo com a ambiguidade de horário do export (tirado no próprio dia 25/08): a O4-015 alterou o **lance padrão da campanha** de 0,40 para 0,48. Se as segmentações seguissem o padrão, leriam **0,40 antes** e **0,48 depois**. Leem **0,45 e 0,54 nas duas fotos** — nunca acompanharam o campo padrão.
+
+**Veredito da O4-015 pode sair de "NÃO AVALIÁVEL" para "INERTE — confirmado por evidência".**
+
+Reforço colateral para G2: no export da O4 (25/07–23/08) a `substitutes` tinha **100 cliques e zero compras**. Vitalício acumulado: 239 cliques / 3 compras / ACOS 20,9%.
+
+### I.3 — Status do SP-01 · ✅ RESOLVIDA — e o diagnóstico estava errado no nível
+
+O diagnóstico (D e G17) atribuiu a entrega zero a *"provável inelegibilidade/supressão recorrente do ASIN"*. **Não é o ASIN.** Nos Produtos Anunciados de 30d:
+
+| Onde o SP-01 (B0H5Z1XK3V) é anunciado | Janela | Impressões |
+|---|---|---:|
+| **Manual Bituqueiras Space** | 20/08 – 04/09 | **14** |
+| auto SP-01-o116/07 | 11/08 – **17/08** | 172, e nada depois |
+
+O anúncio do SP-01 **está servindo** — na Bituqueiras, inclusive depois da data em que a auto parou. São três camadas, e só a do meio está travada:
+
+1. **Listing / oferta** — **ativo** (confirmado pelo LEO no Seller Central).
+2. **Anúncio dentro da auto SP-01-o116/07** — **suspenso** (visível ao abrir a campanha no console).
+3. **Anúncio do mesmo SKU na Bituqueiras** — **funcionando**.
+
+Confere com o histórico: contestação negada em 2ª análise, caso encerrado. A marca de política ficou **naquele anúncio**, não no produto.
+
+⚠️ **Por que o diagnóstico não podia ver isso:** no export de 08/09 a auto SP-01 aparece como `Estado = ATIVADO`, `Status = Em inserção`. **O export não expõe suspensão no nível do anúncio** — só o console mostra. Registrar como limitação permanente da fonte.
+
+**Correção de leitura desta auditoria:** em mensagem anterior eu afirmei que a premissa do O4-R03 ("ASIN requalificado ~19–20/08") não se sustentava nos dados. **Estava errado.** A requalificação do ASIN foi real; o que não voltou foi o anúncio dentro daquela campanha. São camadas distintas.
+
+**G17 — motivo corrigido, ação inalterada:** pausar a auto SP-01-o116/07 por **anúncio suspenso por política dentro da campanha** — não é falha de desempenho nem supressão do ASIN. O listing segue ativo e o SP-01 continua anunciado pela Bituqueiras. Pausar **não** tira o SKU do ar em Ads.
+
+**O4-R03 — veredito ajustado:** "executada, sem efeito — bloqueio no nível do anúncio, não da campanha".
+
+### I.1 — Gasto de setembro · ✅ RECEBIDO (console, 01–08/09)
+
+| Métrica | Valor |
+|---|---:|
+| Custo total | **R$ 108,08** |
+| Compras | 3 |
+| ROAS | 7,66 |
+| CPC médio | R$ 0,79 |
+| Vendas atribuídas (derivado) | ≈ R$ 828 |
+| ACOS (derivado) | ≈ **13,1%** |
+
+**Controle do teto de R$ 1.000/mês:** o dia 08/09 está incompleto, então a projeção vai como faixa — R$ 13,51/dia (8 dias corridos) a R$ 15,44/dia (7 dias completos) → **R$ 405 a R$ 463 no mês, ou 41% a 46% do teto**. Sem pressão de orçamento.
+
+Comparação com a projeção da Era (R$ 487/mês, a R$ 16,23/dia): setembro está rodando **mais barato** que a Era, que carregava 26–31/08.
+
+⚠️ **Não calibrar régua com este ROAS.** A janela pega o início do 9.9 (07–13/09) e o mecanismo de atribuição de oferta ainda é inferência de 1 pedido. A leitura vale em **14/09**, como o próprio diagnóstico previu.
+
+---
+
+## 9. Divergência nova entre a documentação e a conta — SP-T na Bituqueiras
+
+O `CLAUDE.md` §12 afirma: *"Campanhas SP-01 e SP-T seguem pausadas, com reativação vinculada à resolução do caso 21652133321."*
+
+Mas a **Manual Bituqueiras Space** anuncia **4 SKUs** entre 20/08 e 04/09, e dois deles são justamente esses:
+
+| SKU | ASIN | Impressões | Cliques |
+|---|---|---:|---:|
+| SP-FF | B0H5X821QS | 11 | 0 |
+| **SP-T** | B0H3MGC36H | 12 | 0 |
+| **SP-01** | B0H5Z1XK3V | 14 | 0 |
+| SP-PP | B0H5X97DR7 | 12 | 2 |
+
+O caso 21652133321 **não foi resolvido** — foi encerrado com contestação negada (25/08). Ou seja: a regra escrita e o estado da conta divergem.
+
+**Impacto financeiro: desprezível** — a Bituqueiras inteira gastou R$ 0,91 em 30 dias. **Impacto de governança: real** — uma regra do `CLAUDE.md` que a operação não cumpre deixa de ser regra.
+
+**Encaminhamento (decisão do LEO):** ou a Bituqueiras passa a excluir SP-01 e SP-T, ou o `CLAUDE.md` é corrigido para dizer que a trava vale para as **campanhas dedicadas** SP-01/SP-T e não para o SKU dentro de outras campanhas. Não decidir agora deixa a contradição aberta, o que o §14 do próprio `CLAUDE.md` proíbe.
