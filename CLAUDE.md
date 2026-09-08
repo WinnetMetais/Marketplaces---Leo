@@ -66,7 +66,7 @@ Informações que mudam com o tempo — preços, tarifas, margens, orçamentos, 
 
 ### Planilha Mestra
 
-- Versão canônica: **v4.3.3** — `dados/Planilha_Mestra_Winnet_v4_3_3.xlsx`.
+- Versão canônica: **v4.3.4** — `dados/Planilha_Mestra_Winnet_v4_3_4.xlsx`.
 - Fonte oficial de SKU, preço, custo, margem, tarifa, frete, classe logística e rentabilidade.
 - Se a Mestra não estiver acessível, **não concluir que a margem comporta**. Usar: *"A performance de Ads sugere possibilidade de escala, mas a decisão financeira fica pendente de validação de margem na Planilha Mestra."*
 
@@ -174,7 +174,7 @@ docs/
   MEMORIA.md                               # aprendizados persistentes
   RELATORIO_CAPACIDADES.md                 # inventário do que este repo consegue fazer
 dados/
-  Planilha_Mestra_Winnet_v4_3_3.xlsx       # versão canônica
+  Planilha_Mestra_Winnet_v4_3_4.xlsx       # versão canônica
   Controle_Semanal_Amazon_Ads_Winnet.xlsx
   Registro_Alteracoes_Amazon_Ads_Winnet.xlsx
 relatorios/amazon/                         # exports Amazon Ads / Seller Central por período

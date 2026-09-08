@@ -219,3 +219,15 @@ Geradores de IA têm dificuldade com edição geométrica precisa; **Photopea** 
 
 Ao final de cada Ox, anexar em **1. Erros de leitura** qualquer armadilha nova encontrada,
 com uma linha objetiva. Não reescrever o histórico — só acrescentar.
+
+## Validação de dados com origem em outra aba morre no `openpyxl` (08/09/2026)
+
+O Excel grava validação de lista **cuja origem está em outra aba** na extensão `x14` (`<extLst>`), não no bloco `<dataValidations>` clássico. O `openpyxl` **não suporta essa extensão e a remove ao salvar**, avisando *"Data Validation extension is not supported and will be removed"*. Validação de lista literal (`"Ads,Orgânico,Conferir"`) fica no formato antigo e sobrevive.
+
+Assinatura do problema na Mestra: de 6 validações, **4 somem e 2 ficam**. Se aparecer exatamente esse padrão, o arquivo passou por `openpyxl`.
+
+**Consequência prática:** a Planilha Mestra **não pode ser salva por `openpyxl`** — nem para uma edição pequena. Fechamento de Livro e lançamento de vendas vão no Excel.
+
+**Reparo, quando acontecer:** copiar o bloco `<extLst>` das abas afetadas de uma versão anterior íntegra e reinjetar por manipulação direta do zip (`zipfile`), **sem abrir com `openpyxl`**. Conferir depois: mesma lista de arquivos internos, só as abas alvo alteradas, zip íntegro e zero diferença de célula.
+
+**Ocorrido em:** fechamento do Livro de agosto (v4.3.2 → v4.3.3). Reparado no v4.3.4.

@@ -13,7 +13,7 @@
 - **Teto mensal de Ads:** **R$ 1.000/mês** (definido por Dianna, registrado em 25/08). Uso atual ~35%.
 - **SP-01 — política de fumo:** **caso encerrado.** Contestação negada em 2ª análise (25/08). A PI SP-01-o228/07 fica **pausada por inelegibilidade** — não é falha de desempenho. A auto SP-01-o116/07 foi reativada entre 17 e 25/08 após requalificação do ASIN.
 - **SP-PP:** anomalia resolvida na causa — segmentação `substitutes` pausada e negativas aplicadas (12 exatas + 6 frases). CTR a reavaliar pós-limpeza na O5.
-- **Planilha Mestra:** versão canônica **v4.3.3** (`dados/Planilha_Mestra_Winnet_v4_3_3.xlsx`).
+- **Planilha Mestra:** versão canônica **v4.3.4** (`dados/Planilha_Mestra_Winnet_v4_3_4.xlsx`) — 4 vendas de setembro lançadas e **validações de dados restauradas**. ⚠️ Pendente de confirmação visual do LEO no Excel.
 - **Livro_Vendas:** fechamento de agosto/2026 movido de 07/09 para **08/09/2026** — exceção documentada por feriado da Independência (07/09, segunda), **não** mudança de protocolo. **Ordem no dia: Livro_Vendas primeiro, O5 depois.** Atribuição de origem (Ads/Orgânico) exige cruzamento com relatórios de publicidade no fechamento; lançamentos não classificáveis devem ser sinalizados para decisão da Wintech — nunca inferidos.
 - **Imagens de produto:** trabalho contínuo em múltiplos SKUs com geradores de IA (GPT, Gemini) e edição manual (Photopea, Canva), prompts em português.
 
@@ -78,6 +78,27 @@
 
 **Notas metodológicas do fechamento (LEO, 08/09):** valores lançados **a preço de tabela** (convenção do painel) — 3 pedidos com promo 5% somam −R$ 341,24 contra a receita real, e o `Registro_Vendas` preserva a real. Atribuição cruzada com Produtos Anunciados (25/07–23/08 + 08/08–06/09) e sanidade fechada contra o Campaign export (**Geral: 9 compras = R$ 3.561,62, bijeção exata**). **Halo Q2430-A → Q3060-A confirmado** (fecha a pendência 4 do Contexto). Diferença histórica de ~R$ 168 até 06/08 permanece registrada como zona cinzenta do par PXP+PXM de 02/07.
 
+## Validações de dados da Mestra — perda e reparo (08/09)
+
+**Sintoma:** o LEO relatou que a Mestra estava **sem as listas suspensas**.
+
+**Diagnóstico (contagem de `<x14:dataValidation>` no XML):** v4.3.2 nas três cópias enviadas (28/08, 31/08, 01/09) tinha **4**; o v4.3.3 do fechamento tem **0**. As 2 validações de formato legado (`Simulador!B7:B232` = Pequenos/Medios/Grandes e `Registro_Vendas!R6:R107` = Ads/Orgânico/Conferir) sobreviveram.
+
+**Causa:** as 4 perdidas são **validações de lista com origem em outra aba**, que o Excel grava na extensão `x14` — exatamente o que o `openpyxl` remove ao salvar (ele emite o aviso *"Data Validation extension is not supported and will be removed"*). As validações de lista literal, gravadas no formato antigo, passam ilesas. O padrão observado — 4 perdidas, 2 mantidas — é a assinatura de um salvamento por `openpyxl` em algum ponto do fechamento do Livro. O arquivo chegou ao repositório já sem elas (md5 idêntico ao enviado pelo LEO).
+
+**As 4 validações perdidas:**
+
+| Aba | Células | Origem da lista |
+|---|---|---|
+| Simulador | `C7:C232` | `Ref_Frete!$A$2:$A$54` |
+| Registro_Vendas | `B6:B105` (SKU) | `Listas!$A$2:$A$114` |
+| Registro_Vendas | `D6:D105` (Região destino) | `Ref_Frete!$A$2:$A$54` |
+| Novo_Produto | `I6:I25` | `Ref_Frete!$A$2:$A$54` |
+
+**Reparo (v4.3.4):** o bloco `<extLst>` das três abas foi copiado do v4.3.2 e reinjetado no arquivo por manipulação direta do zip — **sem passar pelo `openpyxl`**, que destruiria as validações de novo. Conferência: mesmos 21 arquivos internos, apenas as 3 abas alteradas, zip íntegro, **zero células com valor ou fórmula diferente** do arquivo enviado pelo LEO, x14 de volta a 4.
+
+**Regra que fica:** enquanto houver validação de lista com origem em outra aba, **a Mestra não pode ser salva por `openpyxl`** — nem para uma edição pequena. Fechamento de Livro e lançamento de vendas devem ser feitos no Excel. Se um script precisar gravar, o reparo do `extLst` tem de ser refeito depois.
+
 ## No horizonte
 
 - **Monitoramento:** ✅ **realizado em 31/08/2026** — registro em `ciclos/Monitoramento-31-08.md`. Destaques: 3 vendas na janela 24–31/08 (2 atribuídas a Ads), Geral em vigia (ACOS de janela 83,9%, leitura na O5), radar EGC destravou entrega, **auto L1618-o115/07 encontrada ativa e pausada no ato (EC-002, conserto da O4-006)**. O monitoramento de 07/09 foi **eliminado** — feriado, dia não operante confirmado, e a O5 de 08/09 absorve a leitura.
@@ -121,7 +142,7 @@ O método operacional foi originalmente estabelecido por um assessor (Henrique) 
 | Estado | `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md` | ✅ snapshot 25/08/2026 (pós-O4) + atualizações de 28/08 e 01/09 (pendência 7 — migração de ASIN) |
 | Guia da Mestra | `docs/GUIA_PLANILHA_MESTRA.md` | ✅ íntegro |
 | Skill | `.claude/skills/amazon-ads-winnet/SKILL.md` | ✅ v1.6.3 |
-| Planilha Mestra | `dados/Planilha_Mestra_Winnet_v4_3_3.xlsx` | ✅ 9 abas |
+| Planilha Mestra | `dados/Planilha_Mestra_Winnet_v4_3_4.xlsx` | ✅ 9 abas · validações x14 restauradas (pendente conferência no Excel) |
 | Controle Semanal | `dados/Controle_Semanal_Amazon_Ads_Winnet.xlsx` | ✅ |
 | Registro de Alterações | `dados/Registro_Alteracoes_Amazon_Ads_Winnet.xlsx` | ✅ 23 entradas (19 da O4 + EC-001/002/003/004). **EC-005 e EC-006 ainda não lançados pelo LEO** |
 | Relatórios da O4 | `relatorios/amazon/` | ✅ 9 arquivos, janela 25/07–23/08 |
@@ -142,3 +163,4 @@ O método operacional foi originalmente estabelecido por um assessor (Henrique) 
 | 02/09/2026 | entre-ciclos | Pacote 9.9 executado: 16 ofertas aceitas para 07–13/09 (EC-003/EC-004) · Registro de Alterações com 23 entradas |
 | 04/09/2026 | entre-ciclos | Cupons fora do pacote 9.9: EC-005 (P2025 12%) e EC-006 (EMB-05/EMB-05P/EMB-08 a 50%, liquidação abaixo do custo por decisão da Dianna, sem teto de orçamento) · gatilho de revisão em 18/09 |
 | 08/09/2026 | pré-O5 | **Livro_Vendas de agosto fechado** · Planilha Mestra promovida a **v4.3.3** (v4.3.2 preservada) · receita de agosto R$ 13.915,83 com **68,4% orgânico** · Ads ≈ 32% da receita do mês · **pendência 4 (halo Q2430-A) resolvida** · achado do fechamento: lançamento a preço de tabela |
+| 08/09/2026 | pré-O5 | **Mestra v4.3.4**: 4 vendas de setembro (02, 03, 05 e 07/09) · validações de dados perdidas no fechamento e **restauradas por reinjeção do `extLst`** · regra nova: Mestra não pode ser salva por `openpyxl` |
