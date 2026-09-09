@@ -394,3 +394,43 @@ Não é entrega. É **CTR**, com a mesma forma da EGC:
 **O5-016 muda de `INVESTIGAR ENTREGA` para `CORRIGIR CTR / CRIATIVO`**, sem urgência — custo vitalício de R$ 5,50. Entra na O6 junto com a EGC, que tem o mesmo padrão (entrega destravada, CTR 0,13%).
 
 **Não afeta O5-006.** A pausa da auto PXM-o425 se apoiava em redundância com a PI PXM-o3, entre outras — e a PI está de fato viva e convertendo. A redundância continua real.
+
+---
+
+## 12. Conferência pós-execução (09/09) — 7 de 8 corretas, 1 invertida
+
+Fontes: `relatorios/amazon/o5-08-09/gerenciador_vitalicio_pos-execucao_09-09.csv` + prints do console das segmentações da Geral e do SP-PP.
+
+### Corretas (7)
+
+| # | Verificação | |
+|---|---|---|
+| O5-004 | PI L2470-CZ-o425/08 → PAUSADO | ✅ |
+| O5-005 | PI PG3070-o425/08 → PAUSADO | ✅ |
+| O5-006 | auto PXM-o425/08 → PAUSADO | ✅ |
+| O5-012 | auto SP-01-o116/07 → PAUSADO | ✅ |
+| O5-009 | L3070-B → Lances dinâmicos (aumento e redução) | ✅ |
+| O5-001 | Geral `substitutes` 0,54 → **0,45** | ✅ |
+| O5-002 | Geral `close-match` 0,45 → **0,54** | ✅ |
+
+Contagem da conta: **12 ativas / 68 pausadas**, exatamente o previsto (16 − 4). Total da Geral no console (784 cliques / R$ 481,48) bate com o export ao centavo.
+
+### ❌ O5-010 — segmentação errada pausada
+
+| Segmentação | Cliques vit. | Status atual | Devia estar |
+|---|---:|---|---|
+| Substitutos (`substitutes`) | 16 | Pausado | Pausado ✅ (O4-001) |
+| **Correspondência vaga (`loose-match`)** | **7** | **Em inserção** | **PAUSADA** ❌ |
+| **Correspondência aproximada (`close-match`)** | **2** | **Pausado** | **ATIVA** ❌ |
+| Complementos (`complements`) | 0 | Em inserção | ativa ✅ |
+
+**Causa:** a tradução PT-BR inverte a intuição — "Correspondência vaga" é a `loose-match` e "Correspondência aproximada" é a `close-match`. Registrado em `docs/MEMORIA.md`.
+
+**Confirmação por número, não por nome:** o relatório de Segmentação dá `loose-match` = 7 cliques / R$ 8,29 e `close-match` = 2 cliques / R$ 0,79; o print traz "Correspondência vaga" com 7 / R$ 8,27 e "Correspondência aproximada" com 2 / R$ 0,79. Sem ambiguidade.
+
+**Efeito:** oposto ao pretendido. A `loose-match` — origem dos 6 termos "parede" irrelevantes — segue ativa, e a `close-match`, a segmentação mais relevante por definição, foi desligada. Impacto financeiro pequeno (a campanha gasta pouco), mas se não for corrigido a O6 lerá "vigia falhou" quando a vigia nunca foi montada.
+
+**Correção:** ativar `Correspondência aproximada` e pausar `Correspondência vaga`. `Substitutos` permanece pausada, `Complementos` ativa.
+
+**Nota de processo:** este erro só apareceu porque houve export/print pós-execução. Sem ele, a descoberta seria em 14/09 na melhor hipótese, ou na O6 — já contaminando o veredito da campanha. **A conferência pós-execução se pagou no primeiro uso.**
+

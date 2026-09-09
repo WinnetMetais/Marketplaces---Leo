@@ -246,3 +246,18 @@ A janela de 7 dias de um monitoramento na segunda está inteiramente contida na 
 
 O risco que sobra numa Era com muitas execuções não é performance derivando: é **"as execuções pegaram mesmo?"** — e isso se resolve com o **export pós-execução** no ato e com a **conferência de estado no monitoramento do meio da Era**, não na véspera da Ox. Precedente que fundamenta: auto L1618 registrada como pausada em 25/08 e encontrada ativa em 31/08 (EC-002).
 
+## Nomes das segmentações automáticas em PT-BR — a tradução inverte a intuição (09/09/2026)
+
+| Console (PT-BR) | Segmentação real | Sentido |
+|---|---|---|
+| **Correspondência vaga** | **`loose-match`** | *vaga* = ampla, frouxa |
+| **Correspondência aproximada** | **`close-match`** | *aproximada* = próxima |
+| Substitutos | `substitutes` | — |
+| Complementos | `complements` | — |
+
+**A armadilha:** "vaga" soa como a distante e "aproximada" soa como a genérica. É o contrário. Isso causou um erro de execução real na O5: a O5-010 pedia pausar a `loose-match` do SP-PP e o que foi pausado foi a `close-match`, deixando ativa justamente a segmentação que produzia os 6 termos "parede" irrelevantes.
+
+**Como confirmar sem depender do nome:** cruzar cliques e custo do print com o relatório de Segmentação. No SP-PP, `loose-match` = 7 cliques / R$ 8,29 e `close-match` = 2 cliques / R$ 0,79 — o print resolve a ambiguidade em dois segundos.
+
+**Regra operacional:** em qualquer ação de segmentação, a linha do Registro deve trazer **o nome em inglês e o número de cliques vitalícios**, para que a conferência pós-execução não dependa da tradução.
+
