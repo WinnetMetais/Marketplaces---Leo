@@ -358,3 +358,39 @@ Projetar setembro pelo ritmo da **Era** (26/08–07/09) tendo o dado do próprio
 ### Lembrete que o pacote não incorporou
 
 A divergência **SP-T / SP-01 na Manual Bituqueiras** (seção 9 desta auditoria) não aparece no pacote. O `CLAUDE.md` §12 diz que as duas seguem pausadas até a resolução do caso 21652133321, e as duas são anunciadas na Bituqueiras. Custo desprezível, mas é contradição de documentação em aberto — e o §14 do `CLAUDE.md` manda fechar antes de finalizar.
+
+---
+
+## 11. C7 — a PI PXM-o311/08 entrega; o diagnóstico disse o contrário (09/09)
+
+Levantado pelo LEO no console, a pedido do O5-016.
+
+**O que o diagnóstico afirmou** (bloco D e O5-016): *"0 impressões na Era com lance 1,10 em 52 alvos"* · *"Sem entrega na Era"* · decisão `INVESTIGAR ENTREGA`.
+
+**O que as fontes dizem:**
+
+| Fonte | Impressões | Cliques | Custo | Compras |
+|---|---:|---:|---:|---:|
+| Console, vitalício (print do LEO, 09/09) | **2.524** | — | R$ 5,50 | 1 (R$ 203,54 · ROAS 37,01) |
+| `ads_vitalicio_segmentacao`, 52 alvos | **2.500** | 7 | R$ 5,50 | 1 |
+| `ads_30d_campanhas` (08/08–06/09) | **638** | 1 | R$ 0,59 | 0 |
+
+**Os 52 alvos têm impressão**, e vários entregam até **07/09** — dentro da Era (`B0DFX6CBZ6` 290 impr até 07/09 · `B0FDFDTF3D` 221 até 07/09 · `B0D82G2FKT` 94 até 07/09).
+
+### Causa do erro
+
+As impressões da Era foram derivadas como `cliques ÷ CTR`, porque o export do Gerenciador vem com a coluna zerada. **Com 0 cliques a conta é 0 ÷ 0 — indefinido, não zero.** O valor foi registrado como 0 e virou a premissa de "sem entrega".
+
+O bloco B declarou a derivação como limitação. O que não estava previsto é que ela **falha silenciosamente no caso de zero cliques**: devolve um número que parece medição. **Regra que fica: campanha com 0 cliques no export não tem impressão derivável — o valor é DESCONHECIDO e precisa vir do relatório de segmentação ou do console.**
+
+### Diagnóstico correto
+
+Não é entrega. É **CTR**, com a mesma forma da EGC:
+
+- **Entrega** ✅ 2.500 impressões vitalícias, 638 em 30d
+- **CTR** ❌ **0,28% vitalício** (7/2.500) · **0,16% em 30d** (1/638)
+- **Conversão** — os 7 cliques vitalícios geraram **1 compra de R$ 203,54** com R$ 5,50 de gasto (**ROAS 37,01**). Amostra de 1 venda: não é taxa, é ocorrência.
+
+**O5-016 muda de `INVESTIGAR ENTREGA` para `CORRIGIR CTR / CRIATIVO`**, sem urgência — custo vitalício de R$ 5,50. Entra na O6 junto com a EGC, que tem o mesmo padrão (entrega destravada, CTR 0,13%).
+
+**Não afeta O5-006.** A pausa da auto PXM-o425 se apoiava em redundância com a PI PXM-o3, entre outras — e a PI está de fato viva e convertendo. A redundância continua real.
