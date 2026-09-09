@@ -108,7 +108,7 @@ Radares da O4 encerrados: PI L2470-CZ, PI PG3070, auto PXM-o2 (pausados, O5-004/
 
 **§6 Referências operacionais** — acrescentar: (a) **atribuição de Oferta Relâmpago / Melhor Oferta ao preço da oferta** (inferência de 1 pedido, PG2460 07/09; confirmar em 14/09); a atribuição a preço de tabela (31/08) vale para a promoção de quantidade; (b) **"coletor de pilhas" = termo produtivo da Geral** (2 vendas vitalícias, L2460-CP), sem manual; (c) conversão média da conta permanece referência derivada (atualizar com BR de setembro no fechamento).
 
-**§8 Ciclo** — O5 concluída **08/09/2026**. Monitoramento **14/09** (inclui leitura do 9.9 e EC-003/004). **Monitoramento de 21/09: proposta de eliminar** (véspera da O6, mesmo precedente de 07/09) — decisão do LEO. **O6: 22/09/2026** (decisão do escopo da migração de ASIN + veredito consolidado do piloto de lance + leitura de O5-001/002). O7 estimada ~06/10. Fechamento do Livro de setembro: **05/10** (1ª segunda) — sem exceção prevista.
+**§8 Ciclo** — O5 concluída **08/09/2026**. Monitoramento **14/09** (inclui leitura do 9.9 e EC-003/004). **Monitoramento de 21/09: ELIMINADO** (decisão do LEO, 09/09). Motivo: a janela de 7 dias do monitoramento (15–21/09) está inteiramente contida na Era que a O6 lê no dia seguinte (09–21/09) — mesmo dado, 24h de intervalo, sem decisão possível no meio. **Não é o mesmo caso de 07/09**, que era feriado sem dado a ler; aqui há dado, mas ele é relido pela O6. **Contrapartida obrigatória:** o monitoramento de 14/09 passa a incluir a **conferência de estado das execuções da O5 contra o Registro de Alterações** — se essa conferência não acontecer, o monitoramento de 21/09 volta. **O6: 22/09/2026** (decisão do escopo da migração de ASIN + veredito consolidado do piloto de lance + leitura de O5-001/002). O7 estimada ~06/10. Fechamento do Livro de setembro: **05/10** (1ª segunda) — sem exceção prevista.
 
 **§9 Inventário de estratégias** — após O5-009: 75 dinâmicas aumento/redução · 4 fixas · 1 somente redução (contagem inclui pausadas).
 
@@ -158,9 +158,9 @@ Decisões (17 linhas O5-001 a O5-017): rebalancear lances por segmentação da G
 | 08–09/09 | Execução O5 (LEO) | O5-001/002/004/005/006/009/010/012/013 no console; conferir estado antes de cada uma; export pós-execução para auditoria (Playbook §35.15) |
 | 09/09 | Início da Era O5→O6 | 09/09–21/09 = 13 corridos, 9 úteis, 0 feriados |
 | 13/09 | Fim do 9.9 | — |
-| **14/09 (seg)** | Monitoramento semanal + leitura do 9.9 | EC-003/004 · mecanismo de atribuição das ofertas · O5-014 (L2025-B) · P3070 pós-Relâmpago · export 7d com Estado · BR por ASIN 07–13/09 |
+| **14/09 (seg)** | Monitoramento semanal + leitura do 9.9 + **conferência de estado da O5** | **Obrigatório: conferir as 9 execuções da O5 contra o Registro (precedente da auto L1618 em 31/08).** EC-003/004 · mecanismo de atribuição das ofertas · O5-014 (L2025-B) · P3070 pós-Relâmpago · export 7d com Estado · BR por ASIN 07–13/09 |
 | 18/09 | Revisão cupons EMB (EC-006) | Linha de base em `ciclos/EC-04-09.md` |
-| 21/09 (seg) | Monitoramento — **proposta: eliminar** (véspera da O6) | Decisão do LEO |
+| 21/09 (seg) | Monitoramento — **ELIMINADO** (decisão do LEO 09/09) | Janela contida na Era que a O6 lê em 22/09. Contrapartida: conferência de estado no monitoramento de 14/09 |
 | **22/09 (ter)** | **O6** | Relatórios 30d (~23/08–21/09) + export Era 09–21/09 + BR + vitalício por alvo · vereditos: O5-001/002, EGC, SP-PP, P3070, piloto 6B+L3070-B · **escopo da migração de ASIN** (gate GS1) |
 | 05/10 (seg) | Fechamento Livro_Vendas setembro | Primeiro; O7 depois, se cair no mesmo dia |
 | ~06/10 | O7 | — |

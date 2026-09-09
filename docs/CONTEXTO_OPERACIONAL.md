@@ -7,11 +7,11 @@
 
 ## Estado atual
 
-- **Ciclo de Ads:** **O4 concluída em 25/08/2026.** 19 ações aprovadas e executadas por Wintech. Registro completo em `ciclos/O4-25-08.md`.
-- **Estado da conta:** 15 campanhas ativas (eram 21 na manhã de 25/08; a O4 pausou 5, e a PI SP-01 está pausada desde 17/08).
-- **Geral Automática DBA-o3:** única vendedora — 100% da receita atribuída, ACOS 6,06%. Orçamento R$ 90 mantido; lance padrão escalado de R$ 0,40 para **R$ 0,48**.
-- **Teto mensal de Ads:** **R$ 1.000/mês** (definido por Dianna, registrado em 25/08). Uso atual ~35%.
-- **SP-01 — política de fumo:** **caso encerrado.** Contestação negada em 2ª análise (25/08). A PI SP-01-o228/07 fica **pausada por inelegibilidade** — não é falha de desempenho. A auto SP-01-o116/07 foi reativada entre 17 e 25/08 após requalificação do ASIN.
+- **Ciclo de Ads:** **O5 concluída como ANÁLISE em 08/09/2026** — 17 linhas (O5-001 a O5-017) aprovadas item a item pelo LEO, **execução ainda pendente**. Diagnóstico, auditoria e pacote em `ciclos/O5-08-09_*`. A O4 (25/08) teve suas 19 ações avaliadas: 21 das 23 entradas do Registro saem de EM MATURAÇÃO.
+- **Estado da conta:** **16 campanhas ativas** — o snapshot anterior dizia 15, era erro de contagem (os 16 nomes do export coincidem com o mapa vivo). A O5 propõe pausar 4, o que levaria a **12** após a execução.
+- **Geral Automática DBA-o3:** principal vendedora (4 das 6 compras da Era). **O lance padrão de R$ 0,48 é INERTE** — as 4 segmentações têm lance próprio (close 0,45 · complements 0,45 · loose 0,54 · substitutes 0,54) e nunca acompanharam o campo padrão. A escala real da Geral é por segmentação.
+- **Teto mensal de Ads:** **R$ 1.000/mês** (definido por Dianna, registrado em 25/08). **Setembro 01–08: R$ 108,08** (console). Projeção pelo ritmo do próprio mês: **R$ 405 a R$ 463, ou 41% a 46% do teto**. Folga ampla.
+- **SP-01 — política de fumo:** **caso encerrado** (contestação negada em 2ª análise, 25/08). ⚠️ **São três camadas, e só uma está travada:** o **listing está ativo**; o **anúncio dentro da auto SP-01-o116/07 está suspenso por política** (por isso zero entrega desde 17/08, apesar de a requalificação do ASIN em 19–20/08 ter sido real); e o **mesmo SKU segue anunciado normalmente pela Manual Bituqueiras Space** (14 impressões, 20/08–04/09). A O5 propõe pausar a auto — pausar **não** tira o SP-01 do ar em Ads. **O export do Gerenciador não mostra suspensão no nível do anúncio; só o console mostra.**
 - **SP-PP:** anomalia resolvida na causa — segmentação `substitutes` pausada e negativas aplicadas (12 exatas + 6 frases). CTR a reavaliar pós-limpeza na O5.
 - **Planilha Mestra:** versão canônica **v4.3.4** (`dados/Planilha_Mestra_Winnet_v4_3_4.xlsx`) — 4 vendas de setembro lançadas e **validações de dados restauradas**. ⚠️ Pendente de confirmação visual do LEO no Excel.
 - **Livro_Vendas:** fechamento de agosto/2026 movido de 07/09 para **08/09/2026** — exceção documentada por feriado da Independência (07/09, segunda), **não** mudança de protocolo. **Ordem no dia: Livro_Vendas primeiro, O5 depois.** Atribuição de origem (Ads/Orgânico) exige cruzamento com relatórios de publicidade no fechamento; lançamentos não classificáveis devem ser sinalizados para decisão da Wintech — nunca inferidos.
@@ -99,6 +99,24 @@
 
 **Regra que fica:** enquanto houver validação de lista com origem em outra aba, **a Mestra não pode ser salva por `openpyxl`** — nem para uma edição pequena. Fechamento de Livro e lançamento de vendas devem ser feitos no Excel. Se um script precisar gravar, o reparo do `extLst` tem de ser refeito depois.
 
+## O5 — 08/09/2026 · concluída como análise, execução pendente
+
+**Números da Era 26/08–07/09** (13 corridos, 8 úteis): gasto R$ 210,96 · atribuído R$ 1.102,15 · **ACOS 19,1%** · **TACOS 7,3%** · vendas totais R$ 2.897,92 em 11 pedidos, **bijeção exata** com o `Registro_Vendas` · **Ads = 38%** da receita, não atribuído 62%. Venderam: Geral (4), 6B (1 — primeira venda da manual, no piloto dinâmico), Extintor (1). O orgânico trouxe a **primeira venda do P3070 desde junho**.
+
+**Seis achados:**
+1. **A Geral inverteu o funil.** `substitutes` (lance 0,54) consome **39% do gasto** com **ACOS 81%** em 30d; `close-match` (0,45, o menor lance) é a mais eficiente (2,5% em 30d, 6,9% vitalício).
+2. **A O4-015 foi inerte** — o lance padrão não é usado. Confirmado por evidência, não inferência.
+3. **Três dos quatro radares da O4 não geraram amostra** e caíram no contrato de saída. A EGC foi a única em que a entrega destravou (361 → 2.391 impressões); ali o problema migrou de entrega para **CTR** (0,13%).
+4. **Piloto dinâmico da 6B: positivo preliminar** (n=1 venda).
+5. **Melhor Oferta parece ser atribuída ao preço da oferta** — inferência de 1 pedido, a confirmar em 14/09.
+6. **Régua formal de alvo de PI aplicada, com resultado nulo** — nas 7 PIs, o alvo com mais cliques vitalícios tem 12, abaixo dos 15.
+
+**As 17 linhas** (`APROVADA - AGUARDANDO EXECUÇÃO`): rebalancear os lances por segmentação da Geral (substitutes 0,54→0,45 · close 0,45→0,54) **sem tocar no orçamento** · pausar PI L2470-CZ, PI PG3070 e auto PXM-o2 (contrato de radar) e auto SP-01 (anúncio suspenso na campanha) · EGC em vigia por 1 Era com gatilho · L3070-B migra para lance dinâmico · SP-PP perde a `loose-match` e entra em vigia · PI P3070 congelada com gatilho · nova exata na 6B · Q2460-B fica no Nível 2 · escopo da migração de ASIN decide na O6.
+
+**Auditoria do Claude Code:** diagnóstico aprovado com 3 correções e pacote aprovado com mais 3 — todas incorporadas na v2. As recontagens que fecharam ao centavo estão em `ciclos/O5-08-09_auditoria-code.md`.
+
+**Ordem de execução recomendada:** as 4 pausas primeiro (reversíveis, não afetam nada) → O5-001 e O5-002 **juntos**, porque um mede o outro → O5-009 e O5-010 por último. **Tirar o export pós-execução** — é ele que fecha o ciclo no repositório.
+
 ## No horizonte
 
 - **Monitoramento:** ✅ **realizado em 31/08/2026** — registro em `ciclos/Monitoramento-31-08.md`. Destaques: 3 vendas na janela 24–31/08 (2 atribuídas a Ads), Geral em vigia (ACOS de janela 83,9%, leitura na O5), radar EGC destravou entrega, **auto L1618-o115/07 encontrada ativa e pausada no ato (EC-002, conserto da O4-006)**. O monitoramento de 07/09 foi **eliminado** — feriado, dia não operante confirmado, e a O5 de 08/09 absorve a leitura.
@@ -164,3 +182,4 @@ O método operacional foi originalmente estabelecido por um assessor (Henrique) 
 | 04/09/2026 | entre-ciclos | Cupons fora do pacote 9.9: EC-005 (P2025 12%) e EC-006 (EMB-05/EMB-05P/EMB-08 a 50%, liquidação abaixo do custo por decisão da Dianna, sem teto de orçamento) · gatilho de revisão em 18/09 |
 | 08/09/2026 | pré-O5 | **Livro_Vendas de agosto fechado** · Planilha Mestra promovida a **v4.3.3** (v4.3.2 preservada) · receita de agosto R$ 13.915,83 com **68,4% orgânico** · Ads ≈ 32% da receita do mês · **pendência 4 (halo Q2430-A) resolvida** · achado do fechamento: lançamento a preço de tabela |
 | 08/09/2026 | pré-O5 | **Mestra v4.3.4**: 4 vendas de setembro (02, 03, 05 e 07/09) · validações de dados perdidas no fechamento e **restauradas por reinjeção do `extLst`** · regra nova: Mestra não pode ser salva por `openpyxl` |
+| 09/09/2026 | **O5** | Ciclo concluído como análise (17 linhas aprovadas, execução pendente) · correção de 15→16 campanhas ativas · O4-015 confirmada inerte · SP-01 diagnosticado em três camadas · gasto de setembro em 41–46% do teto · **monitoramento de 21/09 eliminado** com conferência de estado obrigatória em 14/09 como contrapartida · divergência SP-T/SP-01 na Bituqueiras em aberto |

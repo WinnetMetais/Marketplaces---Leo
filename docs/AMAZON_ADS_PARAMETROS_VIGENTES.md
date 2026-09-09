@@ -1,6 +1,8 @@
 # AMAZON ADS — PARÂMETROS VIGENTES
 
-Snapshot: **25/08/2026 (pós-O4)**, com atualizações de medição de **26/08/2026** e atualizações operacionais de **28/08/2026** — substitui o snapshot de 14/08/2026.
+Snapshot: **25/08/2026 (pós-O4)**, com atualizações de medição de **26/08/2026**, operacionais de **28/08/2026** e **01/09/2026**, e os **achados da O5 (08–09/09/2026)** incorporados abaixo.
+
+⚠️ **A O5 foi concluída como análise em 08/09/2026, mas NÃO foi executada.** As 17 linhas O5-001 a O5-017 estão em `APROVADA - AGUARDANDO EXECUÇÃO`. **Os valores deste documento continuam sendo os PRÉ-execução.** O snapshot pós-execução proposto está em `ciclos/O5-08-09_pacote-fechamento-v2.md` §3 e só entra aqui quando o LEO executar e confirmar. Recomendar não é autorizar; executar não é registrar.
 
 DOCUMENTO VIVO.
 
@@ -227,7 +229,13 @@ Monitoramento previsto: **31/08/2026**.
 
 **Ordem no dia 08/09: `Livro_Vendas` primeiro, O5 depois.**
 
-**O5 prevista: ~08/09/2026** · O6 estimada: ~22/09/2026
+**O5 concluída como análise: 08/09/2026** — 17 linhas aprovadas item a item pelo LEO, **execução pendente**. Diagnóstico, auditoria e pacote em `ciclos/O5-08-09_*`.
+
+**Monitoramento de 14/09** — semanal + leitura do 9.9 + **conferência de estado obrigatória das 9 execuções da O5 contra o Registro de Alterações**. Precedente que torna isso obrigatório: a auto L1618-o115/07 foi registrada como pausada em 25/08 e encontrada **ativa** em 31/08 (EC-002).
+
+**O monitoramento de 21/09 foi ELIMINADO (decisão do LEO, 09/09).** Motivo: a janela de 7 dias (15–21/09) está inteiramente contida na Era que a O6 lê no dia seguinte (09–21/09) — mesmo dado, 24h de intervalo, sem decisão possível no meio. **Não é o mesmo caso de 07/09:** aquele era feriado sem dado a ler; este tem dado, mas ele é relido com mais contexto na O6. **A eliminação é condicionada à conferência de estado no monitoramento de 14/09** — se ela não acontecer, o monitoramento de 21/09 volta.
+
+**O6: 22/09/2026** (terça) · Era O5→O6: **09–21/09 = 13 corridos, 9 úteis, sem feriado** · O7 estimada ~06/10 · fechamento do `Livro_Vendas` de setembro em **05/10** (1ª segunda, sem exceção prevista).
 
 Datas futuras devem ser atualizadas quando o ciclo efetivamente ocorrer.
 
@@ -250,7 +258,9 @@ Nunca presumir estratégia antes de verificar a campanha.
 
 ## 10. Estado da conta — 25/08/2026 (pós-execuções O4)
 
-**Campanhas ativas: 15.**
+⚠️ **CORREÇÃO (O5, 08/09):** o export do Gerenciador traz **16 campanhas ativas**, não 15. Os 16 nomes coincidem com o mapa vivo — era erro de contagem, não campanha esquecida. A O5 propõe pausar 4, o que levaria a **12** após a execução.
+
+**Campanhas ativas: 16** (o texto abaixo, de 25/08, dizia 15).
 
 Eram 21 no export da manhã. A O4 pausou 5 (PI P3050, auto L1618-o115, auto PG3070-o115, PI P3060-o115, PI PXP-o103); PI SP-01 está pausada desde 17/08.
 
@@ -284,6 +294,14 @@ O mapa deve ser atualizado a cada otimização. Não usar classificação antiga
 ---
 
 ## 12. Pendências operacionais atuais
+
+> **Fechadas na O5 (08–09/09):** os **lances por segmentação da Geral** — resolvido pelo export da O4, que traz 0,45/0,45/0,54/0,54 em 25/08, idênticos aos de 08/09; como a O4-015 mexeu no **lance padrão** (0,40→0,48) e as segmentações nunca leram nenhum desses valores, **a O4-015 é inerte por evidência, não por inferência**. E o **halo Q2430-A**, fechado em 08/09.
+
+> **Abertas com origem na O5:**
+> - **Frete real × `Ref_Frete`** — segue aberta. 9 novas observações Qtd=1 na Era (razão real/tabela **46,3% a 99,8%, mediana 62,9%**) reforçam o achado. Recálculo de margem é decisão de Mestra (LEO/Dianna), não de Ads.
+> - **Atribuição de oferta ao preço da oferta** — inferência de **1 pedido** (PG2460, 07/09, R$ 223,88). Não virar regra antes da leitura de 14/09. A atribuição a **preço de tabela** (31/08) vale para a **promoção de quantidade**, que é outro mecanismo.
+> - **SP-T e SP-01 anunciados na Manual Bituqueiras** — o §12 do `CLAUDE.md` diz que as duas seguem pausadas até a resolução do caso 21652133321, mas ambas são anunciadas ali (SP-T 12 impressões, SP-01 14, entre 20/08 e 04/09), e o caso foi **encerrado com contestação negada**, não resolvido. Custo desprezível (R$ 0,91 em 30 dias); **contradição de documentação em aberto, decisão do LEO**.
+
 
 1. **Confirmar execução de O4-014 e O4-015 — ✅ RESOLVIDA em 26/08.** Execução confirmada no console por Wintech; Registro de Alterações preenchido com as 19 entradas da O4 em status **EXECUTADA - EM MATURAÇÃO**.
 2. **Fila de conversão — DECIDIDA EM DOIS NÍVEIS (26/08).** Margens saudáveis, cliques sem venda — mas nenhum SKU atingiu volume onde zero venda seja anômalo (conversão média ~1,72%). A fila passa a ter duas ordens distintas, porque são duas atividades diferentes:

@@ -231,3 +231,18 @@ Assinatura do problema na Mestra: de 6 validações, **4 somem e 2 ficam**. Se a
 **Reparo, quando acontecer:** copiar o bloco `<extLst>` das abas afetadas de uma versão anterior íntegra e reinjetar por manipulação direta do zip (`zipfile`), **sem abrir com `openpyxl`**. Conferir depois: mesma lista de arquivos internos, só as abas alvo alteradas, zip íntegro e zero diferença de célula.
 
 **Ocorrido em:** fechamento do Livro de agosto (v4.3.2 → v4.3.3). Reparado no v4.3.4.
+
+## Três limitações de fonte confirmadas na O5 (08–09/09/2026)
+
+**1. O export do Gerenciador não expõe suspensão no nível do anúncio.** A auto SP-01-o116/07 aparece como `Estado = ATIVADO`, `Status = Em inserção` com zero entrega há três semanas — o anúncio dentro dela está suspenso por política, e isso **só o console mostra**. Consequência: entrega zero com campanha "ativa" no export **não** autoriza concluir inelegibilidade do ASIN. São três camadas distintas — listing, anúncio naquela campanha, anúncio do mesmo SKU em outra campanha — e o mesmo SP-01 seguia servindo normalmente na Manual Bituqueiras (14 impressões, 20/08–04/09).
+
+**2. O relatório de Termos de Pesquisa é por linha SKU, não por termo.** A mesma palavra-chave aparece em várias linhas quando serve mais de um produto anunciado. Ler uma linha como se fosse o termo **subestima o custo e esconde a perna que não converte**: "lixeira banheiro 7 litros" custou R$ 11,71 no termo (L2025-T 3 cli/1 venda + **L2025-B 4 cli/R$ 6,52/0 venda**), não os R$ 5,19 da linha que vendeu. Agregar por termo **antes** de classificar como vencedor.
+
+**3. Projetar um mês com o ritmo de outra janela distorce.** A Era 26/08–07/09 rodava a R$ 16,23/dia; setembro sozinho roda a R$ 13,51–15,44/dia, porque a Era carrega o fim de agosto. Ter o dado do próprio mês e projetar com o de outra janela é a variante do erro de cruzar janelas.
+
+## Monitoramento na véspera de uma Ox não acrescenta decisão (09/09/2026)
+
+A janela de 7 dias de um monitoramento na segunda está inteiramente contida na Era que a Ox lê na terça. Mesmo dado, 24 horas de intervalo, e nada é executado no meio. **Diferente do caso de 07/09**, que era feriado sem dado a ler — aqui há dado, mas ele é relido no dia seguinte com mais contexto.
+
+O risco que sobra numa Era com muitas execuções não é performance derivando: é **"as execuções pegaram mesmo?"** — e isso se resolve com o **export pós-execução** no ato e com a **conferência de estado no monitoramento do meio da Era**, não na véspera da Ox. Precedente que fundamenta: auto L1618 registrada como pausada em 25/08 e encontrada ativa em 31/08 (EC-002).
+
