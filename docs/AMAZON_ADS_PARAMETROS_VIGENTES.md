@@ -2,7 +2,10 @@
 
 Snapshot: **25/08/2026 (pós-O4)**, com atualizações de medição de **26/08/2026**, operacionais de **28/08/2026** e **01/09/2026**, e os **achados da O5 (08–09/09/2026)** incorporados abaixo.
 
-⚠️ **A O5 foi concluída como análise em 08/09/2026, mas NÃO foi executada.** As 17 linhas O5-001 a O5-017 estão em `APROVADA - AGUARDANDO EXECUÇÃO`. **Os valores deste documento continuam sendo os PRÉ-execução.** O snapshot pós-execução proposto está em `ciclos/O5-08-09_pacote-fechamento-v2.md` §3 e só entra aqui quando o LEO executar e confirmar. Recomendar não é autorizar; executar não é registrar.
+✅ **O5 EXECUTADA em 09/09/2026** — 8 das 9 ações no console, conferidas uma a uma contra export e prints (ver `ciclos/O5-08-09_auditoria-code.md` §12). Os valores abaixo são **pós-execução**. A antiga advertência de "não executada" fica superada.
+
+<!-- superado -->
+⚠️ ~~A O5 foi concluída como análise em 08/09/2026, mas NÃO foi executada.~~ As 17 linhas O5-001 a O5-017 estão em `APROVADA - AGUARDANDO EXECUÇÃO`. **Os valores deste documento continuam sendo os PRÉ-execução.** O snapshot pós-execução proposto está em `ciclos/O5-08-09_pacote-fechamento-v2.md` §3 e só entra aqui quando o LEO executar e confirmar. Recomendar não é autorizar; executar não é registrar.
 
 DOCUMENTO VIVO.
 
@@ -83,15 +86,27 @@ Exata: R$ 1,60 · Frase: R$ 1,30 · Topo +50% · fixo (grupo de controle)
 Exata: R$ 1,20 · Frase: R$ 1,00 · Topo +50% · fixo (grupo de controle)
 
 ### L3070-B + L4080-B
-Exata: R$ 1,20 · Frase: R$ 1,00 · Topo +25% · fixo (grupo de controle)
+Exata: R$ 1,20 · Frase: R$ 1,00 · Topo +25% · **dinâmicos (aumento e redução)** desde 09/09 (O5-009; era fixo). Passa a integrar o grupo do piloto de lance junto com a 6B.
 
 ### Automática EGC
 Lance atual: **R$ 0,84** (O4-012; era R$ 0,70) · fixo (grupo de controle)
 
-### Geral Automática DBA-o311/08
-Lance padrão do grupo: **R$ 0,48** (O4-015; era R$ 0,40; 98 produtos)
+### Geral Automática DBA-o59/09  *(renomeada em 09/09; era DBA-o311/08)*
 
-Pendência para a O5: conferir lances por segmentação automática (close / loose / substitutes / complements).
+⚠️ **O lance padrão do grupo (R$ 0,48) é INERTE** — as 4 segmentações têm lance próprio e nunca acompanharam esse campo. Confirmado por evidência: o export da O4 (25/08) e o console (08/09) trazem os mesmos 0,45/0,45/0,54/0,54. A O4-015 não teve efeito operacional.
+
+**Lances vigentes — por segmentação** (conferidos no console em 09/09, pós-execução):
+
+| Segmentação | Console (PT-BR) | Lance | Mudou na O5? |
+|---|---|---:|---|
+| `close-match` | Correspondência aproximada | **R$ 0,54** | ✅ era 0,45 (O5-002, +20%) |
+| `loose-match` | Correspondência vaga | R$ 0,54 | não |
+| `substitutes` | Substitutos | **R$ 0,45** | ✅ era 0,54 (O5-001, −17%) |
+| `complements` | Complementos | R$ 0,45 | não |
+
+Orçamento **R$ 90/dia** mantido (O5-003) — a campanha consome ~12% dele.
+
+⚠️ **Nomes em PT-BR invertem a intuição:** *Correspondência vaga* = `loose-match`; *Correspondência aproximada* = `close-match`. Conferir sempre por cliques/custo, nunca pelo nome — a troca já causou um erro de execução na O5 (ver `docs/MEMORIA.md`).
 
 IMPORTANTE:
 
@@ -103,12 +118,23 @@ Esses valores são snapshot, não regra permanente.
 
 ## 4. Radares vigentes — com contrato de saída na O5
 
-| Estrutura | Situação |
+**Os radares da O4 foram encerrados na O5 (09/09).** Três não geraram amostra e caíram no contrato de saída; o quarto virou vigia.
+
+| Estrutura | Desfecho na O5 |
 |---|---|
-| PI L2470-CZ-o228/07 `[O4 25/08]` | alvos +20% (0,66 / 0,60) |
-| PI PG3070-o228/07 `[O4 25/08]` | 57 alvos a 0,66 |
-| Auto PXM-o228/07 | radar formalizado da família PXM |
-| Auto EGC | lance 0,84, julgamento longo (nicho de busca rara) |
+| PI L2470-CZ | **PAUSADA** (O5-004) — Era 4 cliques / 0 venda; vitalício 18 cliques / 0 em 32 alvos |
+| PI PG3070 | **PAUSADA** (O5-005) — Era 1 clique; vitalício 8 cliques / 0 em 83 alvos |
+| Auto PXM-o425/08 | **PAUSADA** (O5-006) — Era 2 cliques / 0; redundante com Extintor, PI PXM-o3 e auto PXP-o3 |
+| Auto EGC | **VIGIA por 1 Era** (O5-007) — lance 0,84 mantido. Radar cumpriu a entrega (361 → 2.391 impressões); o problema migrou para CTR (0,13%) |
+
+**Vigias e gatilhos vigentes após a O5:**
+
+| Estrutura | Situação | Gatilho na O6 (22/09) |
+|---|---|---|
+| Auto EGC | VIGIA, lance 0,84 | 0 vendas **E** CTR < 0,3% → pausar |
+| Auto SP-PP-o59/09 | VIGIA — só `close-match` e `complements` ativas | 0 cliques relevantes → pausar campanha |
+| PI P3070-o228/07 | CONGELADA com gatilho | sem venda pós-Relâmpago **E** ≥15 cliques na Era → lances −20% nos asin-expanded |
+| PI PXM-o311/08 | **CORRIGIR CTR** (era "investigar entrega" — ver C7) | entrega 2.500 impressões vitalícias, CTR 0,28%; custo R$ 5,50. Ler junto com a EGC |
 
 **Contrato comum:** na O5 (~08/09), sem amostra relevante ou com cliques acumulados sem venda → **pausa sem prorrogação**.
 
@@ -243,6 +269,8 @@ Datas futuras devem ser atualizadas quando o ciclo efetivamente ocorrer.
 
 ## 9. Inventário de estratégias de lance — PENDÊNCIA RESOLVIDA ✅
 
+**Contagem pós-O5 (export de 09/09, inclui pausadas): 75 dinâmicas aumento/redução · 4 fixas · 1 somente redução.** A L3070-B saiu de fixa para dinâmica (O5-009). Fixas restantes: Cinzeiros, Bituqueiras, Extintor, auto EGC — o grupo de controle do piloto.
+
 Resolvida na O4 com o export do Gerenciador de 25/08.
 
 - **Estruturas da fase da assessoria** (gerações o1/o2/o3, ativas ou pausadas): lances dinâmicos — aumento e redução. Exceção única: auto L1618-T-o130/06 (somente redução; pausada).
@@ -260,7 +288,13 @@ Nunca presumir estratégia antes de verificar a campanha.
 
 ⚠️ **CORREÇÃO (O5, 08/09):** o export do Gerenciador traz **16 campanhas ativas**, não 15. Os 16 nomes coincidem com o mapa vivo — era erro de contagem, não campanha esquecida. A O5 propõe pausar 4, o que levaria a **12** após a execução.
 
-**Campanhas ativas: 16** (o texto abaixo, de 25/08, dizia 15).
+**Campanhas ativas: 12** (pós-execução da O5, conferido no export de 09/09: 12 ATIVADO / 68 PAUSADO).
+
+Eram 16 antes da O5 — o snapshot de 25/08 dizia 15, que era erro de contagem. A O5 pausou 4: PI L2470-CZ, PI PG3070, auto PXM-o425 e auto SP-01.
+
+**As 12 ativas:** Geral DBA-o59/09 · 6B Lixeiras banheiro · Extintor · Cinzeiros · Bituqueiras · L3070-B · PI P3070-o228/07 · PI PXM-o311/08 · PI L2030-B-o311/08 · auto PXP-o311/08 · auto SP-PP-o59/09 · auto EGC.
+
+**Renomeações da O5 (convenção de ciclo):** `geral DBA-o311/08` → **`DBA-o59/09`** · `SP-PP-o425/08` → **`SP-PP-o59/09`**.
 
 Eram 21 no export da manhã. A O4 pausou 5 (PI P3050, auto L1618-o115, auto PG3070-o115, PI P3060-o115, PI PXP-o103); PI SP-01 está pausada desde 17/08.
 
