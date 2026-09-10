@@ -354,10 +354,12 @@ O mapa deve ser atualizado a cada otimização. Não usar classificação antiga
    | 6 | L1618-T | 37 | R$ 21,36 | R$ 13,59 |
    | 7 | L2030-B | 6 | R$ 29,58 | R$ 3,05 |
 
-   **A fila profunda e a proposta de concentração são UMA decisão só, na O5**, com estoque na mesa. Ver `docs/PROPOSTA_CONCENTRACAO_O5.md`.
+   ⚠️ **ATUALIZAÇÃO (O5, 09/09): a decisão foi ADIADA para a O6 (22/09)**, por decisão do LEO, e o gate é o **GS1**. A fila profunda e a proposta de concentração continuam sendo **uma decisão só**. Insumo da O5 para o piloto: **P3060 + P3050** (+P4080 opcional) — tráfego mensurável e zero venda, portanto nada de histórico a destruir. Fora do piloto: L2025-T e L1618-T (vendem orgânico) e P3070 (PI ativa e acabou de converter). Ver `docs/PROPOSTA_CONCENTRACAO_O5.md`.
 
-3. **Lances por segmentação da Geral** — coletar no console na O5.
-4. **Halo Q2430-A — CONFIRMADO POR INFERÊNCIA FORTE (26/08); validação final pendente.** A venda de 20/08 foi **3 un × R$ 580,52 = R$ 1.741,56**; o SKU anunciado Q2430-A custa R$ 231,21 e R$ 1.741,56 ÷ 231,21 não fecha em número inteiro. Consistência numérica exata com 3 un da Aro Quadrada 50L (B0H51P391G). **Validação final no pedido durante o fechamento do Livro_Vendas em 08/09** — sai de graça, o Livro será aberto de qualquer forma. Produto anunciado ≠ produto comprado.
+   **Reordenação da fila Nível 2 fica para depois do 9.9** — 4 dos 7 SKUs estiveram em oferta. O **L1618-T sai da fila de diagnóstico** (2 vendas orgânicas na Era), mas ⚠️ **uma delas foi devolvida em 09/09** com o comentário *"a lixeira é muito grande para usar onde eu gostaria"* — sinal de percepção de escala na página, no SKU que era o nº 1 da fila Nível 1. Reavaliar em 14/09.
+
+3. **Lances por segmentação da Geral — ✅ RESOLVIDA em 08–09/09 (O5).** Coletados: `close-match` 0,45 · `complements` 0,45 · `loose-match` 0,54 · `substitutes` 0,54 — idênticos ao export da O4 de 25/08. Como a O4-015 alterou o **lance padrão** de 0,40 para 0,48 e as segmentações **nunca leram nenhum desses dois valores**, a O4-015 é **inerte por evidência**. Os lances vigentes após a O5 estão no §3. Ver `ciclos/O5-08-09.md`.
+4. **Halo Q2430-A — ✅ RESOLVIDA em 08/09**, no fechamento do `Livro_Vendas` de agosto: confirmado Q2430-A → Q3060-A, pedido de R$ 1.741,56 = 3 un da Aro Quadrada 50L (B0H51P391G), atribuído à Geral DBA. *Registro do raciocínio original, mantido:* CONFIRMADO POR INFERÊNCIA FORTE (26/08). A venda de 20/08 foi **3 un × R$ 580,52 = R$ 1.741,56**; o SKU anunciado Q2430-A custa R$ 231,21 e R$ 1.741,56 ÷ 231,21 não fecha em número inteiro. Consistência numérica exata com 3 un da Aro Quadrada 50L (B0H51P391G). **Validação final no pedido durante o fechamento do Livro_Vendas em 08/09** — sai de graça, o Livro será aberto de qualquer forma. Produto anunciado ≠ produto comprado.
 5. **Frete por unidade — PARCIALMENTE RESOLVIDO (28/08), por medição.**
 
    **✅ RESOLVIDO — o frete cobrado NÃO escala com a quantidade.** Cruzamento dos 10 pedidos multi-unidade do `Registro_Vendas` contra a `Ref_Frete`: a tabela tem apenas **Região × Classe**, sem dimensão de quantidade — é **valor por remessa**. **9 dos 10 foram cobrados exatamente a tarifa de 1 unidade** da tabela. Única exceção: PXM 3un/Ceará Capital, cobrado R$ 159,96 contra R$ 70 de tabela.
@@ -391,7 +393,7 @@ O mapa deve ser atualizado a cada otimização. Não usar classificação antiga
 
 6. **Acompanhar gasto contra o teto mensal de R$ 1.000.**
 
-7. **MIGRAÇÃO DE ASIN — recriação do catálogo sob a marca WINNET METAIS (pendência nova, 01/09/2026). Escopo a decidir na O5, fundido com a proposta de concentração — são a mesma decisão.**
+7. **MIGRAÇÃO DE ASIN — recriação do catálogo sob a marca WINNET METAIS (pendência nova, 01/09/2026). Escopo decidido na O6 (22/09)** — adiado na O5 por decisão do LEO; gate: **GS1**. Fundido com a proposta de concentração — são a mesma decisão. Insumo: P3060 + P3050 (+P4080).
 
    **Origem:** Brand Registry aprovado, mas o atributo de marca "Genérico" dos ASINs atuais **não pode ser alterado** (caso 21821042531). A+, Avaliações, Brand Analytics e Sponsored Brands só operam sobre ASINs novos criados sob a marca.
 
@@ -410,7 +412,7 @@ O mapa deve ser atualizado a cada otimização. Não usar classificação antiga
    **Pré-requisito em andamento:** EANs próprios via **GS1 Brasil** (decisão Wintech + Dianna, 01/09; emissão no CNPJ titular da marca). Isenção de GTIN descartada.
 
    **NOTA DE MÉTODO — marco de corte de série:** a migração é um **corte na série histórica por ASIN**. Fica registrado que **Era pré-migração e Era pós-migração NÃO são comparáveis** por SKU migrado — reinício de amostra explícito, a marcar no fechamento do ciclo que executar cada fase. O SKU interno não muda: `Registro_Vendas`, `Livro_Vendas` e margens permanecem íntegros; o corte é só de ASIN.
-7. **Dispersão de catálogo — NOVO (26/08).** 323 sessões/semana distribuídas em 74 ASINs; mediana de 2 por ASIN; **zero ASINs** atingiram as ~58 sessões necessárias. Proposta de concentração em 9 SKUs preparada para decisão na **O5** — **decisão unificada com o Nível 2 da pendência 2**.
+8. **Dispersão de catálogo — NOVO (26/08).** *(numeração corrigida: havia dois itens 7)* 323 sessões/semana distribuídas em 74 ASINs; mediana de 2 por ASIN; **zero ASINs** atingiram as ~58 sessões necessárias. Proposta de concentração em 9 SKUs — **decisão unificada com o Nível 2 da pendência 2, adiada para a O6 (22/09)**, com gate no GS1.
 
    **Bloqueador de estoque RESOLVIDO em 26/08:** a operação anuncia disponibilidade respaldada por **reposição imediata de fábrica**, não por estoque próprio, e **pode expedir direto da fábrica** — sem perna de transferência. Capacidade não é restrição e o prazo de manuseio prometido é cumprido. **A O5 fica dependendo apenas do monitoramento de 31/08.**
 
