@@ -264,11 +264,17 @@ Todas em **Semana de Beleza**, Brasil, público **Todos os clientes**, **taxa R$
 
 **Bate com a verificação de 03/09**, que projetava 07/09 ×2 · 10/09 ×1 · 11/09 ×2.
 
-### ⚠️ Faltam as duas de 07/09
+### ~~⚠️ Faltam as duas de 07/09~~ — superado em 10/09
 
 O print cobre 3 das 5 Relâmpago. **As duas que rodaram em 07/09 não aparecem nesta visão** — provavelmente saíram do filtro por já terem encerrado.
 
-**São justamente as que já têm resultado para ler.** Antes de 14/09, capturar delas: **unidades vendidas, vendas em R$, visualizações e conversão**. Se o console deixar de exibir deals encerradas, essa leitura se perde e o veredito do EC-004 fica sem base.
+~~São justamente as que já têm resultado para ler. Antes de 14/09, capturar delas...~~
+
+**Correção do LEO (10/09), aceita:** as três vendas com desconto de −10% do evento — **PG2460 em 07/09 · PXP ×2 e ×1 em 08/09** — vieram de **Melhor Oferta, não de Relâmpago**. As Melhor Oferta rodam **de 07 a 13/09**, ou seja, ainda estão abertas. Perseguir número parcial das Relâmpago encerradas não acrescenta nada agora.
+
+**Leitura única em 14/09**, e não em 13: a Melhor Oferta roda **até o dia 13 inclusive**, então no próprio dia 13 os números ainda estão incompletos. Em 14 estão os 7 dias fechados — e é a data do monitoramento.
+
+**Único risco a vigiar:** se o console deixar de exibir as Relâmpago já encerradas antes de 14/09. Se em 13/09 elas ainda aparecerem no painel, não há nada a fazer antes.
 
 ### Nota de método
 
