@@ -247,3 +247,29 @@ Valores para o template de Relâmpago (mesmo fluxo download → editar → uploa
 | Q3060-A | b45401f5 | **11/09 (sex)** |
 
 ⚠️ **Nenhuma Relâmpago caiu no 9.9 em si** — a Amazon espalhou pela semana (2 no feriado de 07/09, inclusive). As 11 Melhores Ofertas cobrem a semana inteira (07–13/09), incluindo o dia 09. Implicação para a leitura pós-evento: o "pico" das Relâmpago virá em 3 momentos distintos, não num dia único — ler vendas por dia, não agregado.
+
+---
+
+## Calendário real das Ofertas Relâmpago — conferido no console em 10/09/2026
+
+Fecha o **item 5 do bloco I** do diagnóstico da O5: *"dia em que cada Relâmpago rodou/vai rodar"*, necessário para a leitura de 14/09.
+
+| Deal | Dia | Status em 10/09 | Vendas até aqui |
+|---|---|---|---|
+| `DEAL-2c746504-f3a6-4e33-b457-99892bfdce70` | **11/09** | Em breve | — |
+| `DEAL-b45401f5-25aa-4e93-908a-747627d32bc6` | **11/09** | Em breve | — |
+| `DEAL-9d50ac13-4a16-4f48-adf8-64b907d691fb` | **10/09** | **Em processamento** (rodando hoje) | R$ 0,00 · 0 unidades |
+
+Todas em **Semana de Beleza**, Brasil, público **Todos os clientes**, **taxa R$ 0,00/dia** — confirma a taxa zero prevista no pacote.
+
+**Bate com a verificação de 03/09**, que projetava 07/09 ×2 · 10/09 ×1 · 11/09 ×2.
+
+### ⚠️ Faltam as duas de 07/09
+
+O print cobre 3 das 5 Relâmpago. **As duas que rodaram em 07/09 não aparecem nesta visão** — provavelmente saíram do filtro por já terem encerrado.
+
+**São justamente as que já têm resultado para ler.** Antes de 14/09, capturar delas: **unidades vendidas, vendas em R$, visualizações e conversão**. Se o console deixar de exibir deals encerradas, essa leitura se perde e o veredito do EC-004 fica sem base.
+
+### Nota de método
+
+O painel **não identifica o SKU** — só o código do deal e a miniatura. **Não inferir SKU por imagem.** Para amarrar cada deal ao seu produto na leitura de 14/09, é preciso abrir o deal ou cruzar pelo relatório de Produtos Anunciados da janela.
