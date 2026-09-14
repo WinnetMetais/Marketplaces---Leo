@@ -49,6 +49,17 @@ As fotos enviadas na solicitação eram de uma **lixeira-amostra com a marca GRA
 
 **Nota sobre a GS1:** o Brand Registry foi aprovado em 01/09, o que normalmente já exige prova da marca no produto. A revisão de imagem que barrou o pedido é **específica do processo de isenção**; anunciar com um EAN real não passa por ela. Registrado como fato, não como reabertura da decisão do LEO.
 
+### ⚠️ Comparação de caminhos em 14/09 — a GS1 ficou mais curta
+
+| Caminho | Falta | Prazo |
+|---|---|---|
+| **Isenção de GTIN** | Mudar a marcação do produto na produção para `WINNET METAIS` | **Indefinido** — depende da Wintech |
+| **GS1** | **Um documento** (Faturamento Fiscal do Último Exercício, com a contabilidade) | **1–2 dias úteis** de análise |
+
+A filiação à GS1 **já estava em andamento** — dois dos três documentos aprovados (conferido no portal em 14/09; ver `CHECKLIST_GS1_EAN.md`, que foi reativado). Com EAN real, o ASIN novo sob `WINNET METAIS` é criado **sem passar pela revisão de imagem** que barrou a isenção.
+
+**Isto não dispensa a marcação correta do produto** — ela continua necessária por integridade de marca, NF e outros canais. Mas **deixaria de ser o gargalo da migração**.
+
 ### Perguntas em aberto — bloqueiam o cronograma
 
 1. [x] **Grafia exata no Brand Registry — CONFIRMADA em 14/09: `WINNET METAIS`**, tudo junto, sem espaço. ⚠️ Logo **a amostra gravada (`WIN NET METAIS`) também está errada** — as três grafias divergem entre si. Pior cenário confirmado; nenhum atalho de digitação resolve.

@@ -1,14 +1,28 @@
-> ## ⚠️ DOCUMENTO SUSPENSO EM 14/09/2026
+> ## ⚠️ REATIVADO EM 14/09/2026 — A FILIAÇÃO ESTÁ EM ANDAMENTO
 >
-> **Decisão do LEO, 14/09:** o caminho vigente é a **isenção de GTIN** na Amazon, não o EAN próprio via GS1.
-> Checklist vigente: **`docs/CHECKLIST_ISENCAO_GTIN.md`**.
+> ~~DOCUMENTO SUSPENSO. Decisão do LEO, 14/09: o caminho vigente é a isenção de GTIN. Nenhuma caixa da Fase 1 chegou a ser marcada.~~
 >
-> Este arquivo fica **suspenso, não excluído** — a filiação à GS1 pode ser retomada se a isenção for negada,
-> se o Brand Registry cair (INPI 944049613 em oposição) ou quando NF, adesivo e outros canais entrarem na pauta.
-> Nenhuma caixa da Fase 1 chegou a ser marcada.
+> **Correção do mesmo dia:** a filiação **foi iniciada** e está a **um documento** de concluir.
+> Print do portal da GS1 (14/09):
 >
-> **Os itens 11 (NF, campo `cEAN`) e 12 (adesivo com código de barras) NÃO são resolvidos pela isenção** —
-> continuam abertos e sem dono no caminho novo.
+> | Documento | Status |
+> |---|---|
+> | Contrato Social | ✅ Concluída |
+> | **Faturamento Fiscal do Último Exercício** | 🔴 **PENDENTE** |
+> | RG ou CNH (representantes legais) | ✅ Concluída |
+>
+> O portal declara **análise em 1 a 2 dias úteis**. Como está parado há muito tempo, a leitura provável é que
+> **o documento nunca foi enviado** — a pendência é da Winnet, não da GS1. Mesmo padrão da isenção de GTIN.
+>
+> **Esse documento é da contabilidade** e define a **faixa de anuidade** — pode ter travado por indecisão de custo.
+> ⚠️ Reconferir que a filiação está no **CNPJ titular da marca WINNET METAIS**.
+>
+> **Por que isto passou a importar:** a **isenção de GTIN foi RECUSADA** e depende de mudar a marcação do produto
+> na produção, sem data. A GS1 depende de **um documento e 1–2 dias úteis**. Com EAN real, o ASIN novo sob
+> `WINNET METAIS` é criado **sem passar pela revisão de imagem** que barrou a isenção — ela é específica daquele processo.
+> Ver `docs/CHECKLIST_ISENCAO_GTIN.md`.
+>
+> **Os itens 11 (NF, campo `cEAN`) e 12 (marcação com código de barras) continuam sendo resolvidos só por este caminho.**
 
 ---
 
@@ -17,10 +31,13 @@
 Decisão registrada: Wintech + Dianna, 01/09. Isenção de GTIN descartada.
 ⚠️ **REGRA DE OURO: toda a filiação no CNPJ titular da marca WINNET METAIS.**
 
-## Fase 1 — Filiação (fazer JÁ — é o caminho crítico do piloto da O6, 22/09)
+## Fase 1 — Filiação (EM ANDAMENTO — estado conferido em 14/09)
 
-1. [ ] Acessar **gs1br.org** → "Solicitar código de barras" / associar-se
-2. [ ] Preencher os dados **do CNPJ titular da marca WINNET METAIS** (não o da fábrica, não outro CNPJ do grupo)
+1. [x] Acessar **gs1br.org** → "Solicitar código de barras" / associar-se
+2. [ ] ⚠️ **RECONFERIR** que os dados são **do CNPJ titular da marca WINNET METAIS** (não o da fábrica, não outro CNPJ do grupo)
+
+**Documentos (print do portal, 14/09):** Contrato Social ✅ · **Faturamento Fiscal do Último Exercício 🔴 PENDENTE** · RG/CNH ✅
+**Ação única que destrava:** enviar o Faturamento Fiscal do Último Exercício — pedir à contabilidade. Análise em 1–2 dias úteis.
 3. [ ] Usar o **simulador de valores** do site: escolher a faixa de códigos pela projeção do catálogo — hoje são **114 ofertas**; com variações pai/filho na recriação e novos produtos, dimensionar com folga (faixa de centenas a 1.000)
 4. [ ] Enviar os documentos solicitados (cartão CNPJ, dados do responsável legal) e **pagar o boleto** da anuidade
 5. [ ] Aguardar confirmação — o acesso ao **Cadastro Nacional de Produtos (CNP)** libera após o pagamento confirmado
