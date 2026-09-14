@@ -10,7 +10,7 @@
 - **Ciclo de Ads:** **O5 CONCLUÍDA E EXECUTADA — análise em 08/09, execução em 09/09/2026.** 8 ações no console, todas conferidas contra export e prints. Registro do ciclo em `ciclos/O5-08-09.md`. ~~O5 concluída como ANÁLISE em 08/09/2026~~ — 17 linhas (O5-001 a O5-017) aprovadas item a item pelo LEO, **execução ainda pendente**. Diagnóstico, auditoria e pacote em `ciclos/O5-08-09_*`. A O4 (25/08) teve suas 19 ações avaliadas: 21 das 23 entradas do Registro saem de EM MATURAÇÃO.
 - **Estado da conta:** **12 campanhas ativas** (pós-O5; eram 16, e o snapshot de 25/08 dizia 15 por erro de contagem). ~~16 campanhas ativas~~ — o snapshot anterior dizia 15, era erro de contagem (os 16 nomes do export coincidem com o mapa vivo). A O5 propõe pausar 4, o que levaria a **12** após a execução.
 - **Geral Automática DBA-o3:** principal vendedora (4 das 6 compras da Era). **O lance padrão de R$ 0,48 é INERTE** — as 4 segmentações têm lance próprio (close 0,45 · complements 0,45 · loose 0,54 · substitutes 0,54) e nunca acompanharam o campo padrão. A escala real da Geral é por segmentação.
-- **Teto mensal de Ads:** **R$ 1.000/mês** (definido por Dianna, registrado em 25/08). **Setembro 01–08: R$ 108,08** (console). Projeção pelo ritmo do próprio mês: **R$ 405 a R$ 463, ou 41% a 46% do teto**. Folga ampla.
+- **Teto mensal de Ads:** **R$ 1.000/mês** (Dianna, 25/08). **Setembro 01–14: R$ 158,33** (console) = **15,8% do teto consumido**. Projeção R$ 339/mês (**34%**). ⚠️ O ritmo **caiu 38% após a O5**: R$ 13,51/dia em 01–08 contra **R$ 8,38/dia em 09–14**, efeito das 4 pausas. **ACOS de setembro: 9,93%** — quase no Objetivo de 9%.
 - **SP-01 — política de fumo:** **caso encerrado** (contestação negada em 2ª análise, 25/08). ⚠️ **São três camadas, e só uma está travada:** o **listing está ativo**; o **anúncio dentro da auto SP-01-o116/07 está suspenso por política** (por isso zero entrega desde 17/08, apesar de a requalificação do ASIN em 19–20/08 ter sido real); e o **mesmo SKU segue anunciado normalmente pela Manual Bituqueiras Space** (14 impressões, 20/08–04/09). A O5 propõe pausar a auto — pausar **não** tira o SP-01 do ar em Ads. **O export do Gerenciador não mostra suspensão no nível do anúncio; só o console mostra.**
 - **SP-PP:** anomalia resolvida na causa — segmentação `substitutes` pausada e negativas aplicadas (12 exatas + 6 frases). CTR a reavaliar pós-limpeza na O5.
 - **Planilha Mestra:** versão canônica **v4.3.4** (`dados/Planilha_Mestra_Winnet_v4_3_4.xlsx`) — 4 vendas de setembro lançadas e **validações de dados restauradas**. ⚠️ Pendente de confirmação visual do LEO no Excel.
@@ -117,6 +117,37 @@
 
 **Ordem de execução recomendada:** as 4 pausas primeiro (reversíveis, não afetam nada) → O5-001 e O5-002 **juntos**, porque um mede o outro → O5-009 e O5-010 por último. **Tirar o export pós-execução** — é ele que fecha o ciclo no repositório.
 
+## Monitoramento de 14/09 — leitura do 9.9 e conferência da O5
+
+**Conferência de estado: ✅ tudo firme.** 12 ativas / 68 pausadas, as 5 execuções visíveis no export conforme deixadas, nenhum zumbi.
+
+**Janela 07–14/09:** BR **R$ 1.854,36** em 6 pedidos e 10 unidades · Ads atribuiu **R$ 1.594,56** em 5 compras · participação **86,0%** · ACOS 5,81% · TACOS 5,00% · 287 sessões · conversão 2,09%. ⚠️ **Os 86% não são tendência** — são 6 pedidos; na Era da O5 eram 38%.
+
+**Mestra: bijeção ao centavo.** Uma divergência de R$ 65,64 foi encontrada e corrigida — a linha do PXM de 13/09 tinha o desconto da promo de quantidade (25,95) no lugar do desconto da Melhor Oferta (91,59). Depois da correção, Mestra e Business Report fecham em R$ 1.854,36 exatos.
+
+### O veredito do 9.9
+
+| Formato | Deals | Venderam | Receita | Visualizações |
+|---|---:|---:|---:|---:|
+| **Oferta Relâmpago** | 5 | **0** | **R$ 0,00** | **19** |
+| **Melhor Oferta** | 11 | 3 | R$ 1.196,21 (7 un) | 174 |
+
+**As Relâmpago falharam na exibição, não na conversão** — 19 visualizações somadas em cinco dias não dão amostra para converter. Não repetir o formato, inclusive na Black Friday, antes de entender o porquê.
+
+**As três que venderam são PXP, PXM e PG2460** — suporte de extintor e porta-guarda-chuva. **Nenhuma lixeira vendeu com oferta**, e lixeira é o grosso do catálogo e do tráfego. É o achado mais relevante do evento.
+
+**Vem de Amazon:** 13 das 16 ofertas não pontuam.
+
+### Achados
+
+- **Atribuição ao preço da oferta — CONFIRMADA.** 5 pedidos, 3 SKUs, 4 campanhas, todos ao centavo. Deixa de ser inferência. A atribuição a **preço de tabela** vale para a **promoção de quantidade**, mecanismo diferente.
+- **A família extintor é a que converte.** Três dos termos vencedores da janela são dela, com custo irrisório: *"suporte para extintor de incêndio chao"* trouxe **R$ 519,03 com R$ 1,40 de clique**.
+- ⚠️ **L2025-T: 52 sessões, oferta de −15% no ar, ZERO venda.** Era o motor de vendas — na Era da O5 fez 47 sessões e 4 unidades. Uma semana não decide; se repetir na O6, vira investigação de conversão.
+- **SP-PP silenciosa desde 09/09** — a janela da `loose-match` termina exatamente em 09/09, confirmando que a pausa pegou. O gatilho do O5-010 caminha para disparar na O6.
+- **O5-014 sem novidade:** a perna L2025-B do termo da 6B segue com **4 cliques e zero venda** — os mesmos de 30 dias atrás, ou seja, não recebeu clique novo. Abaixo do checkpoint de ~15. Manter e reler na O6.
+
+⚠️ **O efeito de O5-001/002 ainda NÃO é avaliável.** Os recorrentes cobrem 15/08–13/09 e a mudança de lance foi em 09/09 — só 5 dos 30 dias são pós-mudança, e a janela se sobrepõe à leitura anterior. Veredito só na O6, com janela limpa.
+
 ## No horizonte
 
 - **Monitoramento:** ✅ **realizado em 31/08/2026** — registro em `ciclos/Monitoramento-31-08.md`. Destaques: 3 vendas na janela 24–31/08 (2 atribuídas a Ads), Geral em vigia (ACOS de janela 83,9%, leitura na O5), radar EGC destravou entrega, **auto L1618-o115/07 encontrada ativa e pausada no ato (EC-002, conserto da O4-006)**. O monitoramento de 07/09 foi **eliminado** — feriado, dia não operante confirmado, e a O5 de 08/09 absorve a leitura.
@@ -184,3 +215,4 @@ O método operacional foi originalmente estabelecido por um assessor (Henrique) 
 | 08/09/2026 | pré-O5 | **Mestra v4.3.4**: 4 vendas de setembro (02, 03, 05 e 07/09) · validações de dados perdidas no fechamento e **restauradas por reinjeção do `extLst`** · regra nova: Mestra não pode ser salva por `openpyxl` |
 | 09/09/2026 | **O5** | Ciclo concluído como análise (17 linhas aprovadas, execução pendente) · correção de 15→16 campanhas ativas · O4-015 confirmada inerte · SP-01 diagnosticado em três camadas · gasto de setembro em 41–46% do teto · **monitoramento de 21/09 eliminado** com conferência de estado obrigatória em 14/09 como contrapartida · divergência SP-T/SP-01 na Bituqueiras em aberto |
 | 09/09/2026 | **O5 executada** | 8 ações no console, todas conferidas · O5-010 saiu invertida (nomes PT-BR das segmentações) e foi corrigida no mesmo dia pela conferência pós-execução · O5-013 não executada (L2030-T fora do grupo da 6B) · **C7: a PI PXM entrega — o diagnóstico havia invertido entrega e CTR** · conta em 12 ativas · Parâmetros com o snapshot pós-execução |
+| 14/09/2026 | monitoramento | Conferência de estado da O5 ✅ · 9.9 lido: Relâmpago zero em 5 deals, Melhor Oferta 3 de 11 · nenhuma lixeira vendeu com oferta · atribuição ao preço da oferta confirmada com 5 pedidos · divergência de R$ 65,64 na Mestra corrigida, bijeção ao centavo · setembro em 15,8% do teto |

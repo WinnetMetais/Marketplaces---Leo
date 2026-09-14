@@ -170,6 +170,15 @@ Tese: capturar leilões que o funil já provou converter — termos da 6B vendem
 
 ## 6. Referências operacionais vigentes
 
+### ✅ REGRA CONFIRMADA — atribuição de oferta (14/09/2026)
+
+**Oferta Relâmpago e Melhor Oferta são atribuídas pelo Ads ao PREÇO DA OFERTA**, já com o desconto. Confirmado em **5 pedidos, 3 SKUs e 4 campanhas**, todos batendo ao centavo entre o painel de ofertas, o Business Report e o export de Ads: PG2460 R$ 223,88 · PXP R$ 302,20 e R$ 151,10 · PXM R$ 519,03.
+
+⚠️ **Não confundir com a promoção de quantidade**, cujo desconto é aplicado no checkout e **é atribuída a preço de tabela** (medido em 31/08). São dois mecanismos, com dois comportamentos, ambos medidos.
+
+**Consequência prática no `Registro_Vendas`:** em venda com oferta, lançar o **preço de tabela** na coluna de preço e o **desconto da oferta** na coluna própria — a receita líquida é o que o Ads e o Business Report vão registrar. Esse é o padrão que fez a bijeção fechar ao centavo em 14/09, depois de duas correções (PG2460 e PXM).
+
+
 ### Conversão e tráfego medidos — NOVO (26/08/2026)
 
 **REFERÊNCIA DERIVADA, não régua oficial.** Os números abaixo são **média da conta inteira**, misturando tráfego orgânico e Ads em 74 ASINs. **Não representam a conversão de nenhum SKU específico** e não substituem régua do Playbook.
