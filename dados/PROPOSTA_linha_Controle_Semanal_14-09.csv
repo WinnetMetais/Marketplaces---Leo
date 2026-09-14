@@ -1,17 +1,17 @@
 Coluna,Campo,Valor a lançar (linha 12)
 A,Data de referência,14/09/2026
 B,Período analisado,07/09/2026 a 14/09/2026
-C,Impressões,"(DEIXAR VAZIO — export do Gerenciador veio com a coluna zerada)"
-D,Cliques,123
+C,Impressões,22192
+D,Cliques,122
 E,Custo Ads (R$),"92,67"
 F,Vendas atribuídas Ads (R$),"1594,56"
 G,Pedidos atribuídos,5
 H,Unidades atribuídas,8
-I,ROAS,(calculada)
-J,ACOS,(calculada)
-K,Taxa de compra,(calculada)
-L,CPC (R$),(calculada)
-M,CTR,(calculada — ficará vazia enquanto C estiver vazia)
+I,ROAS,(calculada — deve dar 17;21)
+J,ACOS,(calculada — deve dar 5;81%)
+K,Taxa de compra,(calculada — deve dar 4;10%)
+L,CPC (R$),(calculada — deve dar 0;76)
+M,CTR,(calculada — deve dar 0;55%)
 N,Status semanal,VIGIA
-O,Notas,"9.9 lido: Melhor Oferta 3 de 11 (R$ 1.196,21 / 7 un / 174 visualizações); Relâmpago 0 de 5 (19 visualizações) — falha de EXIBIÇÃO, não de conversão. Atribuição ao PREÇO DA OFERTA confirmada (5 pedidos, 3 SKUs, 4 campanhas). ACOS de 5,81% está inflado pela concentração de vendas com oferta — não recalibrar régua por ele. Participação de Ads de 86% é janela curta (6 pedidos), não tendência; na Era da O5 era 38%. ⚠️ L2025-T: 52 sessões (maior tráfego da semana), Melhor Oferta ativa, ZERO venda — era o motor de vendas (47 sessões / 4 un na Era). Vigiar na O6. Estado da O5 conferido: 12 ativas / 68 pausadas, nenhum zumbi. IMPRESSÕES INDISPONÍVEIS: a coluna veio zerada no export e o print do console (46.493) é da janela 01–14/09 — janela diferente, não usar. LACUNA DE SÉRIE: não há linha para 01–06/09 (o monitoramento de 07/09 foi eliminado pelo feriado) — a série não é contínua entre 31/08 e 14/09."
-P,Arquivo / fonte,relatorios/amazon/monitoramento-14-09 + ciclos/Monitoramento-14-09.md
+O,Notas,"9.9 lido: Melhor Oferta 3 de 11 (R$ 1.196,21 / 7 un / 174 visualizações); Relâmpago 0 de 5 (19 visualizações) — falha de EXIBIÇÃO, não de conversão. Atribuição ao PREÇO DA OFERTA confirmada (5 pedidos, 3 SKUs, 4 campanhas). ACOS de 5,81% está inflado pela concentração de vendas com oferta — não recalibrar régua por ele. Participação de Ads de 86% é janela curta (6 pedidos), não tendência; na Era da O5 era 38%. QUEDA DE IMPRESSÕES ESPERADA: 22.192 contra 47.770 em 24–31/08. É o efeito da O5 (4 campanhas pausadas em 09/09, no meio da janela), não colapso de entrega. CTR agregado SUBIU para 0,55% (era 0,41%) — entrega mais limpa, que era o objetivo. ⚠️ L2025-T: 52 sessões (maior tráfego da semana), Melhor Oferta ativa, ZERO venda — era o motor de vendas (47 sessões / 4 un na Era). Vigiar na O6. Estado da O5 conferido: 12 ativas / 68 pausadas, nenhum zumbi. LACUNA DE SÉRIE: não há linha para 01–06/09 (o monitoramento de 07/09 foi eliminado pelo feriado) — a série não é contínua entre 31/08 e 14/09."
+P,Arquivo / fonte,"console Amazon Ads (set 7–set 14) + relatorios/amazon/monitoramento-14-09 + ciclos/Monitoramento-14-09.md"

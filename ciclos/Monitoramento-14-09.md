@@ -38,6 +38,8 @@ Duas pausadas registram atividade na janela: auto PXM-o425 (1 clique, R$ 1,31) e
 
 **B2 — Faltam Termos de Pesquisa e Segmentação.** Sem eles não dá para fechar o **O5-014** (a perna L2025-B no termo da 6B) nem ler os termos da semana.
 
+**B0 — RESOLVIDO em 14/09: impressões da janela.** O export do Gerenciador veio com a coluna de Impressões zerada. O console, consultado em **set 7 – set 14** (mesma janela), fecha em **22.192 impressões · 122 cliques · R$ 1.594,56 em vendas**. O valor de vendas bate ao centavo com a reconstrução pedido a pedido feita em C — a reconstrução estava correta. Os cliques divergem em 1 (export 123, console 122), provavelmente clique invalidado retroativamente; para o Controle Semanal prevalece o **122**, da mesma consulta das impressões.
+
 **B3 — Gasto acumulado de setembro não disponível.** O export de 07–14/09 dá R$ 92,67, mas **sobrepõe** os dias 07–08 já contados nos R$ 108,08 do console até 08/09. **Não somar.** Preciso do número do console para o controle do teto.
 
 **B4 — Divergência de R$ 65,64 entre a Mestra e o Business Report.** Detalhada em C.
