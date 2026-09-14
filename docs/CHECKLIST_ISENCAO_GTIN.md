@@ -7,11 +7,35 @@
 
 ---
 
-## Situação em 14/09
+## Situação em 14/09 — ⚠️ RECUSADA
 
 - Pedido **feito** dentro do fluxo de cadastro de anúncio novo.
-- **Sem retorno da Amazon.**
-- Data exata da solicitação: **não registrada** — preencher quando conhecida.
+- **RECUSADO pela Amazon.** Motivo **não lido** — o LEO localizou a recusa mas não conseguiu abrir a justificativa.
+- Data da solicitação e nº do caso: **não registrados** — preencher quando conhecidos.
+
+### Hipótese do motivo — confiança ALTA, a confirmar
+
+A regra da Amazon exige que **o nome da marca informado corresponda exatamente à marca fisicamente afixada no produto ou na embalagem**, comprovada por fotos reais de todos os lados.
+
+O diagnóstico de catálogo de 01/09, neste repositório, registra:
+
+> *"Adesivo do produto traz **'Winnet Home & Pro'** — não bate com a marca registrada. **Embalagem sem impressão de marca**."*
+
+Pedida a isenção para **WINNET METAIS**, as fotos mostram "Winnet Home & Pro" no adesivo e nada na embalagem. A marca solicitada **não existe fisicamente no produto**. Se for esse o motivo, **reenviar não resolve** — é condição física, não de formulário.
+
+**Confirmar lendo o motivo real antes de agir.**
+
+### ⚠️ Consequência — o adesivo virou o caminho crítico
+
+Os três caminhos convergem no mesmo pré-requisito físico:
+
+| | Exige adesivo com a grafia `WINNET METAIS`? |
+|---|---|
+| Isenção de GTIN | **Sim** — é a prova exigida |
+| ASIN novo sob a marca | **Sim** |
+| EAN próprio via GS1 | **Sim** (já era o item 12 do checklist GS1) |
+
+**Premissa de custo alterada:** o argumento que descartou a GS1 em 01/09 era o custo combinado de anuidade **+** reimpressão do adesivo. A reimpressão passou a ser **obrigatória em qualquer cenário**, então o custo incremental de imprimir um código de barras real no mesmo adesivo é quase zero. ⚠️ **Decidir isso ANTES de mandar imprimir** — adesivo sem código de barras implica segunda reimpressão se a GS1 voltar. Conversa com Wintech e Dianna, que foram as partes da decisão de 01/09.
 
 ## Fase 1 — Conferir o que foi pedido (fazer JÁ)
 
@@ -37,10 +61,14 @@ Três coisas podem invalidar o pedido sem aviso. Conferir antes de esperar mais:
 8. [ ] **Nunca em SP-01/SP-T** — excluídos da migração (histórico de política de fumo)
 9. [ ] Marcar o **corte de série**: Era pré-migração e pós-migração não são comparáveis por SKU migrado
 
-## Fase 3 — Se não houver retorno
+## Fase 3 — Após a recusa (gatilho disparado em 14/09)
 
-10. [ ] **Corte em 19/09 (sexta).** Sem aprovação até lá, o escopo da migração entra na O6 como **NÃO DECIDIR AINDA** e o dia 22/09 fica só para os vereditos.
-11. [ ] Se for negada: reabrir a decisão sobre a GS1 com a Wintech e a Dianna — foi delas a decisão de 01/09
+10. [ ] **Ler o motivo real da recusa** — `Ajuda → Registro de casos` → abrir o caso → detalhe/correspondência. Conferir também o e-mail de recusa (spam/promoções). Motivo genérico: responder no próprio caso pedindo o específico.
+11. [ ] Registrar aqui o **motivo** e o **nº do caso**
+12. [ ] **Adesivo novo com a grafia `WINNET METAIS`** — Wintech. Caminho crítico dos três cenários. **Decidir com/sem código de barras antes de imprimir.**
+13. [ ] Só depois do adesivo: **reenviar a isenção** com fotos reais do produto e da embalagem mostrando a marca afixada
+14. [ ] **O6 (22/09): escopo da migração entra como NÃO DECIDIR AINDA.** O corte de 19/09 não será cumprido — reimpressão de adesivo tem lead time de produção. O dia 22/09 fica para os vereditos.
+15. [ ] Reabrir a decisão GS1 × isenção com **Wintech e Dianna** — foi delas a decisão de 01/09, e a premissa de custo mudou
 
 ---
 
