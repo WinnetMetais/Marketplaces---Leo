@@ -35,7 +35,7 @@ As fotos enviadas na solicitação eram de uma **lixeira-amostra com a marca GRA
 |---|---|
 | Produto que embarca (estoque atual) | **Winnet Home & Pro** |
 | Amostra fotografada (gravada no inox) | **WIN NET METAIS** |
-| Brand Registry / solicitação | **WINNET METAIS** |
+| Brand Registry / solicitação | **WINNET METAIS** *(confirmado na tela em 14/09 — tudo junto, sem espaço)* |
 
 **Nenhuma corresponde a outra.** A Amazon exige correspondência exata entre a marca da solicitação e a marca afixada no produto fotografado.
 
@@ -51,7 +51,7 @@ As fotos enviadas na solicitação eram de uma **lixeira-amostra com a marca GRA
 
 ### Perguntas em aberto — bloqueiam o cronograma
 
-1. [ ] **Grafia exata no Brand Registry** — copiar da tela, não digitar de memória. Se for `WIN NET METAIS`, a amostra já está correta e o problema encolhe.
+1. [x] **Grafia exata no Brand Registry — CONFIRMADA em 14/09: `WINNET METAIS`**, tudo junto, sem espaço. ⚠️ Logo **a amostra gravada (`WIN NET METAIS`) também está errada** — as três grafias divergem entre si. Pior cenário confirmado; nenhum atalho de digitação resolve.
 2. [ ] **A gravação vai para a produção? Quando?** É isto que define o cronograma da migração — não a Amazon.
 3. [ ] **O adesivo `Winnet Home & Pro` sai de linha junto?** Conviverem no mesmo produto é pior que uma grafia errada só.
 
