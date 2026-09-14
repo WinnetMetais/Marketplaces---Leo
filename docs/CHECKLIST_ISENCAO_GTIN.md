@@ -13,17 +13,36 @@
 - **RECUSADO pela Amazon.** Motivo **não lido** — o LEO localizou a recusa mas não conseguiu abrir a justificativa.
 - Data da solicitação e nº do caso: **não registrados** — preencher quando conhecidos.
 
-### Hipótese do motivo — confiança ALTA, a confirmar
+### Motivo declarado pela Amazon (texto recebido em 14/09)
 
-A regra da Amazon exige que **o nome da marca informado corresponda exatamente à marca fisicamente afixada no produto ou na embalagem**, comprovada por fotos reais de todos os lados.
+> *"After a review, we've identified that you haven't provided images that meet all requirements."*
 
-O diagnóstico de catálogo de 01/09, neste repositório, registra:
+Seguido da lista genérica de requisitos, **sem apontar qual falhou**:
 
-> *"Adesivo do produto traz **'Winnet Home & Pro'** — não bate com a marca registrada. **Embalagem sem impressão de marca**."*
+- Imagens claras de **todos os lados** do produto **e da embalagem** (frente, verso, esquerda, direita, topo, base)
+- **Fotos reais**, não renderizações digitais
+- **O nome da marca deve corresponder exatamente** entre todas as imagens e a solicitação
+- **A marca deve estar permanentemente afixada**
+- JPEG ou PNG até 10 MB · mínimo 500×500 · bem iluminada e em foco
 
-Pedida a isenção para **WINNET METAIS**, as fotos mostram "Winnet Home & Pro" no adesivo e nada na embalagem. A marca solicitada **não existe fisicamente no produto**. Se for esse o motivo, **reenviar não resolve** — é condição física, não de formulário.
+Referência: `https://sellercentral.amazon.com.br/help/hub/reference/G200426310`
 
-**Confirmar lendo o motivo real antes de agir.**
+### Duas causas possíveis — e o teste que as separa
+
+⚠️ **Correção de 14/09:** a hipótese anterior ("recusa por marca não afixada", confiança ALTA) **não é confirmada por este texto**. A Amazon citou imagens, sem especificar o item. As duas causas continuam abertas:
+
+| | Causa | Custo de corrigir |
+|---|---|---|
+| **A** | **Procedimento de foto** — enviadas imagens de catálogo/render em vez de fotos reais dos 6 lados do produto e da embalagem. Erro mais comum. | Uma hora e uma mesa |
+| **B** | **A marca** — o adesivo diz *"Winnet Home & Pro"*, a solicitação diz `WINNET METAIS`, e a embalagem não tem impressão de marca. Falha em *"brand name must exactly match"* e em *"branding must be permanently affixed"*. | Reimpressão do adesivo (produção Wintech) |
+
+**Teste discriminante, barato:** refazer as fotos corretamente e reenviar.
+- **Aprovado** → era a causa A; o adesivo deixa de ser urgente para este fim.
+- **Recusado de novo** → causa B confirmada; o adesivo é o bloqueio real.
+
+⚠️ **NÃO retocar o adesivo nas fotos.** Imagem digitalmente alterada é motivo declarado de recusa e é questão de política, não de cadastro. Fotografar como está.
+
+⚠️ **A embalagem é o ponto frágil:** ela não tem marca impressa (diagnóstico de catálogo, 01/09). Fotografar caixa lisa pode não satisfazer *"branding must be permanently affixed"* — é exatamente onde a causa B se manifesta.
 
 ### ⚠️ Consequência — o adesivo virou o caminho crítico
 
@@ -35,7 +54,7 @@ Os três caminhos convergem no mesmo pré-requisito físico:
 | ASIN novo sob a marca | **Sim** |
 | EAN próprio via GS1 | **Sim** (já era o item 12 do checklist GS1) |
 
-**Premissa de custo alterada:** o argumento que descartou a GS1 em 01/09 era o custo combinado de anuidade **+** reimpressão do adesivo. A reimpressão passou a ser **obrigatória em qualquer cenário**, então o custo incremental de imprimir um código de barras real no mesmo adesivo é quase zero. ⚠️ **Decidir isso ANTES de mandar imprimir** — adesivo sem código de barras implica segunda reimpressão se a GS1 voltar. Conversa com Wintech e Dianna, que foram as partes da decisão de 01/09.
+**Premissa de custo alterada:** o argumento que descartou a GS1 em 01/09 era o custo combinado de anuidade **+** reimpressão do adesivo. A reimpressão é necessária em qualquer cenário, então o custo incremental de imprimir um código de barras real no mesmo adesivo é quase zero. ⚠️ **Decidir isso ANTES de mandar imprimir** — adesivo sem código de barras implica segunda reimpressão se a GS1 voltar. Conversa com Wintech e Dianna, que foram as partes da decisão de 01/09. **Abrir essa conversa em paralelo ao reenvio**, não depois do resultado.
 
 ## Fase 1 — Conferir o que foi pedido (fazer JÁ)
 
@@ -63,12 +82,13 @@ Três coisas podem invalidar o pedido sem aviso. Conferir antes de esperar mais:
 
 ## Fase 3 — Após a recusa (gatilho disparado em 14/09)
 
-10. [ ] **Ler o motivo real da recusa** — `Ajuda → Registro de casos` → abrir o caso → detalhe/correspondência. Conferir também o e-mail de recusa (spam/promoções). Motivo genérico: responder no próprio caso pedindo o específico.
-11. [ ] Registrar aqui o **motivo** e o **nº do caso**
-12. [ ] **Adesivo novo com a grafia `WINNET METAIS`** — Wintech. Caminho crítico dos três cenários. **Decidir com/sem código de barras antes de imprimir.**
-13. [ ] Só depois do adesivo: **reenviar a isenção** com fotos reais do produto e da embalagem mostrando a marca afixada
-14. [ ] **O6 (22/09): escopo da migração entra como NÃO DECIDIR AINDA.** O corte de 19/09 não será cumprido — reimpressão de adesivo tem lead time de produção. O dia 22/09 fica para os vereditos.
-15. [ ] Reabrir a decisão GS1 × isenção com **Wintech e Dianna** — foi delas a decisão de 01/09, e a premissa de custo mudou
+10. [x] ~~Ler o motivo da recusa~~ — obtido em 14/09 (ver acima): **imagens fora dos requisitos**, sem especificação de qual item
+11. [ ] Registrar aqui o **nº do caso** e a **data da solicitação**
+12. [ ] **REFAZER AS FOTOS** — 6 lados do produto **e** 6 da embalagem, foto real sobre a mesa ou na mão, sem render, sem fundo de estúdio, adesivo legível em ao menos uma, nenhum código de barras GS1 visível, JPEG/PNG ≥ 500×500 até 10 MB. **Sem retoque.**
+13. [ ] **Reenviar a isenção** com essas fotos — é o teste discriminante entre as causas A e B
+14. [ ] **Em paralelo, abrir com a Wintech o adesivo com a grafia `WINNET METAIS`** — necessário nos três cenários independentemente do resultado. **Decidir com/sem código de barras antes de imprimir.**
+15. [ ] **Corte de 19/09 (sexta) — de volta em jogo.** Aprovado até lá, o escopo da migração entra na O6. Recusado de novo, causa B confirmada, escopo vai a **NÃO DECIDIR AINDA** e 22/09 fica para os vereditos.
+16. [ ] Se a causa B se confirmar: reabrir a decisão GS1 × isenção com **Wintech e Dianna** — foi delas a decisão de 01/09, e a premissa de custo mudou
 
 ---
 
