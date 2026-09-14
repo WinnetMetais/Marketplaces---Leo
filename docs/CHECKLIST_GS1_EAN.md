@@ -1,3 +1,17 @@
+> ## ⚠️ DOCUMENTO SUSPENSO EM 14/09/2026
+>
+> **Decisão do LEO, 14/09:** o caminho vigente é a **isenção de GTIN** na Amazon, não o EAN próprio via GS1.
+> Checklist vigente: **`docs/CHECKLIST_ISENCAO_GTIN.md`**.
+>
+> Este arquivo fica **suspenso, não excluído** — a filiação à GS1 pode ser retomada se a isenção for negada,
+> se o Brand Registry cair (INPI 944049613 em oposição) ou quando NF, adesivo e outros canais entrarem na pauta.
+> Nenhuma caixa da Fase 1 chegou a ser marcada.
+>
+> **Os itens 11 (NF, campo `cEAN`) e 12 (adesivo com código de barras) NÃO são resolvidos pela isenção** —
+> continuam abertos e sem dono no caminho novo.
+
+---
+
 # CHECKLIST — EAN PRÓPRIO VIA GS1 BRASIL (decisão de 01/09/2026)
 
 Decisão registrada: Wintech + Dianna, 01/09. Isenção de GTIN descartada.

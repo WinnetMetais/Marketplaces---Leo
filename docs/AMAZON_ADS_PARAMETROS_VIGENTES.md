@@ -363,7 +363,7 @@ O mapa deve ser atualizado a cada otimização. Não usar classificação antiga
    | 6 | L1618-T | 37 | R$ 21,36 | R$ 13,59 |
    | 7 | L2030-B | 6 | R$ 29,58 | R$ 3,05 |
 
-   ⚠️ **ATUALIZAÇÃO (O5, 09/09): a decisão foi ADIADA para a O6 (22/09)**, por decisão do LEO, e o gate é o **GS1**. A fila profunda e a proposta de concentração continuam sendo **uma decisão só**. Insumo da O5 para o piloto: **P3060 + P3050** (+P4080 opcional) — tráfego mensurável e zero venda, portanto nada de histórico a destruir. Fora do piloto: L2025-T e L1618-T (vendem orgânico) e P3070 (PI ativa e acabou de converter). Ver `docs/PROPOSTA_CONCENTRACAO_O5.md`.
+   ⚠️ **ATUALIZAÇÃO (O5, 09/09): a decisão foi ADIADA para a O6 (22/09)**, por decisão do LEO. ⚠️ **O gate mudou em 14/09: não é mais o GS1, é a ISENÇÃO DE GTIN** (ver pendência 7). A fila profunda e a proposta de concentração continuam sendo **uma decisão só**. Insumo da O5 para o piloto: **P3060 + P3050** (+P4080 opcional) — tráfego mensurável e zero venda, portanto nada de histórico a destruir. Fora do piloto: L2025-T e L1618-T (vendem orgânico) e P3070 (PI ativa e acabou de converter). Ver `docs/PROPOSTA_CONCENTRACAO_O5.md`.
 
    **Reordenação da fila Nível 2 fica para depois do 9.9** — 4 dos 7 SKUs estiveram em oferta. O **L1618-T sai da fila de diagnóstico** (2 vendas orgânicas na Era), mas ⚠️ **uma delas foi devolvida em 09/09** com o comentário *"a lixeira é muito grande para usar onde eu gostaria"* — sinal de percepção de escala na página, no SKU que era o nº 1 da fila Nível 1. Reavaliar em 14/09.
 
@@ -402,7 +402,7 @@ O mapa deve ser atualizado a cada otimização. Não usar classificação antiga
 
 6. **Acompanhar gasto contra o teto mensal de R$ 1.000.**
 
-7. **MIGRAÇÃO DE ASIN — recriação do catálogo sob a marca WINNET METAIS (pendência nova, 01/09/2026). Escopo decidido na O6 (22/09)** — adiado na O5 por decisão do LEO; gate: **GS1**. Fundido com a proposta de concentração — são a mesma decisão. Insumo: P3060 + P3050 (+P4080).
+7. **MIGRAÇÃO DE ASIN — recriação do catálogo sob a marca WINNET METAIS (pendência nova, 01/09/2026). Escopo decidido na O6 (22/09)** — adiado na O5 por decisão do LEO; gate: **isenção de GTIN** (decisão do LEO, 14/09 — substitui o GS1). Fundido com a proposta de concentração — são a mesma decisão. Insumo: P3060 + P3050 (+P4080).
 
    **Origem:** Brand Registry aprovado, mas o atributo de marca "Genérico" dos ASINs atuais **não pode ser alterado** (caso 21821042531). A+, Avaliações, Brand Analytics e Sponsored Brands só operam sobre ASINs novos criados sob a marca.
 
@@ -418,10 +418,16 @@ O mapa deve ser atualizado a cada otimização. Não usar classificação antiga
 
    **Item novo para a O5:** avaliar criar **variações pai/filho** na recriação (L1618/-A/-B/-T e famílias similares hoje competem como páginas isoladas). É a única janela sem custo extra para fazer isso.
 
-   **Pré-requisito em andamento:** EANs próprios via **GS1 Brasil** (decisão Wintech + Dianna, 01/09; emissão no CNPJ titular da marca). Isenção de GTIN descartada.
+   **Pré-requisito em andamento — CAMINHO TROCADO EM 14/09 (decisão do LEO):** **isenção de GTIN** na Amazon, solicitada dentro do fluxo de cadastro de anúncio novo. ~~EANs próprios via GS1 Brasil (decisão Wintech + Dianna, 01/09). Isenção de GTIN descartada.~~ **Sem retorno da Amazon até 14/09.**
+
+   **O que a troca de caminho NÃO resolve** — registrado para não se perder, não para reabrir a decisão:
+   - **Nota fiscal:** a isenção não gera GTIN, então o campo `cEAN` do XML continua sem código. Pendência aberta com a contabilidade/ERP.
+   - **Adesivo:** sem GTIN não há código de barras para imprimir. A reimpressão com a grafia `WINNET METAIS` continua necessária; o código de barras, não.
+   - **Outros canais:** a isenção vale só na Amazon. Mercado Livre e qualquer outro canal seguem sem identificador próprio.
+   - ⚠️ **Risco acoplado ao INPI 944049613 (em oposição):** a isenção é concedida **por marca**. Se a marca for negada e a Amazon revogar o Brand Registry, a isenção cai junto e os ASINs novos ficam sem identificador e sem marca. O EAN próprio sobreviveria a esse cenário; a isenção não. **Decisão tomada com esse risco conhecido.**
 
    **NOTA DE MÉTODO — marco de corte de série:** a migração é um **corte na série histórica por ASIN**. Fica registrado que **Era pré-migração e Era pós-migração NÃO são comparáveis** por SKU migrado — reinício de amostra explícito, a marcar no fechamento do ciclo que executar cada fase. O SKU interno não muda: `Registro_Vendas`, `Livro_Vendas` e margens permanecem íntegros; o corte é só de ASIN.
-8. **Dispersão de catálogo — NOVO (26/08).** *(numeração corrigida: havia dois itens 7)* 323 sessões/semana distribuídas em 74 ASINs; mediana de 2 por ASIN; **zero ASINs** atingiram as ~58 sessões necessárias. Proposta de concentração em 9 SKUs — **decisão unificada com o Nível 2 da pendência 2, adiada para a O6 (22/09)**, com gate no GS1.
+8. **Dispersão de catálogo — NOVO (26/08).** *(numeração corrigida: havia dois itens 7)* 323 sessões/semana distribuídas em 74 ASINs; mediana de 2 por ASIN; **zero ASINs** atingiram as ~58 sessões necessárias. Proposta de concentração em 9 SKUs — **decisão unificada com o Nível 2 da pendência 2, adiada para a O6 (22/09)**, com gate na **isenção de GTIN** (era GS1 até 14/09).
 
    **Bloqueador de estoque RESOLVIDO em 26/08:** a operação anuncia disponibilidade respaldada por **reposição imediata de fábrica**, não por estoque próprio, e **pode expedir direto da fábrica** — sem perna de transferência. Capacidade não é restrição e o prazo de manuseio prometido é cumprido. **A O5 fica dependendo apenas do monitoramento de 31/08.**
 

@@ -45,11 +45,19 @@
 - Categorias (PTD): `TRASH_CAN`, `MOUNT_BRACKET`, `CLOTHES_RACK`, `ASHTRAY`, `HOME`.
 - Adesivo do produto traz **"Winnet Home & Pro"** — não bate com a marca registrada. Embalagem sem impressão de marca.
 
-### Decisão — EAN próprio (Wintech + Dianna, 01/09)
-- **Filiação à GS1 Brasil com emissão de EANs próprios.** Isenção de GTIN descartada.
-- Motivo: elimina a dependência do EAN da fábrica (código registrado em nome de terceiros — risco de rejeição na criação, anexação de oferta e disputa de página) e serve a todos os canais.
-- ⚠️ **Ponto de atenção: os EANs devem ser emitidos no CNPJ titular da marca WINNET METAIS.**
-- Custo: anuidade GS1 + reimpressão do adesivo com a grafia correta. Nenhum outro custo no projeto.
+### Decisão — identificador de produto — ⚠️ REVERTIDA EM 14/09
+
+**Vigente (decisão do LEO, 14/09):** **isenção de GTIN** na Amazon. Solicitada dentro do fluxo de cadastro de anúncio novo; **sem retorno da Amazon até 14/09**. A filiação à GS1 fica **suspensa** — `docs/CHECKLIST_GS1_EAN.md` está marcado como suspenso, não excluído.
+
+~~**Decisão anterior (Wintech + Dianna, 01/09):** filiação à GS1 Brasil com emissão de EANs próprios; isenção de GTIN descartada. Motivo registrado à época: elimina a dependência do EAN da fábrica (código em nome de terceiros) e serve a todos os canais.~~
+
+**O que fica em aberto com o caminho novo** — registro, não reabertura da decisão:
+- **NF (campo `cEAN`)** e **código de barras no adesivo** continuam sem solução. A isenção não gera GTIN.
+- **Mercado Livre e demais canais** seguem sem identificador próprio — a isenção vale só na Amazon.
+- ⚠️ **A isenção é concedida por marca e está acoplada ao Brand Registry.** Com o **INPI 944049613 em oposição**, se a marca for negada e o Brand Registry cair, a isenção cai junto. Risco conhecido no momento da decisão.
+- Custo: zero. A anuidade GS1 sai do projeto enquanto a filiação estiver suspensa. A reimpressão do adesivo com a grafia `WINNET METAIS` continua necessária.
+
+**Checklist do caminho vigente:** `docs/CHECKLIST_ISENCAO_GTIN.md`
 
 ### Risco atravessado — INPI
 - Processo **INPI 944049613 em período de oposição**. Se negar, a Amazon pode **revogar o Brand Registry** e derrubar A+, Store e Brand Analytics. **Manter o Jair Silva de Andrade ativo até a concessão.**
@@ -215,4 +223,5 @@ O método operacional foi originalmente estabelecido por um assessor (Henrique) 
 | 08/09/2026 | pré-O5 | **Mestra v4.3.4**: 4 vendas de setembro (02, 03, 05 e 07/09) · validações de dados perdidas no fechamento e **restauradas por reinjeção do `extLst`** · regra nova: Mestra não pode ser salva por `openpyxl` |
 | 09/09/2026 | **O5** | Ciclo concluído como análise (17 linhas aprovadas, execução pendente) · correção de 15→16 campanhas ativas · O4-015 confirmada inerte · SP-01 diagnosticado em três camadas · gasto de setembro em 41–46% do teto · **monitoramento de 21/09 eliminado** com conferência de estado obrigatória em 14/09 como contrapartida · divergência SP-T/SP-01 na Bituqueiras em aberto |
 | 09/09/2026 | **O5 executada** | 8 ações no console, todas conferidas · O5-010 saiu invertida (nomes PT-BR das segmentações) e foi corrigida no mesmo dia pela conferência pós-execução · O5-013 não executada (L2030-T fora do grupo da 6B) · **C7: a PI PXM entrega — o diagnóstico havia invertido entrega e CTR** · conta em 12 ativas · Parâmetros com o snapshot pós-execução |
+| 14/09/2026 | decisão | **Caminho do identificador de produto REVERTIDO por decisão do LEO: isenção de GTIN substitui o EAN próprio via GS1.** Pedido feito dentro do cadastro de anúncio novo, sem retorno da Amazon. Gate da migração de ASIN na O6 deixa de ser GS1 e passa a ser a isenção. Checklist GS1 suspenso; `CHECKLIST_ISENCAO_GTIN.md` criado. NF, adesivo e demais canais ficam sem solução por esse caminho; risco acoplado ao INPI registrado |
 | 14/09/2026 | monitoramento | Conferência de estado da O5 ✅ · 9.9 lido: Relâmpago zero em 5 deals, Melhor Oferta 3 de 11 · nenhuma lixeira vendeu com oferta · atribuição ao preço da oferta confirmada com 5 pedidos · divergência de R$ 65,64 na Mestra corrigida, bijeção ao centavo · setembro em 15,8% do teto |

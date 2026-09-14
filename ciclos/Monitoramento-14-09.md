@@ -198,4 +198,4 @@ Com isso o Registro sai de 20 para **18 em maturação e 23 avaliadas** (42 no t
 2. **Termos de Pesquisa e Segmentação** da semana — sem eles o O5-014 fica sem decisão
 3. **Gasto acumulado de setembro no console** (B3)
 4. **Por que as Relâmpago tiveram só 19 visualizações** — é a pergunta central do EC-004
-5. **Status do GS1** — portão do piloto de migração na O6, em 8 dias
+5. **Status da isenção de GTIN** — portão do piloto de migração na O6, em 8 dias. ⚠️ **Atualizado em 14/09:** o LEO reverteu o caminho — a isenção de GTIN substitui o EAN próprio via GS1. O pedido foi feito dentro do cadastro de anúncio novo e **não teve retorno**. Ver `docs/CHECKLIST_ISENCAO_GTIN.md`.
