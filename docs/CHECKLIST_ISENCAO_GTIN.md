@@ -27,30 +27,41 @@ Seguido da lista genérica de requisitos, **sem apontar qual falhou**:
 
 Referência: `https://sellercentral.amazon.com.br/help/hub/reference/G200426310`
 
-### Duas causas possíveis — e o teste que as separa
+### ⚠️ CAUSA RAIZ IDENTIFICADA EM 14/09 — três grafias diferentes
 
-⚠️ **Correção de 14/09:** a hipótese anterior ("recusa por marca não afixada", confiança ALTA) **não é confirmada por este texto**. A Amazon citou imagens, sem especificar o item. As duas causas continuam abertas:
+As fotos enviadas na solicitação eram de uma **lixeira-amostra com a marca GRAVADA no inox: `WIN NET METAIS`**. O LEO confirmou que **essa não é a unidade que embarca** — os produtos em estoque ainda saem com o **adesivo `Winnet Home & Pro`**.
 
-| | Causa | Custo de corrigir |
-|---|---|---|
-| **A** | **Procedimento de foto** — enviadas imagens de catálogo/render em vez de fotos reais dos 6 lados do produto e da embalagem. Erro mais comum. | Uma hora e uma mesa |
-| **B** | **A marca** — o adesivo diz *"Winnet Home & Pro"*, a solicitação diz `WINNET METAIS`, e a embalagem não tem impressão de marca. Falha em *"brand name must exactly match"* e em *"branding must be permanently affixed"*. | Reimpressão do adesivo (produção Wintech) |
+| Onde | Grafia |
+|---|---|
+| Produto que embarca (estoque atual) | **Winnet Home & Pro** |
+| Amostra fotografada (gravada no inox) | **WIN NET METAIS** |
+| Brand Registry / solicitação | **WINNET METAIS** |
 
-**Teste discriminante, barato:** refazer as fotos corretamente e reenviar.
-- **Aprovado** → era a causa A; o adesivo deixa de ser urgente para este fim.
-- **Recusado de novo** → causa B confirmada; o adesivo é o bloqueio real.
+**Nenhuma corresponde a outra.** A Amazon exige correspondência exata entre a marca da solicitação e a marca afixada no produto fotografado.
 
-⚠️ **NÃO retocar o adesivo nas fotos.** Imagem digitalmente alterada é motivo declarado de recusa e é questão de política, não de cadastro. Fotografar como está.
+**Consequências:**
 
-⚠️ **A embalagem é o ponto frágil:** ela não tem marca impressa (diagnóstico de catálogo, 01/09). Fotografar caixa lisa pode não satisfazer *"branding must be permanently affixed"* — é exatamente onde a causa B se manifesta.
+1. **Refazer as fotos NÃO resolve.** O problema não está na foto — está no produto. A causa "A — procedimento de foto" fica descartada como causa suficiente.
+2. **As imagens têm de ser da unidade que embarca.** Aprovar a isenção com base numa amostra e despachar unidades com outra marca é problema de integridade de marca, com o **INPI 944049613 em oposição** e o Brand Registry exposto. **Não reenviar com fotos da amostra.**
+3. **Não reenviar antes de resolver a grafia.** Recusa repetida não gera informação nova.
 
-### ⚠️ Consequência — o adesivo virou o caminho crítico
+**Achado positivo:** a amostra prova que **a fábrica consegue gravar a marca permanentemente no inox**. Isso é superior ao adesivo — não descola, não desbota, e satisfaz *"permanently affixed"* sem discussão. O caminho pode ser **levar a gravação à produção**, não reimprimir adesivo.
+
+**Nota sobre a GS1:** o Brand Registry foi aprovado em 01/09, o que normalmente já exige prova da marca no produto. A revisão de imagem que barrou o pedido é **específica do processo de isenção**; anunciar com um EAN real não passa por ela. Registrado como fato, não como reabertura da decisão do LEO.
+
+### Perguntas em aberto — bloqueiam o cronograma
+
+1. [ ] **Grafia exata no Brand Registry** — copiar da tela, não digitar de memória. Se for `WIN NET METAIS`, a amostra já está correta e o problema encolhe.
+2. [ ] **A gravação vai para a produção? Quando?** É isto que define o cronograma da migração — não a Amazon.
+3. [ ] **O adesivo `Winnet Home & Pro` sai de linha junto?** Conviverem no mesmo produto é pior que uma grafia errada só.
+
+### ⚠️ Consequência — a marcação do produto é o caminho crítico
 
 Os três caminhos convergem no mesmo pré-requisito físico:
 
-| | Exige adesivo com a grafia `WINNET METAIS`? |
+| | Exige a marca correta afixada no produto que embarca? |
 |---|---|
-| Isenção de GTIN | **Sim** — é a prova exigida |
+| Isenção de GTIN | **Sim** — é a prova exigida, e foi onde travou |
 | ASIN novo sob a marca | **Sim** |
 | EAN próprio via GS1 | **Sim** (já era o item 12 do checklist GS1) |
 
@@ -84,11 +95,12 @@ Três coisas podem invalidar o pedido sem aviso. Conferir antes de esperar mais:
 
 10. [x] ~~Ler o motivo da recusa~~ — obtido em 14/09 (ver acima): **imagens fora dos requisitos**, sem especificação de qual item
 11. [ ] Registrar aqui o **nº do caso** e a **data da solicitação**
-12. [ ] **REFAZER AS FOTOS** — 6 lados do produto **e** 6 da embalagem, foto real sobre a mesa ou na mão, sem render, sem fundo de estúdio, adesivo legível em ao menos uma, nenhum código de barras GS1 visível, JPEG/PNG ≥ 500×500 até 10 MB. **Sem retoque.**
-13. [ ] **Reenviar a isenção** com essas fotos — é o teste discriminante entre as causas A e B
-14. [ ] **Em paralelo, abrir com a Wintech o adesivo com a grafia `WINNET METAIS`** — necessário nos três cenários independentemente do resultado. **Decidir com/sem código de barras antes de imprimir.**
-15. [ ] **Corte de 19/09 (sexta) — de volta em jogo.** Aprovado até lá, o escopo da migração entra na O6. Recusado de novo, causa B confirmada, escopo vai a **NÃO DECIDIR AINDA** e 22/09 fica para os vereditos.
-16. [ ] Se a causa B se confirmar: reabrir a decisão GS1 × isenção com **Wintech e Dianna** — foi delas a decisão de 01/09, e a premissa de custo mudou
+12. [ ] **Fechar as três perguntas acima** — grafia do Brand Registry, gravação em produção, destino do adesivo antigo
+13. [ ] **NÃO reenviar a isenção** enquanto a unidade que embarca não trouxer a grafia do Brand Registry. Reenvio com foto da amostra está descartado.
+14. [ ] **Definir com a Wintech a marcação de produção** — gravação no inox (preferível) ou adesivo novo. **Decidir com/sem código de barras antes de produzir.**
+15. [x] ~~Corte de 19/09~~ — **não será cumprido.** O bloqueio é físico e conhecido, não é espera de análise. **O6 (22/09): escopo da migração entra como `NÃO DECIDIR AINDA`**; o dia fica para os vereditos.
+16. [ ] Reabrir a decisão GS1 × isenção com **Wintech e Dianna** — foi delas a decisão de 01/09; a premissa de custo mudou e a revisão de imagem da isenção é o bloqueio que a GS1 contorna
+17. [ ] Quando a produção sair com a marca correta: fotografar **a unidade que embarca** — 6 lados do produto e 6 da embalagem, foto real, sem retoque — e reenviar
 
 ---
 
