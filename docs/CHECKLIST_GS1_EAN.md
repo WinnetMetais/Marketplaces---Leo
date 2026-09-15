@@ -37,7 +37,10 @@ Decisão registrada: Wintech + Dianna, 01/09. Isenção de GTIN descartada.
 2. [ ] ⚠️ **RECONFERIR** que os dados são **do CNPJ titular da marca WINNET METAIS** (não o da fábrica, não outro CNPJ do grupo)
 
 **Documentos (print do portal, 14/09):** Contrato Social ✅ · **Faturamento Fiscal do Último Exercício 🔴 PENDENTE** · RG/CNH ✅
-**Ação única que destrava:** enviar o Faturamento Fiscal do Último Exercício — pedir à contabilidade. Análise em 1–2 dias úteis.
+**Ação única que destrava:** enviar o Faturamento Fiscal do Último Exercício. Análise em 1–2 dias úteis.
+
+**Andamento (15/09, informado pelo LEO):** a **Dianna reenviou o documento** e, como contingência, **já solicitou o faturamento à contabilidade** caso o reenvio seja recusado. Duas frentes em curso.
+→ Se o reenvio foi feito em 15/09 (terça), a resposta da GS1 é esperada até **17/09 (quinta)**. Sem retorno até lá, cobrar. O prazo cabe antes da O6 (22/09).
 3. [ ] Usar o **simulador de valores** do site: escolher a faixa de códigos pela projeção do catálogo — hoje são **114 ofertas**; com variações pai/filho na recriação e novos produtos, dimensionar com folga (faixa de centenas a 1.000)
 4. [ ] Enviar os documentos solicitados (cartão CNPJ, dados do responsável legal) e **pagar o boleto** da anuidade
 5. [ ] Aguardar confirmação — o acesso ao **Cadastro Nacional de Produtos (CNP)** libera após o pagamento confirmado
