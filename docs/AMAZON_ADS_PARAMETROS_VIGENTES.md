@@ -144,7 +144,9 @@ A venda de 15/09, **R$ 616,18, atribuída à PI P3070**, é a **primeira convers
 
 **O gatilho caiu, mas isso NÃO promove a campanha a ESCALAR.** Uma venda não reabilita uma estrutura, e o ticket alto infla qualquer leitura de ACOS. O que a O6 precisa, do export da Era completa:
 
-1. **Qual ALVO converteu.** A régua de PI opera no nível do **alvo**, não da campanha. Os 4 em triagem na O5 eram `B09YDLC69D` (12 cliques), `B0CYWMQ93Y` (7), `B0BHMZBZW9` (5), `B0778TD2LY` (5). Se a conversão veio de um deles, muda a triagem **daquele alvo** — e só dele.
+1. **Qual ALVO converteu — EM ABERTO.** A régua de PI opera no nível do **alvo**, não da campanha. Os 4 em triagem na O5 eram `B09YDLC69D` (12 cliques), `B0CYWMQ93Y` (7), `B0BHMZBZW9` (5), `B0778TD2LY` (5). Se a conversão veio de um deles, muda a triagem **daquele alvo** — e só dele.
+
+   ⚠️ **NÃO CONFUNDIR AS DUAS DIMENSÕES DA PI** (confusão real ocorrida em 15/09): `B0H63FKGPJ` é o ASIN **do próprio P3070** — é o **produto anunciado**, não o alvo. Ler essa coluna confirma qual SKU vendeu, não onde o anúncio apareceu. O **alvo** é o ASIN de terceiro que hospedou o anúncio, e só aparece no **relatório de Segmentação / vitalício por alvo** filtrado na campanha. Mesma família de erro do C2 da O5 (linha por SKU vs. por termo).
 2. **Gasto e cliques da PI na Era inteira (09–21/09).** ⚠️ **Não calcular ACOS com a janela parcial de 07–14/09** (R$ 13,98 / 13 cliques): é janela diferente e produz número falso. Esperar o export.
 3. **Margem como referência:** a venda teve lucro de R$ 159,18 sobre R$ 616,18 — margem 25,8%, logo **ACOS de break-even ≈ 25,8%**.
 
