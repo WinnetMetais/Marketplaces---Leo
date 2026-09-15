@@ -133,10 +133,22 @@ Esses valores são snapshot, não regra permanente.
 |---|---|---|
 | Auto EGC | VIGIA, lance 0,84 | 0 vendas **E** CTR < 0,3% → pausar |
 | Auto SP-PP-o59/09 | VIGIA — só `close-match` e `complements` ativas | 0 cliques relevantes → pausar campanha |
-| PI P3070-o228/07 | CONGELADA com gatilho | sem venda pós-Relâmpago **E** ≥15 cliques na Era → lances −20% nos asin-expanded |
+| PI P3070-o228/07 | ✅ **GATILHO DESARMADO em 15/09** | ~~sem venda pós-Relâmpago **E** ≥15 cliques na Era → lances −20% nos asin-expanded~~ — **venda de 15/09 (R$ 616,18) ATRIBUÍDA à própria PI P3070**, posterior ao Relâmpago (07–13/09). A primeira condição da conjunção caiu, logo **não há redução de lance**. Confiança ALTA. Ver pendência abaixo para o que a O6 ainda precisa decidir |
 | PI PXM-o311/08 | **CORRIGIR CTR** (era "investigar entrega" — ver C7) | entrega 2.500 impressões vitalícias, CTR 0,28%; custo R$ 5,50. Ler junto com a EGC |
 
 **Contrato comum:** na O5 (~08/09), sem amostra relevante ou com cliques acumulados sem venda → **pausa sem prorrogação**.
+
+### ⚠️ PI P3070 — o que a O6 precisa resolver (15/09)
+
+A venda de 15/09, **R$ 616,18, atribuída à PI P3070**, é a **primeira conversão da campanha desde 21/06** — quase três meses. Antes dela: 98 cliques vitalícios com 1 compra, e 30 cliques / R$ 34,41 / zero venda na Era O4→O5.
+
+**O gatilho caiu, mas isso NÃO promove a campanha a ESCALAR.** Uma venda não reabilita uma estrutura, e o ticket alto infla qualquer leitura de ACOS. O que a O6 precisa, do export da Era completa:
+
+1. **Qual ALVO converteu.** A régua de PI opera no nível do **alvo**, não da campanha. Os 4 em triagem na O5 eram `B09YDLC69D` (12 cliques), `B0CYWMQ93Y` (7), `B0BHMZBZW9` (5), `B0778TD2LY` (5). Se a conversão veio de um deles, muda a triagem **daquele alvo** — e só dele.
+2. **Gasto e cliques da PI na Era inteira (09–21/09).** ⚠️ **Não calcular ACOS com a janela parcial de 07–14/09** (R$ 13,98 / 13 cliques): é janela diferente e produz número falso. Esperar o export.
+3. **Margem como referência:** a venda teve lucro de R$ 159,18 sobre R$ 616,18 — margem 25,8%, logo **ACOS de break-even ≈ 25,8%**.
+
+**Leitura de método:** a campanha converteu **enquanto congelada**. É evidência a favor do contrapeso vitalício — estrutura com histórico de venda não se pausa por uma Era ruim.
 
 **NOTA DE CALIBRAÇÃO — ERA COM FERIADO (28/08/2026).** A Era O4→O5 (25/08–08/09) contém o feriado prolongado de **05 a 07/09** (Independência, 07/09 em segunda-feira). Em catálogo predominantemente **B2B**, esses dias suprimem tráfego de compra corporativa.
 
