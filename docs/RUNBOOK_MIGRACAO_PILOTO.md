@@ -49,22 +49,40 @@ Para **cada** um dos 4:
 7. [ ] **Publicar.** Anotar o **ASIN novo** gerado.
 8. [ ] Esperar ~30 min (se veio de isenção recém-aprovada) antes de seguir.
 
-**Saída da Fase 1:** 4 ASINs novos, branded, ativos e compráveis (ainda **isolados**, sem variação).
+**Saída da Fase 1:** 4 anúncios novos, branded, **cada um independente** — 4 páginas separadas, cada uma comprável, com seu ASIN/preço/estoque/foto. **Ainda NÃO há variação.** É o estado esperado. A variação vem na Fase 2.
+
+> **💡 Como funciona o pai/filho (leia antes da Fase 2)**
+> - Você **cria os 4 normalmente e separados** (Fase 1). Só depois **associa** eles (Fase 2).
+> - O **"pai"** NÃO é um 5º produto que você fabrica ou vende. É uma **capa/guarda-chuva virtual** que a Amazon cria pra segurar os 4 juntos e mostrar o **seletor de tamanho**. O pai **não tem preço nem estoque** e **ninguém compra o pai**.
+> - Os **"filhos"** são os 4 tamanhos reais (é o que vende). Cada um **mantém** seu ASIN, preço, estoque e fotos.
+> - **Associar** = dizer à Amazon: *"esses 4 são o mesmo produto em tamanhos diferentes"*. As 4 páginas viram **uma só** com o seletor 3/5/7/10 L, e as **avaliações se juntam**.
+> - Deu problema na associação? Os 4 continuam vivos e compráveis sozinhos — corrige e associa de novo, **sem perder nada**.
 
 ---
 
-## FASE 2 — Montar a variação (pai + 4 filhos)
+## FASE 2 — Associar os 4 numa variação (criar o pai e pendurar os filhos)
 
-Dois caminhos (escolher um):
+Aqui você pega os **4 que já existem** (Fase 1) e cria a relação. Dois caminhos — escolher **um**.
 
-**Caminho A — pelo arquivo de categoria (recomendado p/ lote):** usar o mesmo **template "produtos à venda por categoria" (.xlsm)** que você baixou. Na aba **Modelo**:
-- [ ] Linha do **pai**: `product_type = HOME`, SKU do pai, **sem preço/estoque**, `parentage = parent`, `variation_theme = Size` (Tamanho).
-- [ ] Nas 4 linhas dos **filhos**: `parentage = child`, `parent_sku = <SKU do pai>`, `relationship_type = variation`, e o valor de tamanho (3L/5L/7L/10L) no campo de tamanho.
-- [ ] **Enviar** o arquivo em **Catálogo → Adicionar produtos via upload** e conferir o relatório de processamento (0 erros).
+### Caminho A — pela interface (mais simples p/ 1 família)
 
-**Caminho B — pela interface:** no anúncio, **"Adicionar uma variação"** → tema **Tamanho** → adicionar os 4 filhos. Mais manual, bom se for só esta família.
+1. [ ] Abrir **um** dos 4 anúncios em **Gerenciar Estoque → Editar**.
+2. [ ] Procurar **"Variações"** / **"Adicionar uma variação"**.
+3. [ ] Escolher o **tema de variação = Tamanho (Size)**.
+4. [ ] A Amazon **cria o pai automaticamente** (a capa) e pede os valores de tamanho: informar **3 L, 5 L, 7 L, 10 L**.
+5. [ ] **Vincular cada tamanho ao SKU/ASIN filho** correspondente (o L1618-T no 3L, o L1623-T no 5L, etc.) — é aqui que os 4 independentes entram como filhos.
+6. [ ] **Salvar.** Esperar processar.
 
-**Saída da Fase 2:** uma página só, com **seletor de Tamanho (3/5/7/10 L)**, avaliações somadas.
+### Caminho B — pelo arquivo de categoria (o mesmo .xlsm que você baixou)
+
+Na aba **Modelo**, uma linha para o pai + editar as 4 linhas dos filhos:
+- [ ] **Linha nova do pai:** `product_type = HOME` · SKU do pai (ex. `WN-LIX-TAMPA`) · **sem preço, sem estoque** · `parentage = parent` (Pai) · `variation_theme = Size` (Tamanho).
+- [ ] **Nas 4 linhas dos filhos** (os SKUs que você já criou): `parentage = child` (Filho) · `parent_sku = WN-LIX-TAMPA` · `relationship_type = variation` (Variação) · e o **tamanho** de cada um (3L/5L/7L/10L) no campo Tamanho.
+- [ ] Enviar em **Catálogo → Enviar seu estoque / Adicionar produtos via upload** e conferir o relatório: **0 erros**.
+
+> Os dois caminhos fazem a **mesma coisa**: criam o pai (capa) e marcam os 4 como filhos por tamanho. O Caminho A é clicando; o B é planilha (melhor quando for repetir em várias famílias).
+
+**Saída da Fase 2:** uma página única com **seletor de Tamanho (3/5/7/10 L)**, os 4 compráveis por dentro, avaliações somadas.
 
 ---
 
