@@ -125,6 +125,8 @@ Vantagem dupla: são lixeiras com pedal mal classificadas → o piloto **consert
 5. **Marcar o corte de série** na base: Era pré e pós-migração **não são comparáveis** por SKU migrado.
 6. **Nunca** deixar um intervalo em que nem o novo nem o antigo estejam compráveis.
 
+**Passo a passo detalhado do piloto (família pitão):** `docs/RUNBOOK_MIGRACAO_PILOTO.md`.
+
 ---
 
 ## 6. Variação por tamanho (o "buy box" do print — na verdade **variação pai/filho**)
