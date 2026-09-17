@@ -135,6 +135,27 @@ Vantagem dupla: são lixeiras com pedal mal classificadas → o piloto **consert
 - **Remédio direto de devolução por tamanho:** os casos recentes L2030-T (20×30, "muito pequeno") e L1618-T voltaram por descompasso de tamanho. Com a família no mesmo seletor, o cliente que precisa de maior **se autoseleciona** antes de comprar → menos devolução, ticket maior.
 - **Única janela sem custo extra** para fazer isso (recria-se o catálogo uma vez).
 
+### 6.1 Desenho aprovado (LEO, 17/09) — variação por TAMANHO, em bandas
+
+**Regra:** agrupar por **linha de acabamento**, depois **banda de uso** (Residencial ≤20 L · Comercial 21–60 L · Industrial >60 L). **Nunca** uma família única de 3→120 L (mistura banheiro com indústria, spread de preço, família gigante). Linha curta (≤4 SKUs) fica em **família única sem banda**; SKU sozinho fica **avulso** (sem variação). Variantes de função (Alça/Rodízio) em **família própria**.
+
+**Resultado: 18 famílias (+2 avulsos) cobrindo as 95 lixeiras.** Lista completa por SKU em **`dados/FAMILIAS_VARIACAO.csv`**. Resumo:
+
+| Linha | Famílias | Estreia? |
+|---|---|---|
+| **Com Tampa (pitão)** | 1 (3–10 L) — `L1618-T · L1623-T · L2025-T · L2030-T` | ⭐ **ESTREIA** (família das devoluções) |
+| Sem Tampa | 1 (3–10 L) | |
+| Aro Polido | 3 (Res/Com/Ind) | |
+| Basculante | 3 (Res/Com/Ind) | |
+| Meia Lua | 2 (Res/Com) | |
+| Pedal | 3 (Res/Com/Ind) | |
+| Pedal c/ Alça | 2 (Com/Ind) | |
+| Quadrada Aro / Basculante | 2 (uma cada, todos os tamanhos) | |
+| Embutir | 1 (3–8 L) | |
+| Avulsos (sem variação) | PQ-3060 · P4070RA | |
+
+Ordem: **pitão primeiro** (baixo risco, resolve o "veio pequeno", prova o mecanismo) → residenciais das demais linhas → comercial/industrial.
+
 ---
 
 ## 7. Fotos — produto em uso / pedal / escala
@@ -163,7 +184,7 @@ Vantagem dupla: são lixeiras com pedal mal classificadas → o piloto **consert
 3. [ ] **Gravação `WINNET METAIS` na produção** — data (Wintech). É o caminho crítico da isenção.
 4. [ ] **Adesivo antigo** sai de linha? Com/sem código de barras? (Wintech/Dianna)
 5. [x] ~~Reconciliar histórico do piloto~~ — **RESOLVIDO: confiar no Livro_Vendas, P3050/P3060 têm venda (§4).**
-6. [ ] **Desenho da variação** — por tamanho, por acabamento, ou dois níveis? Qual família estreia (§10 sugere 20x30)?
+6. [x] ~~Desenho da variação~~ — **DEFINIDO (17/09): por tamanho, em bandas (§6.1).** 18 famílias em `dados/FAMILIAS_VARIACAO.csv`. Estreia: pitão (com tampa).
 7. [ ] **Categoria dos 18 não-lixeira** — já estão coerentes (guarda-chuva=CLOTHES_RACK, cinzeiro/bitucas=ASHTRAY, extintor=MOUNT_BRACKET). Confirmar se **mantém** ou se algum entra no plano de marca. SP-01/SP-T não migram.
 8. [ ] **Consolidar categoria das lixeiras na migração:** 83 `TRASH_CAN` → `HOME`; **13 da árvore Indústria → Casa `17100596011`**; padronizar sub-nó (L1618-T está em Banho). Ação do LEO no console, na criação do ASIN novo.
 
