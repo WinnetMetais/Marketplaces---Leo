@@ -23,7 +23,9 @@
 
 ---
 
-## FASE 0 — Preparação (antes de tocar no console)
+## FASE 0 — Preparação (feita NO DIA, junto com o Claude)
+
+> **Decisão do LEO (17/09): a Fase 0 NÃO é pré-trabalho.** Título, bullets e imagens dependem das **fotos finais da unidade que embarca** (marca gravada). Fazer antes seria retrabalho. No dia D — com o gate resolvido — o LEO chama o Claude e a copy é escrita **ali, na hora**, seguida da criação → associação → conferência, tudo numa sessão só.
 
 Montar, para cada um dos 4, o pacote de dados:
 
