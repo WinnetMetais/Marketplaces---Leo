@@ -138,6 +138,35 @@ O LEO prefere o **desconto no preço** (preço riscado) à Melhor Oferta. **A se
 
 **Se for por este caminho:** recusar o arquivo de recomendações inteiro (`Participando = Não` em tudo) e aplicar o desconto nos 5 SKUs, 21–27/09. Na Mestra, convenção do PG2460: preço de tabela + coluna de desconto + receita líquida.
 
+## E7 — LISTA FINAL REVISADA (18/09, após o LEO optar por desconto no preço)
+
+⚠️ **Correção do E4:** o **Q3060-A sai**. Foi recomendado pela margem (22,4%), mas teve **1 sessão** na semana de 07–13/09. Desconto em página sem visitante não produz nada — é a lição do EC-006 fechada no mesmo dia. **O critério correto é tráfego × margem, nesta ordem.**
+
+Com desconto no preço o LEO escolhe o percentual, o que **reabre as lixeiras pequenas a 5%**: a 10% caem para 12–13%, a 5% ficam acima do piso de 15%.
+
+**Base de tráfego:** Business Report por ASIN, 07–13/09. **45 dos 59 ASINs têm ≤ 3 sessões/semana** e ficam fora por isso.
+
+| SKU | Sessões/sem | Desconto | Margem final | Custo/un | Justificativa |
+|---|---:|---:|---:|---:|---|
+| **L2025-T** | 52 | **5%** | 16,5% | R$ 5,10 | Maior tráfego do catálogo; 1 venda em ~60 sessões em duas semanas |
+| **L1618-T** | 26 | **5%** | 15,3% | R$ 4,45 | Tráfego alto, conversão baixa; devolução de 09/09 por percepção de tamanho. **No limite do piso** |
+| **PXP** | 23 | **5%** | 16,8% | R$ 6,56 | Converteu com oferta no 9.9 |
+| **Q2460-B** | 14 | **5%** | 16,3% | R$ 13,87 | **Zero conversão crônica** (anomalia documentada desde 26/08). Teste discriminante: se 5% não mover, o problema é a página, não o preço |
+| **P4080** | 13 | 10% | 19,3% | R$ 82,20 | Ticket mais alto do catálogo |
+| **P3060** | 13 | 10% | 22,6% | R$ 39,47 | Maior folga de margem entre os que têm tráfego |
+| **PG2460** | 12 | 10% | 16,7% | R$ 18,98 | Converteu com oferta no 9.9 |
+| **PXM** | 6 | **5%** | 18,4% | R$ 7,97 | Converteu com oferta no 9.9 (3 un em 6 sessões) |
+
+**Opcionais (tráfego marginal):** P3050 (7 sess · 10% · 17,8% · R$ 36,06) · L2030 (6 sess · 5% · 16,1% · R$ 4,57).
+
+**Fora:** Q3060-A (1 sessão) · P3070, EGC, L3070-B (veredito na O6) · L2450-AML (margem negativa) · todo SKU com ≤ 3 sessões/semana.
+
+**Custo do desenho:** uma unidade de cada um dos 8 = **~R$ 180 de margem cedida** sobre ~R$ 2.400 de receita.
+
+**Mecanismo:** desconto no preço · **21 a 27/09** · não empilhar com oferta no mesmo ASIN · arquivo de recomendações inteiro com `Participando = Não`.
+
+**Registro:** ao executar, uma linha **EC-007** por SKU (8 a 10 linhas), tipo de ação `CRIAR DESCONTO NO PREÇO`, com o percentual e a margem final. Reavaliar em **28/09** contra a linha de base de sessões acima. ⚠️ **Conferir a primeira venda pedido a pedido** para descobrir a regra de atribuição do Ads neste mecanismo.
+
 ## F. A oportunidade maior — Prime Day, 05 a 11/10
 
 O arquivo lista **`Mega Ofertas Prime Day (2026-10-05 - 2026-10-11)`** como agendamento disponível.
