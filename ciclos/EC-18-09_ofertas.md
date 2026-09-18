@@ -115,6 +115,29 @@ Começando em **21/09** (`seg. 2026-09-21 - 2026-09-27`), a contaminação fica 
 
 ---
 
+## E6 — Mecanismo alternativo: DESCONTO NO PREÇO (levantado pelo LEO, 18/09)
+
+O LEO prefere o **desconto no preço** (preço riscado) à Melhor Oferta. **A seleção de SKUs, a margem e a data não mudam** — 10% custa o mesmo em qualquer mecanismo. O que muda:
+
+| | Melhor Oferta | Desconto no preço |
+|---|---|---|
+| Exibição | Página de ofertas + selo | **Preço riscado na busca e na página** |
+| Depende de recomendação da Amazon | Sim | **Não** |
+| Duração | Janelas fixas | **Livre** |
+| Taxa | Pode haver | **Sem taxa** |
+| Empilha no mesmo ASIN | — | **Não** — é um ou outro |
+
+**A favor:** o problema do 9.9 foi **exibição**; o preço riscado aparece **na busca**, sem depender de visita à página de ofertas. Para semana comum, tende a render mais visibilidade.
+
+**Ressalvas:**
+1. **Preço de referência precisa ser real** — a Amazon só exibe o risco se o preço de tabela foi praticado recentemente. Os 5 recomendados têm venda a preço cheio em setembro; SKU parado pode não exibir o risco.
+2. **Vem de Amazon:** Melhor Oferta pontua (EC-003). Desconto no preço — **sem informação no repositório**. Não presumir.
+3. **Atribuição do Ads:** **terceiro mecanismo**, regra desconhecida (oferta → preço da oferta; promo de quantidade → preço de tabela). **Conferir a primeira venda pedido a pedido.**
+4. **Não comparável** com os 3 de 11 do 9.9 — formato e semana diferentes. Registrar como mecanismo próprio.
+5. **Disciplina de data:** pode começar hoje, e é por isso que vale a regra — **21/09**, não antes.
+
+**Se for por este caminho:** recusar o arquivo de recomendações inteiro (`Participando = Não` em tudo) e aplicar o desconto nos 5 SKUs, 21–27/09. Na Mestra, convenção do PG2460: preço de tabela + coluna de desconto + receita líquida.
+
 ## F. A oportunidade maior — Prime Day, 05 a 11/10
 
 O arquivo lista **`Mega Ofertas Prime Day (2026-10-05 - 2026-10-11)`** como agendamento disponível.
