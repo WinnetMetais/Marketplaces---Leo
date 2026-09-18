@@ -254,7 +254,7 @@ Todos esses dados devem ser revisados quando houver alteração das promoções.
 
 ### DESCONTO NO PREÇO — 10 SKUs, 21/09 a 27/09/2026 (EC-007 a EC-016)
 
-Criado pelo LEO em 18/09; **data final ajustada para 27/09 antes da ativação** (a primeira configuração ia até 20/10 e atravessava o Prime Day). **Mecanismo novo** (preço riscado na busca e na página), distinto de oferta e de promoção de quantidade. **Não empilha com oferta no mesmo ASIN.**
+✅ **EXECUTADO — agendado e confirmado pelo LEO em 18/09: início 21/09 00:00, término 27/09 23:59.** Duas correções antes da ativação: a data final (ia até 20/10, atravessava o Prime Day) e a data inicial (estava em 18/09, contaminaria 4 dias da Era O5→O6). **Mecanismo novo** (preço riscado na busca e na página), distinto de oferta e de promoção de quantidade. **Não empilha com oferta no mesmo ASIN.**
 
 | SKU | Desc. | Tabela → promo | Piso | Margem final |
 |---|---:|---|---:|---:|

@@ -127,13 +127,13 @@
 
 **Ordem de execução recomendada:** as 4 pausas primeiro (reversíveis, não afetam nada) → O5-001 e O5-002 **juntos**, porque um mede o outro → O5-009 e O5-010 por último. **Tirar o export pós-execução** — é ele que fecha o ciclo no repositório.
 
-## Desconto no preço — 10 SKUs, 21/09 a 27/09 (EC-007 a EC-016, criado 18/09)
+## Desconto no preço — 10 SKUs, 21/09 00:00 a 27/09 23:59 (EC-007 a EC-016, ✅ executado 18/09)
 
 - **Mecanismo:** desconto no preço (preço riscado), escolhido pelo LEO em vez de Melhor Oferta. **Terceiro mecanismo** da conta, com **regra de atribuição do Ads ainda não medida** — conferir a primeira venda pedido a pedido.
 - **SKUs e percentuais:** L1618-T, L2025-T, L2030, PXP, PXM, Q2460-B a **5%** · PG2460, P3050, P3060, P4080 a **10%**. Pisos de segurança no preço de margem 15%. Tabela completa nos Parâmetros §7.
 - **Critério:** tráfego (Business Report 07–13/09) × margem ≥ 15%. Q3060-A saiu da lista por ter 1 sessão/semana. **45 dos 59 ASINs ficaram fora por tráfego ≤ 3 sessões** — lição do EC-006.
 - ⚠️ **Q2460-B roda sem preço riscado** ("sem preço de referência" no console) — enfraquece o teste de conversão dele.
-- **7 dias (21–27/09).** A primeira configuração ia até 20/10 e foi **corrigida antes da ativação** para não atravessar o Prime Day (05–11/10). Sobrepõe 23–27/09 da Era O6→O7 — marcar. Deixa uma semana de preço limpo antes do evento.
+- **7 dias (21–27/09), confirmado.** Duas correções antes da ativação: término (ia até 20/10, atravessava o Prime Day) e **início (estava em 18/09 e contaminaria 4 dias da Era O5→O6)**. Sobrepõe 23–27/09 da Era O6→O7 — marcar. Deixa uma semana de preço limpo antes do evento.
 - **Prime Day:** a janela de inscrição está aberta desde 18/09 (o arquivo de recomendações já lista o agendamento). **Decidir a lista na O6 e submeter no mesmo dia** — candidatos naturais PXP, PXM e PG2460, os únicos que já converteram com oferta.
 - **Arquivo de recomendações da Amazon** (18/09): recusado integralmente — 21 Relâmpago (EC-004), L2450-AML com margem negativa a 29,6%, e o restante por margem ou veredito pendente.
 - **Leituras:** 28/09 (7 dias) e O7. Linhas do Registro em `dados/PROPOSTA_linhas_Registro_EC-007_a_016.csv`.

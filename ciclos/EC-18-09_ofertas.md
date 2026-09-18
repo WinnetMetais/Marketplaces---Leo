@@ -171,7 +171,7 @@ Com desconto no preço o LEO escolhe o percentual, o que **reabre as lixeiras pe
 
 **10 desconto no preço criados** — os 8 da lista + os 2 opcionais (P3050, L2030). Percentuais e pisos conforme E7. **Registro: EC-007 a EC-016**, uma linha por SKU (`dados/PROPOSTA_linhas_Registro_EC-007_a_016.csv`).
 
-**Período: 21 a 27/09 (7 dias).** A primeira configuração ia até 20/10; o LEO **corrigiu antes da ativação** para não atravessar o Prime Day (05–11/10). Sobreposição residual com a Era O6→O7: 23–27/09. Uma semana de preço limpo antes do evento. **Lista do Prime Day: decidir na O6 e submeter no mesmo dia.**
+✅ **EXECUTADO. Período: 21/09 00:00 a 27/09 23:59.** Duas correções antes da ativação: término (ia até 20/10, atravessava o Prime Day) e início (estava em 18/09 20:37, contaminaria 4 dias da Era O5→O6). Sobreposição residual com a Era O6→O7: 23–27/09. Uma semana de preço limpo antes do evento. **Lista do Prime Day: decidir na O6 e submeter no mesmo dia.**
 
 ⚠️ **Q2460-B sem preço de referência** no console: roda sem preço riscado. A leitura de 28/09 deve descontar isso.
 

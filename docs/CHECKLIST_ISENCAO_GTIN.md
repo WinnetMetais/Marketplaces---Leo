@@ -36,6 +36,7 @@ As fotos enviadas na solicitação eram de uma **lixeira-amostra com a marca GRA
 | Produto que embarca (estoque atual) | **Winnet Home & Pro** |
 | Amostra fotografada (gravada no inox) | **WIN NET METAIS** |
 | Brand Registry / solicitação | **WINNET METAIS** *(confirmado na tela em 14/09 — tudo junto, sem espaço)* |
+| Nome da conta de vendedor (Seller Central) | **WinNet Metais** *(visto em 18/09 — quarta grafia; não bloqueia nada por si, mas é mais um lugar onde a marca aparece diferente)* |
 
 **Nenhuma corresponde a outra.** A Amazon exige correspondência exata entre a marca da solicitação e a marca afixada no produto fotografado.
 
