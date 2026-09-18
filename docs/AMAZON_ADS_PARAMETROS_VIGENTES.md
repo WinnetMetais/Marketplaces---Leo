@@ -190,6 +190,8 @@ Tese: capturar leilões que o funil já provou converter — termos da 6B vendem
 
 ⚠️ **Não confundir com a promoção de quantidade**, cujo desconto é aplicado no checkout e **é atribuída a preço de tabela** (medido em 31/08). São dois mecanismos, com dois comportamentos, ambos medidos.
 
+⚠️ **TERCEIRO MECANISMO EM CURSO — desconto no preço (21/09–20/10, EC-007 a EC-016): regra de atribuição AINDA NÃO MEDIDA.** Não presumir nem a regra da oferta nem a da promoção de quantidade. **A primeira venda com desconto no preço em SKU anunciado deve ser conferida pedido a pedido** (painel × Business Report × export de Ads) para fixar a regra. Até lá, a bijeção da Mestra com o Ads nesses 10 SKUs fica **provisória**.
+
 **Consequência prática no `Registro_Vendas`:** em venda com oferta, lançar o **preço de tabela** na coluna de preço e o **desconto da oferta** na coluna própria — a receita líquida é o que o Ads e o Business Report vão registrar. Esse é o padrão que fez a bijeção fechar ao centavo em 14/09, depois de duas correções (PG2460 e PXM).
 
 
@@ -249,6 +251,33 @@ Orçamento configurado: R$ 1.000 por promoção. Promoções não acumuláveis.
 Término atualmente configurado: janeiro/2027.
 
 Todos esses dados devem ser revisados quando houver alteração das promoções.
+
+### ⚠️ DESCONTO NO PREÇO — 10 SKUs, 21/09 a 20/10/2026 (EC-007 a EC-016)
+
+Executado pelo LEO em 18/09. **Mecanismo novo** (preço riscado na busca e na página), distinto de oferta e de promoção de quantidade. **Não empilha com oferta no mesmo ASIN.**
+
+| SKU | Desc. | Tabela → promo | Piso | Margem final |
+|---|---:|---|---:|---:|
+| L1618-T | 5% | 116,00 → 110,20 | 109,58 | 15,3% |
+| L2025-T | 5% | 132,90 → 126,26 | 123,25 | 16,5% |
+| L2030 | 5% | 119,22 → 113,26 | 111,16 | 16,1% |
+| PXP | 5% | 167,89 → 159,50 | 155,00 | 16,8% |
+| PXM | 5% | 203,54 → 193,36 | 183,09 | 18,4% |
+| Q2460-B | 5% | 360,97 → 342,92 | 335,51 | 16,3% — ⚠️ **sem preço de referência**: roda sem preço riscado |
+| PG2460 | 10% | 248,75 → 223,88 | 217,76 | 16,7% |
+| P3050 | 10% | 467,67 → 420,90 | 401,99 | 17,8% |
+| P3060 | 10% | 511,42 → 460,28 | 404,24 | 22,6% |
+| P4080 | 10% | 1.070,17 → 963,15 | 895,93 | 19,3% |
+
+Critério de seleção: **tráfego (Business Report 07–13/09) × margem ≥ 15%**. Detalhe em `ciclos/EC-18-09_ofertas.md` §E7.
+
+**⚠️ Duração de 30 dias, não 7.** O plano era 21–27/09; o LEO configurou até **20/10**. Consequências:
+
+1. **Corte de série na Era O6→O7.** A Era inteira (~23/09–05/10) roda com esses 10 SKUs em desconto. **Conversão e ACOS deles não são comparáveis com as Eras anteriores** — marcar no fechamento da O7, como se faz com a migração de ASIN. A O6 (22/09) lê a Era 09–21/09, que é limpa (só 21/09 tem desconto).
+2. **Conflito com o Prime Day (05–11/10).** Oferta não empilha com desconto no preço no mesmo ASIN — para colocar qualquer um desses 10 em Melhor Oferta no Prime Day, o desconto precisa ser **encerrado antes**. E há um segundo efeito: duas semanas a 5–10% rebaixam o preço de referência que a Amazon usa para validar o preço de uma oferta; a oferta do Prime Day teria de ir **abaixo** do promocional atual. **Decidir na O6 se os 10 ficam até 20/10 ou se o desconto encerra antes do Prime Day.**
+3. **Regra de atribuição do Ads desconhecida** — ver §6.
+
+**Leituras:** primeira em **28/09** (7 dias) contra a linha de base de sessões em `ciclos/EC-18-09_ofertas.md`; leitura final na O7.
 
 ### Auditoria de conformidade — 28/08/2026
 

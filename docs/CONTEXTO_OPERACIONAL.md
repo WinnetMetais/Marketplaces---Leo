@@ -127,6 +127,21 @@
 
 **Ordem de execução recomendada:** as 4 pausas primeiro (reversíveis, não afetam nada) → O5-001 e O5-002 **juntos**, porque um mede o outro → O5-009 e O5-010 por último. **Tirar o export pós-execução** — é ele que fecha o ciclo no repositório.
 
+## Desconto no preço — 10 SKUs, 21/09 a 20/10 (EC-007 a EC-016, executado 18/09)
+
+- **Mecanismo:** desconto no preço (preço riscado), escolhido pelo LEO em vez de Melhor Oferta. **Terceiro mecanismo** da conta, com **regra de atribuição do Ads ainda não medida** — conferir a primeira venda pedido a pedido.
+- **SKUs e percentuais:** L1618-T, L2025-T, L2030, PXP, PXM, Q2460-B a **5%** · PG2460, P3050, P3060, P4080 a **10%**. Pisos de segurança no preço de margem 15%. Tabela completa nos Parâmetros §7.
+- **Critério:** tráfego (Business Report 07–13/09) × margem ≥ 15%. Q3060-A saiu da lista por ter 1 sessão/semana. **45 dos 59 ASINs ficaram fora por tráfego ≤ 3 sessões** — lição do EC-006.
+- ⚠️ **Q2460-B roda sem preço riscado** ("sem preço de referência" no console) — enfraquece o teste de conversão dele.
+- ⚠️ **30 dias em vez de 7.** Cobre a **Era O6→O7 inteira** (corte de série para esses 10 SKUs — não comparar com Eras anteriores) e o **Prime Day (05–11/10)**. Oferta não empilha com desconto no mesmo ASIN, e o desconto prolongado rebaixa o preço de referência que valida uma oferta futura. **A O6 decide se o desconto vai até 20/10 ou encerra antes do Prime Day.**
+- **Arquivo de recomendações da Amazon** (18/09): recusado integralmente — 21 Relâmpago (EC-004), L2450-AML com margem negativa a 29,6%, e o restante por margem ou veredito pendente.
+- **Leituras:** 28/09 (7 dias) e O7. Linhas do Registro em `dados/PROPOSTA_linhas_Registro_EC-007_a_016.csv`.
+
+## Cupons de 04/09 — vereditos de 18/09
+
+- **EC-005 (P2025, 12%):** zero vendas em 14 dias → **SEM EFEITO**. Recomendação: encerrar (risco de empilhamento com promo de quantidade, sem ganho).
+- **EC-006 (EMB-05/05P/08, 50%):** zero vendas em 14 dias → **NEGATIVO no objetivo** (espaço físico não liberado). Confirma a hipótese registrada em 04/09: **gargalo é tráfego, não preço**. Recomendação: migrar a liquidação de canal (lote/atacado/Mercado Livre). Decisão da Dianna. Cupom pode ficar sem custo, mas não resolve.
+
 ## Monitoramento de 14/09 — leitura do 9.9 e conferência da O5
 
 **Conferência de estado: ✅ tudo firme.** 12 ativas / 68 pausadas, as 5 execuções visíveis no export conforme deixadas, nenhum zumbi.
@@ -225,6 +240,7 @@ O método operacional foi originalmente estabelecido por um assessor (Henrique) 
 | 08/09/2026 | pré-O5 | **Mestra v4.3.4**: 4 vendas de setembro (02, 03, 05 e 07/09) · validações de dados perdidas no fechamento e **restauradas por reinjeção do `extLst`** · regra nova: Mestra não pode ser salva por `openpyxl` |
 | 09/09/2026 | **O5** | Ciclo concluído como análise (17 linhas aprovadas, execução pendente) · correção de 15→16 campanhas ativas · O4-015 confirmada inerte · SP-01 diagnosticado em três camadas · gasto de setembro em 41–46% do teto · **monitoramento de 21/09 eliminado** com conferência de estado obrigatória em 14/09 como contrapartida · divergência SP-T/SP-01 na Bituqueiras em aberto |
 | 09/09/2026 | **O5 executada** | 8 ações no console, todas conferidas · O5-010 saiu invertida (nomes PT-BR das segmentações) e foi corrigida no mesmo dia pela conferência pós-execução · O5-013 não executada (L2030-T fora do grupo da 6B) · **C7: a PI PXM entrega — o diagnóstico havia invertido entrega e CTR** · conta em 12 ativas · Parâmetros com o snapshot pós-execução |
+| 18/09/2026 | entre-ciclos | **Desconto no preço em 10 SKUs, 21/09–20/10 (EC-007 a EC-016)** — terceiro mecanismo, regra de atribuição a medir. Arquivo de recomendações da Amazon recusado integralmente (21 Relâmpago; L2450-AML a −6,2% de margem). Q3060-A retirado por 1 sessão/semana. ⚠️ 30 dias em vez de 7: corte de série na Era O6→O7 e conflito com o Prime Day — decisão na O6. **EC-005 e EC-006 avaliados: zero vendas em 14 dias** nos dois cupons; hipótese de tráfego confirmada nos EMB |
 | 15/09/2026 | Ads | **Gatilho O5-011 DESARMADO.** A venda do P3070 de 15/09 (**R$ 616,18**, maior ticket da Era) foi **atribuída à própria PI P3070-o228/07**, posterior ao Relâmpago — a primeira condição do gatilho caiu e **não há redução de lance**. É a **primeira conversão da PI desde 21/06**. Não promove a campanha a ESCALAR: a O6 precisa do alvo que converteu (régua de PI é no nível do alvo) e do gasto da Era inteira. Não calcular ACOS com a janela parcial de 07–14/09. Break-even do SKU ≈ 25,8% |
 | 14/09/2026 | correção | **A filiação à GS1 NÃO estava parada** — o portal mostra 2 dos 3 documentos aprovados e só o **Faturamento Fiscal do Último Exercício** pendente, com análise de 1–2 dias úteis. O `CHECKLIST_GS1_EAN.md` afirmava que nada havia sido iniciado; **reativado e corrigido**. A pendência é da Winnet (documento da contabilidade, define a faixa de anuidade), não da GS1. **Comparação de caminhos inverteu-se:** GS1 a um documento e 1–2 dias; isenção dependente de mudança de produção sem data |
 | 14/09/2026 | bloqueio | **Isenção de GTIN RECUSADA.** Causa raiz identificada: **três grafias diferentes** — produto que embarca `Winnet Home & Pro` (adesivo) · amostra fotografada `WIN NET METAIS` (gravada no inox) · Brand Registry `WINNET METAIS`. As fotos eram da **amostra, não da unidade que embarca**; refazer fotos não resolve. **Bloqueio é físico: o cronograma da migração passa a depender da produção, não da Amazon.** Corte de 19/09 cancelado; escopo da migração na O6 vai a NÃO DECIDIR AINDA. Achado positivo: a fábrica consegue gravar a marca no inox permanentemente — superior ao adesivo. Em aberto: grafia exata do Brand Registry, entrada da gravação em produção, saída do adesivo antigo |

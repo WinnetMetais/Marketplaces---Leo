@@ -167,6 +167,16 @@ Com desconto no preço o LEO escolhe o percentual, o que **reabre as lixeiras pe
 
 **Registro:** ao executar, uma linha **EC-007** por SKU (8 a 10 linhas), tipo de ação `CRIAR DESCONTO NO PREÇO`, com o percentual e a margem final. Reavaliar em **28/09** contra a linha de base de sessões acima. ⚠️ **Conferir a primeira venda pedido a pedido** para descobrir a regra de atribuição do Ads neste mecanismo.
 
+## E8 — EXECUÇÃO (18/09, LEO)
+
+**10 desconto no preço criados** — os 8 da lista + os 2 opcionais (P3050, L2030). Percentuais e pisos conforme E7. **Registro: EC-007 a EC-016**, uma linha por SKU (`dados/PROPOSTA_linhas_Registro_EC-007_a_016.csv`).
+
+⚠️ **Divergência do plano: período de 21/09 a 20/10 (30 dias), não 21–27/09 (7 dias).** Consequências registradas nos Parâmetros §7 e no Contexto:
+- corte de série na Era O6→O7 para os 10 SKUs;
+- conflito com o Prime Day (05–11/10): oferta não empilha com desconto no mesmo ASIN, e o desconto prolongado rebaixa o preço de referência — **a O6 decide** se mantém até 20/10 ou encerra antes do evento.
+
+⚠️ **Q2460-B sem preço de referência** no console: roda sem preço riscado. A leitura de 28/09 deve descontar isso.
+
 ## F. A oportunidade maior — Prime Day, 05 a 11/10
 
 O arquivo lista **`Mega Ofertas Prime Day (2026-10-05 - 2026-10-11)`** como agendamento disponível.
