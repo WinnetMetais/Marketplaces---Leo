@@ -190,7 +190,7 @@ Tese: capturar leilões que o funil já provou converter — termos da 6B vendem
 
 ⚠️ **Não confundir com a promoção de quantidade**, cujo desconto é aplicado no checkout e **é atribuída a preço de tabela** (medido em 31/08). São dois mecanismos, com dois comportamentos, ambos medidos.
 
-⚠️ **TERCEIRO MECANISMO EM CURSO — desconto no preço (21/09–20/10, EC-007 a EC-016): regra de atribuição AINDA NÃO MEDIDA.** Não presumir nem a regra da oferta nem a da promoção de quantidade. **A primeira venda com desconto no preço em SKU anunciado deve ser conferida pedido a pedido** (painel × Business Report × export de Ads) para fixar a regra. Até lá, a bijeção da Mestra com o Ads nesses 10 SKUs fica **provisória**.
+⚠️ **TERCEIRO MECANISMO EM CURSO — desconto no preço (21/09–27/09, EC-007 a EC-016): regra de atribuição AINDA NÃO MEDIDA.** Não presumir nem a regra da oferta nem a da promoção de quantidade. **A primeira venda com desconto no preço em SKU anunciado deve ser conferida pedido a pedido** (painel × Business Report × export de Ads) para fixar a regra. Até lá, a bijeção da Mestra com o Ads nesses 10 SKUs fica **provisória**.
 
 **Consequência prática no `Registro_Vendas`:** em venda com oferta, lançar o **preço de tabela** na coluna de preço e o **desconto da oferta** na coluna própria — a receita líquida é o que o Ads e o Business Report vão registrar. Esse é o padrão que fez a bijeção fechar ao centavo em 14/09, depois de duas correções (PG2460 e PXM).
 
@@ -252,9 +252,9 @@ Término atualmente configurado: janeiro/2027.
 
 Todos esses dados devem ser revisados quando houver alteração das promoções.
 
-### ⚠️ DESCONTO NO PREÇO — 10 SKUs, 21/09 a 20/10/2026 (EC-007 a EC-016)
+### DESCONTO NO PREÇO — 10 SKUs, 21/09 a 27/09/2026 (EC-007 a EC-016)
 
-Executado pelo LEO em 18/09. **Mecanismo novo** (preço riscado na busca e na página), distinto de oferta e de promoção de quantidade. **Não empilha com oferta no mesmo ASIN.**
+Criado pelo LEO em 18/09; **data final ajustada para 27/09 antes da ativação** (a primeira configuração ia até 20/10 e atravessava o Prime Day). **Mecanismo novo** (preço riscado na busca e na página), distinto de oferta e de promoção de quantidade. **Não empilha com oferta no mesmo ASIN.**
 
 | SKU | Desc. | Tabela → promo | Piso | Margem final |
 |---|---:|---|---:|---:|
@@ -271,13 +271,13 @@ Executado pelo LEO em 18/09. **Mecanismo novo** (preço riscado na busca e na p�
 
 Critério de seleção: **tráfego (Business Report 07–13/09) × margem ≥ 15%**. Detalhe em `ciclos/EC-18-09_ofertas.md` §E7.
 
-**⚠️ Duração de 30 dias, não 7.** O plano era 21–27/09; o LEO configurou até **20/10**. Consequências:
+**Duração: 7 dias (21–27/09).** Consequências:
 
-1. **Corte de série na Era O6→O7.** A Era inteira (~23/09–05/10) roda com esses 10 SKUs em desconto. **Conversão e ACOS deles não são comparáveis com as Eras anteriores** — marcar no fechamento da O7, como se faz com a migração de ASIN. A O6 (22/09) lê a Era 09–21/09, que é limpa (só 21/09 tem desconto).
-2. **Conflito com o Prime Day (05–11/10).** Oferta não empilha com desconto no preço no mesmo ASIN — para colocar qualquer um desses 10 em Melhor Oferta no Prime Day, o desconto precisa ser **encerrado antes**. E há um segundo efeito: duas semanas a 5–10% rebaixam o preço de referência que a Amazon usa para validar o preço de uma oferta; a oferta do Prime Day teria de ir **abaixo** do promocional atual. **Decidir na O6 se os 10 ficam até 20/10 ou se o desconto encerra antes do Prime Day.**
+1. **Sobreposição parcial com a Era O6→O7:** 23 a 27/09, cinco dias. Marcar no fechamento da O7 para esses 10 SKUs. A O6 (22/09) lê a Era 09–21/09, limpa (só 21/09 tem desconto).
+2. **Prime Day (05–11/10) preservado:** o desconto encerra em 27/09 e deixa **uma semana de preço limpo (28/09–04/10)** antes do evento, protegendo o preço de referência. Oferta não empilha com desconto no mesmo ASIN — os 10 ficam livres para o evento. **A lista do Prime Day se decide na O6 e se submete no mesmo dia**: a janela de inscrição está aberta desde 18/09 e a data de fechamento não é conhecida.
 3. **Regra de atribuição do Ads desconhecida** — ver §6.
 
-**Leituras:** primeira em **28/09** (7 dias) contra a linha de base de sessões em `ciclos/EC-18-09_ofertas.md`; leitura final na O7.
+**Leituras:** **28/09** (7 dias) contra a linha de base de sessões em `ciclos/EC-18-09_ofertas.md` — decide se prorroga (com teto em 04/10) ou encerra; leitura final na O7.
 
 ### Auditoria de conformidade — 28/08/2026
 
