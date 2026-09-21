@@ -41,7 +41,7 @@ Decisão registrada: Wintech + Dianna, 01/09. Isenção de GTIN descartada.
 
 **Andamento (15/09, informado pelo LEO):** a **Dianna reenviou o documento** e, como contingência, **já solicitou o faturamento à contabilidade** caso o reenvio seja recusado. Duas frentes em curso.
 → Se o reenvio foi feito em 15/09 (terça), a resposta da GS1 é esperada até **17/09 (quinta)**. Sem retorno até lá, cobrar. O prazo cabe antes da O6 (22/09).
-**Estado em 21/09 (LEO):** documento **ainda em análise** — 4 dias úteis após o reenvio, acima do prazo de 1–2 dias declarado pelo portal. **Cobrar a GS1** (canal de atendimento do portal), citando a data do reenvio. A migração de ASIN entra na O6 de 22/09 como `NÃO DECIDIR AINDA`.
+**Estado em 21/09 (LEO):** documento **ainda em análise** — 4 dias úteis após o reenvio, acima do prazo de 1–2 dias declarado pelo portal. **Cobrar a GS1** (canal de atendimento do portal), citando a data do reenvio. → **Feito em 21/09: o LEO acionou o suporte da GS1.** Aguardando retorno. A migração de ASIN entra na O6 de 22/09 como `NÃO DECIDIR AINDA`.
 3. [ ] Usar o **simulador de valores** do site: escolher a faixa de códigos pela projeção do catálogo — hoje são **114 ofertas**; com variações pai/filho na recriação e novos produtos, dimensionar com folga (faixa de centenas a 1.000)
 4. [ ] Enviar os documentos solicitados (cartão CNPJ, dados do responsável legal) e **pagar o boleto** da anuidade
 5. [ ] Aguardar confirmação — o acesso ao **Cadastro Nacional de Produtos (CNP)** libera após o pagamento confirmado
