@@ -261,3 +261,9 @@ O risco que sobra numa Era com muitas execuções não é performance derivando:
 
 **Regra operacional:** em qualquer ação de segmentação, a linha do Registro deve trazer **o nome em inglês e o número de cliques vitalícios**, para que a conferência pós-execução não dependa da tradução.
 
+## Business Report chega com ~1 dia de atraso (21/09/2026)
+
+O BR por ASIN puxado em 21/09 para a janela **14–20/09** não trazia o pedido de **20/09** (3 un de L2025-T, R$ 378,76, já lançado na Mestra). Os 4 itens e R$ 997,98 do relatório correspondem, na prática, a 14–19/09.
+
+**Regra:** para uma janela que termina no dia D, o BR só é confiável se puxado em **D+2**. Puxado em D+1, tratar o último dia como incompleto e fechar a bijeção com a Mestra **excluindo o dia D**. Vale para a O6: um BR 10–21/09 puxado na manhã de 22/09 provavelmente não terá o dia 21 completo — conferir contra a Mestra antes de contar participação de Ads.
+
