@@ -1,0 +1,13 @@
+Coluna,Campo,Valor a lançar (linha 13)
+A,Data de referência,21/09/2026
+B,Período analisado,14/09/2026 a 21/09/2026
+C,Impressões,43599
+D,Cliques,146
+E,Custo Ads (R$),"130,55"
+F,Vendas atribuídas Ads (R$),"749,08"
+G,Pedidos atribuídos,2
+H,Unidades atribuídas,2
+I..M,(calculadas),"ROAS 5,74 · ACOS 17,4% · Taxa 1,37% · CPC 0,89 · CTR 0,335%"
+N,Status semanal,VIGIA
+O,Notas,"SEM DIAGNÓSTICO — regra da véspera (MEMORIA 09/09): a O6 de 22/09 relê a Era 09–21/09 inteira. Esta linha é só registro. Primeira semana LIMPA pós-O5 (sem oferta): ACOS 17,4% com 2 vendas — P3070 R$ 616,18 (PI P3070, 15/09) e L2025-T R$ 132,90 (Geral, 15/09); bijeção console × Mestra fecha ao centavo. Impressões DOBRARAM ante 07–14/09 (22.192 → 43.599): a PI P3070 entregou ≈27,9 mil (64% da semana) com CTR 0,14%, 39 cliques e R$ 56,55 (43% do gasto) — em toda a Era anterior fez 30 cliques. ⚠️ LER NA O6 COM A ERA INTEIRA: Geral 90 cli / R$ 59,12 / 1 venda de R$ 132,90 → ACOS 44,5% na semana (acima da emergência, mas 1 venda de ticket baixo — não decidir por 7 dias); EGC 6 cli / 0 venda / CTR 0,17% (gatilho de pausa: 0 vendas E CTR < 0,3%); SP-PP 0 cliques (gatilho: 0 cliques relevantes → pausar). Setembro: R$ 287,66 = 28,8% do teto. Mestra: 2 vendas novas de L2025-T (19/09 1 un RS Capital; 20/09 3 un SP Capital com 5% de PROMO DE QUANTIDADE — não é o desconto no preço, que só começou 21/09); frete real e STATUS pendentes até o envio. DEVOLUÇÃO nova: L2030-T de 01/09 (R$ 143,13, Goiás Capital), aprovada 17/09 — 2ª devolução de setembro. Business Report cobre até 19/09 (o pedido de 20/09 não aparece): 241 sessões, 4 un, R$ 997,98. Desconto no preço em 10 SKUs ativo a partir de 21/09 00:00 (EC-007 a 016) — 1 dia dentro desta janela."
+P,Arquivo / fonte,"console Amazon Ads (set 14–set 21) + relatorios/amazon/monitoramento-21-09"
