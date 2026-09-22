@@ -303,6 +303,12 @@ Critério de seleção: **tráfego (Business Report 07–13/09) × margem ≥ 15
 
 Fora: L2450-AML, Q2460-B, L2025-T, L1618-T, EGC, L2030, L1618-B. Relâmpago vetada (EC-004). Mínimo do evento 10%. Nenhuma oferta empilha com o desconto no preço (encerra 27/09). Conferir o preço de referência calculado pela Amazon na tela antes de confirmar.
 
+**⚠️ Elegibilidade real (tela de ofertas + arquivo `relatorios/amazon/prime-day-22-09/deal_recommendations_22-09.xlsx`, 22/09 18:16 UTC):** a Amazon só oferece "Mega Ofertas Prime Day" em **Melhor Oferta** para **P3070** e **PXP**. PXM, PG2460, P3060, P4080 e P3050 **não aparecem** (a lista de recomendações muda toda segunda — reconferir em **28/09**). L2025-T e L1618-T só aparecem como Relâmpago (vetada). **Q4070-A** (B0H7ZGZ8DK) aparece em Melhor Oferta, mas fica **fora por decisão do LEO** (6 sessões / 0 venda em 10–20/09; esteve no 9.9 sem vender).
+
+**Ao submeter:** o arquivo vem pré-preenchido com agendamento **"Personalizado 23/09–04/10"** — trocar para **"Mega Ofertas Prime Day (2026-10-05 - 2026-10-11)"**, senão a oferta entra amanhã, empilha com o desconto no preço até 27/09 e contamina a Era. PXP vem pré-preenchido a **R$ 151,90 (9,5%)** — usar **R$ 151,10 (10%)**, o mínimo do evento. P3070 já vem a R$ 523,75. Unidades comprometidas pré-preenchidas com o estoque inteiro (419 / 904).
+
+**Para os 5 não elegíveis:** opção A — esperar a lista de 28/09; opção B — **desconto no preço 05–11/10** com os mesmos percentuais (mesma margem, sem selo do evento; regra de atribuição desconhecida). **Não aprovado na O6; decisão do LEO pendente.**
+
 ### Auditoria de conformidade — 28/08/2026
 
 As duas listas foram cruzadas contra o **Simulador da Planilha Mestra v4.3.2** (cenário SP Interior). Resultado: **conformidade total, zero violações**.
