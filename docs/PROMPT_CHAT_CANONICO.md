@@ -2,6 +2,8 @@
 
 Colar como primeira mensagem de um chat novo dentro do **Projeto Amazon** (com os documentos do Projeto atualizados). Reutilizável sempre que o chat canônico ficar longo demais.
 
+**Versão: O6 (22/09/2026).** Substitui a versão da O5.
+
 **Divisão de papéis vigente (definida pelo LEO em 08/09):** o **chat canônico analisa e roda a Ox**; o **Claude Code audita** o resultado contra os relatórios brutos, as planilhas e o git. É o inverso da divisão anterior — este documento já reflete a inversão.
 
 ---
@@ -81,55 +83,57 @@ Os números específicos vêm dos **Parâmetros Vigentes** — nunca de memória
 
 ## Achados metodológicos vigentes (não re-derivar)
 
-- **A atribuição de Ads valoriza vendas a preço de tabela**, antes do desconto promocional. Em SKU com promoção ativa, o ROAS atribuído infla e o ACOS subestima. Verificado em 31/08. **Crítico na leitura do 9.9.**
+- **Atribuição de Ads — três mecanismos, duas regras medidas:** **Oferta Relâmpago e Melhor Oferta são atribuídas ao PREÇO DA OFERTA** (confirmado em 14/09: 5 pedidos, 3 SKUs, 4 campanhas, ao centavo). **Promoção de quantidade é atribuída a preço de tabela** (medido em 31/08). **Desconto no preço (em curso desde 21/09) é um terceiro mecanismo com regra AINDA NÃO MEDIDA** — não presumir nenhuma das duas; a primeira venda com ele deve ser conferida pedido a pedido.
+- **Business Report chega com ~1 dia de atraso:** para uma janela que termina no dia D, só é confiável puxado em D+2. Puxado em D+1, o dia D vem incompleto — fechar a bijeção com a Mestra excluindo D.
+- **Nomes das segmentações automáticas em PT-BR invertem a intuição:** *Correspondência vaga* = `loose-match`; *Correspondência aproximada* = `close-match`. Conferir sempre por cliques/custo. Já causou um erro de execução na O5.
+- **Régua de PI opera no ALVO, e o relatório tem duas dimensões:** o ASIN do *produto anunciado* (o que a Winnet vende) não é o *alvo* (ASIN de terceiro onde o anúncio apareceu). Só o relatório de Segmentação / vitalício por alvo responde "qual alvo converteu".
 - **A `Ref_Frete` superestima o frete real** — mediana de ~45%, com 27 de 29 pedidos de 1 unidade abaixo da tabela. As margens do Simulador podem estar pessimistas e os rankings de lucro precisam ser recalculados sobre frete real. **Ainda em aberto.**
 - **Conversão de ~1,72% é referência derivada, não régua oficial.**
 - **Pausa por inelegibilidade ≠ falha de desempenho** — não entra em contrapeso vitalício nem em leitura de performance.
 
-## Estado da operação em 08/09/2026
+## Estado da operação em 22/09/2026 (dia da O6)
 
-- **Ciclos:** O4 concluída em 25/08 (19 ações executadas). Monitoramento semanal feito em 31/08. **O5 acontecendo hoje.** O6 prevista para 22/09.
-- **Livro de Vendas de agosto fechado hoje.** Junho R$ 3.312 (29,1% orgânico) · Julho R$ 4.857 (41,7%) · **Agosto R$ 13.916 (68,4% orgânico)**. Total dos três meses: R$ 22.084,55, sendo R$ 9.568,80 de Ads. Agosto quase triplicou julho. **Ads responde por ~32% da receita de agosto** — ler ACOS e ROAS com isso em mente.
-- **Planilha Mestra: v4.3.3** é a canônica (v4.3.2 preservada).
-- **Teto mensal de Ads: R$ 1.000/mês** (definido por Dianna).
-- **Evento 9.9:** 16 ofertas rodando de 07 a 13/09 — 5 Relâmpago e 11 Melhor Oferta, todas a 10–15%, taxa zero. Nenhuma Relâmpago caiu no dia 9; a Amazon espalhou pela semana. **A janela da O5 pega o começo do evento** — cuidado ao ler performance contaminada por promoção.
-- **Cupons fora do evento:** P2025 a 12%; **EMB-05, EMB-05P e EMB-08 a 50%** — liquidação **deliberada abaixo do custo** (−R$ 53 a −R$ 61 por unidade), decisão da Dianna, **sem teto de orçamento**. ⚠️ As vendas desses três sairão com **margem negativa por desenho** — segregue de qualquer média de margem do catálogo e dos rankings de lucro. Revisão marcada para 18/09.
-- **Marca:** Brand Registry `WINNET METAIS` aprovado, mas o atributo de marca dos ASINs atuais está como "Genérico" e **não pode ser alterado** — A+, Brand Analytics e Sponsored Brands só funcionam em ASIN novo. Daí a pendência de **migração de ASIN**, fundida com a proposta de concentração: são a mesma decisão. **Identificador de produto: isenção de GTIN** (decisão do LEO, 14/09 — substitui o EAN próprio via GS1, cujo checklist está suspenso). Pedido feito, sem retorno da Amazon. É o gate do piloto de migração na O6.
-- **Registro de Alterações:** 23 entradas oficiais (O4-R01 a O4-015, EC-001 a EC-004). EC-005 e EC-006 (os cupons) a lançar. **Uma recomendação só vira alteração real quando sua execução estiver confirmada nesse arquivo.**
-- **Pendências abertas para a O5:** frete real × `Ref_Frete` · desempate obrigatório do Q2460-B · veredito dos 4 radares · veredito do piloto de estratégia de lances da 6B · efeito da Geral a R$ 0,48 · reavaliar CTR do SP-PP pós-limpeza · migração de ASIN (escolher 2–3 SKUs piloto) · gasto contra o teto de R$ 1.000.
+- **Ciclos:** O5 analisada em 08/09 e **executada em 09/09** (8 ações no console, conferidas). Monitoramento em 14/09 (Modo A + leitura do 9.9 + conferência de estado da O5: 12 ativas / 68 pausadas, nenhum zumbi). Linha do Controle Semanal em 21/09, **sem diagnóstico** (regra da véspera). **O6 é hoje.** O7 estimada ~06/10. **Livro de Vendas de setembro fecha em 05/10.**
+- **Era O5→O6: 10 a 21/09** (convenção: do dia seguinte à execução anterior até o dia anterior à Ox) — 12 corridos, **9 úteis, sem feriado**. Comparável à Era da O5 (8 úteis, com feriado).
+- **Conta:** 12 campanhas ativas. Geral Automática `DBA-o59/09` com lances **por segmentação** (close 0,54 · loose 0,54 · substitutes 0,45 · complements 0,45 — O5-001/002); o lance padrão de R$ 0,48 é **inerte**. Orçamento R$ 90/dia, consumo ~12%.
+- **Setembro: R$ 287,66 até 21/09 = 28,8% do teto de R$ 1.000** (Dianna).
+- **Planilha Mestra: v4.3.4** canônica, com `Registro_Vendas` até 20/09 e coluna STATUS (`VÁLIDO` / `DEVOLUÇÃO`). **Duas devoluções em setembro:** L1618-T de 02/09 e **L2030-T de 01/09 (aprovada 17/09)** — segregar de qualquer contagem de venda.
+- **Registro de Alterações: 52 entradas** — 25 avaliadas, 26 em maturação, 1 bloqueada. Em maturação: **O5-001 a O5-017** (menos as já avaliadas) e **EC-007 a EC-016**.
+- **9.9 (07–13/09) — vereditos fechados em 14/09:** Melhor Oferta 3 de 11 (PXP, PXM, PG2460 — só extintor e porta-guarda-chuva; **nenhuma lixeira converteu com oferta**); Relâmpago **0 de 5, 19 visualizações somadas** — falha de exibição, não de conversão; **não repetir Relâmpago** antes de entender a exibição. **Cupons de 04/09 avaliados em 18/09: zero vendas nos dois** (EC-005 P2025 12% → SEM EFEITO; EC-006 EMB 50% → NEGATIVO no objetivo: o gargalo é tráfego, não preço).
+- ⚠️ **DESCONTO NO PREÇO EM CURSO: 10 SKUs, 21/09 00:00 a 27/09 23:59 (EC-007 a EC-016).** L1618-T, L2025-T, L2030, PXP, PXM, Q2460-B a **5%**; PG2460, P3050, P3060, P4080 a **10%**. Q2460-B roda **sem preço riscado** (sem preço de referência). **Só o dia 21/09 cai dentro da Era desta O6** — contaminação mínima; mas **23–27/09 cai na Era O6→O7** (corte de série para esses 10 SKUs, a marcar na O7). Primeira leitura em 28/09. **Regra de atribuição do Ads neste mecanismo: desconhecida.**
+- **Prime Day: 05 a 11/10.** A janela de inscrição de ofertas está aberta (o arquivo de recomendações de 18/09 lista o agendamento). O desconto no preço termina em 27/09 justamente para deixar uma semana de preço limpo antes do evento. **A lista do Prime Day se decide nesta O6 e se submete hoje** — candidatos naturais: PXP, PXM, PG2460, os únicos que já converteram com oferta. Oferta não empilha com desconto no preço no mesmo ASIN.
+- **Marca / migração de ASIN:** Brand Registry `WINNET METAIS` aprovado; ASINs atuais com marca "Genérico", inalterável — A+, Brand Analytics e Sponsored Brands só em ASIN novo. **Isenção de GTIN RECUSADA (14/09)** — causa raiz: **três grafias distintas** (produto que embarca *Winnet Home & Pro* · amostra gravada *WIN NET METAIS* · Brand Registry *WINNET METAIS*); o bloqueio é **físico**, depende da marcação de produção (decisão com a Dianna, ainda sem resposta). **GS1 reativada:** 2 de 3 documentos aprovados, o terceiro **em análise** desde 15/09, suporte acionado em 21/09. **Escopo da migração nesta O6: `NÃO DECIDIR AINDA`.** Não gastar tempo de análise nela.
+- **Sinais da semana 14–21/09 (linha 13 do Controle, sem diagnóstico):** impressões dobraram (22.192 → 43.599) puxadas pela **PI P3070** (≈27,9 mil impressões, CTR 0,14%, 39 cliques, R$ 56,55 — 43% do gasto da semana; na Era da O5 inteira fez 30 cliques); **Geral com ACOS 44,5% na semana** sobre uma única venda de R$ 132,90; **EGC** 6 cliques / 0 venda / CTR 0,17%; **SP-PP** 0 cliques. **Ler tudo com a Era inteira, não com a semana.**
 
-## Pauta obrigatória desta O5 (adendo do LEO, 08/09)
+## Pauta obrigatória desta O6
 
-Além das pendências já listadas, esta O5 tem de cobrir:
+**(a) Vereditos das execuções da O5, com a Era 10–21/09:**
+- **O5-001 / O5-002** — lances da Geral por segmentação (substitutes 0,54→0,45; close 0,45→0,54). Efeito na distribuição de cliques/custo entre segmentações e no ACOS da Geral. Precisa do **relatório de Segmentação** da Era.
+- **O5-009** — L3070-B para lances dinâmicos; e o **piloto 6B** (O4-014). Grupo de controle em lances fixos: Cinzeiros, Extintor, EGC, Bituqueiras.
+- **Auto EGC (O5-007, VIGIA)** — gatilho: **0 vendas E CTR < 0,3% → PAUSAR**. Julgar pela Era, não pela semana.
+- **Auto SP-PP-o59/09 (VIGIA)** — gatilho: **0 cliques relevantes → PAUSAR campanha**.
+- **PI P3070 (O5-011)** — gatilho **DESARMADO em 15/09** (venda de R$ 616,18 atribuída à própria PI, pós-Relâmpago). **Não reduzir lance.** Mas a Era precisa responder: **qual ALVO converteu** (vitalício por alvo — os 4 em triagem eram `B09YDLC69D`, `B0CYWMQ93Y`, `B0BHMZBZW9`, `B0778TD2LY`), e o que fazer com a entrega que dobrou. Break-even do SKU ≈ 25,8%. Não promover a ESCALAR por uma venda.
+- **PI PXM-o311/08** — `CORRIGIR CTR` (2.500 impressões vitalícias, CTR 0,28%); ler junto com a EGC.
+- **O5-010, O5-012, O5-013 a O5-017** — conferir cada uma contra a Era; **entrada sem dado na janela é "não avaliável", não veredito fraco.**
 
-**(a) Primeira leitura real de Bituqueiras Space e das estruturas O3** — PI `PXM-o311/08`, auto `PXP-o311/08`, PI `L2030-B-o311/08`. Nunca foram lidas com dado próprio.
+**(b) Entradas em maturação do Registro:** propor **"Resultado pós-alteração"** e **"Veredito posterior"** para cada O5-xxx avaliável. **EC-007 a EC-016 NÃO são avaliáveis hoje** (começaram ontem) — declarar isso, primeira leitura em 28/09.
 
-**(b) Avaliação das entradas EM MATURAÇÃO do Registro de Alterações** — O4-R01 a O4-015 e EC-001 a EC-004. Para cada uma, propor **"Resultado pós-alteração"** e **"Veredito posterior"**. Isso exige dado da campanha/alvo na janela pós-execução: se o relatório recebido não cobrir a janela de uma entrada, **declare a entrada como não avaliável** em vez de emitir veredito fraco. Os textos propostos vão no pacote de fechamento — **quem lança no arquivo é o LEO**.
+**(c) Prime Day — lista para submeter hoje.** Formato Melhor Oferta (Relâmpago está vetada pelo EC-004). Margem no preço da oferta validada contra o Simulador da Mestra (cenário SP Interior; piso de 15%) — **peça ao LEO os números da Mestra, você não tem a planilha**. Base: os 3 que converteram no 9.9 + quem tiver tráfego e folga de margem. **L2450-AML fica fora em qualquer desconto** (−6,2% de margem a 29,6%).
 
-**(c) Lances por segmentação da Geral Automática** (close / loose / substitutes / complements) — **você não tem console**: isso é um pedido ao LEO, não uma coleta sua. Peça explicitamente no bloco I.
+**(d) EC-006 — decisão de canal da liquidação dos EMB** (Dianna). Recomendação já registrada: migrar de canal. Se houver decisão, registrar; se não, manter como pendência nomeada.
 
-**(d) Dados vitalícios por alvo de PI** — peça junto com os relatórios, na primeira mensagem. **Sem eles, a régua formal de alvo (15+ cliques vitalícios) fica declarada como BLOQUEADA**, exatamente como ficou na O4. Não substituir por dado de 30 dias.
+**(e) Pedidos explícitos no bloco I, na primeira mensagem:** export do Gerenciador **10–21/09**; relatórios de **30 dias** (campanhas, termos de pesquisa, segmentação); **vitalício por alvo** (sem ele a régua de alvo fica **BLOQUEADA**, como na O4); Business Report **10–20/09** (o dia 21 não está completo — fechar 21/09 pela Mestra); números da Mestra que precisar.
 
-### Entrega final da O5
+### Entrega final da O6
 
-Além do diagnóstico A–I e da lista G aprovada **item a item** pelo LEO, produzir o **pacote de fechamento** para auditoria e commit do Claude Code:
+Além do diagnóstico A–I e da lista G aprovada **item a item** pelo LEO, o **pacote de fechamento** para auditoria e commit do Claude Code:
 
-1. **Propostas de linha** para o Registro de Alterações (texto pronto para o LEO lançar — proposta, não lançamento);
-2. avaliação das entradas em maturação (item b);
-3. novo snapshot dos Parâmetros Vigentes;
-4. nota-resumo do ciclo;
-5. agenda da O6 e dos monitoramentos.
-
-### Q2460-B — o desempate, com a ressalva
-
-O Q2460-B aparece ao mesmo tempo na fila de investimento profundo (nº 4, R$ 26,45/semana de lucro esperado) e na lista de redução de foco da proposta de concentração (zero venda real, 28 cliques sem conversão; +17 cliques sem venda no monitoramento de 31/08). **As duas posições são incompatíveis** e o desempate é do LEO nesta O5.
-
-⚠️ **Ressalva de evidência.** O adendo enquadra o desempate como decisão de **alocação de tráfego, não de listing**, apoiado na conclusão de que "as páginas são boas, os bloqueios são transversais (prova social, frete visível, infográficos)". **Essa conclusão não está documentada no repositório** — a revisão Nível 1 dos 7 SKUs (27–28/08) não tem registro commitado, e o documento mais próximo (`docs/ACHADOS_DIAGNOSTICO_26-08.md`) sustenta "as páginas convertem" em **dois ASINs**, que é precisamente o erro nº 1 desta lista. Trate-a como **hipótese de trabalho declarada, não como fato estabelecido**, até o LEO fornecer o registro da revisão. Se ele fornecer, ela vira base legítima; se não, o desempate não pode se apoiar nela.
-
-### Estado que o adendo fixa
-
-- A revisão **Nível 1** dos 7 SKUs (`L1618-T → P3070 → P3050 → Q2460-B → P3060 → L2030-B → P4080`) foi **concluída em 27–28/08**.
-- O **lote de execução** dessa revisão **NÃO foi executado** — as correções de página seguem pendentes.
+1. **Propostas de linha** para o Registro de Alterações (O6-001…) — proposta, não lançamento; quem lança é o LEO;
+2. vereditos das entradas em maturação (item b), com "não avaliável" onde couber;
+3. lista do Prime Day (item c) com margem por SKU;
+4. novo snapshot dos Parâmetros Vigentes (§3 lances, §4 vigias e gatilhos, §7 promoções, §8 ciclo);
+5. nota-resumo do ciclo;
+6. agenda: **28/09** (leitura do desconto no preço, 7 dias) · **05/10** (fechamento do Livro de setembro; O7 ~06/10, dentro do Prime Day — decidir se a O7 desloca) · marcação do corte de série 23–27/09 para os 10 SKUs.
 
 ## O que não fazer
 
@@ -138,4 +142,4 @@ O Q2460-B aparece ao mesmo tempo na fila de investimento profundo (nº 4, R$ 26,
 - **Não inventar** SKU, margem, tarifa, ASIN, termo, característica técnica ou política interna.
 - **Não transformar monitoramento semanal em otimização quinzenal.** Se o modo não estiver explícito, declare o modo assumido antes de analisar.
 
-**Aguarde os relatórios antes de iniciar.** Comece confirmando que entendeu o papel e listando o que precisa receber — incluindo os itens (c) e (d) acima.
+**Aguarde os relatórios antes de iniciar.** Comece confirmando que entendeu o papel e listando o que precisa receber — o item (e) da pauta, completo. Se um relatório vier com janela diferente da pedida, diga antes de usar.
