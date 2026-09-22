@@ -100,7 +100,7 @@ Lance atual: **R$ 0,84** (O4-012; era R$ 0,70) · fixo (grupo de controle)
 | Segmentação | Console (PT-BR) | Lance | Mudou na O5? |
 |---|---|---:|---|
 | `close-match` | Correspondência aproximada | **R$ 0,54** | ✅ era 0,45 (O5-002, +20%) |
-| `loose-match` | Correspondência vaga | R$ 0,54 → **R$ 0,45** | ✅ **O6-005 aprovada 22/09 (−17%), execução pendente** — conferir pelos cliques/custo, não pelo nome |
+| `loose-match` | Correspondência vaga | **R$ 0,45** | ✅ era 0,54 (**O6-005, −17%, executada e conferida em 22/09** — print com 9,86 mil impressões da Era na linha "Correspondência vaga") |
 | `substitutes` | Substitutos | **R$ 0,45** | ✅ era 0,54 (O5-001, −17%) |
 | `complements` | Complementos | R$ 0,45 | não |
 
@@ -127,13 +127,13 @@ Esses valores são snapshot, não regra permanente.
 | Auto PXM-o425/08 | **PAUSADA** (O5-006) — Era 2 cliques / 0; redundante com Extintor, PI PXM-o3 e auto PXP-o3 |
 | Auto EGC | **VIGIA por 1 Era** (O5-007) — lance 0,84 mantido. Radar cumpriu a entrega (361 → 2.391 impressões); o problema migrou para CTR (0,13%) |
 
-**Desfecho na O6 (22/09) — aprovado pelo LEO, execução pendente:**
+**Desfecho na O6 (22/09) — aprovado pelo LEO e EXECUTADO no mesmo dia (export + prints conferidos):**
 
 | Estrutura | Gatilho da O5 | Dado da Era 10–21/09 | Desfecho |
 |---|---|---|---|
-| Auto EGC | 0 vendas **E** CTR < 0,3% → pausar | 10 cli · R$ 7,58 · 0 vendas · CTR 0,17% | **PAUSAR CAMPANHA (O6-002)** |
-| Auto SP-PP-o59/09 | 0 cliques relevantes → pausar | **0 cliques** · vit 26 / 0 | **PAUSAR CAMPANHA (O6-001)** |
-| PI P3070-o228/07 | desarmado 15/09 | 52 cli · R$ 71,10 · 1 venda R$ 616,18 **no alvo próprio** (`asin-expanded="B0H63FKGPJ"`) · ACOS 11,5% | alvo `B09YDLC69D` (16 cli vit / 0) → **PAUSAR ALVO (O6-003)** · campanha em **VIGIA re-armada (O6-004)** |
+| Auto EGC | 0 vendas **E** CTR < 0,3% → pausar | 10 cli · R$ 7,58 · 0 vendas · CTR 0,17% | **PAUSADA (O6-002) ✅** |
+| Auto SP-PP-o59/09 | 0 cliques relevantes → pausar | **0 cliques** · vit 26 / 0 | **PAUSADA (O6-001) ✅** |
+| PI P3070-o228/07 | desarmado 15/09 | 52 cli · R$ 71,10 · 1 venda R$ 616,18 **no alvo próprio** (`asin-expanded="B0H63FKGPJ"`) · ACOS 11,5% | alvo `B09YDLC69D` (16 cli vit / 0) → **ALVO PAUSADO (O6-003) ✅** · campanha ativa em **VIGIA re-armada (O6-004)** |
 | PI PXM-o311/08 | CORRIGIR CTR | 2 cli · 1 venda R$ 519,03 no alvo `B0H4S7ZKXS` (PXP, família) | MANTER; CTR segue na fila de página (O6-020) |
 
 **Vigias e gatilhos vigentes após a O6 — leitura na O7 (13/10):**
@@ -345,7 +345,7 @@ Monitoramento previsto: **31/08/2026**.
 
 ~~**O6: 22/09/2026** (terça) · Era O5→O6: **09–21/09 = 13 corridos, 9 úteis, sem feriado** · O7 estimada ~06/10~~
 
-**O6 concluída como análise: 22/09/2026** — Era lida **10–21/09 = 12 corridos, 9 úteis** (convenção: dia seguinte à execução de 09/09). Chat canônico analisou; Claude Code auditou sem correção de número (`ciclos/O6-22-09_auditoria-code.md`). **G1 a G13 aprovados pelo LEO em 22/09; Registro com 20 linhas O6-001…O6-020 (72 entradas no total), todas em APROVADA - AGUARDANDO EXECUÇÃO; execução no console pendente.** Itens com ação: O6-001, 002, 003, 005 (console) e O6-011 a 017 (inscrição do Prime Day, uma linha por SKU: PXM, PG2460, P3070, P3060, P4080, P3050, PXP). O5-013 encerrada como REJEITADA (O6-007).
+**O6 concluída como análise: 22/09/2026** — Era lida **10–21/09 = 12 corridos, 9 úteis** (convenção: dia seguinte à execução de 09/09). Chat canônico analisou; Claude Code auditou sem correção de número (`ciclos/O6-22-09_auditoria-code.md`). **G1 a G13 aprovados e EXECUTADOS pelo LEO em 22/09.** Export pós-execução (`relatorios/amazon/o6-22-09/gerenciador_pos-execucao_22-09.csv`) e 4 prints conferidos: SP-PP pausada · EGC pausada · alvo `B09YDLC69D` pausado (PI P3070 ativa) · loose-match 0,45 na linha certa. **Conta: 10 campanhas ativas** (eram 12). Registro com 20 linhas O6-001…O6-020 (72 entradas): 15 executadas em maturação, 5 do Prime Day aguardando a lista de 28/09. Itens com ação: O6-001, 002, 003, 005 (console) e O6-011 a 017 (inscrição do Prime Day, uma linha por SKU: PXM, PG2460, P3070, P3060, P4080, P3050, PXP). O5-013 encerrada como REJEITADA (O6-007).
 
 **O7: 13/10/2026 (terça) — decisão do LEO em 22/09.** A canônica recomendava análise em 06/10 com execuções adiadas para 12/10; o LEO preferiu a O7 inteira em 13/10. **Era O6→O7: 23/09–12/10 = 20 corridos, 13 úteis** (12/10 é feriado — N. Sra. Aparecida, segunda). ⚠️ A Era contém o **desconto no preço (23–27/09)** e o **Prime Day inteiro (05–11/10)**: ler em **dois blocos** (pré-evento 23/09–04/10 · evento 05–11/10) e marcar o corte de série dos 10 SKUs do desconto. Fechamento do `Livro_Vendas` de setembro em **05/10** (1ª segunda). Monitoramentos semanais: **28/09** (leitura dos 7 dias de desconto + gatilho O6-006) · **05/10** (Livro primeiro) · **12/10** (véspera da O7: só linha do Controle, sem diagnóstico; feriado).
 
@@ -378,7 +378,7 @@ Nunca presumir estratégia antes de verificar a campanha.
 
 Eram 16 antes da O5 — o snapshot de 25/08 dizia 15, que era erro de contagem. A O5 pausou 4: PI L2470-CZ, PI PG3070, auto PXM-o425 e auto SP-01.
 
-**As 12 ativas:** Geral DBA-o59/09 · 6B Lixeiras banheiro · Extintor · Cinzeiros · Bituqueiras · L3070-B · PI P3070-o228/07 · PI PXM-o311/08 · PI L2030-B-o311/08 · auto PXP-o311/08 · auto SP-PP-o59/09 · auto EGC.
+**As 10 ativas (pós-O6, 22/09):** Geral DBA-o59/09 · 6B Lixeiras banheiro · Extintor · Cinzeiros · Bituqueiras · L3070-B · PI P3070-o228/07 · PI PXM-o311/08 · PI L2030-B-o311/08 · auto PXP-o311/08. ~~auto SP-PP-o59/09 · auto EGC~~ — pausadas na O6 (O6-001, O6-002).
 
 **Renomeações da O5 (convenção de ciclo):** `geral DBA-o311/08` → **`DBA-o59/09`** · `SP-PP-o425/08` → **`SP-PP-o59/09`**.
 
