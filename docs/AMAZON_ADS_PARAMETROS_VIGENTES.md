@@ -100,7 +100,7 @@ Lance atual: **R$ 0,84** (O4-012; era R$ 0,70) · fixo (grupo de controle)
 | Segmentação | Console (PT-BR) | Lance | Mudou na O5? |
 |---|---|---:|---|
 | `close-match` | Correspondência aproximada | **R$ 0,54** | ✅ era 0,45 (O5-002, +20%) |
-| `loose-match` | Correspondência vaga | R$ 0,54 | não |
+| `loose-match` | Correspondência vaga | R$ 0,54 → **R$ 0,45** | ✅ **O6-005 aprovada 22/09 (−17%), execução pendente** — conferir pelos cliques/custo, não pelo nome |
 | `substitutes` | Substitutos | **R$ 0,45** | ✅ era 0,54 (O5-001, −17%) |
 | `complements` | Complementos | R$ 0,45 | não |
 
@@ -127,14 +127,24 @@ Esses valores são snapshot, não regra permanente.
 | Auto PXM-o425/08 | **PAUSADA** (O5-006) — Era 2 cliques / 0; redundante com Extintor, PI PXM-o3 e auto PXP-o3 |
 | Auto EGC | **VIGIA por 1 Era** (O5-007) — lance 0,84 mantido. Radar cumpriu a entrega (361 → 2.391 impressões); o problema migrou para CTR (0,13%) |
 
-**Vigias e gatilhos vigentes após a O5:**
+**Desfecho na O6 (22/09) — aprovado pelo LEO, execução pendente:**
 
-| Estrutura | Situação | Gatilho na O6 (22/09) |
+| Estrutura | Gatilho da O5 | Dado da Era 10–21/09 | Desfecho |
+|---|---|---|---|
+| Auto EGC | 0 vendas **E** CTR < 0,3% → pausar | 10 cli · R$ 7,58 · 0 vendas · CTR 0,17% | **PAUSAR CAMPANHA (O6-002)** |
+| Auto SP-PP-o59/09 | 0 cliques relevantes → pausar | **0 cliques** · vit 26 / 0 | **PAUSAR CAMPANHA (O6-001)** |
+| PI P3070-o228/07 | desarmado 15/09 | 52 cli · R$ 71,10 · 1 venda R$ 616,18 **no alvo próprio** (`asin-expanded="B0H63FKGPJ"`) · ACOS 11,5% | alvo `B09YDLC69D` (16 cli vit / 0) → **PAUSAR ALVO (O6-003)** · campanha em **VIGIA re-armada (O6-004)** |
+| PI PXM-o311/08 | CORRIGIR CTR | 2 cli · 1 venda R$ 519,03 no alvo `B0H4S7ZKXS` (PXP, família) | MANTER; CTR segue na fila de página (O6-014) |
+
+**Vigias e gatilhos vigentes após a O6 — leitura na O7 (13/10):**
+
+| Estrutura | Situação | Gatilho na O7 |
 |---|---|---|
-| Auto EGC | VIGIA, lance 0,84 | 0 vendas **E** CTR < 0,3% → pausar |
-| Auto SP-PP-o59/09 | VIGIA — só `close-match` e `complements` ativas | 0 cliques relevantes → pausar campanha |
-| PI P3070-o228/07 | ✅ **GATILHO DESARMADO em 15/09** | ~~sem venda pós-Relâmpago **E** ≥15 cliques na Era → lances −20% nos asin-expanded~~ — **venda de 15/09 (R$ 616,18) ATRIBUÍDA à própria PI P3070**, posterior ao Relâmpago (07–13/09). A primeira condição da conjunção caiu, logo **não há redução de lance**. Confiança ALTA. Ver pendência abaixo para o que a O6 ainda precisa decidir |
-| PI PXM-o311/08 | **CORRIGIR CTR** (era "investigar entrega" — ver C7) | entrega 2.500 impressões vitalícias, CTR 0,28%; custo R$ 5,50. Ler junto com a EGC |
+| PI P3070-o228/07 | VIGIA, lances 1,10 / 0,90 mantidos (O6-004) | 0 venda atribuída na Era **E** ≥15 cliques → −20% nos asin-expanded (1,10 → 0,88). Triagem: `B0CYWMQ93Y` 11 · `B0BHMZBZW9` 7 · `B0BSNVT11K` 5 · `B0F4T8FCDD` 5 · `B0778TD2LY` 5 (régua 15) |
+| Geral — Q2460-B | VIGIA (O6-006) | **28/09:** 0 venda na semana de desconto → pausar o anúncio do SKU dentro da Geral (nível produto) |
+| 6B — exata "lixeira inox para pia de cozinha" | VIGIA, 1,50 (O6-008) | ≥15 cli sem venda → −20% (1,50 → 1,20) ou pausar a keyword |
+| Geral — ASIN `B0BHMZBZW9` (Tramontina pedal 30 L) | VIGIA (O6-013) | ≥15 cli em 30d sem venda → excluir o produto na Geral |
+| Piloto de lance (6B, L3070-B) | +1 Era (O6-010) | zero diferença na Era → encerrar e devolver ao fixo |
 
 **Contrato comum:** na O5 (~08/09), sem amostra relevante ou com cliques acumulados sem venda → **pausa sem prorrogação**.
 
@@ -279,6 +289,20 @@ Critério de seleção: **tráfego (Business Report 07–13/09) × margem ≥ 15
 
 **Leituras:** **28/09** (7 dias) contra a linha de base de sessões em `ciclos/EC-18-09_ofertas.md` — decide se prorroga (com teto em 04/10) ou encerra; leitura final na O7.
 
+### PRIME DAY 05–11/10/2026 — Melhor Oferta, 7 SKUs (O6-011) — aprovado 22/09, inscrição pelo LEO
+
+| SKU | Desc. | Tabela → oferta | Margem SP Interior | Base |
+|---|---:|---|---:|---|
+| PXM | 10% | 203,54 → 183,19 | 15,0% | converteu no 9.9 (3 un a −15%) |
+| PG2460 | 10% | 248,75 → 223,88 | 16,7% | converteu no 9.9 |
+| P3070 | 15% | 616,18 → 523,75 | 16,9% | 66 sessões; PI ativa — a oferta contamina a leitura de Ads do SKU na Era do evento |
+| P3060 | 15% | 511,42 → 434,71 | 19,4% | maior folga entre os com tráfego |
+| P4080 | 15% | 1.070,17 → 909,64 | 15,9% | maior ticket |
+| P3050 | 10% | 467,67 → 420,90 | 17,8% | opcional |
+| **PXP** | 10% | 167,89 → 151,10 | **13,4% — abaixo do piso** | **EXCEÇÃO DOCUMENTADA (decisão do LEO, 22/09):** margem realizada de 21,2% e 25,2% nos 2 pedidos de 08/09 (frete real abaixo da `Ref_Frete`; n = 2). Reavaliar a `Ref_Frete` de Pequenos antes de virar padrão |
+
+Fora: L2450-AML, Q2460-B, L2025-T, L1618-T, EGC, L2030, L1618-B. Relâmpago vetada (EC-004). Mínimo do evento 10%. Nenhuma oferta empilha com o desconto no preço (encerra 27/09). Conferir o preço de referência calculado pela Amazon na tela antes de confirmar.
+
 ### Auditoria de conformidade — 28/08/2026
 
 As duas listas foram cruzadas contra o **Simulador da Planilha Mestra v4.3.2** (cenário SP Interior). Resultado: **conformidade total, zero violações**.
@@ -313,7 +337,11 @@ Monitoramento previsto: **31/08/2026**.
 
 **O monitoramento de 21/09 foi ELIMINADO (decisão do LEO, 09/09).** Motivo: a janela de 7 dias (15–21/09) está inteiramente contida na Era que a O6 lê no dia seguinte (09–21/09) — mesmo dado, 24h de intervalo, sem decisão possível no meio. **Não é o mesmo caso de 07/09:** aquele era feriado sem dado a ler; este tem dado, mas ele é relido com mais contexto na O6. **A eliminação é condicionada à conferência de estado no monitoramento de 14/09** — se ela não acontecer, o monitoramento de 21/09 volta.
 
-**O6: 22/09/2026** (terça) · Era O5→O6: **09–21/09 = 13 corridos, 9 úteis, sem feriado** · O7 estimada ~06/10 · fechamento do `Livro_Vendas` de setembro em **05/10** (1ª segunda, sem exceção prevista).
+~~**O6: 22/09/2026** (terça) · Era O5→O6: **09–21/09 = 13 corridos, 9 úteis, sem feriado** · O7 estimada ~06/10~~
+
+**O6 concluída como análise: 22/09/2026** — Era lida **10–21/09 = 12 corridos, 9 úteis** (convenção: dia seguinte à execução de 09/09). Chat canônico analisou; Claude Code auditou sem correção de número (`ciclos/O6-22-09_auditoria-code.md`). **G1 a G13 aprovados pelo LEO em 22/09; 14 linhas O6-001…O6-014; execução no console pendente** (5 itens com ação: O6-001, 002, 003, 005, 011).
+
+**O7: 13/10/2026 (terça) — decisão do LEO em 22/09.** A canônica recomendava análise em 06/10 com execuções adiadas para 12/10; o LEO preferiu a O7 inteira em 13/10. **Era O6→O7: 23/09–12/10 = 20 corridos, 13 úteis** (12/10 é feriado — N. Sra. Aparecida, segunda). ⚠️ A Era contém o **desconto no preço (23–27/09)** e o **Prime Day inteiro (05–11/10)**: ler em **dois blocos** (pré-evento 23/09–04/10 · evento 05–11/10) e marcar o corte de série dos 10 SKUs do desconto. Fechamento do `Livro_Vendas` de setembro em **05/10** (1ª segunda). Monitoramentos semanais: **28/09** (leitura dos 7 dias de desconto + gatilho O6-006) · **05/10** (Livro primeiro) · **12/10** (véspera da O7: só linha do Controle, sem diagnóstico; feriado).
 
 Datas futuras devem ser atualizadas quando o ciclo efetivamente ocorrer.
 

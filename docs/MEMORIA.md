@@ -267,3 +267,14 @@ O BR por ASIN puxado em 21/09 para a janela **14–20/09** não trazia o pedido 
 
 **Regra:** para uma janela que termina no dia D, o BR só é confiável se puxado em **D+2**. Puxado em D+1, tratar o último dia como incompleto e fechar a bijeção com a Mestra **excluindo o dia D**. Vale para a O6: um BR 10–21/09 puxado na manhã de 22/09 provavelmente não terá o dia 21 completo — conferir contra a Mestra antes de contar participação de Ads.
 
+
+
+## PI de produto pode converter no ALVO PRÓPRIO — auto-segmentação (22/09/2026)
+
+Na O6, a venda de R$ 616,18 "atribuída à PI P3070" veio do alvo `asin-expanded="B0H63FKGPJ"` — **o ASIN do próprio P3070**. A campanha está apontada também para a própria página, e foi ali que converteu; nenhum dos alvos de terceiros em triagem vendeu. Mesmo padrão na PI PXM: a venda de R$ 519,03 veio do alvo `B0H4S7ZKXS`, a página do PXP (família). Em 15/09 o LEO leu "B0H63FKGPJ foi desse aqui" e o Code respondeu que era a dimensão de produto anunciado — **o LEO estava certo**.
+
+**Regra:** ao ler uma venda de PI, abrir o relatório de **Segmentação** (ou o vitalício por alvo) e identificar o alvo. Se o alvo é o próprio ASIN ou um ASIN da Winnet, a "conversão da PI" é defesa da própria página, não conquista de tráfego de terceiro — e não justifica ESCALAR os alvos externos. Um mesmo ASIN pode aparecer como produto anunciado E como alvo; as duas leituras são verdadeiras ao mesmo tempo.
+
+## Business Report registra promoção de quantidade a preço de tabela (22/09/2026)
+
+BR 10–20/09 = R$ 2.573,86; Mestra no mesmo período = R$ 2.553,92. Diferença de **R$ 19,94 = exatamente o desconto da promoção de quantidade** do pedido de 20/09 (3 × L2025-T). O BR valoriza a preço de tabela, a Mestra a receita líquida. Já se sabia que o **Ads** faz o mesmo (31/08); agora está confirmado para o **BR**. A bijeção BR × Mestra fecha ao centavo **depois** de somar de volta os descontos de promoção de quantidade — ao vê-los, não é divergência de fonte.
