@@ -1,0 +1,5 @@
+﻿Estado,Grupos de segmentação automática,Tipo de correspondência de segmentação,Código do status,Status,Lance (BRL),Impressões,Cliques,Custo total (BRL),Compras,Vendas (BRL),ACOS,ROAS
+ATIVADO,close-match,—,TARGETING_CLAUSE_STATUS_LIVE,Em inserção,0.54,4878,30,20.71,1,398.35,"0,0520",19.234669241912115
+ATIVADO,loose-match,—,TARGETING_CLAUSE_STATUS_LIVE,Em inserção,0.54,9862,70,45.57,1,132.9,"0,3429",2.9163923633969717
+ATIVADO,complements,—,TARGETING_CLAUSE_STATUS_LIVE,Em inserção,0.45,2,0,0,0,0,0,0
+ATIVADO,substitutes,—,TARGETING_CLAUSE_STATUS_LIVE,Em inserção,0.45,3171,22,9.23,0,0,0,0

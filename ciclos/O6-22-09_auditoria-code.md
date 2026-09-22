@@ -10,7 +10,7 @@
 
 **O diagnóstico está numericamente correto.** Dos números conferíveis no repositório, todos batem: Era, 30d por campanha e por segmentação, vitalícios dos três exports de alvos, Produtos Anunciados por SKU, Termos (triagem, vencedores, ASINs como termo), Business Report por ASIN, vendas da Mestra citadas, margens do Simulador (tabela e Prime Day, ao décimo), contagens do Registro e lances dos Parâmetros.
 
-**Uma fonte não está no repositório:** o export de segmentação da Geral filtrado na Era (`Sponsored_Products_Target_Sep_22_2026_3.csv`, `[SEG-ERA]`), recebido pelo canônico às 12:54. É a evidência principal do item **G5** (única mudança de lance da lista). Ver §3.
+**A fonte `[SEG-ERA]`** (export de segmentação da Geral filtrado na Era) chegou ao repositório após a primeira versão desta auditoria e **confere ao centavo** — ver §3. G5 passa a ALTA sem condição.
 
 **Três ressalvas de leitura** (nenhuma muda decisão): bijeção BR × Mestra a preço de tabela (§4.1), PXP no Prime Day abaixo do piso (§4.2), margem do L1623-T não consultada (§4.3).
 
@@ -51,7 +51,7 @@
 
 ---
 
-## 3. A fonte que falta no repositório — `[SEG-ERA]`
+## 3. A fonte `[SEG-ERA]` — recebida e conferida
 
 O canônico recebeu do LEO às 12:54 um export de segmentação da Geral **filtrado na Era** (`Sponsored_Products_Target_Sep_22_2026_3.csv`). Ele sustenta:
 
@@ -60,7 +60,7 @@ O canônico recebeu do LEO às 12:54 um export de segmentação da Geral **filtr
 
 **O que o Code consegue verificar sem o arquivo:** consistência interna. 30 + 70 + 22 = 122 cliques ✅ · 20,71 + 45,57 + 9,23 = R$ 75,51 ✅ · 398,35 + 132,90 = R$ 531,25 ✅ · 17.913 impressões vs. 122 ÷ 0,0068 = 17.941 derivadas do CTR do export ✅. Os quatro totais batem com o `gerenciador_era`. **Não há sinal de inconsistência**, mas a distribuição entre segmentações só é auditável com o arquivo.
 
-**Pedido:** LEO envia o arquivo para `relatorios/amazon/o6-22-09/ads_era_segmentacao-geral.csv`. Até lá, G5 fica **ALTA condicionada ao arquivo** — não bloqueia a aprovação, mas o registro do ciclo precisa da fonte.
+**Recebido em 22/09 (após a primeira versão desta auditoria)** e arquivado em `relatorios/amazon/o6-22-09/ads_era_segmentacao-geral_10-21-09.csv`. Conferência linha a linha: close-match 0,54 · 4.878 impr · 30 cli · R$ 20,71 · 1 compra · R$ 398,35 · ACOS 5,20% ✅ · loose-match 0,54 · 9.862 · 70 · R$ 45,57 · 1 · R$ 132,90 · ACOS 34,29% ✅ · substitutes 0,45 · 3.171 · 22 · R$ 9,23 · 0 ✅ · complements 0,45 · 2 impr · 0 ✅. Total 17.913 impr · 122 cli · R$ 75,51 · 2 compras · R$ 531,25 = export da Era. **G5 e os vereditos O5-001/O5-002 estão sustentados pela fonte. G5: ALTA.**
 
 ---
 
@@ -68,7 +68,7 @@ O canônico recebeu do LEO às 12:54 um export de segmentação da Geral **filtr
 
 ### 4.1 Bijeção BR × Mestra — a preço de tabela
 
-O canônico fecha a bijeção com "R$ 531,60 = 4 un de L2025-T" e não atribuído "R$ 907,40". Está certo **na moeda do BR**, que registra promoção de quantidade a preço de tabela. Na Mestra, as 4 unidades são R$ 132,90 + R$ 378,76 = **R$ 511,66** (desconto de quantidade R$ 19,94 no pedido de 20/09). Receita líquida não atribuída = R$ 887,46. A participação de Ads (64,7%) e o TACOS usam o BR nos dois lados e permanecem corretos. Motivo: a cópia da Mestra no Project vai até 15/09 — **trocar a Mestra no Project** pela versão de 21/09.
+O canônico fecha a bijeção com "R$ 531,60 = 4 un de L2025-T" e não atribuído "R$ 907,40". Está certo **na moeda do BR**, que registra promoção de quantidade a preço de tabela. Na Mestra, as 4 unidades são R$ 132,90 + R$ 378,76 = **R$ 511,66** (desconto de quantidade R$ 19,94 no pedido de 20/09). Receita líquida não atribuída = R$ 887,46. A participação de Ads (64,7%) e o TACOS usam o BR nos dois lados e permanecem corretos. Motivo: a cópia da Mestra no Project ia até 15/09 — trocada pelo LEO em 22/09.
 
 ### 4.2 PXP no Prime Day — 13,4% no cenário de referência
 
@@ -114,7 +114,7 @@ Simulador SP Interior, preço de tabela: **17,9%**. Fecha a lacuna de I; não mu
 | 2 | EGC — PAUSAR CAMPANHA | ✅ números conferidos, gatilho O5-007 satisfeito nas duas condições |
 | 3 | PI P3070 — PAUSAR ALVO `B09YDLC69D` | ✅ 16 cli vit / 0, primeiro alvo da conta a cruzar a régua |
 | 4 | PI P3070 — VIGIA re-armada | ✅ sem mudança de lance; gatilho O7 definido |
-| 5 | Geral loose-match 0,54 → 0,45 | ✅ 30d conferido; **Era depende do arquivo `[SEG-ERA]`** (consistência interna ok) |
+| 5 | Geral loose-match 0,54 → 0,45 | ✅ 30d e Era conferidos na fonte (loose 60,3% do gasto da Era, ACOS 34,3%) |
 | 6 | Q2460-B — VIGIA gatilho 28/09 | ✅ 69 cli / 0 em 30d, 27 sessões / 0 |
 | 7 | O5-013 CANCELADA | ✅ devolução confirmada na Mestra (linha 53) |
 | 8 | 6B exata "pia de cozinha" — VIGIA | ✅ 13 cli / R$ 22,97 / 0 |
@@ -124,4 +124,4 @@ Simulador SP Interior, preço de tabela: **17,9%**. Fecha a lacuna de I; não mu
 | 12 | Migração — NÃO DECIDIR AINDA | ✅ |
 | 13 | EC-006 — pendência Dianna | ✅ |
 
-**Pendências do LEO após aprovar:** (1) enviar `[SEG-ERA]` para o repositório; (2) trocar a Mestra no Project; (3) decidir PXP no Prime Day; (4) executar no console e devolver export/prints para a verificação pós-execução; (5) lançar O6-001…O6-014 no Registro (o Code prepara o CSV de colagem após a execução).
+**Pendências do LEO após aprovar:** ~~(1) enviar `[SEG-ERA]`~~ recebido · ~~(2) trocar a Mestra no Project~~ feito 22/09 · (3) decidir PXP no Prime Day · (4) executar no console e devolver export/prints para a verificação pós-execução · (5) lançar O6-001…O6-014 no Registro (o Code prepara o CSV de colagem após a execução).
