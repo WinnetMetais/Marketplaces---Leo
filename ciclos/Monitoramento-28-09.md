@@ -110,7 +110,7 @@ Unidades batem (PXM 5 · L1618-T 2 · EGC 1 = 8 = BR). Valores: BR R$ 1.861,82 �
 2. ~~L1618-T e L2025-T entram no Prime Day a 5%~~ → **FICAM FORA** (decisão final, 28/09): mínimo do evento é 10% e a 10% os dois furam o piso. EC-017/EC-018 removidas do Registro (72 entradas). Prime Day: P3070 e PXP.
 3. **Q2460-B: anúncio pausado dentro da Geral — ✅ print conferido** ("Pausado", 916 impr / 15 cli em 22–28/09). ✅ Linha O6-006 fechada no Registro (veredito "gatilho disparou em 28/09, anúncio pausado", reavaliar 13/10). ~~Falta atualizar a linha O6-006~~ (Executado? SIM · Status EXECUTADA - EM MATURAÇÃO · Veredito "gatilho disparou em 28/09 — anúncio pausado" · Reavaliar 13/10).
 4. Registro com os vereditos EC-007…016 lançado e conferido (72 entradas). Linhas O6-011/012/014/015/016 seguem AGUARDANDO — anotar "não elegível também em 28/09" e reavaliar 05/10.
-5. Contexto e Parâmetros: versões finais de 28/09 enviadas ao LEO para a troca no Project.
+5. Contexto e Parâmetros: versões finais de 28/09 trocadas no Project pelo LEO (Contexto retrocado após a inclusão do mapa SKU ↔ ASIN).
 
 **Monitoramento de 28/09 ENCERRADO.** Pendências residuais do Registro (não bloqueiam): linhas O6-011/012/014/015/016 ainda com "reconferir 28/09" — anotar "não elegível também em 28/09" e reavaliar 05/10; linhas 209–210 do template perderam as fórmulas de Q/R (recolocar quando for usar).
 
