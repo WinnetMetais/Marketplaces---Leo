@@ -1,6 +1,6 @@
-# Monitoramento semanal — 28/09/2026 (MODO A) · RASCUNHO
+# Monitoramento semanal — 28/09/2026 (MODO A)
 
-**Janela:** semana pós-O6. Export do Gerenciador sem período no arquivo (**a confirmar com o LEO: 21–28 ou 22–28/09**); Business Report puxado em 28/09, período **a confirmar**; painel do desconto no preço **21–27/09** (Terminado).
+**Janela:** semana pós-O6. Export do Gerenciador **22–28/09** (7 dias; confirmado pelo LEO); Business Report **22–27/09** (6 dias, puxado 28/09 — regra D+2 respeitada; confirmado pelo LEO); painel do desconto no preço **21–27/09** (Terminado). ⚠️ As três janelas não coincidem: o BR não cobre 21/09 nem 28/09; o export inclui 22/09 (dia da O6, fora da Era O6→O7 que começa em 23/09).
 **Pauta fixada pela O6 para hoje:** (1) leitura dos 7 dias do desconto no preço (EC-007…016); (2) gatilho O6-006 do Q2460-B; (3) reconferência da lista do Prime Day para PXM, PG2460, P3060, P4080, P3050.
 **Arquivos:** `relatorios/amazon/monitoramento-28-09/`.
 
@@ -8,12 +8,12 @@
 
 | Fonte | Janela | Observação |
 |---|---|---|
-| Export do Gerenciador (80 campanhas) | **não consta no arquivo** | 10 ATIVADO / 70 PAUSADO. **Impressões = 0 em todas as linhas** (não populadas, como nos exports anteriores) — CTR/entrega só com print do console. Vendas via Custo × ROAS |
-| Business Report por ASIN | **não consta no arquivo** (puxado 28/09) | 50 ASINs · 202 sessões · 254 pv · 8 un · 5 itens · R$ 1.861,82. Buy Box 100% em todos (PXM 88,9%) |
+| Export do Gerenciador (80 campanhas) | 22–28/09 (LEO) | 10 ATIVADO / 70 PAUSADO. **Impressões = 0 em todas as linhas** (não populadas, como nos exports anteriores) — CTR/entrega só com print do console. Vendas via Custo × ROAS |
+| Business Report por ASIN | 22–27/09 (LEO), 6 dias | 50 ASINs · 202 sessões · 254 pv · 8 un · 5 itens · R$ 1.861,82. Buy Box 100% em todos (PXM 88,9%) |
 | Painel da promoção `TESTEDESCONTONOPRECO` | 21–27/09 | 10 ASINs · 7 un · R$ 1.187,20 · 166 visualizações · conversão 4,2%. **Fecha ao centavo com o BR** para os 10 SKUs (220,40 + 966,80) |
-| Ausentes | — | print do console com impressões · janela do export e do BR · lista de ofertas do Prime Day de hoje · Mestra com as vendas da semana |
+| Ausentes | — | print do console com impressões · lista de ofertas do Prime Day de hoje · Mestra com as vendas da semana |
 
-**Bijeção BR × Ads (a preço com desconto):** BR R$ 1.861,82 − Ads R$ 690,28 = **R$ 1.171,54 = 2 PXM (386,72) + 1 L1618-T (110,20) + 1 EGC (674,62)** — fecha ao centavo.
+**Bijeção BR × Ads (a preço com desconto):** o painel da promoção (21–27/09) e o BR (22–27/09) fecham nos mesmos 7 un — logo **não houve venda com desconto em 21/09**. BR R$ 1.861,82 − Ads R$ 690,28 = **R$ 1.171,54 = 2 PXM (386,72) + 1 L1618-T (110,20) + 1 EGC (674,62)** — fecha ao centavo.
 
 ## Ads — semana (export, vendas via ROAS)
 
@@ -34,7 +34,7 @@ Zumbis: nenhuma pausada com custo. SP-PP e EGC seguem pausadas (O6-001/002).
 
 ## Leitura dos 7 dias do desconto no preço (21–27/09)
 
-| SKU | Desc. | Baseline sessões/sem (EC-18-09, BR 07–13/09) | Sessões nesta semana (BR) | Un. vendidas | Leitura |
+| SKU | Desc. | Baseline sessões/sem (EC-18-09, BR 07–13/09) | Sessões 22–27/09 (BR, **6 dias**) | Un. vendidas | Leitura |
 |---|---:|---:|---:|---:|---|
 | L2025-T | 5% | 52 | 26 | **0** | tráfego caiu à metade; não converteu |
 | L1618-T | 5% | 26 | 27 | **2** (R$ 220,40) | converteu — 1ª venda com desconto no preço |
@@ -48,7 +48,7 @@ Zumbis: nenhuma pausada com custo. SP-PP e EGC seguem pausadas (O6-001/002).
 | L2030 | 5% | — | 3 | 0 | — |
 | **Total** | | | | **7 un · R$ 1.187,20** | 2 de 10 SKUs converteram |
 
-⚠️ Baseline é a semana do 9.9 (com ofertas no ar) e a janela do BR desta semana não está confirmada — comparação de tráfego é **indicativa**, não conclusiva. O que é conclusivo: **o desconto não gera tráfego** (esperado) e **converteu em 2 SKUs** (PXM, L1618-T).
+⚠️ Baseline é a semana do 9.9 (com ofertas no ar, 7 dias) e o BR desta semana tem 6 dias — mesmo ajustando ×7/6, L2025-T (≈30), PXP (≈8) e PG2460 (≈6) ficam bem abaixo; comparação de tráfego é **indicativa**, não conclusiva. O que é conclusivo: **o desconto não gera tráfego** (esperado) e **converteu em 2 SKUs** (PXM, L1618-T).
 
 **Decisão pedida pela EC-18-09 para hoje — prorrogar até 04/10 ou encerrar:** recomendação **ENCERRAR (já terminou em 27/09; não recriar)**. Motivo: a semana 28/09–04/10 de preço limpo protege o preço de referência de P3070/PXP no Prime Day e dos 5 SKUs que podem entrar na lista de hoje; PXM já provou que converte com oferta e L1618-T com 2 un/sem não justifica. Confiança MÉDIA.
 
@@ -63,7 +63,8 @@ Zumbis: nenhuma pausada com custo. SP-PP e EGC seguem pausadas (O6-001/002).
 ## Achados fora da pauta
 
 - **EGC vendeu 1 unidade a preço cheio (R$ 674,62) com a campanha pausada e sem desconto** — não atribuída a Ads. É a primeira venda do EGC registrada nos relatórios. n = 1; não reabre a campanha, mas enfraquece a leitura "página não converte" e deve constar na fila de página.
-- **Tráfego total caiu:** 202 sessões na semana vs ~310/sem na janela 10–20/09 (487 ÷ 11 × 7). Sem impressões no export, não separo entrega de sazonalidade.
+- **Tráfego total caiu:** 202 sessões em 6 dias (≈236/sem) vs ~310/sem na janela 10–20/09 (487 ÷ 11 × 7), −24%. Sem impressões no export, não separo entrega de sazonalidade.
+- **Setembro até 28/09:** R$ 287,66 (até 21/09) + R$ 65,97 (22–28/09) = **R$ 353,63 = 35,4% do teto de R$ 1.000**. Ritmo da semana R$ 9,42/dia.
 - Geral com ACOS 6,9% na semana — abaixo do Objetivo; 1ª semana com loose-match a 0,45. Leitura de 1 semana; veredito da O6-005 na O7.
 
 ## H. O que NÃO fazer agora
@@ -74,4 +75,4 @@ Zumbis: nenhuma pausada com custo. SP-PP e EGC seguem pausadas (O6-001/002).
 5. Não fechar a regra de atribuição do desconto no preço antes da Mestra confirmar a composição dos pedidos.
 
 ## I. Dados que faltam
-Janela do export e do BR · print do console com impressões (linha 14 do Controle) · lista do Prime Day de hoje · Mestra com as vendas de 22–28/09 (PXM 3 + 2, L1618-T 2, EGC 1).
+Print do console com impressões (linha 14 do Controle) · lista do Prime Day de hoje · Mestra com as vendas de 22–28/09 (PXM 3 + 2, L1618-T 2, EGC 1).
