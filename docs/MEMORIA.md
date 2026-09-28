@@ -278,3 +278,10 @@ Na O6, a venda de R$ 616,18 "atribuída à PI P3070" veio do alvo `asin-expanded
 ## Business Report registra promoção de quantidade a preço de tabela (22/09/2026)
 
 BR 10–20/09 = R$ 2.573,86; Mestra no mesmo período = R$ 2.553,92. Diferença de **R$ 19,94 = exatamente o desconto da promoção de quantidade** do pedido de 20/09 (3 × L2025-T). O BR valoriza a preço de tabela, a Mestra a receita líquida. Já se sabia que o **Ads** faz o mesmo (31/08); agora está confirmado para o **BR**. A bijeção BR × Mestra fecha ao centavo **depois** de somar de volta os descontos de promoção de quantidade — ao vê-los, não é divergência de fonte.
+
+
+## Desconto no preço: Ads e BR registram o preço com desconto; a promoção de quantidade empilha por cima e não aparece em nenhum dos dois (28/09/2026)
+
+Primeira semana do mecanismo (21–27/09): a Geral atribuiu R$ 690,28 = 3 × PXM a R$ 193,36 + 1 × L1618-T a R$ 110,20 — **preços com desconto**. O print do pedido de 24/09 mostra produtos R$ 580,08 (3 × 193,36) **e** promoção de quantidade −R$ 29,00 (5% sobre o preço já descontado). Ads e BR registram 580,08; o cliente pagou 551,08 pelos produtos.
+
+**Regras fechadas:** (1) desconto no preço é valorizado ao preço com desconto, como a Melhor Oferta; (2) promoção de quantidade **empilha** com desconto no preço no mesmo pedido — o piso de margem calculado só com o desconto no preço fica furado quando o pedido tem 3+ unidades (PXM: 5% + 5%); (3) na Mestra, lançar preço de tabela + coluna de desconto com a **soma** dos dois descontos + receita líquida. Erro real desta semana: a linha do pedido de 3 PXM saiu só com a promo de quantidade (receita 581,62 em vez de 551,08).

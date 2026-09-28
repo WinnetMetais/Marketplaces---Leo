@@ -200,7 +200,7 @@ Tese: capturar leilões que o funil já provou converter — termos da 6B vendem
 
 ⚠️ **Não confundir com a promoção de quantidade**, cujo desconto é aplicado no checkout e **é atribuída a preço de tabela** (medido em 31/08). São dois mecanismos, com dois comportamentos, ambos medidos.
 
-⚠️ **TERCEIRO MECANISMO EM CURSO — desconto no preço (21/09–27/09, EC-007 a EC-016): regra de atribuição AINDA NÃO MEDIDA.** Não presumir nem a regra da oferta nem a da promoção de quantidade. **A primeira venda com desconto no preço em SKU anunciado deve ser conferida pedido a pedido** (painel × Business Report × export de Ads) para fixar a regra. Até lá, a bijeção da Mestra com o Ads nesses 10 SKUs fica **provisória**.
+✅ **REGRA CONFIRMADA — desconto no preço (28/09/2026):** o Ads atribui **ao preço com desconto**, igual à Melhor Oferta. Evidência: Geral 22–28/09 = R$ 690,28 = 3 × PXM a 193,36 (R$ 580,08, pedido de 24/09 conferido pelo print) + 1 × L1618-T a 110,20. **A promoção de quantidade que empilha por cima (−R$ 29,00 no pedido de 3 PXM) NÃO entra** nem no Ads nem no BR — os dois registram o preço com desconto antes da promo de quantidade. **Empilhamento real:** desconto no preço + promoção de quantidade se somam no mesmo pedido (5% + 5% no PXM). Os três mecanismos: Oferta → preço da oferta · Promo de quantidade → preço de tabela · Desconto no preço → preço com desconto.
 
 **Consequência prática no `Registro_Vendas`:** em venda com oferta, lançar o **preço de tabela** na coluna de preço e o **desconto da oferta** na coluna própria — a receita líquida é o que o Ads e o Business Report vão registrar. Esse é o padrão que fez a bijeção fechar ao centavo em 14/09, depois de duas correções (PG2460 e PXM).
 
@@ -285,7 +285,7 @@ Critério de seleção: **tráfego (Business Report 07–13/09) × margem ≥ 15
 
 1. **Sobreposição parcial com a Era O6→O7:** 23 a 27/09, cinco dias. Marcar no fechamento da O7 para esses 10 SKUs. A O6 (22/09) lê a Era 09–21/09, limpa (só 21/09 tem desconto).
 2. **Prime Day (05–11/10) preservado:** o desconto encerra em 27/09 e deixa **uma semana de preço limpo (28/09–04/10)** antes do evento, protegendo o preço de referência. Oferta não empilha com desconto no mesmo ASIN — os 10 ficam livres para o evento. **A lista do Prime Day se decide na O6 e se submete no mesmo dia**: a janela de inscrição está aberta desde 18/09 e a data de fechamento não é conhecida.
-3. **Regra de atribuição do Ads desconhecida** — ver §6.
+3. ~~Regra de atribuição do Ads desconhecida~~ — **confirmada em 28/09 (§6): preço com desconto.**
 
 **Leituras:** **28/09** (7 dias) contra a linha de base de sessões em `ciclos/EC-18-09_ofertas.md` — decide se prorroga (com teto em 04/10) ou encerra; leitura final na O7.
 

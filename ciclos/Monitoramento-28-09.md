@@ -30,7 +30,7 @@
 
 Zumbis: nenhuma pausada com custo. SP-PP e EGC seguem pausadas (O6-001/002).
 
-**Composição das 2 compras da Geral (inferência aritmética, única combinação possível):** R$ 690,28 = **3 × PXM a 193,36 + 1 × L1618-T a 110,20** — ambos a **preço com desconto**. → **Regra de atribuição do desconto no preço: o Ads valoriza ao preço com desconto** (igual à Melhor Oferta; diferente da promoção de quantidade, valorizada a preço de tabela). **Pendente de confirmação pela Mestra** (pedido de 3 PXM + pedido de 1 L1618-T).
+**Composição das 2 compras da Geral (inferência aritmética, única combinação possível):** R$ 690,28 = **3 × PXM a 193,36 + 1 × L1618-T a 110,20** — ambos a **preço com desconto**. → **Regra de atribuição do desconto no preço: o Ads valoriza ao preço com desconto** (igual à Melhor Oferta; diferente da promoção de quantidade, valorizada a preço de tabela). **✅ CONFIRMADA em 28/09 pelo print do pedido de 24/09 (3 PXM, ES Capital): produtos R$ 580,08 = 3 × 193,36 (preço com desconto), promoção de quantidade −R$ 29,00 por cima, total de produtos pago R$ 551,08.** O Ads e o BR registram R$ 580,08 — **preço com desconto, antes da promoção de quantidade**. Regra fixada.
 
 ## Leitura dos 7 dias do desconto no preço (21–27/09)
 
@@ -52,6 +52,19 @@ Zumbis: nenhuma pausada com custo. SP-PP e EGC seguem pausadas (O6-001/002).
 
 **Decisão pedida pela EC-18-09 para hoje — prorrogar até 04/10 ou encerrar:** recomendação **ENCERRAR (já terminou em 27/09; não recriar)**. Motivo: a semana 28/09–04/10 de preço limpo protege o preço de referência de P3070/PXP no Prime Day e dos 5 SKUs que podem entrar na lista de hoje; PXM já provou que converte com oferta e L1618-T com 2 un/sem não justifica. Confiança MÉDIA.
 
+## Mestra recebida (28/09) — conferência das linhas 68–72
+
+| Linha | Venda | Mestra | BR / pedido | Status |
+|---|---|---|---|---|
+| 68 | 22/09 PXM 2 un CE Capital | desc. 20,36 · receita 386,72 | 2 × 193,36 = 386,72 | ✅ |
+| 69 | 23/09 EGC 1 un SC Interior | 674,62 (preço cheio) | 674,62 | ✅ |
+| 70 | 24/09 L1618-T 1 un ES Interior | **sem desconto, receita 116,00** | BR: 2 un a 110,20 | ⚠️ **falta o desconto de 5,80 → receita 110,20** |
+| 71 | 24/09 PXM 3 un ES Capital | desc. 29,00 · receita 581,62 | print: 580,08 − 29,00 = **551,08** | ⚠️ **desconto deve ser 30,54 + 29,00 = 59,54 → receita 551,08** (o 5% do preço não foi lançado; só a promo de quantidade) |
+| 72 | 26/09 L1618-T 1 un RS Capital | desc. **6,20** · receita 109,80 · frete real pendente | 5% de 116 = **5,80 → 110,20** | ⚠️ **desconto 6,20 → 5,80** |
+| 62 | 13/09 L1618-B 2 un (R$ 259,80) | marcada **DEVOLUÇÃO** (pedido 702-4604095-6119462) | — | 3ª devolução de setembro |
+
+Unidades batem (PXM 5 · L1618-T 2 · EGC 1 = 8 = BR). Valores: BR R$ 1.861,82 − Mestra corrigida R$ 1.832,82 = **R$ 29,00 = a promoção de quantidade** — mesma regra já registrada (BR a preço antes da promo de quantidade). Validações intactas (7, iguais à versão anterior). Totais: receita R$ 27.747,36 · lucro R$ 6.980,80 · margem 25,16% (antes das correções).
+
 ## Vigias com prazo hoje
 
 | Vigia | Condição | Dado | Resultado |
@@ -72,7 +85,7 @@ Zumbis: nenhuma pausada com custo. SP-PP e EGC seguem pausadas (O6-001/002).
 2. Não reativar a EGC por 1 venda orgânica.
 3. Não mexer na PI P3070 — gatilho O6-004 é da O7 e ainda não disparou.
 4. Não recriar o desconto no preço antes do Prime Day (preço de referência).
-5. Não fechar a regra de atribuição do desconto no preço antes da Mestra confirmar a composição dos pedidos.
+5. ~~Não fechar a regra de atribuição~~ — fechada pelo print do pedido.
 
 ## I. Dados que faltam
-Print do console com impressões (linha 14 do Controle) · lista do Prime Day de hoje · Mestra com as vendas de 22–28/09 (PXM 3 + 2, L1618-T 2, EGC 1).
+~~Print do console~~ recebido: **19.379 impressões · 107 cli · R$ 690,28** (22–28/09) — linha 14 proposta em `dados/PROPOSTA_linha_Controle_Semanal_28-09.csv` · lista do Prime Day de hoje · Mestra corrigida (linhas 70–72) · decisões do LEO (Q2460-B; não recriar o desconto).

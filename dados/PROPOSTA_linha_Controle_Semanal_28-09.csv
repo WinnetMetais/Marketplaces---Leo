@@ -1,0 +1,13 @@
+Coluna,Campo,Valor a lançar (linha 14)
+A,Data de referência,28/09/2026
+B,Período analisado,22/09/2026 a 28/09/2026
+C,Impressões,19379
+D,Cliques,107
+E,Custo Ads (R$),"65,97"
+F,Vendas atribuídas Ads (R$),"690,28"
+G,Pedidos atribuídos,2
+H,Unidades atribuídas,4
+I..M,(calculadas),"ROAS 10,46 · ACOS 9,6% · Taxa 1,87% · CPC 0,62 · CTR 0,552%"
+N,Status semanal,VIGIA
+O,Notas,"Primeira semana pós-O6 (10 ativas; SP-PP e EGC pausadas; loose da Geral a 0,45). ACOS 9,6% — 2 vendas, ambas na Geral: 3 un PXM R$ 580,08 (24/09, ES Capital) + 1 un L1618-T R$ 110,20, valorizadas A PREÇO COM DESCONTO — regra de atribuição do desconto no preço FIXADA (igual à Melhor Oferta; a promoção de quantidade que empilhou por cima, −R$ 29,00, não entra no Ads nem no BR). Impressões caíram de 43.599 para 19.379 (PI P3070 13 cli / R$ 14,38 / 0 — sem o alvo B09YDLC69D). Desconto no preço 21–27/09 lido: 7 un / R$ 1.187,20 em 2 de 10 SKUs (PXM 5, L1618-T 2); Q2460-B 9 sessões / 0 → gatilho O6-006 disparou (pausar anúncio na Geral — decisão do LEO). EGC vendeu 1 un a preço cheio (R$ 674,62, 23/09) com a campanha pausada — não atribuída. BR 22–27/09: 202 sessões, 8 un, R$ 1.861,82; bijeção com Mestra fecha após correção das linhas 70–72. DEVOLUÇÃO nova: L1618-B de 13/09 (2 un, R$ 259,80). Setembro até 28/09: R$ 353,63 = 35,4% do teto."
+P,Arquivo / fonte,"console Amazon Ads (set 22–set 28) + relatorios/amazon/monitoramento-28-09"
