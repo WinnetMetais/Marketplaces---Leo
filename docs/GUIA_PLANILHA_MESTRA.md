@@ -72,3 +72,8 @@ Não altere automaticamente preços, custos, tarifas, margens, fórmulas, classi
 ## CONTROLE DE VERSÃO
 
 Sempre que a Planilha Mestra for modificada de forma relevante, preserve a versão anterior, gere uma nova versão e informe claramente o changelog das alterações realizadas.
+
+
+## Mapa SKU ↔ ASIN (28/09/2026)
+
+`dados/MAPA_SKU_ASIN.csv` (113 pares, do Relatório de Todas as Ofertas do Seller Central de 28/09) é a fonte oficial para ligar o Business Report (por ASIN) à Mestra (por SKU). Bijeção exata com o Simulador na data. **Não inferir SKU por título.** Atualizar o mapa sempre que um anúncio for criado, recriado (migração de ASIN) ou removido: Estoque → Relatórios de estoque → Relatório de Todas as Ofertas → colunas `seller-sku` e `asin1`.

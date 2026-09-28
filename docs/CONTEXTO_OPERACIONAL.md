@@ -137,6 +137,8 @@
 
 **Prime Day — lista de 28/09:** PXM, PG2460, P3060, P4080, P3050 **seguem fora**. Entraram **L2025-T e L1618-T** em Melhor Oferta — **decisão final do LEO: ficam fora** (o mínimo do evento é 10%, e a 10% ambos caem abaixo do piso: 11,9% e 13,1%). **Prime Day fecha com 2 SKUs: P3070 15% e PXP 10%.**
 
+**Mapa SKU ↔ ASIN criado** (`dados/MAPA_SKU_ASIN.csv`, 113 pares, bijeção exata com a Mestra) — fonte oficial para BR × Mestra; atualizar a cada anúncio novo/removido.
+
 **Fora da pauta:** EGC vendeu 1 un a preço cheio (R$ 674,62, 23/09) com a campanha pausada — 1ª venda do EGC; não atribuída. Devolução nova: L1618-B 13/09 (2 un). Mestra corrigida em 3 linhas (desconto do L1618-T e do pedido de 3 PXM).
 
 ## O6 — 22/09/2026 · aprovada (G1–G13), execução pendente
