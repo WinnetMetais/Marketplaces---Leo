@@ -115,3 +115,25 @@ Unidades batem (PXM 5 · L1618-T 2 · EGC 1 = 8 = BR). Valores: BR R$ 1.861,82 �
 **Monitoramento de 28/09 ENCERRADO.** Pendências residuais do Registro (não bloqueiam): linhas O6-011/012/014/015/016 ainda com "reconferir 28/09" — anotar "não elegível também em 28/09" e reavaliar 05/10; linhas 209–210 do template perderam as fórmulas de Q/R (recolocar quando for usar).
 
 **Vigias até o próximo monitoramento (05/10, Livro primeiro):** PI P3070 (13 cli / 0 na Era; gatilho O7 em 15) · Geral pós-loose 0,45 (ACOS 6,9% na 1ª semana) · Q2460-B pausado na Geral · EGC 1ª venda (orgânica) · Prime Day com 4 SKUs a partir de 05/10.
+
+
+## Prime Day — a lista que deveria ter entrado (mínimo de 10%, piso 15%)
+
+Critério da O6: **tráfego × margem ≥ 15% no preço da oferta** (Simulador SP Interior). Sessões = BR 10–20/09 + 22–27/09 (17 dias). Elegibilidade = listas de recomendação da Amazon de 22/09 e 28/09.
+
+| # | SKU | Tabela | Oferta | Margem | Sessões 17d | Elegível? | Situação |
+|---|---|---:|---:|---:|---:|---|---|
+| 1 | **P3070** | 616,18 | 15% → 523,75 | 16,9% | 86 | 22 e 28/09 | ✅ inscrito |
+| 2 | **P4080** | 1.070,17 | 15% → 909,64 (ou 10% → 963,15, 19,3%) | 15,9% | 39 | não | fora por elegibilidade |
+| 3 | **P3060** | 511,42 | 15% → 434,71 | 19,4% | 30 | não | fora por elegibilidade |
+| 4 | **PG2460** | 248,75 | 10% → 223,88 | 16,7% | 20 | não | fora por elegibilidade |
+| 5 | **P3050** | 467,67 | 10% → 420,90 | 17,8% | 18 | não | fora por elegibilidade |
+| 6 | **PXM** | 203,54 | 10% → 183,19 | 15,0% | 17 | não | fora por elegibilidade — o SKU que mais converte com desconto (9.9: 3 un; 21–27/09: 5 un) |
+| 7 | EGC (opcional) | 674,62 | 10% → 607,16 | 15,6% | 36 | não | fora por elegibilidade; a O6 já o excluía (oferta do 9.9 zerou); 1ª venda em 23/09 foi orgânica, a preço cheio |
+| — | **PXP** | 167,89 | 10% → 151,10 | **13,4%** | 36 | 22 e 28/09 | ✅ inscrito como **exceção ao piso** (decisão do LEO) |
+
+**Ficam fora pelo piso** (a 10% caem abaixo de 15%): L2025-T 13,1% · L1618-T 11,9% · Q2460-B 13,0% · L1618-B 13,7% · L2030 12,8% · L2030-T 13,0% · L1623-T 11,4% · L2450-AML 12,0% · SP-PP 11,8% · P2025 14,2%. **Ficam fora por tráfego** (margem ok, sessões irrelevantes): Q4070-A 15,6% / 8 sess (também fora por decisão do LEO) · L2470-B 15,5% / 6 · Q3060-A 22,4% / 2 · SP-01 17,0% / 0.
+
+**Resultado:** a lista ideal tinha **6 SKUs** (+ EGC opcional); a Amazon só abriu o evento para 2 deles (P3070 e PXP, este como exceção). **5 SKUs de margem e tráfego adequados ficaram fora por elegibilidade, não por decisão** — P4080, P3060, PG2460, P3050 e PXM. Para o próximo evento (Black Friday, 19/11+), o gargalo é a lista de recomendação da Amazon, que muda semanalmente: conferir toda segunda a partir de 4 semanas antes.
+
+⚠️ **Limitação:** a Mestra não tem coluna de ASIN. Esta lista cobre os 22 SKUs com ASIN mapeado nos documentos do repositório. O catálogo tem 64 SKUs com margem ≥ 15% a 10%, mas os demais não têm ASIN mapeado nem tráfego identificável no BR — pelo critério tráfego × margem, não entrariam de qualquer forma, mas a verificação fica incompleta sem o mapa.
