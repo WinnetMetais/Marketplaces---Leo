@@ -133,9 +133,9 @@
 
 **Regra de atribuição do desconto no preço — CONFIRMADA:** Ads e BR registram o **preço com desconto** (3 PXM = R$ 580,08, print do pedido). A promoção de quantidade **empilha** por cima (−R$ 29,00) e não aparece em nenhum dos dois. Três mecanismos medidos (§6 dos Parâmetros).
 
-**Desconto no preço 21–27/09 (EC-007…016):** 7 un · R$ 1.187,20 em **2 de 10 SKUs** — PXM 5 un, L1618-T 2 un; os outros zero. **Q2460-B: gatilho O6-006 disparou** (pausar o anúncio na Geral — decisão do LEO). Recomendação: não recriar antes do Prime Day. Vereditos propostos para o Registro.
+**Desconto no preço 21–27/09 (EC-007…016):** 7 un · R$ 1.187,20 em **2 de 10 SKUs** — PXM 5 un, L1618-T 2 un; os outros zero. **Q2460-B: gatilho O6-006 disparou → LEO decidiu pausar o anúncio na Geral (28/09; print pendente).** Desconto no preço: **não recriar** antes do Prime Day (decisão do LEO). Vereditos EC-007…016 lançados no Registro (72 entradas: 48 avaliadas · 18 em maturação · 5 aguardando · 1 rejeitada).
 
-**Prime Day — lista de 28/09:** PXM, PG2460, P3060, P4080, P3050 **seguem fora**. Entraram **L2025-T e L1618-T** em Melhor Oferta — candidatos a 5% (15,3% e 16,5% de margem); decisão do LEO pendente.
+**Prime Day — lista de 28/09:** PXM, PG2460, P3060, P4080, P3050 **seguem fora**. Entraram **L2025-T e L1618-T** em Melhor Oferta — **LEO decidiu inscrever os dois a 5%** (EC-017, EC-018; margens 15,3% e 16,5%). Prime Day fica com 4 SKUs: P3070, PXP, L1618-T, L2025-T.
 
 **Fora da pauta:** EGC vendeu 1 un a preço cheio (R$ 674,62, 23/09) com a campanha pausada — 1ª venda do EGC; não atribuída. Devolução nova: L1618-B 13/09 (2 un). Mestra corrigida em 3 linhas (desconto do L1618-T e do pedido de 3 PXM).
 

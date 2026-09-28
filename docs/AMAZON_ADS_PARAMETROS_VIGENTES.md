@@ -141,7 +141,7 @@ Esses valores são snapshot, não regra permanente.
 | Estrutura | Situação | Gatilho na O7 |
 |---|---|---|
 | PI P3070-o228/07 | VIGIA, lances 1,10 / 0,90 mantidos (O6-004) | 0 venda atribuída na Era **E** ≥15 cliques → −20% nos asin-expanded (1,10 → 0,88). Triagem: `B0CYWMQ93Y` 11 · `B0BHMZBZW9` 7 · `B0BSNVT11K` 5 · `B0F4T8FCDD` 5 · `B0778TD2LY` 5 (régua 15) |
-| Geral — Q2460-B | VIGIA (O6-006) | **28/09:** 0 venda na semana de desconto → pausar o anúncio do SKU dentro da Geral (nível produto) |
+| Geral — Q2460-B | ~~VIGIA (O6-006)~~ **GATILHO DISPAROU em 28/09** (9 sessões / 0 venda na semana de desconto) | **PAUSAR o anúncio do SKU dentro da Geral (nível produto) — decisão do LEO em 28/09: pausar; print pendente.** O SKU vai à fila de página (INVESTIGAR CONVERSÃO DO SKU); rodou sem preço riscado, a hipótese de preço segue aberta |
 | 6B — exata "lixeira inox para pia de cozinha" | VIGIA, 1,50 (O6-008) | ≥15 cli sem venda → −20% (1,50 → 1,20) ou pausar a keyword |
 | Geral — ASIN `B0BHMZBZW9` (Tramontina pedal 30 L) | VIGIA (O6-019) | ≥15 cli em 30d sem venda → excluir o produto na Geral |
 | Piloto de lance (6B, L3070-B) | +1 Era (O6-010) | zero diferença na Era → encerrar e devolver ao fixo |
@@ -289,7 +289,7 @@ Critério de seleção: **tráfego (Business Report 07–13/09) × margem ≥ 15
 
 **Leituras:** ~~**28/09** (7 dias) contra a linha de base de sessões em `ciclos/EC-18-09_ofertas.md` — decide se prorroga (com teto em 04/10) ou encerra; leitura final na O7.~~
 
-✅ **LIDO em 28/09 (`ciclos/Monitoramento-28-09.md`):** 7 un · R$ 1.187,20 · 166 visualizações · conversão 4,2% em 21–27/09. **Converteu em 2 de 10 SKUs:** PXM 5 un (2 + 3) e L1618-T 2 un. Q2460-B 0 → gatilho O6-006 disparou. Os outros 7: 0. O desconto não gerou tráfego (esperado; sessões da semana abaixo da linha de base). **Recomendação: não recriar antes do Prime Day** (preço de referência) — decisão do LEO pendente. Vereditos EC-007…016 propostos em `dados/PROPOSTA_vereditos_EC-007_a_016.csv`.
+✅ **LIDO em 28/09 (`ciclos/Monitoramento-28-09.md`):** 7 un · R$ 1.187,20 · 166 visualizações · conversão 4,2% em 21–27/09. **Converteu em 2 de 10 SKUs:** PXM 5 un (2 + 3) e L1618-T 2 un. Q2460-B 0 → gatilho O6-006 disparou. Os outros 7: 0. O desconto não gerou tráfego (esperado; sessões da semana abaixo da linha de base). **Decisão do LEO (28/09): NÃO recriar** antes do Prime Day (preço de referência). Vereditos EC-007…016 lançados no Registro em 28/09 (2 POSITIVOS · 1 NEGATIVO · 7 SEM EFEITO). Vereditos EC-007…016 propostos em `dados/PROPOSTA_vereditos_EC-007_a_016.csv`.
 
 ### PRIME DAY 05–11/10/2026 — Melhor Oferta, 7 SKUs (O6-011 a O6-017, uma linha por SKU) — aprovado 22/09, inscrição pelo LEO
 
@@ -311,7 +311,7 @@ Fora: L2450-AML, Q2460-B, L2025-T, L1618-T, EGC, L2030, L1618-B. Relâmpago veta
 
 **Para os 5 não elegíveis:** opção A — esperar a lista de 28/09; opção B — **desconto no preço 05–11/10** com os mesmos percentuais (mesma margem, sem selo do evento; regra de atribuição desconhecida). **Decisão do LEO (22/09): opção A — esperar a lista de 28/09.**
 
-**Lista de 28/09 (5 recomendações em Melhor Oferta):** P3070 ✓ · PXP ✓ · **L2025-T** (novo) · **L1618-T** (novo) · Q4070-A (fora por decisão do LEO). **PXM, PG2460, P3060, P4080, P3050 seguem não elegíveis** — linhas O6-011/012/014/015/016 ficam aguardando até 05/10; na prática, fora do evento. Candidatos novos a 5% (mínimo): L1618-T → R$ 110,20, margem **15,3%** (converteu 2 un a −5% em 21–27/09) · L2025-T → R$ 126,26, margem **16,5%** (0 conversão a −5% e com oferta no 9.9; maior tráfego). **Decisão do LEO pendente.** Empilhamento: a Melhor Oferta **não** empilhou com a promo de quantidade no 9.9 (PXM 13/09, n = 1); o desconto no preço **empilhou** (PXM 24/09).
+**Lista de 28/09 (5 recomendações em Melhor Oferta):** P3070 ✓ · PXP ✓ · **L2025-T** (novo) · **L1618-T** (novo) · Q4070-A (fora por decisão do LEO). **PXM, PG2460, P3060, P4080, P3050 seguem não elegíveis** — linhas O6-011/012/014/015/016 ficam aguardando até 05/10; na prática, fora do evento. Candidatos novos a 5% (mínimo): L1618-T → R$ 110,20, margem **15,3%** (converteu 2 un a −5% em 21–27/09) · L2025-T → R$ 126,26, margem **16,5%** (0 conversão a −5% e com oferta no 9.9; maior tráfego). **Decisão do LEO (28/09): os dois entram a 5% (EC-017 L1618-T · EC-018 L2025-T) — inscrição pelo LEO, print pendente.** Prime Day fica com **4 SKUs**: P3070 15% · PXP 10% · L1618-T 5% · L2025-T 5%. Empilhamento: a Melhor Oferta **não** empilhou com a promo de quantidade no 9.9 (PXM 13/09, n = 1); o desconto no preço **empilhou** (PXM 24/09).
 
 ### Auditoria de conformidade — 28/08/2026
 

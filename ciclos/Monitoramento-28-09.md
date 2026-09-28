@@ -82,7 +82,7 @@ Unidades batem (PXM 5 · L1618-T 2 · EGC 1 = 8 = BR). Valores: BR R$ 1.861,82 �
 
 **Empilhamento com a promoção de quantidade:** a Melhor Oferta do 9.9 **não** empilhou (PXM 13/09, 3 un a −15%: desconto 91,59 = só a oferta; sem os 5% de 3+). O desconto no preço **empilhou** (PXM 24/09). Logo, para as ofertas do Prime Day, o risco de furar o piso por 3+ unidades **não se materializou** na única observação disponível (n = 1). Se empilhasse: L1618-T 3+ → 12,1% · L2025-T 3+ → 13,3%.
 
-**Recomendação do Code (decisão do LEO):** inscrever **L1618-T a 5%** (confiança MÉDIA — converteu a −5%, margem no piso) e **L2025-T a 5%** (confiança BAIXA-MÉDIA — não converteu com nenhum mecanismo, mas é o maior tráfego e 16,5% comporta; é o teste do selo). Nenhuma acima de 5%: L2025-T a 10% cai a 13,1% e L1618-T a 10% a 11,9%.
+**Decisão do LEO (28/09): os dois entram a 5%** (EC-017, EC-018). Recomendação original do Code: inscrever **L1618-T a 5%** (confiança MÉDIA — converteu a −5%, margem no piso) e **L2025-T a 5%** (confiança BAIXA-MÉDIA — não converteu com nenhum mecanismo, mas é o maior tráfego e 16,5% comporta; é o teste do selo). Nenhuma acima de 5%: L2025-T a 10% cai a 13,1% e L1618-T a 10% a 11,9%.
 
 ## Achados fora da pauta
 
@@ -100,3 +100,14 @@ Unidades batem (PXM 5 · L1618-T 2 · EGC 1 = 8 = BR). Valores: BR R$ 1.861,82 �
 
 ## I. Dados que faltam
 ~~Print do console~~ recebido: **19.379 impressões · 107 cli · R$ 690,28** (22–28/09) — linha 14 proposta em `dados/PROPOSTA_linha_Controle_Semanal_28-09.csv` · lista do Prime Day de hoje · Mestra corrigida (linhas 70–72) · decisões do LEO (Q2460-B; não recriar o desconto).
+
+
+## Decisões do LEO (28/09, fim do dia)
+
+1. **Desconto no preço: não recriar** antes do Prime Day. ✅
+2. **L1618-T e L2025-T entram no Prime Day a 5%** (Melhor Oferta) → EC-017 e EC-018 (`dados/PROPOSTA_linhas_Registro_EC-017_EC-018.csv`, colar em A73). Print das inscrições pendente.
+3. **Q2460-B: pausar o anúncio dentro da Geral** (gatilho O6-006). Print pendente; ao executar, atualizar a linha O6-006 (Executado? SIM · Status EXECUTADA - EM MATURAÇÃO · Veredito "gatilho disparou em 28/09 — anúncio pausado" · Reavaliar 13/10).
+4. Registro com os vereditos EC-007…016 lançado e conferido (72 entradas). Linhas O6-011/012/014/015/016 seguem AGUARDANDO — anotar "não elegível também em 28/09" e reavaliar 05/10.
+5. Contexto e Parâmetros: LEO troca no Project.
+
+**Vigias até o próximo monitoramento (05/10, Livro primeiro):** PI P3070 (13 cli / 0 na Era; gatilho O7 em 15) · Geral pós-loose 0,45 (ACOS 6,9% na 1ª semana) · Q2460-B pausado na Geral · EGC 1ª venda (orgânica) · Prime Day com 4 SKUs a partir de 05/10.
