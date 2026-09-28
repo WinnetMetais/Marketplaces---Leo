@@ -287,7 +287,9 @@ Critério de seleção: **tráfego (Business Report 07–13/09) × margem ≥ 15
 2. **Prime Day (05–11/10) preservado:** o desconto encerra em 27/09 e deixa **uma semana de preço limpo (28/09–04/10)** antes do evento, protegendo o preço de referência. Oferta não empilha com desconto no mesmo ASIN — os 10 ficam livres para o evento. **A lista do Prime Day se decide na O6 e se submete no mesmo dia**: a janela de inscrição está aberta desde 18/09 e a data de fechamento não é conhecida.
 3. ~~Regra de atribuição do Ads desconhecida~~ — **confirmada em 28/09 (§6): preço com desconto.**
 
-**Leituras:** **28/09** (7 dias) contra a linha de base de sessões em `ciclos/EC-18-09_ofertas.md` — decide se prorroga (com teto em 04/10) ou encerra; leitura final na O7.
+**Leituras:** ~~**28/09** (7 dias) contra a linha de base de sessões em `ciclos/EC-18-09_ofertas.md` — decide se prorroga (com teto em 04/10) ou encerra; leitura final na O7.~~
+
+✅ **LIDO em 28/09 (`ciclos/Monitoramento-28-09.md`):** 7 un · R$ 1.187,20 · 166 visualizações · conversão 4,2% em 21–27/09. **Converteu em 2 de 10 SKUs:** PXM 5 un (2 + 3) e L1618-T 2 un. Q2460-B 0 → gatilho O6-006 disparou. Os outros 7: 0. O desconto não gerou tráfego (esperado; sessões da semana abaixo da linha de base). **Recomendação: não recriar antes do Prime Day** (preço de referência) — decisão do LEO pendente. Vereditos EC-007…016 propostos em `dados/PROPOSTA_vereditos_EC-007_a_016.csv`.
 
 ### PRIME DAY 05–11/10/2026 — Melhor Oferta, 7 SKUs (O6-011 a O6-017, uma linha por SKU) — aprovado 22/09, inscrição pelo LEO
 
@@ -308,6 +310,8 @@ Fora: L2450-AML, Q2460-B, L2025-T, L1618-T, EGC, L2030, L1618-B. Relâmpago veta
 **Ao submeter:** o arquivo vem pré-preenchido com agendamento **"Personalizado 23/09–04/10"** — trocar para **"Mega Ofertas Prime Day (2026-10-05 - 2026-10-11)"**, senão a oferta entra amanhã, empilha com o desconto no preço até 27/09 e contamina a Era. PXP vem pré-preenchido a **R$ 151,90 (9,5%)**. **Com o mínimo real de 5%, a exceção ao piso deixa de ser obrigatória:** PXP a **5% = R$ 159,50 → margem 16,8%** (dentro do piso) · 7% = R$ 156,14 → 15,5% · 7,5% = R$ 155,30 → 15,1% (teto no piso) · 10% = R$ 151,10 → 13,4% (exceção). **Decisão do LEO (22/09): manteve 10% — R$ 151,10, exceção ao piso mantida** (O6-017). Planilhas de produto das duas Melhores Ofertas enviadas: P3070 R$ 523,75 / 904 un · PXP R$ 151,10 / 419 un (`relatorios/amazon/prime-day-22-09/bestdeal_*.xlsx`, sem erros nem avisos). **Agendamento confirmado por print (22/09): "Prime Big Deal Days 5–11 de out. de 2026", status "Em breve", público Prime.** Unidades comprometidas pré-preenchidas com o estoque inteiro (419 / 904).
 
 **Para os 5 não elegíveis:** opção A — esperar a lista de 28/09; opção B — **desconto no preço 05–11/10** com os mesmos percentuais (mesma margem, sem selo do evento; regra de atribuição desconhecida). **Decisão do LEO (22/09): opção A — esperar a lista de 28/09.**
+
+**Lista de 28/09 (5 recomendações em Melhor Oferta):** P3070 ✓ · PXP ✓ · **L2025-T** (novo) · **L1618-T** (novo) · Q4070-A (fora por decisão do LEO). **PXM, PG2460, P3060, P4080, P3050 seguem não elegíveis** — linhas O6-011/012/014/015/016 ficam aguardando até 05/10; na prática, fora do evento. Candidatos novos a 5% (mínimo): L1618-T → R$ 110,20, margem **15,3%** (converteu 2 un a −5% em 21–27/09) · L2025-T → R$ 126,26, margem **16,5%** (0 conversão a −5% e com oferta no 9.9; maior tráfego). **Decisão do LEO pendente.** Empilhamento: a Melhor Oferta **não** empilhou com a promo de quantidade no 9.9 (PXM 13/09, n = 1); o desconto no preço **empilhou** (PXM 24/09).
 
 ### Auditoria de conformidade — 28/08/2026
 

@@ -127,6 +127,18 @@
 
 **Ordem de execução recomendada:** as 4 pausas primeiro (reversíveis, não afetam nada) → O5-001 e O5-002 **juntos**, porque um mede o outro → O5-009 e O5-010 por último. **Tirar o export pós-execução** — é ele que fecha o ciclo no repositório.
 
+## Monitoramento de 28/09 — leitura do desconto no preço, gatilho do Q2460-B, lista do Prime Day
+
+**Semana 22–28/09 (10 ativas):** 19.379 impr · 107 cli · R$ 65,97 · R$ 690,28 em 2 compras (Geral) · **ACOS 9,6%**. BR 22–27/09: 202 sessões · 8 un · R$ 1.861,82; bijeção com a Mestra fechada (diferença R$ 29,00 = promo de quantidade). Setembro até 28/09: **R$ 353,63 = 35,4% do teto**. Sem emergência, sem zumbi. Linha 14 do Controle lançada.
+
+**Regra de atribuição do desconto no preço — CONFIRMADA:** Ads e BR registram o **preço com desconto** (3 PXM = R$ 580,08, print do pedido). A promoção de quantidade **empilha** por cima (−R$ 29,00) e não aparece em nenhum dos dois. Três mecanismos medidos (§6 dos Parâmetros).
+
+**Desconto no preço 21–27/09 (EC-007…016):** 7 un · R$ 1.187,20 em **2 de 10 SKUs** — PXM 5 un, L1618-T 2 un; os outros zero. **Q2460-B: gatilho O6-006 disparou** (pausar o anúncio na Geral — decisão do LEO). Recomendação: não recriar antes do Prime Day. Vereditos propostos para o Registro.
+
+**Prime Day — lista de 28/09:** PXM, PG2460, P3060, P4080, P3050 **seguem fora**. Entraram **L2025-T e L1618-T** em Melhor Oferta — candidatos a 5% (15,3% e 16,5% de margem); decisão do LEO pendente.
+
+**Fora da pauta:** EGC vendeu 1 un a preço cheio (R$ 674,62, 23/09) com a campanha pausada — 1ª venda do EGC; não atribuída. Devolução nova: L1618-B 13/09 (2 un). Mestra corrigida em 3 linhas (desconto do L1618-T e do pedido de 3 PXM).
+
 ## O6 — 22/09/2026 · aprovada (G1–G13), execução pendente
 
 **Papéis:** chat canônico analisou e propôs; Claude Code auditou (`ciclos/O6-22-09_auditoria-code.md`) — todos os números conferidos, três ressalvas de leitura, nenhuma muda decisão. Diagnóstico em `ciclos/O6-22-09_diagnostico-chat-canonico.md`; base em `ciclos/O6-22-09_base-auditada-code.md`; 11 relatórios em `relatorios/amazon/o6-22-09/`.
@@ -259,6 +271,7 @@ O método operacional foi originalmente estabelecido por um assessor (Henrique) 
 | 08/09/2026 | pré-O5 | **Mestra v4.3.4**: 4 vendas de setembro (02, 03, 05 e 07/09) · validações de dados perdidas no fechamento e **restauradas por reinjeção do `extLst`** · regra nova: Mestra não pode ser salva por `openpyxl` |
 | 09/09/2026 | **O5** | Ciclo concluído como análise (17 linhas aprovadas, execução pendente) · correção de 15→16 campanhas ativas · O4-015 confirmada inerte · SP-01 diagnosticado em três camadas · gasto de setembro em 41–46% do teto · **monitoramento de 21/09 eliminado** com conferência de estado obrigatória em 14/09 como contrapartida · divergência SP-T/SP-01 na Bituqueiras em aberto |
 | 09/09/2026 | **O5 executada** | 8 ações no console, todas conferidas · O5-010 saiu invertida (nomes PT-BR das segmentações) e foi corrigida no mesmo dia pela conferência pós-execução · O5-013 não executada (L2030-T fora do grupo da 6B) · **C7: a PI PXM entrega — o diagnóstico havia invertido entrega e CTR** · conta em 12 ativas · Parâmetros com o snapshot pós-execução |
+| 28/09/2026 | monitoramento | Semana 22–28/09: ACOS 9,6%, 2 vendas na Geral · **regra do desconto no preço confirmada (preço com desconto; promo de quantidade empilha)** · desconto 21–27/09: 7 un em 2 de 10 SKUs (PXM 5, L1618-T 2) · **gatilho Q2460-B disparou** · Prime Day 28/09: 5 SKUs seguem fora, L2025-T e L1618-T entraram (decisão pendente) · EGC 1ª venda (orgânica) · devolução L1618-B · setembro 35,4% do teto · Mestra corrigida (3 linhas) |
 | 22/09/2026 | **O6 executada** | 4 mexidas no console conferidas por export e prints (SP-PP e EGC pausadas; alvo `B09YDLC69D` pausado; loose 0,54 → 0,45 na linha certa) · conta em **10 ativas** · Prime Day: só P3070 e PXP elegíveis, inscritos em Prime Big Deal Days 5–11/10 (PXP a 10% como exceção ao piso; mínimo do evento é 5%) · 5 SKUs esperam a lista de 28/09 · Q4070-A fora · Registro com 72 entradas conferidas |
 | 22/09/2026 | **O6** | Ciclo concluído como análise: canônico analisou, Code auditou (números conferidos; 3 ressalvas de leitura). **G1–G13 aprovados pelo LEO, execução pendente.** Era 10–21/09: ACOS 10,75%, Ads 64,7%, TACOS 6,96%. PI P3070 converteu no alvo próprio; `B09YDLC69D` cruzou a régua; loose-match é o dreno da Geral. Pausas de SP-PP e EGC; O5-013 cancelada; Prime Day com 7 SKUs (PXP como exceção ao piso). **O7 marcada para 13/10** (decisão do LEO). Mestra do Project trocada pela versão de 21/09 |
 | 21/09/2026 | controle semanal | **Linha 13 (14–21/09) — só registro, sem diagnóstico (regra da véspera).** 43.599 impr · 146 cli · R$ 130,55 · R$ 749,08 em 2 vendas (P3070 pela PI, L2025-T pela Geral) · ACOS 17,4% na primeira semana limpa pós-O5. **Sinais para a O6 ler com a Era inteira:** impressões dobraram pela PI P3070 (≈27,9 mil, CTR 0,14%, 39 cli, R$ 56,55); Geral com ACOS 44,5% na semana (1 venda); EGC CTR 0,17% e 0 venda; SP-PP 0 cliques. Setembro em 28,8% do teto. Mestra: +2 vendas L2025-T (19 e 20/09, a de 20/09 com promo de quantidade, não desconto no preço); **devolução nova L2030-T de 01/09 aprovada 17/09**. BR de 14–20/09 puxado em 21/09 não traz o pedido de 20/09 — atraso de ~1 dia |

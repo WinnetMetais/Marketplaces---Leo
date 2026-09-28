@@ -58,12 +58,12 @@ Zumbis: nenhuma pausada com custo. SP-PP e EGC seguem pausadas (O6-001/002).
 |---|---|---|---|---|
 | 68 | 22/09 PXM 2 un CE Capital | desc. 20,36 · receita 386,72 | 2 × 193,36 = 386,72 | ✅ |
 | 69 | 23/09 EGC 1 un SC Interior | 674,62 (preço cheio) | 674,62 | ✅ |
-| 70 | 24/09 L1618-T 1 un ES Interior | **sem desconto, receita 116,00** | BR: 2 un a 110,20 | ⚠️ **falta o desconto de 5,80 → receita 110,20** |
-| 71 | 24/09 PXM 3 un ES Capital | desc. 29,00 · receita 581,62 | print: 580,08 − 29,00 = **551,08** | ⚠️ **desconto deve ser 30,54 + 29,00 = 59,54 → receita 551,08** (o 5% do preço não foi lançado; só a promo de quantidade) |
-| 72 | 26/09 L1618-T 1 un RS Capital | desc. **6,20** · receita 109,80 · frete real pendente | 5% de 116 = **5,80 → 110,20** | ⚠️ **desconto 6,20 → 5,80** |
+| 70 | 24/09 L1618-T 1 un ES Interior | corrigida: desc. 5,80 · receita 110,20 | BR: 2 un a 110,20 | ✅ (corrigida 28/09) |
+| 71 | 24/09 PXM 3 un ES Capital | corrigida: desc. 59,54 · receita 551,08 · margem 15,6% | print: 580,08 − 29,00 = 551,08 | ✅ (corrigida 28/09) |
+| 72 | 26/09 L1618-T 1 un RS Capital | corrigida: desc. 5,80 · receita 110,20 · frete real pendente | 110,20 | ✅ (corrigida 28/09) |
 | 62 | 13/09 L1618-B 2 un (R$ 259,80) | marcada **DEVOLUÇÃO** (pedido 702-4604095-6119462) | — | 3ª devolução de setembro |
 
-Unidades batem (PXM 5 · L1618-T 2 · EGC 1 = 8 = BR). Valores: BR R$ 1.861,82 − Mestra corrigida R$ 1.832,82 = **R$ 29,00 = a promoção de quantidade** — mesma regra já registrada (BR a preço antes da promo de quantidade). Validações intactas (7, iguais à versão anterior). Totais: receita R$ 27.747,36 · lucro R$ 6.980,80 · margem 25,16% (antes das correções).
+Unidades batem (PXM 5 · L1618-T 2 · EGC 1 = 8 = BR). Valores: BR R$ 1.861,82 − Mestra corrigida R$ 1.832,82 = **R$ 29,00 = a promoção de quantidade** — mesma regra já registrada (BR a preço antes da promo de quantidade). Validações intactas (7, iguais à versão anterior). Totais após correção: receita R$ 27.711,42 · lucro R$ 6.953,01 · margem 25,09%. **Mestra corrigida recebida e arquivada em 28/09; bijeção BR × Mestra = R$ 29,00 (promo de quantidade), fechada.**
 
 ## Vigias com prazo hoje
 
@@ -71,7 +71,18 @@ Unidades batem (PXM 5 · L1618-T 2 · EGC 1 = 8 = BR). Valores: BR R$ 1.861,82 �
 |---|---|---|---|
 | O6-006 — Q2460-B na Geral | 0 venda na semana de desconto → pausar o anúncio do SKU dentro da Geral | 9 sessões · 12 pv · 0 un (BR); 12 visualizações · 0 (painel) | **DISPAROU → PAUSAR o anúncio do Q2460-B na Geral** (nível produto). Ressalva já registrada: rodou sem preço riscado — o teste discriminante preço × página ficou enfraquecido; a pausa vale pela régua, não fecha a hipótese de preço |
 | O6-004 — PI P3070 | 0 venda **E** ≥15 cli na Era → −20% | 13 cli · R$ 14,38 · 0 na semana (Era desde 23/09) | ainda não (13 < 15); ler na O7 |
-| O6-011/012/014/015/016 — Prime Day | reconferir lista em 28/09 | **lista não recebida** | pendente |
+| O6-011/012/014/015/016 — Prime Day | reconferir lista em 28/09 | lista de 28/09 (5 recomendações, Melhor Oferta): P3070 ✓ · PXP ✓ · **L2025-T (novo)** · **L1618-T (novo)** · Q4070-A (fora). **PXM, PG2460, P3060, P4080, P3050 seguem não elegíveis** | as 5 linhas ficam AGUARDANDO até 05/10 (dia do início); na prática, fora do evento. **Decisão nova para o LEO:** inscrever L1618-T e/ou L2025-T a 5% |
+
+## Prime Day — lista de 28/09 e os dois candidatos novos
+
+| SKU | Melhor Oferta 5% (mínimo) | Margem SP Interior | Evidência de conversão | Leitura |
+|---|---|---:|---|---|
+| **L1618-T** (B0H3QQLFFY) | 116,00 → **110,20** | **15,3%** (no piso) | **2 un a −5% nesta semana** (desconto no preço), 27 sessões; 9.9 com oferta: 0 | candidato — a única lixeira que converteu com desconto |
+| **L2025-T** (B0H6C5CTSC) | 132,90 → **126,26** | **16,5%** | 0 un a −5% nesta semana (26 sessões); 9.9 com oferta: 0; vende orgânico e por promo de quantidade | maior tráfego do catálogo; o selo do evento é o que ainda não foi testado |
+
+**Empilhamento com a promoção de quantidade:** a Melhor Oferta do 9.9 **não** empilhou (PXM 13/09, 3 un a −15%: desconto 91,59 = só a oferta; sem os 5% de 3+). O desconto no preço **empilhou** (PXM 24/09). Logo, para as ofertas do Prime Day, o risco de furar o piso por 3+ unidades **não se materializou** na única observação disponível (n = 1). Se empilhasse: L1618-T 3+ → 12,1% · L2025-T 3+ → 13,3%.
+
+**Recomendação do Code (decisão do LEO):** inscrever **L1618-T a 5%** (confiança MÉDIA — converteu a −5%, margem no piso) e **L2025-T a 5%** (confiança BAIXA-MÉDIA — não converteu com nenhum mecanismo, mas é o maior tráfego e 16,5% comporta; é o teste do selo). Nenhuma acima de 5%: L2025-T a 10% cai a 13,1% e L1618-T a 10% a 11,9%.
 
 ## Achados fora da pauta
 
