@@ -285,3 +285,8 @@ BR 10–20/09 = R$ 2.573,86; Mestra no mesmo período = R$ 2.553,92. Diferença 
 Primeira semana do mecanismo (21–27/09): a Geral atribuiu R$ 690,28 = 3 × PXM a R$ 193,36 + 1 × L1618-T a R$ 110,20 — **preços com desconto**. O print do pedido de 24/09 mostra produtos R$ 580,08 (3 × 193,36) **e** promoção de quantidade −R$ 29,00 (5% sobre o preço já descontado). Ads e BR registram 580,08; o cliente pagou 551,08 pelos produtos.
 
 **Regras fechadas:** (1) desconto no preço é valorizado ao preço com desconto, como a Melhor Oferta; (2) promoção de quantidade **empilha** com desconto no preço no mesmo pedido — o piso de margem calculado só com o desconto no preço fica furado quando o pedido tem 3+ unidades (PXM: 5% + 5%); (3) na Mestra, lançar preço de tabela + coluna de desconto com a **soma** dos dois descontos + receita líquida. Erro real desta semana: a linha do pedido de 3 PXM saiu só com a promo de quantidade (receita 581,62 em vez de 551,08).
+
+
+## Mínimo de desconto do Prime Day é 10%; uma "correção" verbal virou premissa errada por 6 dias (28/09/2026)
+
+Em 22/09 o LEO corrigiu o canônico dizendo que o mínimo do evento era 5%; em 28/09 corrigiu de volta: **é 10%**. Nesse intervalo o Code recomendou inscrever L1618-T e L2025-T "a 5%" (margens 15,3% e 16,5%) — a 10% os dois ficam abaixo do piso (11,9% e 13,1%), e a recomendação inverte. **Regra:** parâmetro de plataforma (mínimo de desconto, janela de evento, elegibilidade) só entra nos documentos com **print da tela** que o mostre; correção verbal contra um número já documentado pede confirmação antes de virar base de recomendação.

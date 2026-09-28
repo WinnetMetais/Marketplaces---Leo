@@ -75,7 +75,7 @@ Unidades batem (PXM 5 · L1618-T 2 · EGC 1 = 8 = BR). Valores: BR R$ 1.861,82 �
 
 ## Prime Day — lista de 28/09 e os dois candidatos novos
 
-| SKU | Melhor Oferta 5% (mínimo) | Margem SP Interior | Evidência de conversão | Leitura |
+| SKU | Melhor Oferta a 5% ~~(mínimo)~~ | Margem SP Interior | Evidência de conversão | Leitura |
 |---|---|---:|---|---|
 | **L1618-T** (B0H3QQLFFY) | 116,00 → **110,20** | **15,3%** (no piso) | **2 un a −5% nesta semana** (desconto no preço), 27 sessões; 9.9 com oferta: 0 | candidato — a única lixeira que converteu com desconto |
 | **L2025-T** (B0H6C5CTSC) | 132,90 → **126,26** | **16,5%** | 0 un a −5% nesta semana (26 sessões); 9.9 com oferta: 0; vende orgânico e por promo de quantidade | maior tráfego do catálogo; o selo do evento é o que ainda não foi testado |
@@ -83,6 +83,8 @@ Unidades batem (PXM 5 · L1618-T 2 · EGC 1 = 8 = BR). Valores: BR R$ 1.861,82 �
 **Empilhamento com a promoção de quantidade:** a Melhor Oferta do 9.9 **não** empilhou (PXM 13/09, 3 un a −15%: desconto 91,59 = só a oferta; sem os 5% de 3+). O desconto no preço **empilhou** (PXM 24/09). Logo, para as ofertas do Prime Day, o risco de furar o piso por 3+ unidades **não se materializou** na única observação disponível (n = 1). Se empilhasse: L1618-T 3+ → 12,1% · L2025-T 3+ → 13,3%.
 
 **Decisão do LEO (28/09): os dois entram a 5%** (EC-017, EC-018). Recomendação original do Code: inscrever **L1618-T a 5%** (confiança MÉDIA — converteu a −5%, margem no piso) e **L2025-T a 5%** (confiança BAIXA-MÉDIA — não converteu com nenhum mecanismo, mas é o maior tráfego e 16,5% comporta; é o teste do selo). Nenhuma acima de 5%: L2025-T a 10% cai a 13,1% e L1618-T a 10% a 11,9%.
+
+⚠️ **CORREÇÃO (28/09, fim do dia): o mínimo do evento é 10%, não 5%** — a "correção" de 22/09 estava errada (o canônico tinha razão). A tabela acima e a recomendação foram feitas sobre 5%. **A 10%:** L1618-T → R$ 104,40, **11,9%** · L2025-T → R$ 119,61, **13,1%** — os dois abaixo do piso de 15%. **Recomendação revisada do Code: nenhum dos dois entra.** L1618-T já converte a −5% fora do evento (desconto no preço) e a −10% perderia mais R$ 5,80 por unidade num SKU que já está no piso; L2025-T não converteu com nenhum mecanismo e ficaria a 13,1%. Se o LEO mantiver a inscrição, registrar como exceções documentadas (como o PXP) e reescrever EC-017/EC-018 a 10%. A decisão "os dois entram" fica **suspensa até o LEO reconfirmar**.
 
 ## Achados fora da pauta
 
@@ -105,9 +107,9 @@ Unidades batem (PXM 5 · L1618-T 2 · EGC 1 = 8 = BR). Valores: BR R$ 1.861,82 �
 ## Decisões do LEO (28/09, fim do dia)
 
 1. **Desconto no preço: não recriar** antes do Prime Day. ✅
-2. **L1618-T e L2025-T entram no Prime Day a 5%** (Melhor Oferta) → EC-017 e EC-018 (`dados/PROPOSTA_linhas_Registro_EC-017_EC-018.csv`, colar em A73). Print das inscrições pendente.
-3. **Q2460-B: pausar o anúncio dentro da Geral** (gatilho O6-006). Print pendente; ao executar, atualizar a linha O6-006 (Executado? SIM · Status EXECUTADA - EM MATURAÇÃO · Veredito "gatilho disparou em 28/09 — anúncio pausado" · Reavaliar 13/10).
+2. ~~**L1618-T e L2025-T entram no Prime Day a 5%**~~ → **premissa errada (mínimo é 10%)**; EC-017 e EC-018 já lançadas nas linhas 83–84 a 5% — reescrever a 10% (exceções) ou cancelar, conforme o LEO reconfirmar. Sem fórmulas em Q/R nessas linhas.
+3. **Q2460-B: anúncio pausado dentro da Geral — ✅ print conferido** ("Pausado", 916 impr / 15 cli em 22–28/09). Falta atualizar a linha O6-006 (Executado? SIM · Status EXECUTADA - EM MATURAÇÃO · Veredito "gatilho disparou em 28/09 — anúncio pausado" · Reavaliar 13/10).
 4. Registro com os vereditos EC-007…016 lançado e conferido (72 entradas). Linhas O6-011/012/014/015/016 seguem AGUARDANDO — anotar "não elegível também em 28/09" e reavaliar 05/10.
-5. Contexto e Parâmetros: LEO troca no Project.
+5. Contexto e Parâmetros: trocados no Project em 28/09 — **trocar de novo** após a correção do mínimo (10%).
 
 **Vigias até o próximo monitoramento (05/10, Livro primeiro):** PI P3070 (13 cli / 0 na Era; gatilho O7 em 15) · Geral pós-loose 0,45 (ACOS 6,9% na 1ª semana) · Q2460-B pausado na Geral · EGC 1ª venda (orgânica) · Prime Day com 4 SKUs a partir de 05/10.
