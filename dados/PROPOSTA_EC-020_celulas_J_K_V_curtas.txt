@@ -1,0 +1,8 @@
+J86:
+Preço fixo a 10%: L2460-CP 302,11 · EGC 607,15 · Q4070-A 947,85 · L2470-B 358,51 · L3070-B 489,46 · P4080 963,15 · P3050 420,90 · P3060 460,27 · PXM 183,18 · L2460-AML 261,15 · Q3060-A 522,46 · L3085-B 578,01 · Todos os clientes · 05/10 00:00–11/10 23:59 · unidades = estoque
+
+K86:
+Prime Day largo (A+B+C) aprovado pelo LEO. Desconto do evento exigiu frete grátis → descartado (frete grátis + 10% deixa tudo abaixo do piso). Dos 61, só 13 tinham preço de referência; L2450--CZ caiu por ASIN restrito → 12. Margem a 10%: 15,0% (PXM) a 22,6% (P3060); 4 no piso; promo de qtd empilha.
+
+V86:
+Sem selo do evento; riscado '10% off' para todos. Não conflita com P3070/PXP (Melhor Oferta). 48 SKUs fora por 'Sem preço de referência' = nunca venderam (Registro_Vendas); SP-01 inelegível. Ads atribui a preço com desconto. Ler na O7 em 2 blocos. Painel PRECOPRIMEALTERNATIVO Em breve, 12 ASINs.
