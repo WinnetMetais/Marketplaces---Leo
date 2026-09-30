@@ -175,3 +175,16 @@ Todas a preço de tabela (desconto no preço encerrou 27/09). Origem Ads × não
 
 
 **Achado de 30/09 (print do LEO):** a tela de criação do **desconto no preço** tem o campo **"Evento"**, e nele aparece **"Prime Big Deal Days"** — com datas travadas em 05/10 00:00 – 11/10 23:59, **público "Clientes Prime"**, "Nenhuma tarifa para esse evento" e tipo de desconto "Preço fixo". Ou seja: **qualquer SKU pode entrar no evento por este caminho**, sem depender da lista de recomendações da Melhor Oferta. Diferenças a registrar antes de comparar com a Melhor Oferta: (1) é um **desconto no preço vinculado ao evento**, não uma Melhor Oferta — a exibição (selo, página de ofertas) pode ser diferente e **só se mede depois**; (2) público restrito a Prime (o desconto de 21–27/09 era "Todos os clientes"); (3) "preço fixo" = informar o preço final (183,19 / 223,88 / 460,28), não o percentual. A recomendação dos 3 SKUs não muda; a decisão de estender a P4080 ou P3050 (que a Amazon também não listou) volta a ser possível e é do LEO. Registro: EC-017/018/019 lançadas (75 entradas) — conferir se a criação real usou o campo Evento e ajustar a coluna "Estado / valor aprovado" se sim.
+
+
+**Criação conferida (print de 30/09, evento Prime Big Deal Days, público Prime, preço fixo):**
+
+| SKU | Preço lançado | Desconto real | Visualização | Margem | Situação |
+|---|---:|---:|---|---:|---|
+| P3060 | 460,27 | 10,0% | riscado 511,42 · "10% off" · "Preço exclusivo do Prime" | 22,6% | ✅ conforme EC-019 |
+| PXM | 183,18 | 10,0% | riscado 203,54 · "10% off" · "Preço exclusivo do Prime" | 15,0% | ✅ conforme EC-017 (R$ 0,09 acima do piso) |
+| **PG2460** | **236,31** | **5,0%** | **"Sem preço de referência"** — sem riscado, sem selo | 19,8% | ⚠️ **divergente de EC-018 (10% → 223,88)** e sem preço de referência |
+
+Preços ficaram R$ 0,01 abaixo do calculado (460,27 / 183,18) — arredondamento da tela para exibir "10% off"; sem efeito de margem.
+
+**PG2460 sem preço de referência:** o mesmo sintoma do Q2460-B em 21–27/09. Causa provável: o SKU esteve a R$ 223,88 duas vezes em 30 dias (Melhor Oferta no 9.9 e desconto no preço em 21–27/09), e a Amazon deixou de reconhecer R$ 248,75 como preço vigente. Consequência: **qualquer desconto no PG2460 fica invisível na busca** (sem riscado, sem "Preço exclusivo do Prime") — a evidência do 9.9 (converteu com selo de oferta) não se transfere. Opções para o LEO: (a) corrigir para **R$ 223,88** (10%, o aprovado) e aceitar que só aparece como preço menor para Prime, custo só nas vendas que ocorrerem; (b) **excluir o PG2460** da promoção e deixá-lo a preço cheio, recuperando o preço de referência para a Black Friday. Recomendação do Code: **(b)**, confiança MÉDIA — sem exibição, o desconto não testa nada e ainda adia a recuperação da referência. Se ficar, é (a), nunca os 5% atuais.
