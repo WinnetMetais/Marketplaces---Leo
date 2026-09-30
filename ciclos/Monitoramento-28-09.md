@@ -139,3 +139,14 @@ Critério da O6: **tráfego × margem ≥ 15% no preço da oferta** (Simulador S
 ✅ **Lacuna fechada em 28/09:** o Relatório de Todas as Ofertas (`relatorios/amazon/monitoramento-28-09/relatorio_todas_as_ofertas_28-09.txt`) virou `dados/MAPA_SKU_ASIN.csv` — **113 SKUs ↔ 113 ASINs, bijeção exata com o Simulador da Mestra** (nenhum SKU só de um lado); os 22 pares que os documentos já usavam conferem; todos os 56 ASINs do Business Report têm SKU. Regra: o mapa é a fonte para cruzar BR × Mestra; atualizar quando entrar ou sair anúncio.
 
 **Releitura com o catálogo inteiro (margem ≥ 15% a 10% **e** ≥ 5 sessões em 17 dias):** a lista de 6 (+ EGC) **não muda**. Entram na varredura, mas com tráfego marginal, mais 6 SKUs: L2460-CP (16,6%, 9 sess) · L4080-A (21,8%, 8) · Q4070-A (15,6%, 8 — fora por decisão do LEO) · L3070-B (18,3%, 7) · L2470-B (15,5%, 6) · Q4070-B (15,2%, 6). Com 6–9 sessões em 17 dias, nenhum justificaria oferta pelo critério tráfego × margem. Com tráfego mas abaixo do piso a 10%, além dos já listados: L2030-B 12,8% (10 sess) · L2025-B 11,2% (7) · Q3060-B 12,6% (6) · L2430-B 11,8% (5). **Conclusão mantida: 6 SKUs deveriam ter entrado; a Amazon abriu para 2.**
+
+
+## Adendo 30/09 — Mestra atualizada (3 vendas 28–30/09)
+
+| Data | SKU | Un. | Região | Receita | Margem | Observação |
+|---|---|---:|---|---:|---:|---|
+| 28/09 | L2030-B | 1 | RS Interior | 153,72 | 28,6% | 2ª venda registrada (1ª em 25/07) |
+| 28/09 | **L1623-T** | 1 | SP Capital | 123,93 | 26,9% | **1ª venda registrada** — estava em INVESTIGAR CONVERSÃO DO SKU (18 cli / 0 em 30d na O6) |
+| 30/09 | **PG4080** | 1 | MG Capital | 639,57 | 35,3% | **1ª venda registrada**; classe Grandes |
+
+Todas a preço de tabela (desconto no preço encerrou 27/09). Origem Ads × não atribuída só com o export de 29/09–05/10. Para a O7: L1623-T sai de "zero conversão crônica" para "converteu 1 em ~25 sessões/mês" — n = 1, não fecha a fila de página, mas muda a leitura.
