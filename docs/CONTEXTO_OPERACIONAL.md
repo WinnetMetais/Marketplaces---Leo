@@ -251,7 +251,7 @@ O repositório teve **4 sessões** no grupo Amazon, não 1. Esta (`claude/winnet
 | **"Devolução por produto pequeno"** | 17/09 | `claude/sharp-wright-fhs42q` | **7 commits de plano de migração de marca**: `docs/PLANO_MIGRACAO_MARCA.md`, `docs/RUNBOOK_MIGRACAO_PILOTO.md` (família pitão), `dados/MAPA_MIGRACAO_SKUS.csv` (113 SKUs com categoria/node), `dados/FAMILIAS_VARIACAO.csv` (18 famílias, 95 lixeiras) | **trazidos para esta branch em 30/09, como estavam em 17/09** — não revisados contra o estado atual (isenção recusada, GS1 reativado, migração NÃO DECIDIR AINDA); tratar como insumo da O7 |
 | "Mestre atualizada" | 24/09 | `claude/tender-dijkstra-s52osc` | lançou na Mestra as vendas de 22–24/09 e a devolução da L62; bump automático do Ruflo | **superado**: a Mestra de 28/09 recebida aqui já contém tudo, corrigido; o bump do Ruflo não entra |
 
-**Regra a partir de agora:** trabalhar sempre nesta sessão/branch. Se outra sessão for aberta por engano, avisar aqui para o Code trazer o que ela produziu antes que se perca.
+**As duas sessões paralelas foram ARQUIVADAS em 30/09 com autorização do LEO** (reversível; as branches `sharp-wright` e `tender-dijkstra` seguem no remoto como histórico). **Regra a partir de agora:** trabalhar sempre nesta sessão/branch. Se outra sessão for aberta por engano, avisar aqui para o Code trazer o que ela produziu antes que se perca.
 
 ## Estado do repositório (Claude Code)
 
