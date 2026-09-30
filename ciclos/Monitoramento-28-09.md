@@ -225,3 +225,26 @@ Preços ficaram R$ 0,01 abaixo do calculado (460,27 / 183,18) — arredondamento
 Leituras: (1) a exigência de **frete grátis** é regra das **Ofertas especiais** para envio pelo vendedor — o desconto no preço vinculado ao evento aceitou P3060 e PXM "Enviado por: Vendedor" sem essa exigência no mesmo dia (print da criação); (2) **SP-01 é inelegível pela própria Amazon** (categoria restrita) — fecha a dúvida da linha SP por decisão da plataforma, não só por política interna; SP-T e SP-FF não foram testados; (3) o arquivo tinha só 10 SKUs — faltam L4080-A e Q4070-B (grupo B) e os 50 do grupo C aprovados pelo LEO; (4) unidades = estoque inteiro, coerente com a resposta de que unidades comprometidas não bloqueiam a venda a preço cheio para não-Prime (a Amazon começa a desligar o desconto aos 90% das unidades comprometidas). Preços do LEO ficaram R$ 0,01 acima da proposta do Code (arredondamento da tela) — sem efeito.
 
 **Caminho recomendado (decisão do LEO):** refazer o upload em **Anúncios → Promoções → Desconto no preço → PRIMEDAY-DESCONTO-10 (editar) → Etapa 2 → Fazer upload do arquivo**, com o **modelo do desconto no preço** (`dados/PROPOSTA_PrimeDay_modelo_upload_59_SKUs.xlsx`, 61 SKUs, preencher unidades). Atenção: o upload **substitui** a lista existente do desconto, por isso PXM e P3060 estão dentro do arquivo. Não trocar a política de frete para atender à regra das Ofertas: frete grátis muda preço líquido de todo o catálogo e não foi analisado. Se o mesmo erro de frete aparecer no fluxo de desconto no preço, parar e trazer o print — aí é regra nova de plataforma e entra nos documentos só com print (MEMORIA 28/09).
+
+
+**Frete grátis (pergunta do LEO, 30/09): "só é possível com frete grátis, não trabalhamos com isso, o que faço?"** Simulação com a Mestra v4.3.4 (Simulador, cenário SP Interior; frete cobrado por classe: Pequenos 16,90 · Médios 39,90 · Grandes 120,00; frete real 30 / 49 / 120). Frete grátis = Winnet absorve o frete cobrado; o lucro por unidade cai exatamente esse valor.
+
+| SKU | Classe | Margem a 10% (frete cobrado) | Margem a 10% **+ frete grátis** | Margem a preço cheio + frete grátis |
+|---|---|---:|---:|---:|
+| P3060 | Médios | 22,6% | **13,9%** | 20,2% |
+| P3070 | Médios | 20,3% | 13,1% | 19,5% |
+| L3070-B | Médios | 18,3% | 10,1% | 16,8% |
+| EGC | Médios | 15,6% | 9,0% | 15,9% |
+| P3050 | Médios | 17,8% | 8,3% | 15,2% |
+| P4080 | Grandes | 19,3% | 6,8% | 13,9% |
+| PXM | Pequenos | 15,0% | 5,8% | 13,1% |
+| L4080-A | Grandes | 21,8% | 5,4% | 12,5% |
+| L2470-B | Médios | 15,5% | 4,4% | 11,7% |
+| L2460-CP | Médios | 16,6% | 3,4% | 10,7% |
+| Q4070-B | Grandes | 15,2% | 3,3% | 10,6% |
+| Q4070-A | Grandes | 15,6% | 2,9% | 10,3% |
+| PXP | Pequenos | 13,4% | 2,2% | 9,8% |
+
+**Conclusão:** com 10% de desconto **e** frete grátis, **nenhum SKU fica no piso de 15%** (melhor caso P3060, 13,9%); nos Grandes a margem vai a 3–7%. Mesmo sem desconto, frete grátis só deixa 5 SKUs no piso. No cenário RS Capital (frete cobrado 24,90 / 59,90 / 233,00) é pior. **Recomendação: NÃO ativar frete grátis para o Prime Day.** Confiança ALTA (aritmética direta sobre a Mestra). Frete grátis como estratégia é decisão à parte, para depois do evento: exigiria embutir o frete no preço de tabela, o que zera a referência de preço e invalida qualquer desconto por semanas — e a Mestra já mostra que o frete cobrado hoje está abaixo do real em Pequenos e Médios.
+
+**Antes de aceitar a premissa "só com frete grátis":** o desconto no preço PRIMEDAY-DESCONTO-10 já aceitou **P3060 e PXM "Enviado por: Vendedor", status Ativo, sem frete grátis** (print de 30/09). A exigência apareceu no arquivo devolvido pelo fluxo de **Ofertas**. Teste decisivo: abrir o PRIMEDAY-DESCONTO-10, "Adicionar produtos" pela tela (não por upload), incluir P4080 a R$ 963,15. Se aceitar → o caminho é esse, sem frete grátis, e os 59 entram pela tela ou pelo modelo correto de upload. Se recusar com a mesma mensagem → print, e o Prime Day roda com o que já está dentro: P3070 e PXP (Melhor Oferta) + PXM e P3060 (desconto). Checar também no painel de Ofertas se P3070/PXP mostram algum aviso de frete — foram aceitos como Melhor Oferta sem frete grátis em 22/09.
