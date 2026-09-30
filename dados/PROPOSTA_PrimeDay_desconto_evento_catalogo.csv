@@ -33,6 +33,7 @@ L4080-B;B0H6GSX6YM;Grandes;831,06;747,95;19,2;16,2;14,2;1;C — opcional;"sem tr
 P4070;B0H7L3J5DK;Grandes;820,96;738,86;20,1;17,1;15,2;1;C — opcional;"sem tráfego recente; custo só se vender; selo pode gerar 1ª visita"
 P4070ALC;B0H6H1W988;Grandes;1025,83;923,25;18,3;15,2;13,2;1;C — opcional;"sem tráfego recente; custo só se vender; selo pode gerar 1ª visita"
 PG4080;B0H7T8WJFK;Grandes;639,57;575,61;18,8;15,8;13,8;1;C — opcional;"sem tráfego recente; custo só se vender; selo pode gerar 1ª visita"
+SP-T;B0H3MGC36H;Medios;462,37;416,13;15,7;12,6;10,5;1;C — opcional;"anunciado normalmente na Manual Bituqueiras (sem suspensão); margem no piso (15,7%): pedido de 3+ → 12,5%. Entrar é decisão do LEO"
 L2440-AML;B0H4RY2L65;Pequenos;228,04;205,24;15,8;12,5;10,4;0;C — opcional;"sem tráfego recente; custo só se vender; selo pode gerar 1ª visita · ⚠️ margem no piso: pedido de 3+ empilha promo de quantidade → 12.5%"
 L2460-A;B0H6QYTSNV;Medios;272,57;245,31;17,3;14,2;12,1;0;C — opcional;"sem tráfego recente; custo só se vender; selo pode gerar 1ª visita"
 L2470-AML;B0H6NCDJ5C;Medios;408,32;367,49;17,8;14,7;12,7;0;C — opcional;"sem tráfego recente; custo só se vender; selo pode gerar 1ª visita"
@@ -48,7 +49,7 @@ P4050;B0H5MWNDKW;Medios;701,76;631,58;16,7;13,5;11,4;0;C — opcional;"sem tráf
 P4060;B0H7KTWPXB;Medios;811,94;730,75;20,0;16,9;15,0;0;C — opcional;"sem tráfego recente; custo só se vender; selo pode gerar 1ª visita"
 P4060ALC;B0H6H25KJX;Medios;988,28;889,45;17,3;14,1;12,0;0;C — opcional;"sem tráfego recente; custo só se vender; selo pode gerar 1ª visita"
 PG3070;B0H4S6J82Z;Medios;451,17;406,05;17,6;14,4;12,4;0;C — opcional;"sem tráfego recente; custo só se vender; selo pode gerar 1ª visita"
-SP-FF;B0H5X821QS;Medios;457,17;411,45;17,5;14,3;12,3;0;C — opcional;"sem tráfego recente; custo só se vender; selo pode gerar 1ª visita"
+SP-FF;B0H5X821QS;Medios;457,17;411,45;17,5;14,3;12,3;0;C — opcional;"sem tráfego recente; sem histórico de política — pode entrar"
 L4075-B;B0H6H2BTKC;Grandes;810,5;729,45;17,7;14,7;12,6;0;C — opcional;"sem tráfego recente; custo só se vender; selo pode gerar 1ª visita"
 L4090-A;B0H6R1WBTM;Grandes;822,83;740,55;21,7;18,8;17,0;0;C — opcional;"sem tráfego recente; custo só se vender; selo pode gerar 1ª visita"
 L4090-B;B0H6GQB9S3;Grandes;895,15;805,63;18,4;15,4;13,4;0;C — opcional;"sem tráfego recente; custo só se vender; selo pode gerar 1ª visita"
@@ -96,7 +97,6 @@ L2440-B;B0H5M7DCH6;Pequenos;231,66;208,49;13,2;9,9;7,7;1;FORA;abaixo do piso a 1
 L2450-A;B0H6XYVBKH;Pequenos;253,58;228,22;13,8;10,5;8,3;1;FORA;abaixo do piso a 10% (13.8%)
 P2025;B0H7L6HYFW;Pequenos;198,79;178,91;14,2;10,9;8,8;1;FORA;abaixo do piso a 10% (14.2%)
 P3050ALC;B0H6C92MLT;Medios;623,5;561,15;14,1;10,8;8,6;1;FORA;abaixo do piso a 10% (14.1%)
-SP-T;B0H3MGC36H;Medios;462,37;416,13;15,7;12,6;10,5;1;FORA;política (nicho fumo / inelegibilidade) — não expor
 EMB-05;B0H761RP63;Pequenos;244,9;220,41;10,3;6,8;4,5;0;FORA;liquidação à parte (EC-006, decisão da Dianna)
 EMB-05P;B0H77J9YF2;Pequenos;290,0;261,0;13,1;9,7;7,5;0;FORA;liquidação à parte (EC-006, decisão da Dianna)
 EMB-08;B0H77M42RM;Pequenos;344,76;310,28;14,9;11,6;9,5;0;FORA;liquidação à parte (EC-006, decisão da Dianna)
@@ -111,4 +111,4 @@ P2425;B0H7LG2168;Pequenos;238,25;214,43;14,8;11,5;9,3;0;FORA;abaixo do piso a 10
 PG2450;B0H9T7X7WD;Pequenos;234,12;210,71;12,8;9,4;7,2;0;FORA;abaixo do piso a 10% (12.8%)
 Q2430-A;B0H7XXH5GV;Pequenos;231,21;208,09;12,9;9,5;7,2;0;FORA;abaixo do piso a 10% (12.9%)
 PQ-3060;B0H4S2WXFB;Medios;721,69;649,52;13,1;9,7;7,5;0;FORA;abaixo do piso a 10% (13.1%)
-SP-01;B0H5Z1XK3V;Medios;475,31;427,78;17,0;13,9;11,8;0;FORA;política (nicho fumo / inelegibilidade) — não expor
+SP-01;B0H5Z1XK3V;Medios;475,31;427,78;17,0;13,9;11,8;0;FORA (recomendação);"anúncio suspenso por política (caso 21652133321 encerrado com contestação negada); margem ok (17,0%), mas a promoção passa por revisão e expõe o SKU — não expor"

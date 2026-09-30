@@ -208,3 +208,8 @@ Preços ficaram R$ 0,01 abaixo do calculado (460,27 / 183,18) — arredondamento
 **Regras ao criar:** (1) usar o **preço fixo da coluna** (a tela arredonda R$ 0,01 para exibir "10% off" — sem efeito); (2) **excluir na hora qualquer SKU que a tela marque "Sem preço de referência"** — o desconto fica invisível (caso PG2460 e Q2460-B) e ainda adia a recuperação da referência; (3) os 5 SKUs marcados ⚠️ estão entre 15,0 e 15,9% — um pedido de 3+ empilha a promo de quantidade e cai a ~12%; risco já aceito no PXM, vale decidir se aceita nos outros; (4) público é só Prime.
 
 **Registro:** com 58 SKUs, uma linha por SKU (padrão EC-007…016) fica pesado. Proposta: **uma linha por grupo** — EC-020 (grupo A+B, lista dos SKUs na observação) e EC-021 (grupo C) — ou uma única EC-020 para o lote inteiro. Decisão do LEO.
+
+
+**Decisão do LEO (30/09): entram A + B + C, e P4080 e P3050 voltam.** Total no desconto do evento: **59 SKUs** (3 A + 6 B + 50 C) + PXM e P3060 já criados = **61**, mais P3070 e PXP em Melhor Oferta = **63 SKUs no Prime Day**.
+
+**Linha SP (pergunta do LEO):** SP-PP fora por margem (11,8% a 10%). **SP-FF entra** (grupo C, 17,5%, sem histórico de política). **SP-T pode entrar** (grupo C, 15,7% — no piso; é anunciado normalmente na Manual Bituqueiras, sem suspensão) — decisão do LEO. **SP-01: recomendação FORA** — o anúncio está suspenso por política (caso 21652133321, contestação negada); a promoção passa por revisão da Amazon e expõe exatamente o SKU que não deve ser exposto (mesma lógica da exclusão da migração). Margem não é o problema (17,0%). Confiança MÉDIA.
