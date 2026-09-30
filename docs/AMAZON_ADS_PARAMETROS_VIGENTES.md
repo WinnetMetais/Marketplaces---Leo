@@ -485,6 +485,8 @@ O mapa deve ser atualizado a cada otimização. Não usar classificação antiga
 
 7. **MIGRAÇÃO DE ASIN — recriação do catálogo sob a marca WINNET METAIS (pendência nova, 01/09/2026). Escopo decidido na O6 (22/09)** — adiado na O5 por decisão do LEO; gate: **isenção de GTIN** (decisão do LEO, 14/09 — substitui o GS1). Fundido com a proposta de concentração — são a mesma decisão. Insumo: P3060 + P3050 (+P4080).
 
+   **Estado em 30/09:** O6 decidiu **NÃO DECIDIR AINDA** (O6-018); gate atual é a **marcação física da marca** (isenção recusada 14/09; GS1 a um documento). **Plano pronto e confirmado pelo LEO como versão atual (30/09):** `docs/PLANO_MIGRACAO_MARCA.md` · `docs/RUNBOOK_MIGRACAO_PILOTO.md` (piloto = família Com Tampa / pitão, 4 tamanhos, já como variação) · `dados/MAPA_MIGRACAO_SKUS.csv` (113 SKUs, categoria e node alvo) · `dados/FAMILIAS_VARIACAO.csv` (18 famílias, 95 lixeiras). Quando o gate destravar, executar a partir deles, sem refazer a análise. Nota: o piloto do runbook (família pitão) difere do insumo antigo (P3060 + P3050) — o runbook prevalece por ser mais recente e confirmado.
+
    **Origem:** Brand Registry aprovado, mas o atributo de marca "Genérico" dos ASINs atuais **não pode ser alterado** (caso 21821042531). A+, Avaliações, Brand Analytics e Sponsored Brands só operam sobre ASINs novos criados sob a marca.
 
    **Estratégia: faseada, não parcial.** Piloto de 2–3 SKUs na O6 (22/09) → resto do núcleo após 1 Era de leitura → cauda com ficha clonada. Destino provável é migrar tudo; o piloto existe para **medir a perda de orgânico** antes de comprometer o catálogo.
