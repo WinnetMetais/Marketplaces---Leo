@@ -188,3 +188,23 @@ Todas a preço de tabela (desconto no preço encerrou 27/09). Origem Ads × não
 Preços ficaram R$ 0,01 abaixo do calculado (460,27 / 183,18) — arredondamento da tela para exibir "10% off"; sem efeito de margem.
 
 **PG2460 sem preço de referência:** o mesmo sintoma do Q2460-B em 21–27/09. Causa provável: o SKU esteve a R$ 223,88 duas vezes em 30 dias (Melhor Oferta no 9.9 e desconto no preço em 21–27/09), e a Amazon deixou de reconhecer R$ 248,75 como preço vigente. Consequência: **qualquer desconto no PG2460 fica invisível na busca** (sem riscado, sem "Preço exclusivo do Prime") — a evidência do 9.9 (converteu com selo de oferta) não se transfere. Opções para o LEO: (a) corrigir para **R$ 223,88** (10%, o aprovado) e aceitar que só aparece como preço menor para Prime, custo só nas vendas que ocorrerem; (b) **excluir o PG2460** da promoção e deixá-lo a preço cheio, recuperando o preço de referência para a Black Friday. Recomendação do Code: **(b)**, confiança MÉDIA — sem exibição, o desconto não testa nada e ainda adia a recuperação da referência. Se ficar, é (a), nunca os 5% atuais.
+
+
+## Adendo 30/09 — Prime Day largo: desconto no preço vinculado ao evento, catálogo inteiro
+
+**Decisões do LEO:** PG2460 excluído da promoção · P4080 e P3050 fora · descrição interna `PRIMEDAY-DESCONTO-10` · **quer uma promoção mais larga**, já que o desconto vinculado ao evento aceita qualquer SKU.
+
+**Lista completa em `dados/PROPOSTA_PrimeDay_desconto_evento_catalogo.xlsx` / `.csv`** (113 SKUs, preço fixo a 10%, margem SP Interior a 10% e com a promo de quantidade empilhada, sessões de 17 dias, recomendação):
+
+| Grupo | SKUs | Critério |
+|---|---:|---|
+| JÁ NO EVENTO (Melhor Oferta) | 2 | P3070, PXP — não criar desconto (não empilha) |
+| JÁ CRIADO | 2 | PXM, P3060 (EC-017, EC-019) |
+| **A — entrar** | 3 | margem ≥ 15% a 10% **e** ≥ 10 sessões/17d: **P4080, EGC, P3050** — os dois primeiros que o LEO tirou são exatamente os melhores candidatos pelo critério; EGC no piso (15,6%) |
+| **B — entrar** | 6 | margem ok, 5–9 sessões: L2460-CP, L4080-A, Q4070-A, L3070-B, L2470-B, Q4070-B |
+| **C — opcional** | 49 | margem ≥ 15% a 10%, sem tráfego recente (inclui os cinzeiros L2470-CZ 22,8% e L2460-CZ 18,1%, e os pedais ALC). Custo só se vender; o selo pode gerar a 1ª visita; risco é só de referência de preço, que se recupera antes da Black Friday |
+| FORA | 51 | abaixo do piso a 10% (todas as lixeiras pequenas: L1618/L1623/L2025/L2030/L24xx-B, Q2460-B…), PG2460 (sem referência), SP-01/SP-T (política), EMB (liquidação à parte) |
+
+**Regras ao criar:** (1) usar o **preço fixo da coluna** (a tela arredonda R$ 0,01 para exibir "10% off" — sem efeito); (2) **excluir na hora qualquer SKU que a tela marque "Sem preço de referência"** — o desconto fica invisível (caso PG2460 e Q2460-B) e ainda adia a recuperação da referência; (3) os 5 SKUs marcados ⚠️ estão entre 15,0 e 15,9% — um pedido de 3+ empilha a promo de quantidade e cai a ~12%; risco já aceito no PXM, vale decidir se aceita nos outros; (4) público é só Prime.
+
+**Registro:** com 58 SKUs, uma linha por SKU (padrão EC-007…016) fica pesado. Proposta: **uma linha por grupo** — EC-020 (grupo A+B, lista dos SKUs na observação) e EC-021 (grupo C) — ou uma única EC-020 para o lote inteiro. Decisão do LEO.
