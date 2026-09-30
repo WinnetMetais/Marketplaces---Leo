@@ -1,6 +1,6 @@
 # AMAZON ADS — PARÂMETROS VIGENTES
 
-Snapshot: **25/08/2026 (pós-O4)**, com atualizações de medição de **26/08/2026**, operacionais de **28/08/2026** e **01/09/2026**, e os **achados da O5 (08–09/09/2026)** incorporados abaixo.
+Snapshot: **25/08/2026 (pós-O4)**, com atualizações de medição de **26/08/2026**, operacionais de **28/08/2026** e **01/09/2026**, e os **achados da O5 (08–09/09/2026)** incorporados abaixo. Atualizações posteriores: **O6 executada (22/09)**, **monitoramento de 28/09** e **Prime Day fechado em 30/09** (§7 e §8).
 
 ✅ **O5 EXECUTADA em 09/09/2026** — 8 das 9 ações no console, conferidas uma a uma contra export e prints (ver `ciclos/O5-08-09_auditoria-code.md` §12). Os valores abaixo são **pós-execução**. A antiga advertência de "não executada" fica superada.
 
@@ -354,6 +354,8 @@ Monitoramento previsto: **31/08/2026**.
 **O6 concluída como análise: 22/09/2026** — Era lida **10–21/09 = 12 corridos, 9 úteis** (convenção: dia seguinte à execução de 09/09). Chat canônico analisou; Claude Code auditou sem correção de número (`ciclos/O6-22-09_auditoria-code.md`). **G1 a G13 aprovados e EXECUTADOS pelo LEO em 22/09.** Export pós-execução (`relatorios/amazon/o6-22-09/gerenciador_pos-execucao_22-09.csv`) e 4 prints conferidos: SP-PP pausada · EGC pausada · alvo `B09YDLC69D` pausado (PI P3070 ativa) · loose-match 0,45 na linha certa. **Conta: 10 campanhas ativas** (eram 12). Registro com 20 linhas O6-001…O6-020 (72 entradas): 15 executadas em maturação, 5 do Prime Day aguardando a lista de 28/09. Itens com ação: O6-001, 002, 003, 005 (console) e O6-011 a 017 (inscrição do Prime Day, uma linha por SKU: PXM, PG2460, P3070, P3060, P4080, P3050, PXP). O5-013 encerrada como REJEITADA (O6-007).
 
 **O7: 13/10/2026 (terça) — decisão do LEO em 22/09.** A canônica recomendava análise em 06/10 com execuções adiadas para 12/10; o LEO preferiu a O7 inteira em 13/10. **Era O6→O7: 23/09–12/10 = 20 corridos, 13 úteis** (12/10 é feriado — N. Sra. Aparecida, segunda). ⚠️ A Era contém o **desconto no preço (23–27/09)** e o **Prime Day inteiro (05–11/10)**: ler em **dois blocos** (pré-evento 23/09–04/10 · evento 05–11/10) e marcar o corte de série dos 10 SKUs do desconto. Fechamento do `Livro_Vendas` de setembro em **05/10** (1ª segunda). Monitoramentos semanais: **28/09** (leitura dos 7 dias de desconto + gatilho O6-006) · **05/10** (Livro primeiro) · **12/10** (véspera da O7: só linha do Controle, sem diagnóstico; feriado).
+
+**Prime Day fechado em 30/09 (dentro da Era O6→O7): 14 SKUs** — P3070 e PXP em Melhor Oferta (Prime Big Deal Days) + 12 SKUs no desconto no preço comum `PRECOPRIMEALTERNATIVO` (Todos os clientes, 05–11/10, 10%). Desconto vinculado ao evento descartado (exige frete grátis — §7). Registro: EC-020 em maturação, reavaliar na O7; EC-017/018/019 DESCARTADAS. **Monitoramento de 05/10:** Livro de setembro primeiro; depois Mestra, export 29/09–05/10, print do console com impressões, BR 29/09–04/10 e **print de como o desconto aparece na busca** (exibição do desconto comum na semana do evento ainda não medida). **O7 (13/10):** bloco evento 05–11/10 lido à parte; gatilhos O6-004/008/010/013/019; 1ªs vendas de L1623-T e P4080 mudam a leitura de conversão.
 
 Datas futuras devem ser atualizadas quando o ciclo efetivamente ocorrer.
 
