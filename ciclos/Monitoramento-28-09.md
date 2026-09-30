@@ -147,6 +147,6 @@ Critério da O6: **tráfego × margem ≥ 15% no preço da oferta** (Simulador S
 |---|---|---:|---|---:|---:|---|
 | 28/09 | L2030-B | 1 | RS Interior | 153,72 | 28,6% | 2ª venda registrada (1ª em 25/07) |
 | 28/09 | **L1623-T** | 1 | SP Capital | 123,93 | 26,9% | **1ª venda registrada** — estava em INVESTIGAR CONVERSÃO DO SKU (18 cli / 0 em 30d na O6) |
-| 30/09 | **PG4080** | 1 | MG Capital | 639,57 | 35,3% | **1ª venda registrada**; classe Grandes |
+| 30/09 | **P4080** | 1 | MG Capital | 1.070,17 | 30,9% | **1ª venda registrada**; classe Grandes (lançado como PG4080 e corrigido pelo LEO em 30/09). Não converteu a −10% em 21–27/09 (13 sessões) e vendeu a preço cheio 3 dias depois — n = 1 |
 
 Todas a preço de tabela (desconto no preço encerrou 27/09). Origem Ads × não atribuída só com o export de 29/09–05/10. Para a O7: L1623-T sai de "zero conversão crônica" para "converteu 1 em ~25 sessões/mês" — n = 1, não fecha a fila de página, mas muda a leitura.
