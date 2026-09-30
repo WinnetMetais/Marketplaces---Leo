@@ -241,6 +241,18 @@ O método operacional foi originalmente estabelecido por um assessor (Henrique) 
 
 ---
 
+## Sessões paralelas do Claude Code — consolidação (30/09)
+
+O repositório teve **4 sessões** no grupo Amazon, não 1. Esta (`claude/winnet-amazon-setup-ub0w7p`, desde 19/08) é a **canônica** — todo o histórico O4→O6, Registro, Mestra e docs vivem aqui. As outras nasceram quando um chat novo foi aberto no Claude Code em vez de continuar este, e cada uma trabalhou numa **branch própria**, invisível para esta:
+
+| Sessão | Data | Branch | O que fez | Situação |
+|---|---|---|---|---|
+| "Verificação de memória do repositório" | 19/08–03/09 | `claude/repo-memory-check-q94vom` | falhou; branch não existe mais no remoto | nada a recuperar |
+| **"Devolução por produto pequeno"** | 17/09 | `claude/sharp-wright-fhs42q` | **7 commits de plano de migração de marca**: `docs/PLANO_MIGRACAO_MARCA.md`, `docs/RUNBOOK_MIGRACAO_PILOTO.md` (família pitão), `dados/MAPA_MIGRACAO_SKUS.csv` (113 SKUs com categoria/node), `dados/FAMILIAS_VARIACAO.csv` (18 famílias, 95 lixeiras) | **trazidos para esta branch em 30/09, como estavam em 17/09** — não revisados contra o estado atual (isenção recusada, GS1 reativado, migração NÃO DECIDIR AINDA); tratar como insumo da O7 |
+| "Mestre atualizada" | 24/09 | `claude/tender-dijkstra-s52osc` | lançou na Mestra as vendas de 22–24/09 e a devolução da L62; bump automático do Ruflo | **superado**: a Mestra de 28/09 recebida aqui já contém tudo, corrigido; o bump do Ruflo não entra |
+
+**Regra a partir de agora:** trabalhar sempre nesta sessão/branch. Se outra sessão for aberta por engano, avisar aqui para o Code trazer o que ela produziu antes que se perca.
+
 ## Estado do repositório (Claude Code)
 
 | Fonte | Arquivo | Situação |
@@ -273,6 +285,7 @@ O método operacional foi originalmente estabelecido por um assessor (Henrique) 
 | 08/09/2026 | pré-O5 | **Mestra v4.3.4**: 4 vendas de setembro (02, 03, 05 e 07/09) · validações de dados perdidas no fechamento e **restauradas por reinjeção do `extLst`** · regra nova: Mestra não pode ser salva por `openpyxl` |
 | 09/09/2026 | **O5** | Ciclo concluído como análise (17 linhas aprovadas, execução pendente) · correção de 15→16 campanhas ativas · O4-015 confirmada inerte · SP-01 diagnosticado em três camadas · gasto de setembro em 41–46% do teto · **monitoramento de 21/09 eliminado** com conferência de estado obrigatória em 14/09 como contrapartida · divergência SP-T/SP-01 na Bituqueiras em aberto |
 | 09/09/2026 | **O5 executada** | 8 ações no console, todas conferidas · O5-010 saiu invertida (nomes PT-BR das segmentações) e foi corrigida no mesmo dia pela conferência pós-execução · O5-013 não executada (L2030-T fora do grupo da 6B) · **C7: a PI PXM entrega — o diagnóstico havia invertido entrega e CTR** · conta em 12 ativas · Parâmetros com o snapshot pós-execução |
+| 30/09/2026 | repositório | 4 sessões paralelas identificadas; os 4 arquivos do plano de migração de marca (17/09, branch `sharp-wright`) trazidos para a branch canônica sem revisão; branch de 24/09 superada pela Mestra de 28/09 |
 | 30/09/2026 | Mestra | 3 vendas novas a preço de tabela (desconto encerrado 27/09): **L2030-B** 28/09 (R$ 153,72, 2ª venda registrada) · **L1623-T** 28/09 (R$ 123,93, **1ª venda registrada** — SKU que estava em INVESTIGAR CONVERSÃO com 18 cli / 0 em 30d) · **PG4080** 30/09 (R$ 639,57, Grandes, **1ª venda registrada**). Origem (Ads × orgânico) só no export de 05/10. Totais: receita R$ 28.628,64 · lucro R$ 7.290,16 · margem 25,46%. Validações intactas |
 | 28/09/2026 | monitoramento | Semana 22–28/09: ACOS 9,6%, 2 vendas na Geral · **regra do desconto no preço confirmada (preço com desconto; promo de quantidade empilha)** · desconto 21–27/09: 7 un em 2 de 10 SKUs (PXM 5, L1618-T 2) · **gatilho Q2460-B disparou** · Prime Day 28/09: 5 SKUs seguem fora; L2025-T e L1618-T entraram na lista mas ficam fora (mínimo 10% fura o piso) — evento fecha com P3070 e PXP · EGC 1ª venda (orgânica) · devolução L1618-B · setembro 35,4% do teto · Mestra corrigida (3 linhas) |
 | 22/09/2026 | **O6 executada** | 4 mexidas no console conferidas por export e prints (SP-PP e EGC pausadas; alvo `B09YDLC69D` pausado; loose 0,54 → 0,45 na linha certa) · conta em **10 ativas** · Prime Day: só P3070 e PXP elegíveis, inscritos em Prime Big Deal Days 5–11/10 (PXP a 10% como exceção ao piso; mínimo do evento é 10%) · 5 SKUs esperam a lista de 28/09 · Q4070-A fora · Registro com 72 entradas conferidas |
