@@ -150,3 +150,22 @@ Critério da O6: **tráfego × margem ≥ 15% no preço da oferta** (Simulador S
 | 30/09 | **P4080** | 1 | MG Capital | 1.070,17 | 30,9% | **1ª venda registrada**; classe Grandes (lançado como PG4080 e corrigido pelo LEO em 30/09). Não converteu a −10% em 21–27/09 (13 sessões) e vendeu a preço cheio 3 dias depois — n = 1 |
 
 Todas a preço de tabela (desconto no preço encerrou 27/09). Origem Ads × não atribuída só com o export de 29/09–05/10. Para a O7: L1623-T sai de "zero conversão crônica" para "converteu 1 em ~25 sessões/mês" — n = 1, não fecha a fila de página, mas muda a leitura.
+
+
+## Adendo 30/09 — Prime Day: os 5 fora do evento e o "10.10"
+
+**Fato:** a lista de recomendações da Amazon (22/09 e 28/09) não abriu o evento para PXM, PG2460, P3060, P4080 e P3050. A próxima rotação é 05/10, dia em que o evento começa — na prática, estão fora da Melhor Oferta do Prime Day. **Não existe "10.10" na Amazon Brasil**: no arquivo de agendamento de ofertas exportado em 22/09, os únicos eventos listados são **Mega Ofertas Prime Day (05–11/10)** e **Black Friday e Cyber Monday (a partir de 19/11)**; o 10/10 cai dentro do Prime Day. O 10.10 do Mercado Livre é sinal externo, não gatilho de ação na Amazon (CLAUDE.md §2).
+
+**Plano B possível — desconto no preço 05–11/10 nos 5 SKUs** (opção B registrada em 22/09 e então descartada pelo LEO à espera da lista de 28/09). Não tem selo do evento nem entra na página de ofertas, mas o preço riscado aparece na busca durante a semana de maior tráfego do trimestre, e a regra de atribuição agora é conhecida (preço com desconto). Não conflita com P3070/PXP (que estão em Melhor Oferta) e mantém a semana de preço limpo até 04/10.
+
+| SKU | 10% → oferta | Margem SP Interior | Com promo de quantidade empilhada (3+ / 5+) | Evidência de resposta a desconto |
+|---|---:|---:|---|---|
+| **PXM** | 183,19 | 15,0% | **11,7% / 9,5%** | converte com qualquer desconto: 3 un a −15% (9.9), 5 un a −5% (21–27/09) |
+| **PG2460** | 223,88 | 16,7% | 13,5% / 11,5% | converteu com oferta no 9.9 (−10%); 0 a −10% em 21–27/09 |
+| P3060 | 460,28 | 22,6% | 19,7% / 17,8% | 0 a −10% em 21–27/09; maior folga de margem |
+| P4080 | 963,15 | 19,3% | 16,3% / 14,3% | 0 a −10% em 21–27/09; **vendeu a preço cheio em 30/09** |
+| P3050 | 420,90 | 17,8% | 14,7% / 12,6% | 0 a −10% em 21–27/09 |
+
+**Recomendação do Code (decisão do LEO):** desconto no preço 05/10 00:00 – 11/10 23:59 em **PXM e PG2460 a 10%** (os dois com evidência de resposta a desconto) e **P3060 a 10%** (folga de 22,6% absorve até o empilhamento). **P4080 e P3050 ficam a preço cheio**: não responderam a −10% na semana passada, o P4080 acabou de vender sem desconto, e o empilhamento com 3+ os deixa abaixo do piso. Confiança **MÉDIA**. ⚠️ Risco conhecido: a promoção de quantidade empilha com o desconto no preço (medido em 24/09) — no PXM um pedido de 3+ fica em 11,7%; é o mesmo risco já aceito na semana de 21–27/09, quando o pedido de 3 PXM saiu a 15,6% realizados (frete real abaixo da tabela). Criar hoje com início agendado em 05/10 preserva a semana de preço limpo.
+
+**Alternativa zero:** não fazer nada nos 5 e ler o Prime Day só com P3070 e PXP. Custo: perder a semana de tráfego alto exatamente nos SKUs de margem e tráfego adequados que a Amazon deixou de fora.
