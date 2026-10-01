@@ -282,3 +282,5 @@ Diff célula a célula contra a versão de 30/09: só as linhas 76–78 e os tot
 **Semana de preço limpo (28/09 → 01/10, 4 dias): 9 un · R$ 3.566,93 · lucro R$ 906,23 · margem 25,4%** — L2030-B, L1623-T, P4080, P3070, P3060 ×2, PXM ×3. Mesmo padrão do P4080: P3060 não respondeu ao desconto de 10% e vendeu a preço cheio na semana seguinte. Origem (Ads × orgânico) só no export de 05/10 — **não atribuir ao desconto nem à sua ausência** (coincidência temporal, CLAUDE.md §7). Totais da Mestra: receita R$ 31.278,35 · lucro R$ 7.893,72 · margem 25,24%.
 
 Para a O7: P3060 e P3070 entram no bloco do evento com venda recente a preço cheio na série — o corte pré-evento/evento fica mais importante, não menos.
+
+**Registro corrigido pelo LEO (01/10):** J86, K86 e V86 recolados com a versão curta (275/299/296 caracteres, sem corte). Diff contra a versão anterior: só essas três células e a coluna R (recálculo de TODAY()). Validações 4. Registro fechado em 76 entradas.
