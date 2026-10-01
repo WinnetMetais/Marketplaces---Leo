@@ -267,3 +267,18 @@ Leituras: (1) a exigência de **frete grátis** é regra das **Ofertas especiais
 **Registro atualizado pelo LEO (30/09, 76 entradas):** EC-020 na linha 86 (EXECUTADA - EM MATURAÇÃO, reavaliar 13/10, Q/R com fórmula); EC-017/018/019 → EXECUTADA - AVALIADA, veredito DESCARTADA 30/09. Nada mais alterado (diff contra a versão anterior: só linhas 83–86); validações intactas (4). Ressalva: as células J86, K86 e V86 entraram truncadas em 300 caracteres (perderam unidades, fim do motivo e fim das observações) — versão curta das três em `dados/PROPOSTA_EC-020_celulas_J_K_V_curtas.txt`. Totais da linha 6: 76 · 76 · 70 · 0 · 19 · 51.
 
 **Os 48 "Sem preço de referência" = os 48 que nunca venderam.** Cruzamento com `Registro_Vendas`: os 12 que entraram têm 1–9 vendas registradas (última entre 09/07 e 30/09); os 48 que caíram têm zero. Correspondência exata → a referência de preço nasce da 1ª venda a preço de tabela. Lista com ASIN, classe, grupo e sessões em `dados/SKUs_sem_preco_de_referencia_30-09.csv` (+ L2450--CZ, que tinha referência e saiu por ASIN restrito). Regra registrada em MEMORIA.md. Consequência para a Black Friday: a lista elegível é o conjunto com venda registrada e margem no piso, hoje ~14 SKUs, não o catálogo.
+
+
+## Adendo 01/10 — Mestra: 3 vendas novas (linhas 76–78)
+
+Diff célula a célula contra a versão de 30/09: só as linhas 76–78 e os totais (108); validações 7 (intactas); frete cobrado bate com `Ref_Frete` nas três regiões.
+
+| Data | SKU | Qtd | Região | Receita | Desconto | Lucro | Margem | Leitura |
+|---|---|---:|---|---:|---:|---:|---:|---|
+| 30/09 | **P3070** | 1 | SC Capital | 616,18 | — | 160,37 | 26,0% | preço cheio 5 dias antes da Melhor Oferta a 15% (05/10); 4ª venda registrada |
+| 01/10 | **P3060** | 2 | SC Interior | 1.022,84 | — | 230,02 | 22,5% | **2 un a preço cheio** no SKU que não converteu a −10% em 21–27/09; entra no desconto comum em 05/10; frete real 128,40 contra 69,90 cobrado |
+| 01/10 | **PXM** | 3 | ES Capital | 580,09 | 30,53 (promo qtd 5%) | 108,28 | 18,7% | 3º pedido de 3 un; promo de quantidade sozinha (sem desconto no preço); 20 un registradas no ano |
+
+**Semana de preço limpo (28/09 → 01/10, 4 dias): 9 un · R$ 3.566,93 · lucro R$ 906,23 · margem 25,4%** — L2030-B, L1623-T, P4080, P3070, P3060 ×2, PXM ×3. Mesmo padrão do P4080: P3060 não respondeu ao desconto de 10% e vendeu a preço cheio na semana seguinte. Origem (Ads × orgânico) só no export de 05/10 — **não atribuir ao desconto nem à sua ausência** (coincidência temporal, CLAUDE.md §7). Totais da Mestra: receita R$ 31.278,35 · lucro R$ 7.893,72 · margem 25,24%.
+
+Para a O7: P3060 e P3070 entram no bloco do evento com venda recente a preço cheio na série — o corte pré-evento/evento fica mais importante, não menos.
