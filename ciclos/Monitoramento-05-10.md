@@ -88,3 +88,5 @@ Sem relatório de termos nesta semana (ritual: só na O7). Alvo B0CTMZHJFJ da PI
 **Regra nova (MEMÓRIA):** o status "Em processamento" no painel de promoções **não** significa fora do ar — a página do produto é a fonte da exibição. O painel de ofertas pode ficar em processamento com a oferta já visível.
 
 **Adendo 05/10 — tela de edição da Melhor Oferta do PXP:** Seu preço 167,89 · referência 167,89 · preço da oferta **R$ 151,10 = "Máx.: R$ 151,10 (10%)"** · desconto 16,79 (mín. 16,79) · 419 un reservadas (travado). Todos os campos coerentes; a oferta está exatamente no teto permitido (mínimo de 10%, confirmado em tela). Nada a alterar — salvar/enviar para reprocessar a validação; se o status não limpar, caso com a Amazon.
+
+**Controle Semanal atualizado pelo LEO (05/10):** linha 15 com 39.236 · 125 · 110,44 · 3.573,64 · 6 · 9 · VIGIA; fórmulas I:M intactas (ROAS 32,36 · ACOS 3,09% · taxa 4,80% · CPC 0,88 · CTR 0,32%); validação 1. A nota (coluna O) entrou cortada em 300 caracteres — versão curta e atualizada em `dados/PROPOSTA_Controle_O15_nota_curta.txt`, sem urgência.
