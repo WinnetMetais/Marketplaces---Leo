@@ -1,5 +1,5 @@
 ﻿Linha no Registro_Vendas;Data;Valor (R$);Unid.;SKU(s);Origem;Campanha / termo (quando conhecido);Confiança
-55;03/09;616,18;1;P3070;Orgânico;"sem atribuição: PI P3070 tem 2 compras no mês (15/09 alvo próprio; 30/09 alvo B0CTMZHJFJ) e os exports de 08/09 e 14/09 não registraram venda nesta PI — CONFERIR no export de 05/10";MÉDIA
+55;03/09;616,18;1;P3070;Ads;"PI P3070-o228/07 — print vitalício (05/10): 3 compras / R$ 1.848,54 = as 3 vendas de P3070 desde a criação da campanha; a de 03/09 veio de clique anterior a 26/08 (fora da janela de setembro, por isso o relatório do mês mostra 2)";ALTA
 56;05/09;116,00;1;L1618-T;Orgânico;sem atribuição (Geral só atribuiu 1 un de L1618-T a R$ 110,20);ALTA
 57;07/09;223,88;1;PG2460;Ads;"Geral DBA — close-match ""porta guarda chuva aço"" (07/09) · Melhor Oferta 9.9 a −10%";ALTA
 58;08/09;302,20;2;PXP ×2;Orgânico;sem atribuição (auto PXP atribuiu 1 un a R$ 151,10 — é a linha seguinte) · Melhor Oferta 9.9;MÉDIA
@@ -13,16 +13,16 @@
 67;20/09;378,76;3;L2025-T ×3;Orgânico;sem atribuição · promo de quantidade 5% (BR registra 398,70);ALTA
 68;22/09;386,72;2;PXM ×2;Orgânico;sem atribuição (Geral só atribuiu o pedido de 3 un de 24/09) · desconto no preço 5%;ALTA
 69;23/09;674,62;1;EGC;Orgânico;"1ª venda do EGC; auto EGC pausada em 22/09, Geral 1 clique/0 venda";ALTA
-70;24/09;110,20;1;L1618-T;Ads;Geral DBA — substitutes, ASIN B07Y44FLCX (intervalo 02–27/09) · desconto no preço 5% · o relatório não distingue 24/09 de 26/09: uma das duas é Ads;MÉDIA
+70;24/09;110,20;1;L1618-T;Orgânico;sem atribuição — o gráfico diário da Geral para B0H3QQLFFY (print 05/10) marca a compra em 26/09, não em 24/09 · desconto no preço 5%;ALTA
 71;24/09;551,08;3;PXM ×3;Ads;"Geral DBA — close-match ""suporte extintor de incêndio 6 kg"" (24/09); Ads registra 580,08 (preço com desconto 5%), receita real 551,08 com promo de quantidade";ALTA
-72;26/09;110,20;1;L1618-T;Orgânico;par da linha de 24/09 — uma das duas é Ads, relatório não distingue · desconto no preço 5%;MÉDIA
+72;26/09;110,20;1;L1618-T;Ads;"Geral DBA — substitutes, ASIN B07Y44FLCX; gráfico diário (print 05/10) marca a compra em 26/09 · desconto no preço 5%";ALTA
 73;28/09;153,72;1;L2030-B;Orgânico;sem atribuição (Geral e PI L2030-B: 0 venda);ALTA
 74;28/09;123,93;1;L1623-T;Ads;"Geral DBA — close-match ""lixeira inox banheiro"" (15–30/09) · 1ª venda do L1623-T";ALTA
 75;30/09;1.070,17;1;P4080;Ads;"Geral DBA — substitutes ""lixeira grande 100l com pedal inox"" (30/09) · 1ª venda do P4080";ALTA
-76;30/09;616,18;1;P3070;Ads;PI P3070-o228/07 — alvo B0CTMZHJFJ (asin-expanded, 04–30/09) — CONFERIR no export de 29/09–05/10 (1 compra esperada na PI);MÉDIA
+76;30/09;616,18;1;P3070;Ads;"PI P3070-o228/07 — alvo B0CTMZHJFJ (asin-expanded); vitalício da campanha fecha 3 compras = 3 vendas de setembro";ALTA
 
 RESUMO MENSAL;Mês;Total (R$);Ads (R$);Orgânico (R$);% Orgânico
-;Setembro;7.500,30;4.645,90;2.854,40;38,1%
-;TOTAL (jun–set);29.584,85;14.214,70;15.370,15;52,0%
+;Setembro;7.500,30;5.262,08;2.238,22;29,8%
+;TOTAL (jun–set);29.584,85;14.830,88;14.753,97;49,9%
 
 FORA DO LIVRO (decisão do LEO 05/10): devoluções;01/09 L2030-T 143,13 · 02/09 L1618-T 116,00 · 13/09 L1618-B ×2 259,80 = R$ 518,93 · nenhuma atribuída a Ads

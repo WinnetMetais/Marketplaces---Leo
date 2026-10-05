@@ -41,3 +41,17 @@ Leitura: a inversão da parcela (orgânico 68% → 38%) não é queda do orgâni
 1. LEO lança as 21 linhas no `Livro_Vendas` (Excel) + linha "Setembro" no RESUMO MENSAL + atualiza TOTAL; preenche a coluna **Origem** (R) das 24 linhas do Registro_Vendas; salva como **nova versão** (v4.3.5), v4.3.4 preservada.
 2. Code confere célula a célula, valida (7 validações) e sobe; atualiza GUIA/CLAUDE.md para a versão nova; §2 dos Parâmetros com os números do mês.
 3. Export de 29/09–05/10: confirmar a venda da PI P3070 de 30/09 (se a PI mostrar 1 compra na semana, fecha a leitura; se 0, a Ads é a de 03/09 e troca a origem das duas linhas — total não muda).
+
+
+## Correção pelos prints do console (05/10, LEO)
+
+Prints em `relatorios/amazon/fechamento-livro-set/print_PI-P3070_vitalicio_3-compras_05-10.png` e `print_Geral_L1618-T_diario_set_compra-26-09_05-10.png`.
+
+1. **PI P3070 — vitalício: 3 compras, R$ 1.848,54 (3 × 616,18), 192 cliques, R$ 234,09, ACOS 12,66%.** A campanha foi criada em 28/07 e desde então o P3070 vendeu exatamente 3 vezes (03, 15 e 30/09; nenhuma em agosto — BR e Livro de agosto conferem). Logo **as 3 vendas de setembro são Ads**. O relatório de 01–30/09 mostra 2 porque a Amazon atribui a venda à **data do clique**: a compra de 03/09 veio de um clique anterior a 26/08 (não aparecia no export de 26/08–07/09 nem no de setembro). Linha 55 → **Ads, confiança ALTA**.
+2. **Geral DBA, anúncio B0H3QQLFFY (L1618-T), gráfico diário de setembro:** a linha de compras marca **26/09**, não 24/09. Linha 72 (26/09) → **Ads**; linha 70 (24/09) → **Orgânico**. Confiança ALTA.
+
+**Totais corrigidos do Livro de setembro:** Ads **R$ 5.262,08** (13 vendas, 19 un) · Orgânico **R$ 2.238,22** (8 vendas, 10 un) · Total R$ 7.500,30 · **29,8% orgânico** · Ads = 70,2% da receita. TOTAL jun–set: R$ 29.584,85 · Ads 14.830,88 · Orgânico 14.753,97 · 49,9% orgânico.
+
+**ACOS e TACOS do mês não mudam** (8,8% e 5,5%): o gasto é o do mês e o relatório de 30 dias segue sendo a base comparável entre meses. A venda de 03/09 pertence, pela régua da Amazon, ao ciclo de agosto. Pendência 3 do fechamento **resolvida** sem esperar o export.
+
+**Aprendizado para a MEMÓRIA:** relatório Ads de período atribui pela data do clique — venda do começo do mês pode "faltar" no mês; o **vitalício do anúncio** e o **gráfico diário do console** resolvem o que o relatório agregado não distingue.
