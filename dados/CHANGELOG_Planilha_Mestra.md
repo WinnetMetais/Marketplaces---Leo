@@ -25,6 +25,14 @@ git show 9470403:dados/Planilha_Mestra_Winnet_v4_3_4.xlsx > v4_3_4_de_08-09.xlsx
 
 ---
 
+## v4.3.5 — 05/10/2026 (fechamento do Livro de setembro)
+
+Lançado pelo LEO no Excel (sem openpyxl — validações 7, intactas). Conferido célula a célula contra a v4.3.4 de 01/10 (`ciclos/Fechamento-Livro-set-05-10.md`).
+
+- **`Livro_Vendas`:** 21 vendas de setembro em A46:F66 (soma R$ 7.549,24, valores a preço do painel — convenção de agosto); 3 devoluções fora do Livro (decisão do LEO). RESUMO MENSAL: **Setembro 7.549,24 · Ads 5.291,08 · Orgânico 2.258,16 · 29,9%**; TOTAL jun–set 29.633,79 · 14.859,88 · 14.773,91 · 49,9%. Nota de reconciliação acrescentada. Origem fechada com Produtos Anunciados + Termos 01–30/09, vitalício da PI P3070 e gráfico diário da Geral.
+- **`Registro_Vendas`:** coluna Origem (R) preenchida nas 24 linhas de setembro (L53–L76). Pendência: R70 e R72 invertidas (24/09 deve ser Orgânico, 26/09 Ads). Duas vendas de outubro: L79 — 03/10 L1618-B 1 un Ceará Interior R$ 129,90 (frete cobrado R$ 103,00 pela Ref_Frete, a conferir no pedido) · L80 — 04/10 L2030 1 un SP Capital R$ 119,22. Totais: receita R$ 31.527,47 · lucro R$ 8.033,41.
+- Versão anterior (v4.3.4, estado de 01/10) preservada em `dados/`.
+
 ## v4.3.4 — 09/09/2026 (segunda encarnação, vigente)
 
 **Estrutura**
