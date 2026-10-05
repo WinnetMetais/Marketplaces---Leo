@@ -1,6 +1,6 @@
 # AMAZON ADS — PARÂMETROS VIGENTES
 
-Snapshot: **25/08/2026 (pós-O4)**, com atualizações de medição de **26/08/2026**, operacionais de **28/08/2026** e **01/09/2026**, e os **achados da O5 (08–09/09/2026)** incorporados abaixo. Atualizações posteriores: **O6 executada (22/09)**, **monitoramento de 28/09** e **Prime Day fechado em 30/09** (§7 e §8).
+Snapshot: **25/08/2026 (pós-O4)**, com atualizações de medição de **26/08/2026**, operacionais de **28/08/2026** e **01/09/2026**, e os **achados da O5 (08–09/09/2026)** incorporados abaixo. Atualizações posteriores: **O6 executada (22/09)**, **monitoramento de 28/09**, **Prime Day fechado em 30/09 e no ar em 05/10** (§7), **Livro de setembro fechado e monitoramento de 05/10** (§2 e §8).
 
 ✅ **O5 EXECUTADA em 09/09/2026** — 8 das 9 ações no console, conferidas uma a uma contra export e prints (ver `ciclos/O5-08-09_auditoria-code.md` §12). Os valores abaixo são **pós-execução**. A antiga advertência de "não executada" fica superada.
 
