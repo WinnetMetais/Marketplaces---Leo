@@ -70,6 +70,10 @@ Para qualquer decisão específica por SKU, consultar obrigatoriamente a PLANILH
 
 ---
 
+**Setembro/2026 fechado (Livro, 05/10):** receita válida **R$ 7.549,24** a preço do painel (21 vendas, 29 un; 3 devoluções fora, R$ 518,93) · **Ads R$ 5.291,08 (70,1%) · orgânico R$ 2.258,16 (29,9%)** · gasto Ads **R$ 411,88** (41% do teto) · **ACOS do mês 8,8%** (relatório 01–30/09: 12 compras, R$ 4.674,90) · TACOS 5,5%. Agosto, para comparação: R$ 13.915,83, 68,4% orgânico, Ads R$ 4.391,50. Leitura: Ads cresceu em valor com gasto abaixo do teto; o orgânico de agosto tinha o pedido de 4 Q4070-A (R$ 4.212,68). Detalhe em `ciclos/Fechamento-Livro-set-05-10.md`. Mestra canônica passa a **v4.3.5**.
+
+---
+
 ## 3. Lances atuais — estruturas novas
 
 ### Extintor

@@ -62,3 +62,11 @@ Prints em `relatorios/amazon/fechamento-livro-set/print_PI-P3070_vitalicio_3-com
 
 A nota de reconciliação do próprio Livro (fechamento de agosto) fixa a convenção: **valores a preço de tabela / do painel; a receita real fica no Registro_Vendas**. A proposta inicial usava a receita real em dois pedidos com promoção de quantidade — corrigido: L2025-T ×3 (20/09) **398,70** e PXM ×3 (24/09) **580,08**. **Setembro no Livro: R$ 7.549,24 · Ads 5.291,08 · Orgânico 2.258,16 · 29,9% orgânico.** TOTAL jun–set: 29.633,79 · 14.859,88 · 14.773,91 · 49,9%. Diferença para o Registro_Vendas (7.500,30) = R$ 48,94 = as duas promoções de quantidade. Bloco pronto para colar em `dados/PROPOSTA_Livro_setembro_colar_A46.txt`.
 
+## Conferência do lançamento (05/10, Mestra enviada pelo LEO)
+
+- **Livro_Vendas:** 21 linhas em A46:F66, valores e origens iguais à proposta, **soma B46:B66 = 7.549,24**; RESUMO com Setembro (7.549,24 · 5.291,08 · 2.258,16 · 29,9%) e TOTAL (29.633,79 · 14.859,88 · 14.773,91 · 49,9%) nas linhas 73–74; nota de reconciliação acrescentada (linha 76). Cosmético: a coluna A das linhas novas entrou como data (formato "d-mmm") em vez de texto "dd/09" como nas linhas anteriores — não afeta nada; formatar como texto se quiser uniformizar.
+- **Registro_Vendas, coluna Origem (R):** 24 linhas preenchidas. **R70 (24/09) e R72 (26/09) estão invertidas** em relação à proposta corrigida pelos prints — no Livro estão certas (24/09 Orgânico · 26/09 Ads). Ajustar na próxima gravação.
+- **Vendas novas (outubro):** linha 79 — 03/10 **L1618-B** 1 un, Ceará Interior, R$ 129,90, frete cobrado **R$ 103,00** (Ref_Frete: Ceará Interior Pequenos custo = cobrança = 103), frete real R$ 22,15, margem 81% — **conferir o frete cobrado no pedido**; é a anomalia da Ref_Frete já conhecida (regiões com custo = cobrança). Linha 80 — 04/10 **L2030** 1 un, SP Capital, R$ 119,22, margem 29%, coerente com a Ref_Frete. Totais: receita R$ 31.527,47 · lucro R$ 8.033,41 · margem 25,5%.
+- Validações: 7 (intactas). Nenhuma outra célula alterada fora Livro, coluna R e linhas 79–80.
+- **Versão:** arquivo recebido ainda com o nome v4_3_4; gravado no repositório como **`dados/Planilha_Mestra_Winnet_v4_3_5.xlsx`** (decisão do LEO: versão anterior preservada). CLAUDE.md, Contexto e Parâmetros atualizados para v4.3.5. LEO: renomear o arquivo local para v4_3_5.
+
