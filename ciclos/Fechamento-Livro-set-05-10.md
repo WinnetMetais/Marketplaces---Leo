@@ -55,3 +55,5 @@ Prints em `relatorios/amazon/fechamento-livro-set/print_PI-P3070_vitalicio_3-com
 **ACOS e TACOS do mês não mudam** (8,8% e 5,5%): o gasto é o do mês e o relatório de 30 dias segue sendo a base comparável entre meses. A venda de 03/09 pertence, pela régua da Amazon, ao ciclo de agosto. Pendência 3 do fechamento **resolvida** sem esperar o export.
 
 **Aprendizado para a MEMÓRIA:** relatório Ads de período atribui pela data do clique — venda do começo do mês pode "faltar" no mês; o **vitalício do anúncio** e o **gráfico diário do console** resolvem o que o relatório agregado não distingue.
+
+**3º print (05/10): gráfico diário da PI P3070 em setembro** (`print_PI-P3070_diario_set_compras-15-e-30-09_05-10.png`) — compras marcadas em **15/09 e 30/09**; nada em 03/09. Fecha a leitura: as duas compras do relatório do mês são 15 e 30/09, e a de 03/09 é a 3ª do vitalício, atribuída a clique de agosto. Nenhuma mudança na proposta.
