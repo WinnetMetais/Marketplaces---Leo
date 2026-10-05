@@ -57,3 +57,8 @@ Prints em `relatorios/amazon/fechamento-livro-set/print_PI-P3070_vitalicio_3-com
 **Aprendizado para a MEMÓRIA:** relatório Ads de período atribui pela data do clique — venda do começo do mês pode "faltar" no mês; o **vitalício do anúncio** e o **gráfico diário do console** resolvem o que o relatório agregado não distingue.
 
 **3º print (05/10): gráfico diário da PI P3070 em setembro** (`print_PI-P3070_diario_set_compras-15-e-30-09_05-10.png`) — compras marcadas em **15/09 e 30/09**; nada em 03/09. Fecha a leitura: as duas compras do relatório do mês são 15 e 30/09, e a de 03/09 é a 3ª do vitalício, atribuída a clique de agosto. Nenhuma mudança na proposta.
+
+## Convenção do Livro corrigida (05/10): valores a preço do painel
+
+A nota de reconciliação do próprio Livro (fechamento de agosto) fixa a convenção: **valores a preço de tabela / do painel; a receita real fica no Registro_Vendas**. A proposta inicial usava a receita real em dois pedidos com promoção de quantidade — corrigido: L2025-T ×3 (20/09) **398,70** e PXM ×3 (24/09) **580,08**. **Setembro no Livro: R$ 7.549,24 · Ads 5.291,08 · Orgânico 2.258,16 · 29,9% orgânico.** TOTAL jun–set: 29.633,79 · 14.859,88 · 14.773,91 · 49,9%. Diferença para o Registro_Vendas (7.500,30) = R$ 48,94 = as duas promoções de quantidade. Bloco pronto para colar em `dados/PROPOSTA_Livro_setembro_colar_A46.txt`.
+

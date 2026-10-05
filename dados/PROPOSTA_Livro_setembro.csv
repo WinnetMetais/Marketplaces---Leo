@@ -10,11 +10,11 @@
 64;15/09;616,18;1;P3070;Ads;"PI P3070-o228/07 — ""lixeira inox 60l"", alvo próprio B0H63FKGPJ (export 14–21/09: 1 compra)";ALTA
 65;15/09;132,90;1;L2025-T;Ads;Geral DBA — substitutes, ASIN B076PN14B6;ALTA
 66;19/09;132,90;1;L2025-T;Ads;"Geral DBA — loose-match ""lixeira banheiro inox c tampa"" (16–19/09)";ALTA
-67;20/09;378,76;3;L2025-T ×3;Orgânico;sem atribuição · promo de quantidade 5% (BR registra 398,70);ALTA
+67;20/09;398,70;3;L2025-T ×3;Orgânico;"sem atribuição · valor do painel 398,70 (3 × 132,90); receita real 378,76 com promo de quantidade 5% (Registro_Vendas preserva a real)";ALTA
 68;22/09;386,72;2;PXM ×2;Orgânico;sem atribuição (Geral só atribuiu o pedido de 3 un de 24/09) · desconto no preço 5%;ALTA
 69;23/09;674,62;1;EGC;Orgânico;"1ª venda do EGC; auto EGC pausada em 22/09, Geral 1 clique/0 venda";ALTA
 70;24/09;110,20;1;L1618-T;Orgânico;sem atribuição — o gráfico diário da Geral para B0H3QQLFFY (print 05/10) marca a compra em 26/09, não em 24/09 · desconto no preço 5%;ALTA
-71;24/09;551,08;3;PXM ×3;Ads;"Geral DBA — close-match ""suporte extintor de incêndio 6 kg"" (24/09); Ads registra 580,08 (preço com desconto 5%), receita real 551,08 com promo de quantidade";ALTA
+71;24/09;580,08;3;PXM ×3;Ads;"Geral DBA — close-match ""suporte extintor de incêndio 6 kg"" (24/09) · valor do painel 580,08 (3 × 193,36, preço com desconto 5%); receita real 551,08 com promo de quantidade (Registro_Vendas preserva a real)";ALTA
 72;26/09;110,20;1;L1618-T;Ads;"Geral DBA — substitutes, ASIN B07Y44FLCX; gráfico diário (print 05/10) marca a compra em 26/09 · desconto no preço 5%";ALTA
 73;28/09;153,72;1;L2030-B;Orgânico;sem atribuição (Geral e PI L2030-B: 0 venda);ALTA
 74;28/09;123,93;1;L1623-T;Ads;"Geral DBA — close-match ""lixeira inox banheiro"" (15–30/09) · 1ª venda do L1623-T";ALTA
@@ -22,7 +22,8 @@
 76;30/09;616,18;1;P3070;Ads;"PI P3070-o228/07 — alvo B0CTMZHJFJ (asin-expanded); vitalício da campanha fecha 3 compras = 3 vendas de setembro";ALTA
 
 RESUMO MENSAL;Mês;Total (R$);Ads (R$);Orgânico (R$);% Orgânico
-;Setembro;7.500,30;5.262,08;2.238,22;29,8%
-;TOTAL (jun–set);29.584,85;14.830,88;14.753,97;49,9%
+;Setembro;7.549,24;5.291,08;2.258,16;29,9%
+;TOTAL (jun–set);29.633,79;14.859,88;14.773,91;49,9%
 
 FORA DO LIVRO (decisão do LEO 05/10): devoluções;01/09 L2030-T 143,13 · 02/09 L1618-T 116,00 · 13/09 L1618-B ×2 259,80 = R$ 518,93 · nenhuma atribuída a Ads
+CONVENÇÃO;Valores a preço do painel (Business Report), como no fechamento de agosto: promo de quantidade não entra no Livro (2 pedidos, −R$ 48,94 vs receita real). Receita real fica no Registro_Vendas.
