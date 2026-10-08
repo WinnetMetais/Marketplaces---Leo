@@ -97,3 +97,17 @@ Sem relatório de termos nesta semana (ritual: só na O7). Alvo B0CTMZHJFJ da PI
 - **Lançar na Mestra (LEO):** linha 81 do Registro_Vendas — 05/10/2026 · L1623-T · 1 · região do pedido · pedido 702-5656903-4025847 · Origem Ads (Geral). Primeira venda do dia 1 do Prime Day, fora das promoções.
 
 **Mestra v4.3.5 regravada pelo LEO (05/10, conferida):** R70 → Orgânico e R72 → Ads (ajuste feito); **linha 81 = 05/10 L1623-T 1 un, Rio de Janeiro Capital, R$ 123,93**, frete cobrado 24,90 / real 16,36 (Ref_Frete RJ Capital Pequenos cobrança 24,90 — coerente), margem 32,4%. Faltam na linha 81 a coluna **Origem (R) = Ads** e o nº do pedido 702-5656903-4025847 (Q) — preencher na próxima gravação. Totais: receita R$ 31.651,40 · lucro R$ 8.073,60 · margem 25,5%. Validações 7. Nenhuma outra célula alterada. Mesma versão (lançamento rotineiro não gera versão nova — CHANGELOG, nota de método).
+
+## Adendo 08/10 — Mestra: 4 vendas novas na semana do evento (linhas 82–85), todas fora das promoções
+
+Diff contra a versão de 05/10: só as linhas 82–85 e os totais; validações 7; frete cobrado bate com a `Ref_Frete` nas 4 regiões.
+
+| Data | SKU | Qtd | Região | Receita | Margem | Leitura |
+|---|---|---:|---|---:|---:|---|
+| 05/10 | L2025-T | 2 | Paraná Interior | 265,80 | 28,9% | preço cheio (2 un não aciona promo de quantidade) |
+| 07/10 | L1618-T | 1 | SP Interior | 116,00 | 26,6% | preço cheio |
+| 08/10 | L2025-T | 1 | RJ Capital | 132,90 | 32,9% | preço cheio; 2º pedido do SKU na semana |
+| 08/10 | **L2460-CZ** | 1 | SP Capital | 318,56 | 29,5% | **1ª venda do SKU** (estava entre os 48 "sem preço de referência"); cinzeiro-lixeira 27 L, vendido a preço cheio — passa a ter referência |
+
+**Leitura parcial do Prime Day (até o que está lançado em 08/10):** 5 pedidos / 6 un / R$ 957,19 na semana do evento, **nenhum nos 14 SKUs em promoção** — L1623-T, L2025-T, L1618-T e L2460-CZ estão todos fora (pequenas abaixo do piso; CZ sem referência). Leitura **não conclusiva**: o painel de promoções e o BR do bloco 05–11/10 só entram na O7; vendas da promoção podem não estar lançadas ainda. Coluna Origem (R) das linhas 81–85 vazia — preencher após o export de 06–12/10. Totais: receita R$ 32.484,66 · lucro R$ 8.319,10 · margem 25,6%.
+
