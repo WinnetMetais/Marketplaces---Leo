@@ -9,6 +9,7 @@ Planilhas vigentes da operação. **Repositório privado** — estes arquivos co
 | `Planilha_Mestra_Winnet_v4_3_2.xlsx` | Fonte oficial de SKU, preço, custo, margem, tarifa, frete, classe logística, rentabilidade. 9 abas, incluindo `Simulador`, `Registro_Vendas` e `Livro_Vendas`. | ✅ carregada |
 | `Controle_Semanal_Amazon_Ads_Winnet.xlsx` | Acompanhamento do monitoramento semanal. Campo Status usa só categorias oficiais. | ✅ carregada |
 | `Registro_Alteracoes_Amazon_Ads_Winnet.xlsx` | **Fonte oficial do que virou alteração real.** Uma recomendação só é alteração quando confirmada aqui. | ✅ carregada |
+| `Precificacao_Marketplaces_Winnet_v1_0.xlsx` | Precificação por marketplace: abas `ML Clássico`, `ML Premium`, `Amazon`, `Via (Casas Bahia)`, `MadeiraMadeira`, `Magalu`, com base única em `Produtos`, taxas e comissão por categoria em `Parâmetros` e `Comparativo` entre canais. Amazon pré-carregada da Mestra v4.3.5 (SP Interior). Não substitui a Mestra para decisão Amazon. | ✅ carregada (09/10) |
 
 ## Regras
 
