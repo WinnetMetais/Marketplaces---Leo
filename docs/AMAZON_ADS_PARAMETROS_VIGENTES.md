@@ -82,27 +82,27 @@ Para qualquer decisão específica por SKU, consultar obrigatoriamente a PLANILH
 
 ## 3. Lances atuais — estruturas novas
 
-⚠️ **13/10 — O7 executada (Registro: O7-001…018 em maturação). Conferência parcial** (`ciclos/O7-13-10_conferencia-execucao.md`): **conferidos** Geral close **0,65** · substitutes **0,54** · alvo B0CYWMQ93Y pausado · L3070-B em **fixo** · PXP substitutes **1,58** · orçamentos PI PXM **R$ 80** e PI P3070 **R$ 24**. **Aguardando print:** PI PXM 1,32/1,08 · 6B "7 litros" 1,80 e exata "lixo banheiro" 0,80 · L3070-B 1,44 · Extintor 3,12 · Cinzeiros 1,92 · Bituqueiras 1,44 · negativas da Geral. **Contradito pelo export:** 6B segue em lances dinâmicos. Os valores das seções abaixo marcados com ✅ já são pós-execução; os demais seguem pré-execução.
+⚠️ **13/10 — O7 executada (Registro: O7-001…018 em maturação). Conferência parcial** (`ciclos/O7-13-10_conferencia-execucao.md`): **conferidos** Geral close **0,65** · substitutes **0,54** · alvo B0CYWMQ93Y pausado · L3070-B em **fixo** · PXP substitutes **1,58** · orçamentos PI PXM **R$ 80** e PI P3070 **R$ 24**. **2ª rodada conferida:** 6B em fixo · PI PXM 1,32/1,08 · L3070-B 1,44 · Extintor 3,12 · Cinzeiros 1,92 · Bituqueiras 1,44. **Aguardando print:** 6B "7 litros" 1,80 e exata "lixo banheiro" 0,80 · negativas da Geral (ASIN B076VYNP9W, frase "dourada"). Os valores das seções abaixo marcados com ✅ já são pós-execução; os demais seguem pré-execução.
 
 **Auto PXP-o311/08 (R$ 40) — lances por segmentação (print 13/10):** Correspondência vaga 1,32 · Complementos 1,32 · **Substitutos 1,58 ✅ (O7-015; era 1,32)** · Correspondência aproximada 1,10. Aprovados (O7-001…017): Geral close 0,54 → 0,65 · substitutes 0,45 → 0,54 · PI PXM 1,10 → 1,32 e 0,90 → 1,08 · auto PXP substitutes 1,32 → 1,58 · Extintor 2,60 → 3,12 · Cinzeiros 1,60 → 1,92 · Bituqueiras 1,20 → 1,44 · L3070-B 1,20 → 1,44 (e volta a fixo) · 6B "lixeira banheiro 7 litros" 1,50 → 1,80 (e volta a fixo) · exata "lixo banheiro" nova a 0,80 · alvo B0CYWMQ93Y pausado · orçamentos PXM 80 / P3070 24. Entram aqui como vigentes só com export + prints.
 
 **Regra reativada em 13/10 (decisão do LEO):** em manuais e automáticas individuais, **segmento que gastou menos de R$ 5 em 30 dias recebe +20% de lance**, desde que o ACOS da campanha não esteja acima do Máximo (ACOS indefinido por falta de venda **não** conta como acima). Em PI, campanha inteira abaixo de R$ 5 em 30 dias → +20% em todas as segmentações. Aplicar a cada Ox. O checkpoint de ~15 cliques sem venda continua acima dela: segmento em vigia não sobe.
 
 ### Extintor
-Exata: R$ 2,60 · Topo de Pesquisa **+75% (reaplicado em 25/08 — vigente)** · fixo
+Exata "suporte para extintor de incêndio": **R$ 3,12 ✅** (O7-010, 13/10; era 2,60) · exata "suporte de extintor chão": R$ 2,60 · Topo de Pesquisa **+75% (reaplicado em 25/08 — vigente)** · fixo
 
 ### Lixeiras banheiro — 6B
-Exata: R$ 1,50 · Frase: R$ 1,20 · Topo +25%
-**PILOTO: lances dinâmicos (aumento e redução)** — O4-014
+Exata: R$ 1,50 ("lixeira banheiro 7 litros" → 1,80 aprovado O7-014, print pendente; exata nova "lixo banheiro" 0,80 aprovada O7-007, print pendente) · Frase: R$ 1,20 · Topo +25%
+**Lances fixos ✅ desde 13/10 (O7-006; print)** — ~~PILOTO: lances dinâmicos (aumento e redução) — O4-014~~ encerrado (2 Eras sem diferença).
 
 ### Cinzeiros — 6C
-Exata: R$ 1,60 · Frase: R$ 1,30 · Topo +50% · fixo (grupo de controle)
+Exata "lixeira com cinzeiro": **R$ 1,92 ✅** (O7-011, 13/10; era 1,60) · exata "cinzeiro de chão inox": R$ 1,60 · Frase: R$ 1,30 · Topo +50% · fixo
 
 ### Bituqueiras
-Exata: R$ 1,20 · Frase: R$ 1,00 · Topo +50% · fixo (grupo de controle)
+Exata "bituqueira de parede": **R$ 1,44 ✅** (O7-012, 13/10; era 1,20) · Frase: R$ 1,00 · Topo +50% · fixo · anúncios SP-PP, SP-FF, SP-T em inserção; SP-01 suspensa (caso 21652133321)
 
 ### L3070-B + L4080-B
-Exata: R$ 1,20 (→ 1,44 aprovado O7-013, print pendente) · Frase: R$ 1,00 · Topo +25% · **fixos ✅ desde 13/10 (O7-006; export)** — ~~dinâmicos (aumento e redução) desde 09/09 (O5-009)~~. Piloto encerrado.
+Exata "lixeira basculante 50 litros": **R$ 1,44 ✅** (O7-013, 13/10; era 1,20) · demais exatas ("lixeira 50 litros basculante", "lixeira inox basculante grande", "lixeira 80 litros basculante"): R$ 1,20 · Frases: R$ 1,00 · Topo +25% · **fixos ✅ desde 13/10 (O7-006; export)** — ~~dinâmicos (aumento e redução) desde 09/09 (O5-009)~~. Piloto encerrado.
 
 ### Automática EGC
 Lance atual: **R$ 0,84** (O4-012; era R$ 0,70) · fixo (grupo de controle)
@@ -150,13 +150,13 @@ Esses valores são snapshot, não regra permanente.
 | Auto EGC | 0 vendas **E** CTR < 0,3% → pausar | 10 cli · R$ 7,58 · 0 vendas · CTR 0,17% | **PAUSADA (O6-002) ✅** |
 | Auto SP-PP-o59/09 | 0 cliques relevantes → pausar | **0 cliques** · vit 26 / 0 | **PAUSADA (O6-001) ✅** |
 | PI P3070-o228/07 | desarmado 15/09 | 52 cli · R$ 71,10 · 1 venda R$ 616,18 **no alvo próprio** (`asin-expanded="B0H63FKGPJ"`) · ACOS 11,5% | alvo `B09YDLC69D` (16 cli vit / 0) → **ALVO PAUSADO (O6-003) ✅** · campanha ativa em **VIGIA re-armada (O6-004)** |
-| PI PXM-o311/08 | CORRIGIR CTR | 2 cli · 1 venda R$ 519,03 no alvo `B0H4S7ZKXS` (PXP, família) | MANTER; CTR segue na fila de página (O6-020) |
+| PI PXM-o311/08 | CORRIGIR CTR · **lances 1,32 (51 asin-expanded) / 1,08 (7 asin) ✅ (O7-008/009) · orçamento R$ 80 ✅ (O7-016)** | 2 cli · 1 venda R$ 519,03 no alvo `B0H4S7ZKXS` (PXP, família) | MANTER; CTR segue na fila de página (O6-020) |
 
 **Vigias e gatilhos vigentes após a O6 — leitura na O7 (13/10):**
 
 | Estrutura | Situação | Gatilho na O7 |
 |---|---|---|
-| PI P3070-o228/07 | VIGIA, lances 1,10 / 0,90 mantidos (O6-004) | 0 venda atribuída na Era **E** ≥15 cliques → −20% nos asin-expanded (1,10 → 0,88). Triagem: `B0CYWMQ93Y` 11 · `B0BHMZBZW9` 7 · `B0BSNVT11K` 5 · `B0F4T8FCDD` 5 · `B0778TD2LY` 5 (régua 15) |
+| PI P3070-o228/07 | VIGIA, lances 1,10 / 0,90 mantidos (O6-004); **orçamento R$ 24 ✅ (O7-017)**; alvo `B0CYWMQ93Y` **pausado ✅ (O7-003)** | 0 venda atribuída na Era **E** ≥15 cliques → −20% nos asin-expanded (1,10 → 0,88). Triagem: `B0CYWMQ93Y` 11 · `B0BHMZBZW9` 7 · `B0BSNVT11K` 5 · `B0F4T8FCDD` 5 · `B0778TD2LY` 5 (régua 15) |
 | Geral — Q2460-B | ~~VIGIA (O6-006)~~ **GATILHO DISPAROU em 28/09** (9 sessões / 0 venda na semana de desconto) | **Anúncio do SKU PAUSADO dentro da Geral em 28/09 (print: "Pausado", 916 impr / 15 cli em 22–28/09; campanha e segmentações ativas).** O SKU vai à fila de página (INVESTIGAR CONVERSÃO DO SKU); rodou sem preço riscado, a hipótese de preço segue aberta |
 | 6B — exata "lixeira inox para pia de cozinha" | VIGIA, 1,50 (O6-008) | ≥15 cli sem venda → −20% (1,50 → 1,20) ou pausar a keyword |
 | Geral — ASIN `B0BHMZBZW9` (Tramontina pedal 30 L) | VIGIA (O6-019) | ≥15 cli em 30d sem venda → excluir o produto na Geral |
@@ -196,9 +196,11 @@ Nota para a O5 sobre PG3070: os alvos são `asin-expanded` — avaliar migraçã
 
 ---
 
-## 5. Piloto de estratégia de lance (O4-014)
+## 5. Piloto de estratégia de lance (O4-014) — ENCERRADO em 13/10/2026
 
-**6B → dinâmicos (aumento e redução).**
+**Veredito final (O6-010 → O7-006):** duas Eras sem diferença entre o grupo dinâmico (6B, L3070-B) e o controle fixo. **6B e L3070-B devolvidas a lances fixos em 13/10 (prints/export conferidos).** Toda a conta nova opera em fixo; as estruturas da assessoria (Geral, PIs, auto PXP) seguem em dinâmico aumento e redução (§9). Histórico abaixo preservado.
+
+~~**6B → dinâmicos (aumento e redução).**~~
 
 Grupo de controle mantido em lances fixos: Cinzeiros, L3070-B, Extintor, EGC, Bituqueiras.
 
