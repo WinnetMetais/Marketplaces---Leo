@@ -82,7 +82,7 @@ Para qualquer decisão específica por SKU, consultar obrigatoriamente a PLANILH
 
 ## 3. Lances atuais — estruturas novas
 
-⚠️ **13/10 — O7 executada (Registro: O7-001…018 em maturação). Conferência parcial** (`ciclos/O7-13-10_conferencia-execucao.md`): **conferidos** Geral close **0,65** · substitutes **0,54** · alvo B0CYWMQ93Y pausado · L3070-B em **fixo** · PXP substitutes **1,58** · orçamentos PI PXM **R$ 80** e PI P3070 **R$ 24**. **2ª rodada conferida:** 6B em fixo · PI PXM 1,32/1,08 · L3070-B 1,44 · Extintor 3,12 · Cinzeiros 1,92 · Bituqueiras 1,44. **3ª rodada conferida:** negativas da Geral. **Aguardando print:** 6B "7 litros" 1,80 e exata "lixo banheiro" 0,80.
+⚠️ **13/10 — O7 executada (Registro: O7-001…018 em maturação). Conferência parcial** (`ciclos/O7-13-10_conferencia-execucao.md`): **conferidos** Geral close **0,65** · substitutes **0,54** · alvo B0CYWMQ93Y pausado · L3070-B em **fixo** · PXP substitutes **1,58** · orçamentos PI PXM **R$ 80** e PI P3070 **R$ 24**. **2ª rodada conferida:** 6B em fixo · PI PXM 1,32/1,08 · L3070-B 1,44 · Extintor 3,12 · Cinzeiros 1,92 · Bituqueiras 1,44. **3ª rodada conferida:** negativas da Geral. **4ª rodada — export de palavras da 6B: O7-007 (exata "lixo banheiro" 0,80) e O7-014 ("7 litros" 1,80) NÃO EXECUTADAS** — 6B segue com 7 exatas a 1,50 e 7 frases a 1,20. Registro diverge do console nessas duas linhas; pendente de execução ou correção do Registro.
 
 **Negativas da Geral DBA-o59/09 (inventário, print 13/10):** produtos negativos `B0C5PLHDRL` · `B0BHXCJD1P` · `B076PLZ1PV` · **`B076VYNP9W` ✅ (O7-004)**; palavra-chave negativa **"dourada" (frase) ✅ (O7-005)** — única palavra negativa do grupo. Os valores das seções abaixo marcados com ✅ já são pós-execução; os demais seguem pré-execução.
 
@@ -94,7 +94,7 @@ Para qualquer decisão específica por SKU, consultar obrigatoriamente a PLANILH
 Exata "suporte para extintor de incêndio": **R$ 3,12 ✅** (O7-010, 13/10; era 2,60) · exata "suporte de extintor chão": R$ 2,60 · Topo de Pesquisa **+75% (reaplicado em 25/08 — vigente)** · fixo
 
 ### Lixeiras banheiro — 6B
-Exata: R$ 1,50 ("lixeira banheiro 7 litros" → 1,80 aprovado O7-014, print pendente; exata nova "lixo banheiro" 0,80 aprovada O7-007, print pendente) · Frase: R$ 1,20 · Topo +25%
+Exata: R$ 1,50 nas 7 palavras ("lixeira banheiro 7 litros" → 1,80 aprovado O7-014, **não executado em 13/10**; exata nova "lixo banheiro" 0,80 aprovada O7-007, **não criada em 13/10**) · Frase: R$ 1,20 · Topo +25%
 **Lances fixos ✅ desde 13/10 (O7-006; print)** — ~~PILOTO: lances dinâmicos (aumento e redução) — O4-014~~ encerrado (2 Eras sem diferença).
 
 ### Cinzeiros — 6C
