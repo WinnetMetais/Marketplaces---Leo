@@ -111,3 +111,19 @@ Diff contra a versão de 05/10: só as linhas 82–85 e os totais; validações 
 
 **Leitura parcial do Prime Day (até o que está lançado em 08/10):** 5 pedidos / 6 un / R$ 957,19 na semana do evento, **nenhum nos 14 SKUs em promoção** — L1623-T, L2025-T, L1618-T e L2460-CZ estão todos fora (pequenas abaixo do piso; CZ sem referência). Leitura **não conclusiva**: o painel de promoções e o BR do bloco 05–11/10 só entram na O7; vendas da promoção podem não estar lançadas ainda. Coluna Origem (R) das linhas 81–85 vazia — preencher após o export de 06–12/10. Totais: receita R$ 32.484,66 · lucro R$ 8.319,10 · margem 25,6%.
 
+## Adendo 13/10 — Mestra: semana do Prime Day fechada no Registro_Vendas (linhas 86–92)
+
+Diff contra a versão de 08/10: só as linhas 86–92 e os totais; validações 7; frete cobrado bate com a `Ref_Frete` nas 7 regiões. **Coluna STATUS (S) vazia nas linhas 87–92** e **Origem (R) vazia em 81–92** — preencher.
+
+| Data | SKU | Qtd | Região | Receita | Margem | Leitura |
+|---|---|---:|---|---:|---:|---|
+| 09/10 | **L1623** | 1 | RJ Capital | 109,90 | 36,5% | **1ª venda do SKU** (sem tampa 5 L) |
+| 10/10 | L2030 | 1 | RS Interior | 119,22 | 31,7% | 3ª venda |
+| 10/10 | L2025-T | 2 | SP Interior | 265,80 | 27,7% | preço cheio |
+| 11/10 | **P3070** | 1 | RJ Capital | **616,18** | 25,6% | **preço cheio no último dia da Melhor Oferta a 523,75** — comprador não-Prime (oferta era exclusiva Prime); confirmar valor pago no pedido |
+| 11/10 | **L2025-A** | 5 | RS Capital | 588,34 | **14,4%** | **1ª venda do SKU**; promo de quantidade 8% (5+) + frete RS (real 89,54 vs cobrado 24,90) → abaixo do piso. Cenário de estresse conhecido |
+| 11/10 | L2025-T | 3 | SP Interior | 378,76 | 23,9% | promo de quantidade 5% |
+| 11/10 | L1623-T | 1 | SP Capital | 123,93 | 26,9% | 3ª venda em 2 semanas |
+
+**Semana do Prime Day (05–11/10) no Registro: 12 pedidos · 20 un · R$ 3.159,32 · lucro R$ 649,40 (20,6%).** **Nenhuma venda a preço promocional nos 14 SKUs do evento** — a única venda de um SKU promovido (P3070, 11/10) saiu a preço cheio para não-Prime. O que vendeu: **L2025-T 8 un** (excluído do evento por margem), L1623-T 2, L1623 1, L1618-T 1, L2030 1, L2460-CZ 1, L2025-A 5. Três SKUs fizeram a 1ª venda na semana (L2460-CZ, L1623, L2025-A) — saem da lista dos 48 sem referência. Leitura final só na O7, com painel de promoções, BR 05–11/10 e export: a atribuição Ads × orgânico destas 12 vendas ainda não existe. Totais: receita R$ 34.686,79 · lucro R$ 8.833,58 · margem 25,5%.
+
