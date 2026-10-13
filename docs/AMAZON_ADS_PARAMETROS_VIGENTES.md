@@ -82,7 +82,9 @@ Para qualquer decisão específica por SKU, consultar obrigatoriamente a PLANILH
 
 ## 3. Lances atuais — estruturas novas
 
-⚠️ **13/10 — O7 aprovada; o Registro (98 entradas) marca as 18 linhas O7-001…018 como EXECUTADA - EM MATURAÇÃO em 13/10. Conferência contra export pós-execução e prints PENDENTE** — até ela, os valores abaixo seguem como **PRÉ-execução**. Aprovados (O7-001…017): Geral close 0,54 → 0,65 · substitutes 0,45 → 0,54 · PI PXM 1,10 → 1,32 e 0,90 → 1,08 · auto PXP substitutes 1,32 → 1,58 · Extintor 2,60 → 3,12 · Cinzeiros 1,60 → 1,92 · Bituqueiras 1,20 → 1,44 · L3070-B 1,20 → 1,44 (e volta a fixo) · 6B "lixeira banheiro 7 litros" 1,50 → 1,80 (e volta a fixo) · exata "lixo banheiro" nova a 0,80 · alvo B0CYWMQ93Y pausado · orçamentos PXM 80 / P3070 24. Entram aqui como vigentes só com export + prints.
+⚠️ **13/10 — O7 executada (Registro: O7-001…018 em maturação). Conferência parcial** (`ciclos/O7-13-10_conferencia-execucao.md`): **conferidos** Geral close **0,65** · substitutes **0,54** · alvo B0CYWMQ93Y pausado · L3070-B em **fixo** · PXP substitutes **1,58** · orçamentos PI PXM **R$ 80** e PI P3070 **R$ 24**. **Aguardando print:** PI PXM 1,32/1,08 · 6B "7 litros" 1,80 e exata "lixo banheiro" 0,80 · L3070-B 1,44 · Extintor 3,12 · Cinzeiros 1,92 · Bituqueiras 1,44 · negativas da Geral. **Contradito pelo export:** 6B segue em lances dinâmicos. Os valores das seções abaixo marcados com ✅ já são pós-execução; os demais seguem pré-execução.
+
+**Auto PXP-o311/08 (R$ 40) — lances por segmentação (print 13/10):** Correspondência vaga 1,32 · Complementos 1,32 · **Substitutos 1,58 ✅ (O7-015; era 1,32)** · Correspondência aproximada 1,10. Aprovados (O7-001…017): Geral close 0,54 → 0,65 · substitutes 0,45 → 0,54 · PI PXM 1,10 → 1,32 e 0,90 → 1,08 · auto PXP substitutes 1,32 → 1,58 · Extintor 2,60 → 3,12 · Cinzeiros 1,60 → 1,92 · Bituqueiras 1,20 → 1,44 · L3070-B 1,20 → 1,44 (e volta a fixo) · 6B "lixeira banheiro 7 litros" 1,50 → 1,80 (e volta a fixo) · exata "lixo banheiro" nova a 0,80 · alvo B0CYWMQ93Y pausado · orçamentos PXM 80 / P3070 24. Entram aqui como vigentes só com export + prints.
 
 **Regra reativada em 13/10 (decisão do LEO):** em manuais e automáticas individuais, **segmento que gastou menos de R$ 5 em 30 dias recebe +20% de lance**, desde que o ACOS da campanha não esteja acima do Máximo (ACOS indefinido por falta de venda **não** conta como acima). Em PI, campanha inteira abaixo de R$ 5 em 30 dias → +20% em todas as segmentações. Aplicar a cada Ox. O checkpoint de ~15 cliques sem venda continua acima dela: segmento em vigia não sobe.
 
@@ -100,7 +102,7 @@ Exata: R$ 1,60 · Frase: R$ 1,30 · Topo +50% · fixo (grupo de controle)
 Exata: R$ 1,20 · Frase: R$ 1,00 · Topo +50% · fixo (grupo de controle)
 
 ### L3070-B + L4080-B
-Exata: R$ 1,20 · Frase: R$ 1,00 · Topo +25% · **dinâmicos (aumento e redução)** desde 09/09 (O5-009; era fixo). Passa a integrar o grupo do piloto de lance junto com a 6B.
+Exata: R$ 1,20 (→ 1,44 aprovado O7-013, print pendente) · Frase: R$ 1,00 · Topo +25% · **fixos ✅ desde 13/10 (O7-006; export)** — ~~dinâmicos (aumento e redução) desde 09/09 (O5-009)~~. Piloto encerrado.
 
 ### Automática EGC
 Lance atual: **R$ 0,84** (O4-012; era R$ 0,70) · fixo (grupo de controle)
@@ -113,9 +115,9 @@ Lance atual: **R$ 0,84** (O4-012; era R$ 0,70) · fixo (grupo de controle)
 
 | Segmentação | Console (PT-BR) | Lance | Mudou na O5? |
 |---|---|---:|---|
-| `close-match` | Correspondência aproximada | **R$ 0,54** | ✅ era 0,45 (O5-002, +20%) |
+| `close-match` | Correspondência aproximada | **R$ 0,65** ✅ (O7-001, 13/10; era 0,54) | ✅ era 0,45 (O5-002, +20%) |
 | `loose-match` | Correspondência vaga | **R$ 0,45** | ✅ era 0,54 (**O6-005, −17%, executada e conferida em 22/09** — print com 9,86 mil impressões da Era na linha "Correspondência vaga") |
-| `substitutes` | Substitutos | **R$ 0,45** | ✅ era 0,54 (O5-001, −17%) |
+| `substitutes` | Substitutos | **R$ 0,54** ✅ (O7-002, 13/10; era 0,45) | ✅ era 0,54 (O5-001, −17%) |
 | `complements` | Complementos | R$ 0,45 | não |
 
 Orçamento **R$ 90/dia** mantido (O5-003) — a campanha consome ~12% dele.
