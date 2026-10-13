@@ -90,12 +90,13 @@ Se o modo não estiver explícito, inferir pelos arquivos e **declarar o modo as
 
 Números específicos vêm de `docs/AMAZON_ADS_PARAMETROS_VIGENTES.md` — nunca de memória. Síntese sempre válida:
 
-- **ACOS:** Objetivo **9%** · Máximo **18%** · Emergência **36%**. Confirmar nos Parâmetros Vigentes antes de aplicar.
+- **ACOS:** régua **calculada** (13/10/2026): Máximo = margem média 30d da Mestra · Objetivo = metade · Emergência = dobro. Vigentes: Objetivo **12,5%** · Máximo **25%** · Emergência **50%**. Recalcular a cada Ox; confirmar nos Parâmetros Vigentes antes de aplicar.
 - **Diagnóstico primário:** ENTREGA × CONVERSÃO antes de qualquer pausa.
 - **Checkpoint de cliques:** ~**15 cliques sem venda** abre diagnóstico de conversão. É diagnóstico, **não** pausa automática.
 - **Produto Indicado (PI):** régua no nível do **ALVO**, não da campanha. **15+ cliques vitalícios sem venda** pode autorizar pausa do alvo. Nunca converter alvo ruim em pausa de campanha inteira.
 - **Contrapeso vitalício:** antes de pausar campanha com histórico de vendas, olhar janela recente → 30 dias → vitalício → relevância das vendas históricas.
 - **Geral Automática** nunca é pausada como campanha comum.
+- **Regra "< R$ 5 → +20%"** (reativada 13/10/2026): segmento de manual/auto individual que gastou menos de R$ 5 em 30 dias sobe +20%, salvo ACOS da campanha acima do Máximo; PI com campanha inteira abaixo de R$ 5 → +20% em todas as segmentações. Subordinada ao checkpoint de cliques.
 - **Radar:** só quando houver falta de entrega sustentada pelos dados **+** amostra insuficiente. Poucos cliques isoladamente **não** acionam Radar. Objetivo é **gerar amostra, não escalar gasto**. Referência de aumento: ~+20% por ciclo quando justificado — nunca automático.
 - **Triagem de termos:** ~3+ cliques sem venda é sinal de **revisão**, não negativação automática.
 - **Triagem de ASIN em PI:** ~5+ cliques sem venda é sinal de **revisão**, não exclusão automática.

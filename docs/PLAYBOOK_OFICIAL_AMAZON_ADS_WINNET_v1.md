@@ -935,7 +935,9 @@ Regra original.
 
 Foi utilizada no início e ficou dormente posteriormente.
 
-Sua lógica foi absorvida pela Régua de Radar e pelo diagnóstico de campanhas sufocadas.
+~~Sua lógica foi absorvida pela Régua de Radar e pelo diagnóstico de campanhas sufocadas.~~
+
+**REATIVADA em 13/10/2026 por decisão do LEO (O7-010 a O7-015).** Motivo: sem ela, as manuais pequenas ficaram três ciclos sem nenhuma mexida de lance; o Radar exige "falta de entrega + amostra insuficiente" e nunca disparava nelas. Vale para manuais, automáticas individuais e PI (campanha inteira), com a condição de ACOS do PDF original e subordinada ao checkpoint de ~15 cliques. Valores e condição em AMAZON ADS — PARÂMETROS VIGENTES §3. O documento original da assessoria está em `docs/referencia/`.
 
 ### “Gastou 50% do valor do produto sem vender”
 

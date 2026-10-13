@@ -21,13 +21,19 @@ Não transformar informações deste documento em regras permanentes do Playbook
 
 ## 1. Réguas de ACOS vigentes
 
-Sem alteração na O4.
+**Alteradas em 13/10/2026 (O7-018, aprovada pelo LEO).** Régua passa a ser **calculada**, pela definição original da assessoria (`docs/referencia/Otimizacao_de_ADS_assessoria_Henrique.pdf`): **ACOS Máximo = margem média dos últimos 30 dias · Objetivo = metade · Emergência = dobro**. Fonte da margem: `Registro_Vendas` da Mestra (margem líquida, após tarifa, frete real e imposto — mais conservadora que a "margem bruta" do Gestor Seller citada no PDF). **Recalcular a cada Ox** e registrar aqui com a janela usada.
 
-ACOS Objetivo: 9%
+Margem 13/09–12/10 (31 linhas válidas): **25,1%** → réguas arredondadas:
 
-ACOS Máximo: 18%
+ACOS Objetivo: **12,5%**
 
-ACOS Emergência: 36%
+ACOS Máximo: **25%**
+
+ACOS Emergência: **50%**
+
+~~Sem alteração na O4. Objetivo 9% · Máximo 18% · Emergência 36%~~ (vigentes de 25/08 a 13/10; origem dos números fixos não documentada).
+
+Leitura com a régua nova: Era 23/09–12/10 com ACOS 5,4% = **43% do Objetivo**. Print do Gestor Seller (margem bruta, 30 dias) pode refinar o número; até lá vale a Mestra.
 
 Uso:
 
@@ -75,6 +81,10 @@ Para qualquer decisão específica por SKU, consultar obrigatoriamente a PLANILH
 ---
 
 ## 3. Lances atuais — estruturas novas
+
+⚠️ **13/10 — O7 aprovada, execução pendente.** Os valores abaixo são **PRÉ-execução**. Aprovados (O7-001…017): Geral close 0,54 → 0,65 · substitutes 0,45 → 0,54 · PI PXM 1,10 → 1,32 e 0,90 → 1,08 · auto PXP substitutes 1,32 → 1,58 · Extintor 2,60 → 3,12 · Cinzeiros 1,60 → 1,92 · Bituqueiras 1,20 → 1,44 · L3070-B 1,20 → 1,44 (e volta a fixo) · 6B "lixeira banheiro 7 litros" 1,50 → 1,80 (e volta a fixo) · exata "lixo banheiro" nova a 0,80 · alvo B0CYWMQ93Y pausado · orçamentos PXM 80 / P3070 24. Entram aqui como vigentes só com export + prints.
+
+**Regra reativada em 13/10 (decisão do LEO):** em manuais e automáticas individuais, **segmento que gastou menos de R$ 5 em 30 dias recebe +20% de lance**, desde que o ACOS da campanha não esteja acima do Máximo (ACOS indefinido por falta de venda **não** conta como acima). Em PI, campanha inteira abaixo de R$ 5 em 30 dias → +20% em todas as segmentações. Aplicar a cada Ox. O checkpoint de ~15 cliques sem venda continua acima dela: segmento em vigia não sobe.
 
 ### Extintor
 Exata: R$ 2,60 · Topo de Pesquisa **+75% (reaplicado em 25/08 — vigente)** · fixo
@@ -361,7 +371,7 @@ Monitoramento previsto: **31/08/2026**.
 
 **Prime Day fechado em 30/09 (dentro da Era O6→O7): 14 SKUs** — P3070 e PXP em Melhor Oferta (Prime Big Deal Days) + 12 SKUs no desconto no preço comum `PRECOPRIMEALTERNATIVO` (Todos os clientes, 05–11/10, 10%). Desconto vinculado ao evento descartado (exige frete grátis — §7). Registro: EC-020 em maturação, reavaliar na O7; EC-017/018/019 DESCARTADAS. **Monitoramento de 05/10 — FEITO:** Livro de setembro fechado (Mestra v4.3.5) e semana 29/09–05/10 lida (6 compras / R$ 3.573,64 / ACOS 3,1%; sem ação). **Pendência do evento (05/10 15h):** Melhor Oferta PXP com problema de preço; P3070 e PRECOPRIMEALTERNATIVO "Em processamento"; **exibição confirmada por prints das páginas (05/10): P3070 "De: 616,18" riscado + "Preço exclusivo Prime" + R$ 523,75; P4080 "De: 1.070,17" riscado + R$ 963,15 para todos** — o painel "Em processamento" não reflete o ar. PXP: **também no ar** (riscado 167,89 → 151,10, exclusivo Prime) apesar do aviso "Apresenta problemas" no painel — sem ação; os 3 itens do evento exibidos. **O7 (13/10):** bloco evento 05–11/10 lido à parte; gatilhos O6-004/008/010/013/019; 1ªs vendas de L1623-T e P4080 mudam a leitura de conversão.
 
-**O7 concluída como análise: 13/10/2026 (Code; `ciclos/O7-13-10.md`).** Era 23/09–12/10 lida em dois blocos: ACOS 5,4% (17 compras, R$ 6.360,24, custo R$ 345,19); Prime Day com 1 venda em 14 SKUs promovidos; piloto de lance sem efeito; gatilho da PI P3070 não disparou. **8 ações propostas (G1–G8), sem orçamento — aguardando aprovação e execução do LEO.** Após execução: atualizar §3 (lances da Geral 0,65/0,54; 6B e L3070-B fixos; PI PXM 1,32; exata "lixo banheiro" 0,80), §4 (vigias: exata pia 14/15; B0BHMZBZW9 dupla; auto PXP) e §5 (piloto encerrado). **O8: 27/10** (Era 14–26/10). Monitoramento 20/10.
+**O7 concluída como análise: 13/10/2026 (Code; `ciclos/O7-13-10.md`).** Era 23/09–12/10 lida em dois blocos: ACOS 5,4% (17 compras, R$ 6.360,24, custo R$ 345,19); Prime Day com 1 venda em 14 SKUs promovidos; piloto de lance sem efeito; gatilho da PI P3070 não disparou. ~~8 ações propostas (G1–G8), sem orçamento — aguardando aprovação.~~ **Lista refeita em 13/10 com a régua original da assessoria (PDF enviado pelo LEO; `ciclos/O7-13-10_lista-refeita-regua-henrique.md`): G1–G12 APROVADOS pelo LEO em 13/10 — 18 linhas O7-001…018 em `APROVADA - AGUARDANDO EXECUÇÃO`; execução no console pendente (`ciclos/O7-13-10_execucao-checklist.md`).** Entram: regra "< R$ 5 → +20%" reativada (5 manuais + PXP substitutes), orçamentos PXM 80 / P3070 24 (fidelidade à régua, sem efeito prático) e réguas de ACOS recalculadas (§1). Console 13/09–12/10 (print): 163.382 impr · 640 cli · R$ 508,61 · 19 compras · R$ 7.109,32 · ACOS 7,2% — bate com os relatórios (1 dia de deslocamento; L2460-B de 12/09 fora). Após execução: atualizar §3 (lances da Geral 0,65/0,54; 6B e L3070-B fixos; PI PXM 1,32; exata "lixo banheiro" 0,80), §4 (vigias: exata pia 14/15; B0BHMZBZW9 dupla; auto PXP) e §5 (piloto encerrado). **O8: 27/10** (Era 14–26/10). Monitoramento 20/10.
 
 Datas futuras devem ser atualizadas quando o ciclo efetivamente ocorrer.
 

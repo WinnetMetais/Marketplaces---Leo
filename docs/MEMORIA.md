@@ -191,7 +191,7 @@ corrigido pelo LEO. Ao interpretar SKU novo, conferir o **nome do produto** na M
 característica a partir da sigla — a grafia da base sempre prevalece.
 
 ### Réguas aposentadas — não ressuscitar
-- Regra antiga **"R$5 → +20%"** está **aposentada**, absorvida pela régua de Radar.
+- ~~Regra antiga **"R$5 → +20%"** está **aposentada**, absorvida pela régua de Radar.~~ **Reativada em 13/10/2026** (ver entrada "Régua original da assessoria" abaixo).
 - Referências de **20–25 / 30–50 cliques** são apenas históricas. A régua vigente é ~15 cliques.
 
 ### Campo Status do Controle Semanal
@@ -311,3 +311,7 @@ No 1º dia do Prime Big Deal Days, o painel mostrava a Melhor Oferta do P3070 e 
 
 Três leituras seguidas: desconto no preço 21–27/09 (10 SKUs, 5–10%) → 7 un em 2 SKUs, 206 visualizações; **desconto comum na semana do Prime Day (12 SKUs a 10%, todos os clientes) → 108 visualizações, 0 un**; Melhor Oferta PXP 10% → 23 visualizações, 0. A Melhor Oferta P3070 (15%, selo Prime) levou 108 sessões ao SKU (24% do catálogo na semana) e converteu 1 un. Enquanto isso a semana do evento vendeu 12 pedidos / 20 un a preço de tabela, 7 pela Geral, em lixeiras pequenas fora das promoções — e P4080/P3060 venderam cheio na semana seguinte ao desconto em que não converteram. **Regras:** (1) desconto no preço fora de evento com selo não entra mais como ferramenta de conversão; (2) Melhor Oferta só compensa pelo tráfego do selo, e só em SKU de ticket alto com margem para 15%; (3) a alavanca que converte é tráfego de busca na Geral a preço de tabela — o investimento vai para lance/entrega, não para desconto; (4) preço de tabela limpo até a Black Friday para preservar referência.
 
+
+## Régua original da assessoria: ACOS é calculado pela margem, e a regra "< R$ 5 → +20%" voltou (13/10/2026)
+
+O LEO sentiu que "não mexemos mais em lance" e enviou o PDF original da assessoria (`docs/referencia/Otimizacao_de_ADS_assessoria_Henrique.pdf`). Aplicado mecanicamente aos 30 dias, o PDF mostrou **onde cada método é mais agressivo**: o Playbook sobe lance na Geral com ACOS bom (Henrique diria "abaixo do Máximo → não mexer"); Henrique sobe +20% automaticamente em todo segmento de manual/auto individual que gastou menos de R$ 5 — regra que o Playbook tinha aposentado, e por isso as manuais pequenas ficaram 3 ciclos paradas. **Decisões do LEO (13/10):** (1) regra "< R$ 5 → +20%" **reativada**, subordinada ao checkpoint de 15 cliques, com "ACOS indefinido ≠ acima do Máximo"; (2) **réguas de ACOS deixam de ser fixas**: Máximo = margem média 30d da Mestra, Objetivo = metade, Emergência = dobro, recalculadas a cada Ox (13/10: 25% / 12,5% / 50%; os 18/9/36 anteriores não tinham origem documentada e estavam abaixo da margem real); (3) orçamento pela régua do PDF executado por fidelidade, mas a leitura da O4 continua: orçamento não consumido não é alavanca. **Lição de método:** ao formalizar um método herdado, registrar *por que* cada regra foi aposentada e reler a decisão quando a conta mudar de forma — a aposentadoria fez sentido com 12 campanhas em construção e deixou de fazer com a conta concentrada na Geral.
