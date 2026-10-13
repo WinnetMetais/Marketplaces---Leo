@@ -18,3 +18,5 @@
 **Leitura mínima (sem decisão):** semana do evento com **zero vendas a preço promocional** nos 14 SKUs; o que vendeu foi o catálogo pequeno fora das promoções, 7 de 10 pedidos pela Geral. PI P3070 gastou R$ 35,42 em 31 cliques com a oferta de 15% no ar e não converteu — entra na O7 com a régua de alvo. Linha do Controle em `dados/PROPOSTA_linha_Controle_Semanal_12-10.csv`.
 
 **Controle atualizado pelo LEO (13/10):** linha 16 com os 6 números certos; fórmulas I:M calculando (ROAS 11,92 · ACOS 8,39% · taxa 3,70% · CPC 0,76 · CTR 0,48%); validação 1. **Faltam N16 (VIGIA), O16 (nota) e P16 (fonte)** — preencher na próxima gravação.
+
+**Mestra regravada pelo LEO (13/10):** Origem das linhas 83–92 conforme a atribuição da semana (7 Ads / 3 Orgânico) e STATUS VÁLIDO em 87–92. Só essas 16 células mudaram; validações 7. Pendente: Origem das linhas 81 e 82 (05/10) após o export da Era; nº do pedido na linha 81.
