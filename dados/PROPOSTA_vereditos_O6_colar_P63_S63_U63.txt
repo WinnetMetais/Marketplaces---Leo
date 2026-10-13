@@ -1,0 +1,70 @@
+BLOCO 1 — colar em P63 (Status, 20 linhas, O6-001 a O6-020)
+EXECUTADA - AVALIADA
+EXECUTADA - AVALIADA
+EXECUTADA - AVALIADA
+EXECUTADA - AVALIADA
+EXECUTADA - AVALIADA
+EXECUTADA - AVALIADA
+EXECUTADA - AVALIADA
+EXECUTADA - AVALIADA
+EXECUTADA - AVALIADA
+EXECUTADA - AVALIADA
+APROVADA - NÃO EXECUTADA
+APROVADA - NÃO EXECUTADA
+EXECUTADA - AVALIADA
+APROVADA - NÃO EXECUTADA
+APROVADA - NÃO EXECUTADA
+APROVADA - NÃO EXECUTADA
+EXECUTADA - AVALIADA
+EXECUTADA - AVALIADA
+EXECUTADA - AVALIADA
+EXECUTADA - AVALIADA
+
+BLOCO 2 — colar em S63 (Resultado pós-alteração | Veredito posterior, 2 colunas, 20 linhas)
+SP-PP pausada; 0 atividade na Era	MANTIDA
+EGC pausada; SKU vendeu 1 un orgânica (23/09) e teve 24 sessões na Era sem Ads	MANTIDA — venda orgânica não reabilita a auto
+alvo B09YDLC69D pausado; 16 cli vit / 0 congelados	MANTIDA
+PI P3070 na Era: 70 cli · R$ 89,35 · 1 venda (30/09, alvo B0CTMZHJFJ) · ACOS 14,5%	GATILHO NÃO DISPAROU — lances mantidos; alvo B0CYWMQ93Y → O7-003
+loose-match a 0,45: 153 cli · R$ 96,49 · 4 compras · ACOS 9,4% (30d); era o dreno de 60% do custo	POSITIVO — mantido em 0,45
+Q2460-B pausado na Geral em 28/09; BR 19 → 1 sessão por bloco	CONFIRMADA — SKU vai à fila de página
+O5-013 cancelada em 22/09; nada a promover	ENCERRADA
+exata "lixeira inox para pia de cozinha": 14 cli / R$ 16,18 / 0 em 30d	VIGIA MANTIDA — dispara com 1 clique (→ 1,20 ou pausar)
+L2025-B segue no grupo da 6B; exatas da 6B sem venda em 30d	MANTIDA — grupo recebe a exata "lixo banheiro" (O7-007)
+Piloto +1 Era: 6B 12 cli/0, L3070-B 2 cli/0; controle 0–1 cli	SEM EFEITO — encerrar (O7-006)
+PXM nunca entrou na lista de Melhor Oferta	NÃO ELEGÍVEL — substituída pelo desconto comum (EC-020), 0 venda
+PG2460 não elegível; sem preço de referência	NÃO ELEGÍVEL
+Melhor Oferta P3070 15%: 124 visualizações · 1 un · R$ 523,75 · 0,8%; BR 108 sessões na semana	POSITIVO FRACO — tráfego sim, 1 conversão; repetir só com selo de evento
+P3060 não elegível; no desconto comum: 12 sessões / 0	NÃO ELEGÍVEL
+P4080 não elegível; no desconto comum: 21 sessões / 0	NÃO ELEGÍVEL
+P3050 não elegível; no desconto comum: 11 sessões / 0	NÃO ELEGÍVEL
+Melhor Oferta PXP 10% (exceção ao piso): 23 visualizações · 0 un	SEM EFEITO — exceção ao piso não se repete
+Migração: GS1 reenviado 05/10; gate físico sem data	NÃO DECIDIR AINDA (mantido)
+B0BHMZBZW9: Geral 5 cli / 0 em 30d (régua 15); como alvo da PI P3070 14 cli vit / 0	VIGIA MANTIDA — dupla (Geral 5/15; PI 14/15)
+Geral R$ 90/dia, consumo 12%; auto PXP 10 cli/0 em 30d; PI L2030-B 7 cli/0 (vit 3 compras em 1 alvo)	MANTIDAS
+
+BLOCO 3 — colar em U63 (Reavaliar em, 20 linhas)
+—
+—
+—
+27/10/2026
+—
+—
+—
+20/10/2026
+—
+—
+—
+—
+—
+—
+—
+—
+—
+O8
+27/10/2026
+—
+
+BLOCO 4 — EC-020, linha 86: P86 | S86 | T86 | U86
+EXECUTADA - AVALIADA	PRECOPRIMEALTERNATIVO (12 SKUs a 10%, 05–11/10): 108 visualizações · 0 un · R$ 0	SEM EFEITO — 3ª leitura de desconto a 10% sem conversão; não repetir fora de evento com selo	—
+
+Conferir antes de colar: A63 = O6-001 e A82 = O6-020. Células S/T com mais de 300 caracteres: nenhuma.
