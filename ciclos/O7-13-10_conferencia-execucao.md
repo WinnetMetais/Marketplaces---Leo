@@ -9,8 +9,8 @@
 | O7-001 | Geral close 0,54 → 0,65 | print Geral: "Correspondência aproximada R$ 0,65" | ✅ CONFERIDA |
 | O7-002 | Geral substitutes 0,45 → 0,54 | print Geral: "Substitutos R$ 0,54" (loose e complements em 0,45) | ✅ CONFERIDA |
 | O7-003 | PI P3070 alvo B0CYWMQ93Y pausado | print: alvo "Pausado", campanha ativa | ✅ CONFERIDA |
-| O7-004 | Geral negativar ASIN B076VYNP9W | — | ⏳ falta print (segmentação negativa) |
-| O7-005 | Geral negativar frase "dourada" | — | ⏳ falta print (palavras negativas) |
+| O7-004 | Geral negativar ASIN B076VYNP9W | print "Produtos negativos": `asin="B076VYNP9W"` presente (4 ASINs negativos no grupo: B0C5PLHDRL, B0BHXCJD1P, B076PLZ1PV, B076VYNP9W) | ✅ CONFERIDA |
+| O7-005 | Geral negativar frase "dourada" | print "Palavras-chave negativas": "dourada" · Frase negativa (única palavra negativa do grupo) | ✅ CONFERIDA |
 | O7-006a | 6B dinâmico → fixo | print 2ª rodada: "Lances fixos" na configuração da campanha (o export da 1ª rodada saiu antes da mudança) | ✅ CONFERIDA |
 | O7-006b | L3070-B dinâmico → fixo | export: "Lances fixos" | ✅ CONFERIDA |
 | O7-007 | 6B exata "lixo banheiro" 0,80 | — | ⏳ falta print (palavras da 6B) |
@@ -28,7 +28,7 @@
 
 **Resultado da 1ª rodada:** 7 ações conferidas no console, 1 registrada em documento, 9 aguardando print, 1 contradita pelo export (estratégia da 6B).
 
-**2ª rodada (5 prints + export de alvos da PI PXM):** +7 conferidas (6B fixa · PI PXM 1,32/1,08 · Extintor 3,12 · Cinzeiros 1,92 · Bituqueiras 1,44 · L3070-B 1,44). **Total: 14 de 17 ações de console conferidas + réguas registradas.** Faltam 4: O7-004, O7-005, O7-007, O7-014.
+**2ª rodada (5 prints + export de alvos da PI PXM):** +7 conferidas (6B fixa · PI PXM 1,32/1,08 · Extintor 3,12 · Cinzeiros 1,92 · Bituqueiras 1,44 · L3070-B 1,44). **Total: 14 de 17 ações de console conferidas + réguas registradas.** **3ª rodada (2 prints das negativas da Geral): +2 conferidas. Total: 16 de 17.** Falta só a 6B: O7-007 (exata "lixo banheiro" 0,80) e O7-014 ("lixeira banheiro 7 litros" 1,80) — um print resolve as duas.
 
 **Achado novo (print PXP):** a auto PXP tem lances por segmentação que não estavam nos Parâmetros: Correspondência vaga 1,32 · Complementos 1,32 · Substitutos 1,58 (pós) · Correspondência aproximada 1,10. Entram no §3.
 
@@ -36,7 +36,9 @@
 
 **Mestra (recebida junto):** F89 92,34 → **92,43** corrigido pelo LEO; P3070 de 11/10 agora a R$ 523,75. Única diferença; validações preservadas. Cópia do repositório atualizada.
 
-## 3ª rodada — o que falta
-Prints de: **palavras-chave da 6B** ("lixeira banheiro 7 litros" 1,80 + exata "lixo banheiro" 0,80 nova) · **negativas da Geral** (segmentação negativa ASIN B076VYNP9W e palavra negativa frase "dourada").
+## 4ª rodada — o que falta
+Um print: **palavras-chave da 6B** ("lixeira banheiro 7 litros" 1,80 + exata "lixo banheiro" 0,80 nova).
+
+**Achado do print de negativas:** o grupo da Geral tem 4 ASINs negativos (B0C5PLHDRL, B0BHXCJD1P, B076PLZ1PV de ciclos anteriores + B076VYNP9W da O7) e 1 palavra negativa ("dourada", frase). Inventário de negativas da Geral passa a constar nos Parâmetros.
 
 **Detalhe dos prints da 2ª rodada (lances das demais palavras, para o §3):** L3070-B: exatas "lixeira 50 litros basculante", "lixeira inox basculante grande", "lixeira 80 litros basculante" a 1,20; frases a 1,00. Extintor: "suporte de extintor chão" 2,60. Cinzeiros: "cinzeiro de chão inox" 1,60.
