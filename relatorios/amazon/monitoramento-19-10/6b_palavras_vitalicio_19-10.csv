@@ -1,0 +1,16 @@
+﻿Estado,Palavra-chave,Tipo de correspondência de segmentação,Status,Lance (BRL),Impressões,Cliques,Custo total (BRL),Compras,Vendas (BRL),ACOS,ROAS
+ATIVADO,lixeira banheiro 7 litros,Exata,Em inserção,1.8,2376,10,17.43,1,265.8,"0,0656",15.249569707401033
+ATIVADO,lixeira inox 10 litros banheiro,Exata,Em inserção,1.5,0,0,0,0,0,0,0
+ATIVADO,lixeira basculante inox banheiro,Exata,Em inserção,1.5,12,0,0,0,0,0,0
+ATIVADO,lixeira inox banheiro escritório,Exata,Em inserção,1.5,0,0,0,0,0,0,0
+ATIVADO,lixeira inox pequena com tampa,Exata,Em inserção,1.5,0,0,0,0,0,0,0
+ATIVADO,lixeira redonda inox basculante 8 litros,Exata,Em inserção,1.5,0,0,0,0,0,0,0
+ATIVADO,lixeira inox para pia de cozinha,Exata,Em inserção,1.5,2114,32,45.69,0,0,0,0
+ATIVADO,lixeira inox 10 litros banheiro,Frase,Em inserção,1.2,4,0,0,0,0,0,0
+ATIVADO,lixeira basculante inox banheiro,Frase,Em inserção,1.2,6,0,0,0,0,0,0
+ATIVADO,lixeira inox banheiro escritório,Frase,Em inserção,1.2,0,0,0,0,0,0,0
+ATIVADO,lixeira inox pequena com tampa,Frase,Em inserção,1.2,0,0,0,0,0,0,0
+ATIVADO,lixeira redonda inox basculante 8 litros,Frase,Em inserção,1.2,0,0,0,0,0,0,0
+ATIVADO,lixeira banheiro 7 litros,Frase,Em inserção,1.2,611,0,0,0,0,0,0
+ATIVADO,lixeira inox para pia de cozinha,Frase,Em inserção,1.2,403,2,1.87,0,0,0,0
+ATIVADO,lixo banheiro,Exata,Em inserção,0.8,113,1,0.8,0,0,0,0

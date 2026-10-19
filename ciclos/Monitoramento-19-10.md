@@ -63,3 +63,17 @@ Nenhuma execução esta semana. **Checkpoint 22/10 (quarta):** LEO abre a Geral 
 4. Linha 17 do Controle: `dados/PROPOSTA_linha_Controle_Semanal_19-10.csv`.
 
 Próximos: checkpoint 22/10 · **O8 27/10** (Era 14–26/10; recalcular réguas pela margem 30d; ler O7-001…017).
+
+---
+
+## Adendo 19/10 — vigias conferidas (exports de palavras da 6B e alvos da PI P3070) · Controle
+
+**6B — exata "lixeira inox para pia de cozinha": GATILHO DISPAROU.** Vitalício 19/10: 2.114 impr · **32 cli · R$ 45,69 · 0 venda** (13/10: 31 / 44,51). Contrato O6-008 ("dispara com 1 clique → 1,20 ou pausar"). Recomendação: **PAUSAR ALVO** (a exata), confiança ALTA — 32 cliques sem venda é o dobro da régua, e o termo (pia de cozinha) não é o produto da campanha (lixeiras de banheiro). Alternativa prevista no contrato: reduzir para 1,20. A frase correspondente (403 impr · 2 cli · 1,87) fica. Proposta: `dados/PROPOSTA_linha_Registro_EC-021.csv` (linha 105). **Execução só com aprovação do LEO.**
+
+Demais palavras da 6B: "lixeira banheiro 7 litros" exata a 1,80 — 2.376 impr · 10 cli · 1 compra (semana: +325 impr, +2 cli; CTR da semana 0,6% contra 0,08% histórico, n pequeno) · **"lixo banheiro" exata a 0,80 — 113 impr · 1 cli · R$ 0,80 na 1ª semana** (entregando) · frases sem mudança relevante. Soma da semana: 5 cli / R$ 6,58 = export de campanhas ✓.
+
+**PI P3070 — nenhum alvo cruzou a régua.** Vitalício 19/10: 97 alvos · 236 cli · R$ 287,48 · **3 compras (iguais às de 13/10)** → a venda do P3070 em 15/10 **não foi atribuída à PI: Origem = Orgânico, confiança ALTA**. Triagem (5+ sem venda): `B0BHMZBZW9` 14 (sem clique na semana) · `B0F4T8FCDD` 11 · `B0BSNVT11K` 8 · `B0778TD2LY` 8 (+1) · `B0C5N9HQJM` 8 (+1) · `asin="B09YDKHT3H"` 8 (+1) · `asin="B0CYY5P6MR"` 6 (+2) · `B0CXTQT2L3` 5 · `B07J2MT48B` 5. Alvos pausados: `B0CYWMQ93Y` 18 · `B09YDLC69D` 16. Sem ação; reler na O8.
+
+**Origem para a Mestra (resposta ao LEO):** linha 93 (L1618-B 13/10) = **Ads** · linha 94 (P3070 15/10) = **Orgânico** · linha 95 (L1618-T 19/10) = deixar vazia até a O8; STATUS da 95 = VÁLIDO.
+
+**Controle (recebido 19/10):** linha 17 colada com os 6 números e nota; fórmulas I:M calculando (ROAS 1,31 · ACOS 76,2% · taxa 0,80% · CPC 0,79 · CTR 0,50%); N16 preenchido com VIGIA; validação 1. Faltam só O16 e P16 (nota e fonte da semana 06–12/10) — opcional.
