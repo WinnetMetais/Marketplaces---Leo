@@ -10,7 +10,7 @@ Objetivo: o Code puxar sozinho os relatórios de Ads (Gerenciador, 30d, termos, 
 |---|---|---|---|
 | 1 | Criar perfil de segurança **Login with Amazon** (gera Client ID e Client Secret) | LEO | ✅ 19/10 — app "Winnet Ads API", redirect https://www.amazon.com; aparece em My Apps sem escopos (esperado) |
 | 2 | **Pedir acesso à Amazon Ads API** — botão "How to get Ads API access" → Anunciante direto → perfil "Vendedor da Amazon" → escopo "Publicidade" | LEO | ✅ enviado para revisão em 19/10 |
-| 3 | Aguardar aprovação da Amazon (relatos: 1 a 3 dias úteis) | Amazon | aguardando desde 19/10 |
+| 3 | Aguardar aprovação da Amazon (relatos: 1 a 3 dias úteis). **E-mail chega na conta Amazon da Dianna** (conta usada no app LwA e no pedido); link de aprovação e autorização da etapa 4 nessa mesma conta | Amazon | aguardando desde 19/10 |
 | 4 | Autorizar a conta de anúncios e gerar o **refresh token** (script `obter_refresh_token.ps1`, roda no PC do LEO) | LEO, guiado pelo Code | após 3 |
 | 5 | Guardar os 3 segredos no ambiente: `AMZN_ADS_CLIENT_ID`, `AMZN_ADS_CLIENT_SECRET`, `AMZN_ADS_REFRESH_TOKEN` | LEO | após 4 |
 | 6 | Code testa `ads_api.py profiles` em sessão nova, anota o `AMZN_ADS_PROFILE_ID` (perfil BR) e passa a puxar relatórios | Code | após 5 |
