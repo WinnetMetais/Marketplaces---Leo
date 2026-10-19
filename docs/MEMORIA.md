@@ -318,3 +318,7 @@ O LEO sentiu que "não mexemos mais em lance" e enviou o PDF original da assesso
 
 ### Export pré × pós: conferir pela hora, não pelo dia (O7, 13/10/2026)
 Na conferência da O7 dois exports do mesmo dia divergiram do Registro (6B "em dinâmico"; palavras da 6B sem as mudanças) porque foram tirados **antes** da execução daquele item. Antes de declarar "não executada", pedir um export novo do mesmo objeto; só declarar divergência se o 2º export confirmar. Ordem que funcionou: executar tudo → export de campanhas → export/print por campanha alterada.
+
+## Ambiente único: Project descontinuado, Claude Code é a operação (19/10/2026)
+
+Desde 05/10 nada rodava mais no Project além de receber cópias de Contexto e Parâmetros; cada troca era um passo manual com risco de divergência. Decisão do LEO em 19/10: **descontinuar o Project**. O repositório (esta sessão/branch) passa a ser análise, auditoria, registro e memória ao mesmo tempo. Divisão: Mestra com o LEO (validações x14 só sobrevivem no Excel); Registro e Controle com o Code (openpyxl preserva fórmulas e a validação padrão do Controle — conferir a contagem a cada gravação); console com o LEO, sob a trava. Regra operacional nova: **um editor por arquivo**. O que antes era "MEMORIA.md não vai para o chat canônico" deixa de existir — não há mais chat canônico.

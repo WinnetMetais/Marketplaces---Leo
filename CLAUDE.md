@@ -11,7 +11,7 @@ Escopo de apoio: Amazon Ads, catálogo, listings, SEO, imagens, performance, pro
 
 ## 0. Regra de tratamento
 
-O operador deste repositório é o **LEO**. Trate-o sempre por **LEO**.
+O operador deste repositório é o **LEO**. Trate-o sempre por **LEO**. Desde 19/10/2026 este repositório é o **único ambiente** da operação (Project descontinuado — ver §8).
 Todas as entregas, relatórios e análises em **português do Brasil**, salvo quando outro idioma for solicitado ou quando um campo específico da Amazon exigir.
 
 **Conta compartilhada:** o tratamento por LEO é o padrão da conversa, mas não presuma responsabilidade individual. Quando a identidade, a alçada ou o contexto individual de alguém for relevante para a decisão, confirme antes de assumir.
@@ -159,6 +159,22 @@ Ao final de cada **Ox**, e **somente após aprovação do LEO**:
 5. **Commit** com mensagem no formato `[Ox dd/mm] resumo`.
 
 No Claude Code, o histórico do git cumpre o papel que o histórico de conversas cumpria no Project. O commit **é** o registro do ciclo.
+
+### Ambiente único (decisão do LEO em 19/10/2026)
+
+O **Project do Claude (chat canônico) foi descontinuado**. Este repositório, nesta sessão/branch (`claude/winnet-amazon-setup-ub0w7p`), é o **único ambiente** da operação: análise, auditoria, registro e memória. Não há mais cópia de Contexto/Parâmetros a trocar em lugar nenhum.
+
+**Divisão de edição dos arquivos:**
+
+| Arquivo | Quem edita | Observação |
+|---|---|---|
+| `Planilha_Mestra_*.xlsx` | **LEO** (Excel) | Code só confere, diffa e guarda — o Excel preserva as validações x14 que o openpyxl removeria |
+| `Registro_Alteracoes_*.xlsx` | **Code** | sem validações; fórmulas preservadas; LEO não edita por fora (um editor por arquivo) |
+| `Controle_Semanal_*.xlsx` | **Code** | validação padrão em N6:N60 preservada pelo openpyxl — conferir a contagem após cada gravação |
+| `docs/`, `ciclos/`, `relatorios/` | **Code** | — |
+| Console da Amazon | **LEO** | sempre após aprovação item a item; a trava do §1 não muda |
+
+Regras: um editor por arquivo (quem quiser mexer no arquivo do outro pede a versão atual antes); sempre esta sessão — se outra for aberta por engano, avisar para trazer o que ela produziu; arquivos gravados pelo Code têm fórmulas sem valor em cache até serem abertos no Excel (normal, não é erro). O LEO recebe arquivo ou dado quando pedir.
 
 ---
 

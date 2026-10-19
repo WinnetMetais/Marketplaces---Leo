@@ -7,7 +7,7 @@ Snapshot: **25/08/2026 (pós-O4)**, com atualizações de medição de **26/08/2
 <!-- superado -->
 ⚠️ ~~A O5 foi concluída como análise em 08/09/2026, mas NÃO foi executada.~~ As 17 linhas O5-001 a O5-017 estão em `APROVADA - AGUARDANDO EXECUÇÃO`. **Os valores deste documento continuam sendo os PRÉ-execução.** O snapshot pós-execução proposto está em `ciclos/O5-08-09_pacote-fechamento-v2.md` §3 e só entra aqui quando o LEO executar e confirmar. Recomendar não é autorizar; executar não é registrar.
 
-DOCUMENTO VIVO.
+DOCUMENTO VIVO. **Desde 19/10/2026 vive só neste repositório** (Project descontinuado); não há cópia a sincronizar.
 
 Este documento contém valores, configurações, ciclos, situações de campanhas e parâmetros operacionais que podem mudar com o tempo.
 
