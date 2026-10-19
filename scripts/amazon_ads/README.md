@@ -8,8 +8,8 @@ Objetivo: o Code puxar sozinho os relatórios de Ads (Gerenciador, 30d, termos, 
 
 | # | Etapa | Quem | Status |
 |---|---|---|---|
-| 1 | Criar perfil de segurança **Login with Amazon** (gera Client ID e Client Secret) | LEO | pendente |
-| 2 | **Pedir acesso à Amazon Ads API** no console de anúncios (formulário usa o Client ID da etapa 1) | LEO | pendente |
+| 1 | Criar perfil de segurança **Login with Amazon** (gera Client ID e Client Secret) | LEO | ✅ 19/10 — app "Winnet Ads API", redirect https://www.amazon.com; aparece em My Apps sem escopos (esperado) |
+| 2 | **Pedir acesso à Amazon Ads API** — botão **"How to get Ads API access"** em My Apps → caminho Direct Advertiser | LEO | em andamento 19/10 |
 | 3 | Aguardar aprovação da Amazon (dias a semanas) | Amazon | — |
 | 4 | Autorizar a conta de anúncios e gerar o **refresh token** (script `obter_refresh_token.ps1`, roda no PC do LEO) | LEO, guiado pelo Code | após 3 |
 | 5 | Guardar os 3 segredos no ambiente: `AMZN_ADS_CLIENT_ID`, `AMZN_ADS_CLIENT_SECRET`, `AMZN_ADS_REFRESH_TOKEN` | LEO | após 4 |
@@ -26,7 +26,7 @@ Objetivo: o Code puxar sozinho os relatórios de Ads (Gerenciador, 30d, termos, 
 O formulário **não** fica no menu de campanhas. Ele vive no **Advanced tools center** (painel de desenvolvedor do Amazon Ads):
 1. Entrar em advertising.amazon.com **com o mesmo e-mail usado na etapa 1** (isso importa: o link de aprovação só funciona logado nessa mesma conta).
 2. Abrir **https://advertising.amazon.com/developer/overview** (Advanced tools center). Se pedir para escolher a conta de anúncios, escolher a Winnet.
-3. Na aba de apps ("My apps" / "Seus apps") usar a opção de **solicitar acesso / registrar app** e escolher o perfil **Direct Advertiser** (anunciante que usa a API para a própria conta, não agência nem ferramenta).
+3. Em **My Apps** o app da etapa 1 já aparece listado (sem escopos). Clicar no botão azul **"How to get Ads API access"**, logo acima do card do app, e seguir o caminho de **Direct Advertiser** (anunciante que usa a API para a própria conta). **Não** usar o "Create app" da seção "You are not an approved AAPN partner" — isso é para parceiros/agências.
 4. Campos relatados por quem fez em 2025/26: razão social, site da empresa começando com `https://`, país de registro (Brasil), descrição do uso (ex.: "relatórios de desempenho das próprias campanhas Sponsored Products para análise interna") e o **Client ID** do perfil Login with Amazon da etapa 1.
 5. Enviar. A resposta vem por e-mail (relatos de 1 a 3 dias úteis). Guardar o e-mail.
 6. **Após a aprovação:** o e-mail traz um link para **atribuir o acesso ao app Login with Amazon** ("assign API access"). Abrir **logado com o mesmo e-mail**; se outra conta abrir, o link se invalida e é preciso escrever para ads-api-onboarding@amazon.com. Documentação: https://advertising.amazon.com/API/docs/en-us/guides/onboarding/apply-for-access e .../onboarding/assign-api-access.
