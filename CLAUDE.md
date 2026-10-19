@@ -282,3 +282,5 @@ Contradições e lacunas de método devem ser registradas, resolvidas e **fechad
 ## 15. Segredos
 
 Nenhum token, credencial ou chave de API entra neste repositório — nem em código, nem em docs, nem em commit. `.gitignore` cobre `.env*`, `*.token`, `*.pem`, `*.key`, `secrets/`. Credenciais ficam no ambiente.
+
+**Amazon Ads API (em implantação desde 19/10/2026):** credenciais só nos segredos do ambiente da sessão (`AMZN_ADS_CLIENT_ID`, `AMZN_ADS_CLIENT_SECRET`, `AMZN_ADS_REFRESH_TOKEN`, `AMZN_ADS_PROFILE_ID`). O cliente `scripts/amazon_ads/ads_api.py` é **somente leitura por política**: nenhum endpoint de escrita é chamado, mesmo com o token permitindo — a trava do §1 continua valendo e a execução segue no console, pelo LEO. Passo a passo em `scripts/amazon_ads/README.md`.
