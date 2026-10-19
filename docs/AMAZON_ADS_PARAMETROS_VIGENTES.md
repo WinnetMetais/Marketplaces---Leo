@@ -94,7 +94,7 @@ Para qualquer decisão específica por SKU, consultar obrigatoriamente a PLANILH
 Exata "suporte para extintor de incêndio": **R$ 3,12 ✅** (O7-010, 13/10; era 2,60) · exata "suporte de extintor chão": R$ 2,60 · Topo de Pesquisa **+75% (reaplicado em 25/08 — vigente)** · fixo
 
 ### Lixeiras banheiro — 6B
-Exatas: **"lixeira banheiro 7 litros" R$ 1,80 ✅** (O7-014; era 1,50) · **"lixo banheiro" R$ 0,80 ✅ (nova, O7-007; L1618-T + L2025-T)** · outras 5 exatas R$ 1,50 · **exata "lixeira inox para pia de cozinha" PAUSADA em 19/10 (EC-021; 32 cli vitalícios / R$ 45,69 / 0 — gatilho O6-008; conferência por print pendente)** · 7 frases R$ 1,20 · Frase: R$ 1,20 · Topo +25%
+Exatas: **"lixeira banheiro 7 litros" R$ 1,80 ✅** (O7-014; era 1,50) · **"lixo banheiro" R$ 0,80 ✅ (nova, O7-007; L1618-T + L2025-T)** · outras 5 exatas R$ 1,50 · **exata "lixeira inox para pia de cozinha" PAUSADA em 19/10 (EC-021; 32 cli vitalícios / R$ 45,69 / 0 — gatilho O6-008; print conferido; Registro 99 entradas)** · 7 frases R$ 1,20 · Frase: R$ 1,20 · Topo +25%
 **Lances fixos ✅ desde 13/10 (O7-006; print)** — ~~PILOTO: lances dinâmicos (aumento e redução) — O4-014~~ encerrado (2 Eras sem diferença).
 
 ### Cinzeiros — 6C
