@@ -23,10 +23,15 @@ Objetivo: o Code puxar sozinho os relatórios de Ads (Gerenciador, 30d, termos, 
 5. Anotar **Client ID** e **Client Secret** (botão "Show Secret") em lugar seguro **fora** deste repositório e **fora** do chat. Eles vão direto para os segredos do ambiente na etapa 5.
 
 ### Etapa 2 — pedir acesso à API
-1. No console do **Amazon Ads** (advertising.amazon.com), com o usuário administrador da conta Winnet, abrir o formulário de acesso à API (link no documento de onboarding acima, seção "Apply for access"; o console também exibe a opção no menu da conta).
-2. Preencher como **anunciante usando a API para a própria conta** (não como agência/ferramenta de terceiros).
-3. Informar o **Client ID** da etapa 1 quando o formulário pedir.
-4. Enviar. A Amazon responde por e-mail. Guardar o e-mail de aprovação.
+O formulário **não** fica no menu de campanhas. Ele vive no **Advanced tools center** (painel de desenvolvedor do Amazon Ads):
+1. Entrar em advertising.amazon.com **com o mesmo e-mail usado na etapa 1** (isso importa: o link de aprovação só funciona logado nessa mesma conta).
+2. Abrir **https://advertising.amazon.com/developer/overview** (Advanced tools center). Se pedir para escolher a conta de anúncios, escolher a Winnet.
+3. Na aba de apps ("My apps" / "Seus apps") usar a opção de **solicitar acesso / registrar app** e escolher o perfil **Direct Advertiser** (anunciante que usa a API para a própria conta, não agência nem ferramenta).
+4. Campos relatados por quem fez em 2025/26: razão social, site da empresa começando com `https://`, país de registro (Brasil), descrição do uso (ex.: "relatórios de desempenho das próprias campanhas Sponsored Products para análise interna") e o **Client ID** do perfil Login with Amazon da etapa 1.
+5. Enviar. A resposta vem por e-mail (relatos de 1 a 3 dias úteis). Guardar o e-mail.
+6. **Após a aprovação:** o e-mail traz um link para **atribuir o acesso ao app Login with Amazon** ("assign API access"). Abrir **logado com o mesmo e-mail**; se outra conta abrir, o link se invalida e é preciso escrever para ads-api-onboarding@amazon.com. Documentação: https://advertising.amazon.com/API/docs/en-us/guides/onboarding/apply-for-access e .../onboarding/assign-api-access.
+
+Páginas oficiais não puderam ser abertas pelo Code em 19/10 (rede bloqueia advertising.amazon.com); caminho acima vem da discussão oficial em github.com/amzn/ads-advanced-tools-docs (#161). Rótulos de botão podem variar.
 
 ### Etapa 4 — autorização e refresh token (só após aprovação)
 No PC do LEO (Windows, PowerShell), rodar `scripts/amazon_ads/obter_refresh_token.ps1`. O script:
