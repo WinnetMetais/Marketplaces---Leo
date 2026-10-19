@@ -77,3 +77,5 @@ Demais palavras da 6B: "lixeira banheiro 7 litros" exata a 1,80 — 2.376 impr �
 **Origem para a Mestra (resposta ao LEO):** linha 93 (L1618-B 13/10) = **Ads** · linha 94 (P3070 15/10) = **Orgânico** · linha 95 (L1618-T 19/10) = deixar vazia até a O8; STATUS da 95 = VÁLIDO.
 
 **Controle (recebido 19/10):** linha 17 colada com os 6 números e nota; fórmulas I:M calculando (ROAS 1,31 · ACOS 76,2% · taxa 0,80% · CPC 0,79 · CTR 0,50%); N16 preenchido com VIGIA; validação 1. Faltam só O16 e P16 (nota e fonte da semana 06–12/10) — opcional.
+
+**EC-021 — APROVADA E EXECUTADA pelo LEO em 19/10** (exata "lixeira inox para pia de cozinha" pausada na 6B, lance 1,50 congelado). Conferência contra export/print das palavras da 6B e linha 105 do Registro pendentes. A 6B fica com 6 exatas ativas (5 a 1,50 + "7 litros" 1,80 + "lixo banheiro" 0,80) e 7 frases a 1,20. Contrato de saída da O6-008 cumprido.
