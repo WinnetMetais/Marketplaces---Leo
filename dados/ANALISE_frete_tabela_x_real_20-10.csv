@@ -1,0 +1,33 @@
+﻿Região;Classe;n;Frete tabela (R$);Frete real mediano (R$);Razão real/tabela mediana;Mín;Máx;Exemplos
+Minas Gerais Capital;Grandes;1;274,00;171,55;63%;63%;63%;P4080 30/09 171,55
+Rio de Janeiro Capital;Grandes;1;178,00;119,13;67%;67%;67%;P4080 11/08 119,13
+Bahia Interior;Medios;1;142,00;96,04;68%;68%;68%;P3050 19/10 96,04
+Ceará Capital;Medios;1;158,00;61,25;39%;39%;39%;L2460-CP 19/08 61,25
+Distrito Federal;Medios;2;122,00;60,70;50%;44%;56%;P3050 29/06 53,08 · P3070 03/09 68,33
+Minas Gerais Interior;Medios;3;69,90;57,77;83%;50%;115%;L3070-B 02/08 80,69 · P3050 09/07 57,77 · L2470-B 12/09 35,01
+Paraná Capital;Medios;1;46,01;37,97;83%;83%;83%;PG2460 25/06 37,97
+Paraná Interior;Medios;1;69,90;63,46;91%;91%;91%;P3070 15/10 63,46
+Rio Grande do Norte Capital;Medios;1;163,00;81,96;50%;50%;50%;SP-01 29/06 81,96
+Rio Grande do Sul Capital;Medios;1;59,90;53,59;89%;89%;89%;EGC 30/07 53,59
+Rio de Janeiro Capital;Medios;3;51,00;42,41;71%;70%;97%;L2460-CP 19/06 35,52 · Q3060-B 22/06 42,41 · P3070 11/10 58,10
+Rio de Janeiro Interior;Medios;1;69,90;84,49;121%;121%;121%;L3085-B 14/08 84,49
+Santa Catarina Capital;Medios;1;59,90;55,56;93%;93%;93%;P3070 30/09 55,56
+Santa Catarina Interior;Medios;1;69,90;34,14;49%;49%;49%;EGC 23/09 34,14
+São Paulo Capital;Medios;4;40,01;36,17;97%;60%;129%;P3070 22/06 37,22 · EGC 02/07 44,98 · P3070 15/09 35,12 · L2460-CZ 08/10 20,88
+São Paulo Interior;Medios;1;39,90;26,34;66%;66%;66%;PG2460 07/09 26,34
+Bahia Capital;Pequenos;1;82,01;24,60;30%;30%;30%;L2450--CZ 03/07 24,60
+Ceará Interior;Pequenos;1;103,00;22,15;22%;22%;22%;L1618-B 03/10 22,15
+Distrito Federal;Pequenos;2;52,00;17,88;34%;31%;38%;L2030-B 25/07 19,73 · L1618-B 13/10 16,04
+Espírito Santo Interior;Pequenos;1;29,90;21,78;73%;73%;73%;L1618-T 24/09 21,78
+Goiás Capital;Pequenos;2;59,49;24,12;51%;46%;56%;PXP 02/07 27,29 · PXM 20/07 20,94
+Goiás Interior;Pequenos;1;52,00;19,26;37%;37%;37%;L2025-T 15/09 19,26
+Minas Gerais Capital;Pequenos;4;24,90;14,50;58%;47%;73%;PXM 26/08 18,08 · PXP 29/08 14,69 · L2025-T 31/08 14,30 · L1618-T 19/10 11,70
+Paraná Capital;Pequenos;5;23,51;15,65;63%;57%;75%;L1618-A 13/06 15,65 · L2025-T 06/08 18,60 · L2025-T 30/08 15,65 · PXP 08/09 14,22
+Pernambuco Capital;Pequenos;1;70,00;19,95;28%;28%;28%;L2030 16/08 19,95
+Rio Grande do Sul Capital;Pequenos;3;24,90;20,49;82%;68%;85%;PXP 21/07 21,19 · L2025-T 19/09 20,49 · L1618-T 26/09 16,89
+Rio Grande do Sul Interior;Pequenos;2;29,90;23,81;80%;79%;80%;L2030-B 28/09 23,87 · L2030 10/10 23,75
+Rio de Janeiro Capital;Pequenos;3;24,90;16,36;66%;66%;66%;L1623-T 05/10 16,36 · L2025-T 08/10 16,36 · L1623 09/10 16,36
+Rio de Janeiro Interior;Pequenos;1;29,90;19,08;64%;64%;64%;L1618-T 05/08 19,08
+São Paulo Capital;Pequenos;8;12,90;12,87;100%;81%;120%;PXM 04/07 15,49 · L1618-T 08/08 11,68 · L2025-T 12/08 14,23 · L1618-T 05/09 12,87
+São Paulo Interior;Pequenos;4;16,25;26,25;159%;98%;238%;L2450-AML 24/06 34,50 · L1618-T 09/07 16,64 · L2025-B 22/07 40,18 · L1618-T 07/10 18,00
+TODAS;;63;;;70%;22%;238%;
