@@ -79,3 +79,6 @@ Decisão registrada: Wintech + Dianna, 01/09. Isenção de GTIN descartada.
 | Adesivo novo | Wintech | Até a O6 (22/09) |
 
 Fontes: [GS1 Brasil — solicitar código de barras](https://www.gs1br.org/solicitar-codigo-de-barras) · [Passo a passo do registro](https://blog.gs1br.org/passo-a-passo-saiba-como-e-feito-o-registro-do-codigo-de-barras/)
+
+
+**20/10/2026:** bloqueado no financeiro — a GS1 exigirá novo documento e o financeiro ainda não enviou. Reabrir quando o documento sair.
