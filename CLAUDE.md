@@ -283,4 +283,6 @@ Contradições e lacunas de método devem ser registradas, resolvidas e **fechad
 
 Nenhum token, credencial ou chave de API entra neste repositório — nem em código, nem em docs, nem em commit. `.gitignore` cobre `.env*`, `*.token`, `*.pem`, `*.key`, `secrets/`. Credenciais ficam no ambiente.
 
+**Bling (ERP) — conector MCP ligado pelo LEO em 20/10/2026:** usar **somente quando o LEO pedir explicitamente**, e só para leitura (pedidos, notas, estoque, cadastros). Nunca criar, alterar ou autorizar nada no Bling — vale a trava do §1. Não consultar por iniciativa própria.
+
 **Amazon Ads API (em implantação desde 19/10/2026):** credenciais só nos segredos do ambiente da sessão (`AMZN_ADS_CLIENT_ID`, `AMZN_ADS_CLIENT_SECRET`, `AMZN_ADS_REFRESH_TOKEN`, `AMZN_ADS_PROFILE_ID`). O cliente `scripts/amazon_ads/ads_api.py` é **somente leitura por política**: nenhum endpoint de escrita é chamado, mesmo com o token permitindo — a trava do §1 continua valendo e a execução segue no console, pelo LEO. Passo a passo em `scripts/amazon_ads/README.md`.
