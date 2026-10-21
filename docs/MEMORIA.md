@@ -326,3 +326,7 @@ Desde 05/10 nada rodava mais no Project além de receber cópias de Contexto e P
 ## Listing: título curto (orientação da assessoria) e sem marca enquanto o ASIN for Genérico (21/10/2026)
 
 Na correção da página do Q2460-B, o LEO ajustou duas coisas da proposta do Code: (1) **título curto** — a orientação do Henrique é não esticar o título com lista de usos; um complemento de 2 termos ("para Escritório e Recepção") basta; (2) **sem "Winnet Metais" nas bullets** enquanto o atributo de marca do ASIN for "Genérico" — citar a marca no texto com a marca errada no cadastro gera inconsistência. Regras para as próximas páginas: título de uma linha com produto + material + capacidade + medida + abertura + até 2 usos; bullets com fato (medida, peso, material, uso, limpeza) e sem nome de marca até a migração.
+
+## Frete visível na busca: comparar o que o cliente vê na lista, não só a página (21/10/2026)
+
+A busca "lixeira basculante quadrada inox 30 litros" mostrou a Winnet em 3º orgânico, preço no meio dos concorrentes, e **única sem "Entrega GRÁTIS"** na primeira tela. Com zero avaliações e marca Genérico, a conversão zero do Q2460-B passa a ter uma causa visível antes mesmo do clique. Decisão: testar frete embutido no preço (360,97 → 399,90) com frete grátis em 1 SKU (EC-023), leitura de 4 semanas. **Regra:** todo diagnóstico de página começa pelo print da busca do termo principal — preço, avaliações e frete dos concorrentes na mesma tela. E a migração de marca não é motivo para adiar teste de oferta: preço e modelo de envio ficam no SKU, não no ASIN.
