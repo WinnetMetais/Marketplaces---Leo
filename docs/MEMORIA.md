@@ -337,3 +337,6 @@ A busca "lixeira basculante quadrada inox 30 litros" mostrou a Winnet em 3º org
 - Saco de lixo: a medida do saco segue a litragem da lixeira (regra do LEO, 21/10).
 - L1618-T: tampa solta com puxador. L1618-B: disco basculante de 14 cm, aro removível. P3070: aro interno removível.
 - Enquanto o ASIN for "Genérico", **nenhum bullet cita a marca**; título curto no formato da assessoria (produto + material + capacidade + medida + abertura + até 2 usos).
+
+### Rotina "Solicitar avaliação" (iniciada 22/10/2026)
+Botão do Seller Central, na página do pedido, disponível entre 5 e 30 dias após a entrega, um clique por pedido, sem texto. Sem custo e dentro da política. Fila: toda venda nova da Mestra entra com data = entrega + 5 dias. Não é alteração de listing nem de Ads: não gera EC. Leitura: número de classificações por ASIN nos prints de página (hoje só o P3070 tem 1).
