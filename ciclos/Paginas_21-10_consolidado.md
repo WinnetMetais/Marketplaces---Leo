@@ -23,4 +23,4 @@
 ## Para a O8 (27/10)
 - Termos: "embutir" (L1618-T) e "basculante 3 litros" (L1618-B) para revisão; CPC/conversão dos anúncios dos pequenos com preço 1,5–2× da tela.
 - PI P3070: conferir alvos contra os vizinhos reais (Tramontina 30 L, Vonder 30 L, Brinox 30 L, Kazalinda, Nobille).
-- Origem em branco na Mestra: P3060 linhas 37 e 77 · P4080 linha 40 · P3070 linha 98 · L1618-T linha 95 (e 96–97 já listadas).
+- Origem em branco na Mestra: P3060 linhas 37, 77 e 100 · P4080 linha 40 · P3070 linha 98 · PXP linha 99 · L1618-T linha 95 (e 96–97 já listadas).
