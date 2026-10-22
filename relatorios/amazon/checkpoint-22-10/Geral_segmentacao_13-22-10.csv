@@ -1,0 +1,5 @@
+﻿Estado,Grupos de segmentação automática,Tipo de correspondência de segmentação,Status,Lance (BRL),Impressões,Cliques,Custo total (BRL),Compras,Vendas (BRL),ACOS,ROAS
+ATIVADO,close-match,—,Em inserção,0.65,15195,59,48.01,1,511.42,"0,0939",10.652364090814412
+ATIVADO,substitutes,—,Em inserção,0.54,6604,45,29.01,0,0,0,0
+ATIVADO,loose-match,—,Em inserção,0.45,2827,23,14.01,2,597.57,"0,0234",42.65310492505354
+ATIVADO,complements,—,Em inserção,0.45,1,0,0,0,0,0,0
